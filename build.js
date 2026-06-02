@@ -138,11 +138,21 @@ for (const locale of config.locales) {
         </li>`
         )
         .join("\n        ");
-      ctx.benefitsHeading = pdata.benefits.heading;
-      ctx.benefitsIntro = pdata.benefits.intro;
-      ctx.benefitsList = pdata.benefits.items
-        .map((f) => `<div class="benefit"><h3>${f.title}</h3><p>${f.text}</p></div>`)
-        .join("\n        ");
+      // Benefits section is optional — only render it when present.
+      if (pdata.benefits && pdata.benefits.items && pdata.benefits.items.length) {
+        const benefitsList = pdata.benefits.items
+          .map((f) => `<div class="benefit"><h3>${f.title}</h3><p>${f.text}</p></div>`)
+          .join("\n        ");
+        ctx.benefitsSection = `<section class="benefits">
+      <h2>${pdata.benefits.heading}</h2>
+      <p class="benefits-intro">${pdata.benefits.intro}</p>
+      <div class="benefits-grid">
+        ${benefitsList}
+      </div>
+    </section>`;
+      } else {
+        ctx.benefitsSection = "";
+      }
     } else if (page.type === "legal") {
       ctx.lastUpdatedLabel = pdata.lastUpdatedLabel;
       ctx.lastUpdated = pdata.lastUpdated;

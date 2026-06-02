@@ -42,41 +42,15 @@
         "steps": [
           {
             "title": "Yükleyin",
-            "text": "Dönüştürmek istediğiniz Word, Excel, PowerPoint, PDF veya başka bir dosyayı seçin. Yukarıdaki kutuya sürükleyip bırakın ya da cihazınızdan seçin."
+            "text": "Dönüştürmek istediğiniz PDF dosyasını seçin. Yukarıdaki kutuya sürükleyip bırakın ya da cihazınızdan seçin."
           },
           {
             "title": "İşlemi başlatın",
-            "text": "Ücretsiz çevrimiçi PDF dönüştürücümüz, belgenizi saniyeler içinde PDF'ye veya PDF'den dönüştürür ve tablolarınızı, satırlarınızı ve sütunlarınızı doğru bir şekilde korur."
+            "text": "Ücretsiz çevrimiçi PDF dönüştürücümüz, PDF belgenizi saniyeler içinde Excel'e dönüştürür ve tablolarınızı, satırlarınızı ve sütunlarınızı doğru bir şekilde korur."
           },
           {
             "title": "İndirin",
-            "text": "Yeni belgeniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan dosyalar sunucumuzdan silinecektir."
-          }
-        ]
-      },
-      "benefits": {
-        "heading": "En İyi Ücretsiz PDF Dönüştürücü",
-        "intro": "Hangi tür dosyaları dönüştürmeniz gerekirse gereksin, çevrimiçi dosya dönüştürücümüz yalnızca bir PDF'den Excel'e dönüştürücüden çok daha fazlasıdır. Tüm belge ve dosya dönüştürme ihtiyaçlarınız için başvuracağınız çözümdür.",
-        "items": [
-          {
-            "title": "Tamamen ücretsiz",
-            "text": "Çevrimiçi PDF dönüştürücümüzün kullanımı tamamen ücretsizdir — kayıt yok, abonelik yok ve gizli ücret yok. Dosyaları istediğiniz kadar PDF'ye ve PDF'den dönüştürün ve hiçbir zaman hesap oluşturmadan tüm dosya dönüştürme araçları paketimizi kullanın."
-          },
-          {
-            "title": "Şifrelenmiş dosyalar",
-            "text": "Verilerinizin gizliliğini önemsiyoruz. Tüm dosyalarınızın 256 bit SSL şifrelemesi, dosyalarınızın, belgelerinizin ve verilerinizin her yükleme ve indirme sırasında güvende olduğu anlamına gelir. Ayrıca verilerinizi üçüncü taraflarla paylaşmaz veya vermeyiz."
-          },
-          {
-            "title": "Dosyalarınızın otomatik olarak silinmesi",
-            "text": "Bir belgeyi PDF'ye veya Excel'e dönüştürdükten sonra dosyalarınızı sunucularımızdan indirebilir ve silebilirsiniz. Dosyalarınızı silmeyi unutursanız, bilgilerinizi güvende tutmak için üç saat sonra sunucumuzdan otomatik olarak silinirler."
-          },
-          {
-            "title": "Evrensel dönüştürme",
-            "text": "Ücretsiz dosya dönüştürücümüz Windows, Mac ve Linux dahil her işletim sisteminde çalışır. Bu sayede, internet bağlantınız olduğu sürece PDF dosyalarını herhangi bir işletim sisteminden, tarayıcıdan veya cihazdan — masaüstü, tablet ya da telefon — Excel'e dönüştürebilirsiniz."
-          },
-          {
-            "title": "Yararlı dosya dönüştürme araçları paketi",
-            "text": "PDF dosya dönüştürücümüz, PDF'yi Excel'e dönüştürmekten çok daha fazlasını yapar. Sıkıştırma ve döndürmeden iki PDF'yi birleştirmeye ve bir PDF'yi ikiye bölmeye kadar, çevrimiçi araç paketimizle PDF dosyalarınızı göz açıp kapayıncaya kadar kolayca düzenleyebilir ve yönetebilirsiniz."
+            "text": "Yeni Excel belgeniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan dosyalar sunucumuzdan silinecektir."
           }
         ]
       }
@@ -158,7 +132,7 @@
         {
           "heading": "12. Bize Ulaşın",
           "body": [
-            "Bu Şartlarla ilgili herhangi bir sorunuz varsa, lütfen XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 adresinden veya support@xyzlab.com e-posta adresinden bizimle iletişime geçin."
+            "Bu Şartlarla ilgili herhangi bir sorunuz varsa, lütfen XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 adresinden veya hello@xyzlab.com e-posta adresinden bizimle iletişime geçin."
           ]
         }
       ]
@@ -246,7 +220,7 @@
         {
           "heading": "13. Bize Ulaşın",
           "body": [
-            "Bu Gizlilik Politikası veya verilerinizi nasıl ele aldığımız hakkında herhangi bir sorunuz varsa, lütfen XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 adresinden veya support@xyzlab.com e-posta adresinden bizimle iletişime geçin."
+            "Bu Gizlilik Politikası veya verilerinizi nasıl ele aldığımız hakkında herhangi bir sorunuz varsa, lütfen XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 adresinden veya hello@xyzlab.com e-posta adresinden bizimle iletişime geçin."
           ]
         }
       ]
