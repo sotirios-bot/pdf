@@ -9,8 +9,8 @@
   "nav": {
     "home": "Bosh sahifa",
     "convertPdf": "PDF o‘girish",
-    "pdfToExcel": "PDFni Excelga",
-    "pdfToWord": "PDFni Wordga"
+    "pdfToExcel": "PDFdan Excelga",
+    "pdfToWord": "PDFdan Wordga"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
@@ -18,7 +18,7 @@
     "legalHeading": "Huquqiy axborot",
     "privacy": "Maxfiylik siyosati",
     "terms": "Xizmat shartlari",
-    "toolsHeading": "Vositalar"
+    "toolsHeading": "Asboblar"
   },
   "common": {
     "languageLabel": "Til"
@@ -31,6 +31,18 @@
     "notFoundHome": "Bosh sahifaga qaytish"
   },
   "pages": {
+    "home": {
+      "slug": "",
+      "title": "PDFConvertMe — Bepul onlayn PDF konvertatsiya vositalari",
+      "metaDescription": "PDFConvertMe'dan bepul onlayn PDF vositalari. PDFni Excel, PDF Word va boshqalarga o‘giring — tez, aniq, xavfsiz va bepul, ro‘yxatdan o‘tmasdan.",
+      "h1": "Bepul onlayn PDF vositalari",
+      "subtitle": "PDF fayllarni bir necha soniyada o‘giring — bepul, onlayn va xavfsiz. Boshlash uchun vositani tanlang.",
+      "toolsHeading": "Vosita tanlang",
+      "tools": [
+        { "id": "pdfToExcel", "name": "PDFdan Excelga", "description": "PDF jadvallarni to‘liq tahrirlanadigan XLSX elektron jadvallariga aylantiring.", "badge": "" },
+        { "id": "pdfToWord", "name": "PDFdan Wordga", "description": "PDF hujjatlarni tahrirlanadigan Word (DOCX) fayllariga aylantiring.", "badge": "Yangi" }
+      ]
+    },
     "pdfToExcel": {
       "slug": "pdf-to-excel",
       "title": "PDFni Excelga o‘girish - Bepul onlayn PDFni Excelga o‘girish vositasi (XLSX)",

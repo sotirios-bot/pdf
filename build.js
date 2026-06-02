@@ -30,7 +30,7 @@ const config = {
   // Pages to render. Each maps a locale `pages.<id>` block to a template.
   // `locales` restricts which languages a page is built for (default: all).
   pages: [
-    { id: "home", template: "hub.html", type: "hub", locales: ["en", "ru"] },
+    { id: "home", template: "hub.html", type: "hub", locales: ["en", "ru", "uz"] },
     { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download" },
     { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", locales: ["en", "ru", "tr", "kk", "uz"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
