@@ -323,10 +323,10 @@ for (const locale of config.locales) {
     footerLegalHeading: t.footer.legalHeading,
     footerPrivacy: t.footer.privacy,
     footerTerms: t.footer.terms,
-    title: "404 — Page Not Found | PDFConvertMe",
-    metaDescription: "The page you’re looking for could not be found.",
-    notFoundText: "Sorry, the page you’re looking for doesn’t exist or has moved.",
-    notFoundHome: "Back to homepage"
+    title: t.meta.notFoundTitle,
+    metaDescription: t.meta.notFoundDescription,
+    notFoundText: t.meta.notFoundText,
+    notFoundHome: t.meta.notFoundHome
   };
   ctx.head = render(headTpl, ctx);
   ctx.header = render(headerTpl, ctx);
@@ -348,7 +348,7 @@ fs.writeFileSync(
     {
       name: "PDFConvertMe",
       short_name: "PDFConvertMe",
-      description: "Convert PDF to Excel for free — fast, online, and secure.",
+      description: defaultT.meta.manifestDescription,
       start_url: "/",
       display: "standalone",
       background_color: "#ffffff",

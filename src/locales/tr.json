@@ -19,6 +19,13 @@
   "common": {
     "languageLabel": "Dil"
   },
+  "meta": {
+    "manifestDescription": "PDF'yi ücretsiz Excel'e dönüştürün — hızlı, çevrimiçi ve güvenli.",
+    "notFoundTitle": "404 — Sayfa Bulunamadı | PDFConvertMe",
+    "notFoundDescription": "Aradığınız sayfa bulunamadı.",
+    "notFoundText": "Üzgünüz, aradığınız sayfa mevcut değil veya taşınmış.",
+    "notFoundHome": "Ana sayfaya dön"
+  },
   "pages": {
     "home": {
       "slug": "",

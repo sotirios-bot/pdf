@@ -19,6 +19,13 @@
   "common": {
     "languageLabel": "Language"
   },
+  "meta": {
+    "manifestDescription": "Convert PDF to Excel for free — fast, online, and secure.",
+    "notFoundTitle": "404 — Page Not Found | PDFConvertMe",
+    "notFoundDescription": "The page you’re looking for could not be found.",
+    "notFoundText": "Sorry, the page you’re looking for doesn’t exist or has moved.",
+    "notFoundHome": "Back to homepage"
+  },
   "pages": {
     "home": {
       "slug": "",

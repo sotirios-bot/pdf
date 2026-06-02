@@ -19,6 +19,13 @@
   "common": {
     "languageLabel": "Язык"
   },
+  "meta": {
+    "manifestDescription": "Конвертируйте PDF в Excel бесплатно — быстро, онлайн и безопасно.",
+    "notFoundTitle": "404 — Страница не найдена | PDFConvertMe",
+    "notFoundDescription": "Запрашиваемая страница не найдена.",
+    "notFoundText": "Извините, запрашиваемая страница не существует или была перемещена.",
+    "notFoundHome": "Вернуться на главную"
+  },
   "pages": {
     "home": {
       "slug": "",
