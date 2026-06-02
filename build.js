@@ -32,7 +32,7 @@ const config = {
   pages: [
     { id: "home", template: "hub.html", type: "hub", locales: ["en"] },
     { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx" },
-    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", locales: ["en"] },
+    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", locales: ["en", "ru", "tr"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]

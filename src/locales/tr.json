@@ -74,6 +74,43 @@
         ]
       }
     },
+    "pdfToWord": {
+      "slug": "pdf-to-word",
+      "title": "PDF'yi Word'e Dönüştür — Ücretsiz Çevrimiçi PDF'den Word'e Dönüştürücü (DOCX)",
+      "metaDescription": "PDF'yi çevrimiçi olarak ücretsiz Word'e dönüştürün. PDF dosyalarını saniyeler içinde düzenlenebilir Word (DOCX) belgelerine çevirin — kurulum ve kayıt gerekmez. Hızlı, doğru ve güvenli.",
+      "h1": "PDF'yi Word'e ÜCRETSİZ Dönüştür",
+      "subtitle": "PDF dosyalarını saniyeler içinde tamamen düzenlenebilir Word (DOCX) belgelerine dönüştürün — ücretsiz, çevrimiçi ve güvenli.",
+      "uploader": {
+        "dropText": "PDF'nizi buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
+        "button": "Word'e Dönüştür",
+        "converting": "PDF'niz dönüştürülüyor…",
+        "downloadReady": "Tamamlandı! Word belgeniz hazır.",
+        "download": "DOCX İndir",
+        "errorGeneric": "Dönüştürme sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PDF'yi Word'e Nasıl Ücretsiz Dönüştürülür",
+        "steps": [
+          { "title": "Yükleyin", "text": "Dönüştürmek istediğiniz PDF dosyasını seçin. Yukarıdaki kutuya sürükleyip bırakın ya da cihazınızdan seçin." },
+          { "title": "İşlemi başlatın", "text": "Ücretsiz çevrimiçi dönüştürücümüz PDF'nizden metni çıkarır ve saniyeler içinde düzenlenebilir bir Word belgesine dönüştürür." },
+          { "title": "İndirin", "text": "Yeni Word belgeniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan dosyalar sunucumuzdan silinecektir." }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          { "q": "PDF'yi Word'e nasıl dönüştürürüm?", "a": "PDF'nizi yukarıdaki kutuya yükleyin, \"Word'e Dönüştür\" düğmesine tıklayın ve ortaya çıkan DOCX belgesini indirin. Tüm işlem yalnızca birkaç saniye sürer." },
+          { "q": "PDF'den Word'e dönüştürücü ücretsiz mi?", "a": "Evet. PDFConvertMe'nin kullanımı tamamen ücretsizdir; kayıt, abonelik ve gizli ücret yoktur." },
+          { "q": "Metnim Word'de düzenlenebilir olacak mı?", "a": "Evet. PDF'nizdeki metni çıkarıp düzenlenebilir bir Word belgesine yerleştiriyoruz, böylece onu serbestçe değiştirebilir, kopyalayabilir ve yeniden biçimlendirebilirsiniz." },
+          { "q": "Dosyalarım güvenli ve gizli mi?", "a": "Dosyanız şifreli (SSL) bir bağlantı üzerinden gönderilir ve kimse incelemeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
+          { "q": "Taranmış bir PDF'yi dönüştürebilir miyim?", "a": "Dönüştürücü en iyi dijital, metin tabanlı PDF'lerle çalışır. Taranmış veya yalnızca görüntü içeren PDF'lerde metin katmanı yoktur, bu nedenle henüz dönüştürülemeyebilir — OCR desteği planlanmaktadır." },
+          { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle her işletim sisteminde ve cihazda çalışır — Windows, Mac, Linux, Android ve iOS." }
+        ]
+      }
+    },
     "terms": {
       "slug": "terms",
       "title": "Kullanım Şartları — XYZ LAB PTE. LTD. tarafından PDFConvertMe",
