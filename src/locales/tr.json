@@ -9,8 +9,8 @@
   "nav": {
     "home": "Ana Sayfa",
     "convertPdf": "PDF Dönüştür",
-    "pdfToExcel": "PDF'den Excel'e",
-    "pdfToWord": "PDF'den Word'e"
+    "pdfToExcel": "PDF'ten Excel'e",
+    "pdfToWord": "PDF'ten Word'a"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
@@ -31,6 +31,18 @@
     "notFoundHome": "Ana sayfaya dön"
   },
   "pages": {
+    "home": {
+      "slug": "",
+      "title": "PDFConvertMe — Ücretsiz Çevrimiçi PDF Dönüştürme Araçları",
+      "metaDescription": "PDFConvertMe'den ücretsiz çevrimiçi PDF araçları. PDF'yi Excel'e, PDF'yi Word'e ve daha fazlasına dönüştürün — hızlı, doğru, güvenli ve ücretsiz, kayıt gerekmez.",
+      "h1": "Ücretsiz Online PDF Araçları",
+      "subtitle": "PDF'lerinizi saniyeler içinde dönüştürün — ücretsiz, çevrimiçi ve güvenli. Başlamak için bir araç seçin.",
+      "toolsHeading": "Bir araç seçin",
+      "tools": [
+        { "id": "pdfToExcel", "name": "PDF'ten Excel'e", "description": "PDF tablolarını tamamen düzenlenebilir XLSX tablolarına dönüştürün.", "badge": "" },
+        { "id": "pdfToWord", "name": "PDF'ten Word'a", "description": "PDF belgelerini düzenlenebilir Word (DOCX) dosyalarına dönüştürün.", "badge": "Yeni" }
+      ]
+    },
     "pdfToExcel": {
       "slug": "pdf-to-excel",
       "title": "PDF'yi Excel'e Dönüştür — Ücretsiz Çevrimiçi PDF'den Excel'e Dönüştürücü (XLSX)",
