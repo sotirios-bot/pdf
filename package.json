@@ -1,8 +1,8 @@
 {
-  "name": "pdf-tools",
+  "name": "pdfconvertme",
   "version": "0.1.0",
   "private": true,
-  "description": "Online PDF tools — starting with PDF to Excel. Multilingual (EN/RU/TR), built to grow.",
+  "description": "PDFConvertMe — online PDF tools, starting with PDF to Excel. Multilingual (EN/RU/TR), built to grow. Operated by XYZ LAB PTE. LTD.",
   "type": "module",
   "scripts": {
     "build": "node build.js",

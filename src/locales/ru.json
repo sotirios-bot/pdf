@@ -3,7 +3,7 @@
   "dir": "ltr",
   "localeName": "Русский",
   "site": {
-    "name": "PDF Convert",
+    "name": "PDFConvertMe",
     "tagline": "Бесплатный онлайн-конвертер PDF"
   },
   "nav": {
@@ -57,8 +57,8 @@
     },
     "terms": {
       "slug": "terms",
-      "title": "Условия использования — PDF Convert от XYZ LAB PTE. LTD.",
-      "metaDescription": "Ознакомьтесь с Условиями использования онлайн-сервиса конвертации файлов PDF Convert, управляемого компанией XYZ LAB PTE. LTD.",
+      "title": "Условия использования — PDFConvertMe от XYZ LAB PTE. LTD.",
+      "metaDescription": "Ознакомьтесь с Условиями использования онлайн-сервиса конвертации файлов PDFConvertMe, управляемого компанией XYZ LAB PTE. LTD.",
       "h1": "Условия использования",
       "lastUpdatedLabel": "Последнее обновление",
       "lastUpdated": "2 июня 2026 г.",
@@ -139,8 +139,8 @@
     },
     "privacy": {
       "slug": "privacy",
-      "title": "Политика конфиденциальности — PDF Convert от XYZ LAB PTE. LTD.",
-      "metaDescription": "Ознакомьтесь с Политикой конфиденциальности онлайн-сервиса конвертации файлов PDF Convert, управляемого компанией XYZ LAB PTE. LTD. Узнайте, как мы собираем, используем и защищаем ваши данные.",
+      "title": "Политика конфиденциальности — PDFConvertMe от XYZ LAB PTE. LTD.",
+      "metaDescription": "Ознакомьтесь с Политикой конфиденциальности онлайн-сервиса конвертации файлов PDFConvertMe, управляемого компанией XYZ LAB PTE. LTD. Узнайте, как мы собираем, используем и защищаем ваши данные.",
       "h1": "Политика конфиденциальности",
       "lastUpdatedLabel": "Последнее обновление",
       "lastUpdated": "2 июня 2026 г.",

@@ -3,7 +3,7 @@
   "dir": "ltr",
   "localeName": "Türkçe",
   "site": {
-    "name": "PDF Convert",
+    "name": "PDFConvertMe",
     "tagline": "Ücretsiz çevrimiçi PDF dönüştürücü"
   },
   "nav": {
@@ -57,8 +57,8 @@
     },
     "terms": {
       "slug": "terms",
-      "title": "Kullanım Şartları — XYZ LAB PTE. LTD. tarafından PDF Convert",
-      "metaDescription": "XYZ LAB PTE. LTD. tarafından işletilen PDF Convert çevrimiçi dosya dönüştürme hizmetinin Kullanım Şartlarını okuyun.",
+      "title": "Kullanım Şartları — XYZ LAB PTE. LTD. tarafından PDFConvertMe",
+      "metaDescription": "XYZ LAB PTE. LTD. tarafından işletilen PDFConvertMe çevrimiçi dosya dönüştürme hizmetinin Kullanım Şartlarını okuyun.",
       "h1": "Kullanım Şartları",
       "lastUpdatedLabel": "Son güncelleme",
       "lastUpdated": "2 Haziran 2026",
@@ -139,8 +139,8 @@
     },
     "privacy": {
       "slug": "privacy",
-      "title": "Gizlilik Politikası — XYZ LAB PTE. LTD. tarafından PDF Convert",
-      "metaDescription": "XYZ LAB PTE. LTD. tarafından işletilen PDF Convert çevrimiçi dosya dönüştürme hizmetinin Gizlilik Politikasını okuyun. Verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin.",
+      "title": "Gizlilik Politikası — XYZ LAB PTE. LTD. tarafından PDFConvertMe",
+      "metaDescription": "XYZ LAB PTE. LTD. tarafından işletilen PDFConvertMe çevrimiçi dosya dönüştürme hizmetinin Gizlilik Politikasını okuyun. Verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin.",
       "h1": "Gizlilik Politikası",
       "lastUpdatedLabel": "Son güncelleme",
       "lastUpdated": "2 Haziran 2026",

@@ -72,7 +72,7 @@ export default async function handler(req, res) {
       .filter((l) => l.trim().length > 0);
 
     const workbook = new ExcelJS.Workbook();
-    workbook.creator = "PDF Tools";
+    workbook.creator = "PDFConvertMe";
     const sheet = workbook.addWorksheet("Sheet1");
 
     for (const line of lines) {

@@ -11,7 +11,7 @@ const OUT = path.join(__dirname, "public");
 // ----- Site configuration -------------------------------------------------
 const config = {
   // Used for canonical URLs / hreflang / sitemap. Update to your real domain.
-  baseUrl: "https://example.com",
+  baseUrl: "https://pdfconvertme.com",
   defaultLocale: "en",
   locales: ["en", "ru", "tr"],
   // Pages to render. Each maps a locale `pages.<id>` block to a template.
