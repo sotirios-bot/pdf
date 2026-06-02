@@ -347,7 +347,7 @@ for (const locale of config.locales) {
     const outDir = path.join(OUT, route);
     fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(path.join(outDir, "index.html"), html);
-    sitemapEntries.push({ loc: canonical, pageId: page.id });
+    sitemapEntries.push({ loc: canonical, pageId: page.id, type: page.type });
     console.log(`✓ ${locale}/${page.id} → ${route}`);
   }
 }
@@ -431,18 +431,27 @@ fs.writeFileSync(
 );
 
 // sitemap.xml (with lastmod + hreflang alternates) + robots.txt
+// Per-page-type sitemap hints (changefreq is advisory; priority is relative).
+const sitemapMeta = {
+  hub: { changefreq: "weekly", priority: "1.0" },
+  converter: { changefreq: "weekly", priority: "0.9" },
+  legal: { changefreq: "yearly", priority: "0.3" }
+};
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${sitemapEntries
-  .map(
-    (e) => `  <url>
+  .map((e) => {
+    const m = sitemapMeta[e.type] || { changefreq: "monthly", priority: "0.5" };
+    return `  <url>
     <loc>${e.loc}</loc>
     <lastmod>${buildDate}</lastmod>
+    <changefreq>${m.changefreq}</changefreq>
+    <priority>${m.priority}</priority>
 ${altsByPage[e.pageId]
   .map((a) => `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${a.href}" />`)
   .join("\n")}
-  </url>`
-  )
+  </url>`;
+  })
   .join("\n")}
 </urlset>
 `;
