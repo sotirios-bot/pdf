@@ -13,7 +13,6 @@
     }
   },
   "redirects": [
-    { "source": "/ru", "destination": "/ru/pdf-to-excel", "permanent": false },
     { "source": "/tr", "destination": "/tr/pdf-to-excel", "permanent": false },
     { "source": "/kk", "destination": "/kk/pdf-to-excel", "permanent": false },
     { "source": "/uz", "destination": "/uz/pdf-to-excel", "permanent": false }
