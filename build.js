@@ -30,7 +30,9 @@ const config = {
   // Pages to render. Each maps a locale `pages.<id>` block to a template.
   // `locales` restricts which languages a page is built for (default: all).
   pages: [
-    { id: "home", template: "home.html", type: "home" },
+    { id: "home", template: "hub.html", type: "hub", locales: ["en"] },
+    { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx" },
+    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", locales: ["en"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]
@@ -170,11 +172,11 @@ for (const locale of config.locales) {
     };
     const ldBlocks = [orgLd, websiteLd];
 
-    if (page.type === "home") {
+    if (page.type === "converter") {
       ldBlocks.push({
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        name: `${config.org.name} — PDF to Excel Converter`,
+        name: pdata.h1,
         url: canonical,
         applicationCategory: "BusinessApplication",
         operatingSystem: "All",
@@ -236,7 +238,9 @@ for (const locale of config.locales) {
       h1: pdata.h1
     };
 
-    if (page.type === "home") {
+    if (page.type === "converter") {
+      ctx.endpoint = page.endpoint;
+      ctx.downloadExt = page.ext;
       ctx.subtitle = pdata.subtitle;
       ctx.uploaderDropText = pdata.uploader.dropText;
       ctx.uploaderHint = pdata.uploader.hint;
@@ -286,6 +290,23 @@ for (const locale of config.locales) {
       </div>
     </section>`
         : "";
+    } else if (page.type === "hub") {
+      ctx.subtitle = pdata.subtitle;
+      ctx.toolsHeading = pdata.toolsHeading;
+      const icons = { pdfToExcel: "📊", pdfToWord: "📝" };
+      ctx.toolsList = pdata.tools
+        .map((tool) => {
+          const href = urlPath(locale, getLocale(locale).pages[tool.id].slug || "");
+          const badge = tool.badge
+            ? `<span class="tool-badge">${tool.badge}</span>`
+            : "";
+          return `<a class="tool-card" href="${href}">
+          <span class="tool-icon">${icons[tool.id] || "📄"}</span>
+          <span class="tool-name">${tool.name}${badge}</span>
+          <span class="tool-desc">${tool.description}</span>
+        </a>`;
+        })
+        .join("\n        ");
     } else if (page.type === "legal") {
       ctx.lastUpdatedLabel = pdata.lastUpdatedLabel;
       ctx.lastUpdated = pdata.lastUpdated;

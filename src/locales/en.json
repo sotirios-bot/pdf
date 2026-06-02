@@ -30,6 +30,18 @@
   "pages": {
     "home": {
       "slug": "",
+      "title": "PDFConvertMe — Free Online PDF Converter Tools",
+      "metaDescription": "Free online PDF tools from PDFConvertMe. Convert PDF to Excel, PDF to Word and more — fast, accurate, secure, and free with no sign-up.",
+      "h1": "Free Online PDF Tools",
+      "subtitle": "Convert your PDFs in seconds — free, online, and secure. Choose a tool to get started.",
+      "toolsHeading": "Choose a tool",
+      "tools": [
+        { "id": "pdfToExcel", "name": "PDF to Excel", "description": "Convert PDF tables into fully editable XLSX spreadsheets.", "badge": "" },
+        { "id": "pdfToWord", "name": "PDF to Word", "description": "Turn PDF documents into editable Word (DOCX) files.", "badge": "New" }
+      ]
+    },
+    "pdfToExcel": {
+      "slug": "pdf-to-excel",
       "title": "Convert PDF to Excel — Free Online PDF to Excel Converter (XLSX)",
       "metaDescription": "Convert PDF to Excel online for free. Turn PDF files into editable XLSX spreadsheets in seconds — no installation, no sign-up. Fast, accurate, and secure file conversion on any device.",
       "h1": "Convert PDF to Excel for FREE",
@@ -68,6 +80,43 @@
           { "q": "How do I convert a PDF to Excel?", "a": "Upload your PDF in the box above, click \"Convert to Excel\", and download the resulting XLSX spreadsheet. The whole process takes just a few seconds." },
           { "q": "Is the PDF to Excel converter free?", "a": "Yes. PDFConvertMe is completely free to use, with no sign-up, no subscription, and no hidden fees." },
           { "q": "Will my tables, rows, and columns be preserved?", "a": "Yes. We detect the position of every piece of text and rebuild the rows and columns into a proper spreadsheet, and numbers are kept as numbers so you can calculate with them right away." },
+          { "q": "Are my files secure and private?", "a": "Your file is sent over an encrypted (SSL) connection and processed automatically without anyone reviewing it. Uploaded files are deleted from our servers automatically within a few hours." },
+          { "q": "Can I convert a scanned PDF?", "a": "The converter works best with digital, text-based PDFs. Scanned or image-only PDFs have no text layer, so they may not convert yet — OCR support is planned." },
+          { "q": "Does it work on Windows, Mac, and mobile?", "a": "Yes. PDFConvertMe runs entirely in your browser, so it works on any operating system or device — Windows, Mac, Linux, Android, and iOS." }
+        ]
+      }
+    },
+    "pdfToWord": {
+      "slug": "pdf-to-word",
+      "title": "Convert PDF to Word — Free Online PDF to Word Converter (DOCX)",
+      "metaDescription": "Convert PDF to Word online for free. Turn PDF files into editable Word documents (DOCX) in seconds — no installation, no sign-up. Fast, accurate, and secure.",
+      "h1": "Convert PDF to Word for FREE",
+      "subtitle": "Turn PDF files into fully editable Word documents (DOCX) in seconds — free, online, and secure.",
+      "uploader": {
+        "dropText": "Drop your PDF here or click to upload",
+        "hint": "Maximum file size: 20 MB · Your file is processed securely",
+        "button": "Convert to Word",
+        "converting": "Converting your PDF…",
+        "downloadReady": "Done! Your Word document is ready.",
+        "download": "Download DOCX",
+        "errorGeneric": "Something went wrong during conversion. Please try again.",
+        "errorFileType": "Please choose a PDF file.",
+        "errorTooLarge": "That file is too large. The maximum size is 20 MB."
+      },
+      "howTo": {
+        "heading": "How to Convert PDF to Word Free",
+        "steps": [
+          { "title": "Upload", "text": "Select the PDF file you wish to convert. Drag and drop it into the box above or browse from your device." },
+          { "title": "Start processing", "text": "Our free online converter extracts the text from your PDF and rebuilds it into an editable Word document in seconds." },
+          { "title": "Download", "text": "Your new Word document will be ready to download immediately. After the download is complete, any remaining files you uploaded will be purged from our server." }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions",
+        "items": [
+          { "q": "How do I convert a PDF to Word?", "a": "Upload your PDF in the box above, click \"Convert to Word\", and download the resulting DOCX document. The whole process takes just a few seconds." },
+          { "q": "Is the PDF to Word converter free?", "a": "Yes. PDFConvertMe is completely free to use, with no sign-up, no subscription, and no hidden fees." },
+          { "q": "Will my text be editable in Word?", "a": "Yes. We extract the text from your PDF and place it into an editable Word document so you can change, copy, and reformat it freely." },
           { "q": "Are my files secure and private?", "a": "Your file is sent over an encrypted (SSL) connection and processed automatically without anyone reviewing it. Uploaded files are deleted from our servers automatically within a few hours." },
           { "q": "Can I convert a scanned PDF?", "a": "The converter works best with digital, text-based PDFs. Scanned or image-only PDFs have no text layer, so they may not convert yet — OCR support is planned." },
           { "q": "Does it work on Windows, Mac, and mobile?", "a": "Yes. PDFConvertMe runs entirely in your browser, so it works on any operating system or device — Windows, Mac, Linux, Android, and iOS." }

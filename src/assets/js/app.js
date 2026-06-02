@@ -151,7 +151,8 @@
       .then(function (blob) {
         var url = URL.createObjectURL(blob);
         downloadLink.href = url;
-        downloadLink.download = selectedFile.name.replace(/\.pdf$/i, "") + ".xlsx";
+        downloadLink.download =
+          selectedFile.name.replace(/\.pdf$/i, "") + "." + (form.dataset.ext || "xlsx");
         downloadLink.hidden = false;
         setStatus(msg.ready);
         convertBtn.disabled = false;

@@ -28,8 +28,8 @@
     "notFoundHome": "Bosh sahifaga qaytish"
   },
   "pages": {
-    "home": {
-      "slug": "",
+    "pdfToExcel": {
+      "slug": "pdf-to-excel",
       "title": "PDFni Excelga o‘girish - Bepul onlayn PDFni Excelga o‘girish vositasi (XLSX)",
       "metaDescription": "PDF faylni bepul Excel formatiga aylantiring. O‘rnatish va ro‘yxatdan o‘tmasdan bir necha soniyada PDF fayllarni tahrirlanadigan XLSX jadvallariga aylantiring. Istalgan qurilmada fayllarni tez, aniq va xavfsiz o‘girish.",
       "h1": "PDF faylni bepul Excel formatiga o‘girish",

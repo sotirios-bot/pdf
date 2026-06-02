@@ -28,8 +28,8 @@
     "notFoundHome": "Ana sayfaya dön"
   },
   "pages": {
-    "home": {
-      "slug": "",
+    "pdfToExcel": {
+      "slug": "pdf-to-excel",
       "title": "PDF'yi Excel'e Dönüştür — Ücretsiz Çevrimiçi PDF'den Excel'e Dönüştürücü (XLSX)",
       "metaDescription": "PDF'yi çevrimiçi olarak ücretsiz Excel'e dönüştürün. PDF dosyalarını saniyeler içinde düzenlenebilir XLSX elektronik tablolarına çevirin — kurulum ve kayıt gerekmez. Her cihazda hızlı, doğru ve güvenli dosya dönüştürme.",
       "h1": "PDF'yi Excel'e ÜCRETSİZ Dönüştür",
