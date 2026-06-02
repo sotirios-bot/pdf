@@ -53,6 +53,17 @@
             "text": "Yeni Excel belgeniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan dosyalar sunucumuzdan silinecektir."
           }
         ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          { "q": "PDF'yi Excel'e nasıl dönüştürürüm?", "a": "PDF'nizi yukarıdaki kutuya yükleyin, \"Excel'e Dönüştür\" düğmesine tıklayın ve ortaya çıkan XLSX elektronik tablosunu indirin. Tüm işlem yalnızca birkaç saniye sürer." },
+          { "q": "PDF'den Excel'e dönüştürücü ücretsiz mi?", "a": "Evet. PDFConvertMe'nin kullanımı tamamen ücretsizdir; kayıt, abonelik ve gizli ücret yoktur." },
+          { "q": "Tablolarım, satırlarım ve sütunlarım korunacak mı?", "a": "Evet. Her metin parçasının konumunu algılayıp satırları ve sütunları gerçek bir elektronik tabloya yeniden oluşturuyoruz; sayılar sayı olarak korunur, böylece hemen hesaplama yapabilirsiniz." },
+          { "q": "Dosyalarım güvenli ve gizli mi?", "a": "Dosyanız şifreli (SSL) bir bağlantı üzerinden gönderilir ve kimse incelemeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
+          { "q": "Taranmış bir PDF'yi dönüştürebilir miyim?", "a": "Dönüştürücü en iyi dijital, metin tabanlı PDF'lerle çalışır. Taranmış veya yalnızca görüntü içeren PDF'lerde metin katmanı yoktur, bu nedenle henüz dönüştürülemeyebilir — OCR desteği planlanmaktadır." },
+          { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle her işletim sistemi ve cihazda çalışır — Windows, Mac, Linux, Android ve iOS." }
+        ]
       }
     },
     "terms": {

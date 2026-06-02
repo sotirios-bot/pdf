@@ -53,6 +53,17 @@
             "text": "Your new Excel document will be ready to download immediately. After the download is complete, any remaining files you uploaded will be purged from our server."
           }
         ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions",
+        "items": [
+          { "q": "How do I convert a PDF to Excel?", "a": "Upload your PDF in the box above, click \"Convert to Excel\", and download the resulting XLSX spreadsheet. The whole process takes just a few seconds." },
+          { "q": "Is the PDF to Excel converter free?", "a": "Yes. PDFConvertMe is completely free to use, with no sign-up, no subscription, and no hidden fees." },
+          { "q": "Will my tables, rows, and columns be preserved?", "a": "Yes. We detect the position of every piece of text and rebuild the rows and columns into a proper spreadsheet, and numbers are kept as numbers so you can calculate with them right away." },
+          { "q": "Are my files secure and private?", "a": "Your file is sent over an encrypted (SSL) connection and processed automatically without anyone reviewing it. Uploaded files are deleted from our servers automatically within a few hours." },
+          { "q": "Can I convert a scanned PDF?", "a": "The converter works best with digital, text-based PDFs. Scanned or image-only PDFs have no text layer, so they may not convert yet — OCR support is planned." },
+          { "q": "Does it work on Windows, Mac, and mobile?", "a": "Yes. PDFConvertMe runs entirely in your browser, so it works on any operating system or device — Windows, Mac, Linux, Android, and iOS." }
+        ]
       }
     },
     "terms": {
