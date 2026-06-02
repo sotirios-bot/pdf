@@ -13,12 +13,12 @@ const config = {
   // Used for canonical URLs / hreflang / sitemap. Update to your real domain.
   baseUrl: "https://pdfconvertme.com",
   defaultLocale: "en",
-  locales: ["en", "ru", "tr", "kk"],
+  locales: ["en", "ru", "tr", "kk", "uz"],
   // Languages a page falls back to when it isn't translated for a locale
   // (e.g. Kazakh has no legal pages → its footer links point here).
   legalFallbackLocale: "en",
   ogImage: "/assets/og-image.png",
-  ogLocaleMap: { en: "en_US", ru: "ru_RU", tr: "tr_TR", kk: "kk_KZ" },
+  ogLocaleMap: { en: "en_US", ru: "ru_RU", tr: "tr_TR", kk: "kk_KZ", uz: "uz_UZ" },
   org: {
     name: "PDFConvertMe",
     legalName: "XYZ LAB PTE. LTD.",

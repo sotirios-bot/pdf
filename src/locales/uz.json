@@ -1,0 +1,77 @@
+{
+  "lang": "uz",
+  "dir": "ltr",
+  "localeName": "Oʻzbekcha",
+  "site": {
+    "name": "PDFConvertMe",
+    "tagline": "Bepul onlayn PDF konverteri"
+  },
+  "nav": {
+    "home": "Bosh sahifa"
+  },
+  "footer": {
+    "rights": "Barcha huquqlar himoyalangan.",
+    "tagline": "Bepul onlayn fayl konverteri - PDFni Excel va boshqa formatlarga aylantiring.",
+    "legalHeading": "Huquqiy axborot",
+    "privacy": "Maxfiylik siyosati",
+    "terms": "Xizmat shartlari"
+  },
+  "common": {
+    "languageLabel": "Til"
+  },
+  "meta": {
+    "manifestDescription": "PDFni bepul Excelga aylantiring - tez, onlayn va xavfsiz.",
+    "notFoundTitle": "404 - Sahifa topilmadi | PDFConvertMe",
+    "notFoundDescription": "So‘ralgan sahifa topilmadi.",
+    "notFoundText": "Kechirasiz, so‘ralgan sahifa mavjud emas yoki boshqa joyga ko‘chirilgan.",
+    "notFoundHome": "Bosh sahifaga qaytish"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "PDFni Excelga o‘girish - Bepul onlayn PDFni Excelga o‘girish vositasi (XLSX)",
+      "metaDescription": "PDF faylni bepul Excel formatiga aylantiring. O‘rnatish va ro‘yxatdan o‘tmasdan bir necha soniyada PDF fayllarni tahrirlanadigan XLSX jadvallariga aylantiring. Istalgan qurilmada fayllarni tez, aniq va xavfsiz o‘girish.",
+      "h1": "PDF faylni bepul Excel formatiga o‘girish",
+      "subtitle": "PDF fayllarni soniyalar ichida bepul, onlayn va xavfsiz tarzda to‘liq tahrirlanadigan Excel (XLSX) jadvallariga aylantiring.",
+      "uploader": {
+        "dropText": "PDF faylni bu yerga torting yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanmoqda",
+        "button": "Excelga o‘girish",
+        "converting": "PDFingiz o‘girilmoqda…",
+        "downloadReady": "Tayyor! Excel jadvalingiz tayyor.",
+        "download": "XLSX yuklab olish",
+        "errorGeneric": "O‘girish vaqtida xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "Fayllarni PDFga va PDFdan bepul qanday o‘girish mumkin",
+        "steps": [
+          {
+            "title": "Yuklash",
+            "text": "O‘girmoqchi bo‘lgan PDF faylingizni tanlang. Uni yuqoridagi maydonchaga torting yoki qurilmangizda tanlang."
+          },
+          {
+            "title": "Qayta ishlashni boshlash",
+            "text": "Bizning bepul onlayn PDF konverterimiz jadvallar, qatorlar va ustunlarni aniq saqlab, PDF hujjatingizni bir necha soniyada Excelga aylantiradi."
+          },
+          {
+            "title": "Yuklab oling",
+            "text": "Yangi Excel hujjatingiz darhol yuklab olishga tayyor bo‘ladi. Yuklash yakunlangach, siz yuklagan barcha qolgan fayllar serverimizdan o‘chirib tashlanadi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          { "q": "PDFni Excelga qanday o‘tkazish mumkin?", "a": "Yuqoridagi maydonga PDF yuklang, \"Excelga o‘girish\" tugmasini bosing va hosil bo‘lgan XLSX jadvalini yuklab oling. Butun jarayon bir necha soniya davom etadi." },
+          { "q": "PDFni Excelga konverterlash bepulmi?", "a": "Ha. PDFConvertMe butunlay bepul - ro‘yxatdan o‘tmasdan, obuna bo‘lmasdan va yashirin to‘lovlarsiz." },
+          { "q": "Jadval, qator va ustunlarim saqlanib qoladimi?", "a": "Ha. Biz matnning har bir bo‘lagining o‘rnini aniqlaymiz va satrlar hamda ustunlarni to‘liq jadval ko‘rinishida tiklaymiz, sonlar esa sonlar sifatida saqlanadi, shuning uchun ular bilan darhol hisoblash ishlarini bajarish mumkin." },
+          { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Faylingiz shifrlangan (SSL) ulanish orqali uzatiladi va hech kim ko‘rmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar serverlarimizdan bir necha soat ichida avtomatik ravishda o‘chirib tashlanadi." },
+          { "q": "Skanerlangan PDF faylni o‘girish mumkinmi?", "a": "Konvertor raqamli matnli PDF fayllar bilan eng yaxshi ishlaydi. Skanerlangan PDF (rasmlar) matn qatlamiga ega emas, shuning uchun ular hozircha o‘girilmasligi mumkin - OCR qo‘llab-quvvatlanishi rejalashtirilgan." },
+          { "q": "Bu Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe bevosita brauzerda ishlaydi, shuning uchun u har qanday operatsion tizim va qurilma - Windows, Mac, Linux, Android va iOS uchun mos keladi." }
+        ]
+      }
+    }
+  }
+}
