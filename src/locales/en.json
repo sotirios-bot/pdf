@@ -3,15 +3,23 @@
   "dir": "ltr",
   "localeName": "English",
   "site": {
-    "name": "PDF Tools",
-    "tagline": "Free online PDF tools"
+    "name": "PDF Convert",
+    "tagline": "Free online PDF converter"
   },
   "nav": {
     "home": "Home",
-    "pdfToExcel": "PDF to Excel"
+    "pdfToExcel": "PDF to Excel",
+    "allTools": "All Tools",
+    "pricing": "Pricing"
   },
   "footer": {
     "rights": "All rights reserved.",
+    "tagline": "Free online file converter — convert PDF to Excel, Word, and more.",
+    "toolsHeading": "Tools",
+    "companyHeading": "Company",
+    "legalHeading": "Legal",
+    "about": "About",
+    "contact": "Contact",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service"
   },
@@ -21,35 +29,62 @@
   "pages": {
     "home": {
       "slug": "",
-      "title": "Convert PDF to Excel — Free Online PDF to Excel Converter",
-      "metaDescription": "Convert your PDF files to Excel spreadsheets (XLSX) online for free. Fast, accurate, and secure. No installation required.",
-      "h1": "PDF to Excel Converter",
-      "subtitle": "Turn your PDF tables into editable Excel spreadsheets in seconds.",
+      "title": "Convert PDF to Excel — Free Online PDF to Excel Converter (XLSX)",
+      "metaDescription": "Convert PDF to Excel online for free. Turn PDF tables into editable XLSX spreadsheets in seconds — no installation, no sign-up. Fast, accurate, and secure file conversion on any device.",
+      "h1": "Convert PDF to Excel",
+      "subtitle": "Turn PDF tables into fully editable Excel spreadsheets (XLSX) in seconds — free, online, and secure.",
       "uploader": {
-        "dropText": "Drop your PDF here or click to browse",
-        "hint": "Maximum file size: 20 MB",
+        "dropText": "Drop your PDF here or click to upload",
+        "hint": "Maximum file size: 20 MB · Your file is processed securely",
         "button": "Convert to Excel",
-        "converting": "Converting…",
-        "downloadReady": "Your Excel file is ready",
+        "converting": "Converting your PDF…",
+        "downloadReady": "Done! Your Excel spreadsheet is ready.",
         "download": "Download XLSX",
-        "errorGeneric": "Something went wrong. Please try again.",
+        "errorGeneric": "Something went wrong during conversion. Please try again.",
         "errorFileType": "Please choose a PDF file.",
-        "errorTooLarge": "That file is too large."
+        "errorTooLarge": "That file is too large. The maximum size is 20 MB."
       },
-      "steps": {
-        "heading": "How to convert PDF to Excel",
-        "items": [
-          "Upload your PDF file using the box above.",
-          "We extract the tables and data from your document.",
-          "Download your converted Excel (XLSX) file."
+      "howTo": {
+        "heading": "How to Convert Files to and from PDF Free",
+        "steps": [
+          {
+            "title": "Upload",
+            "text": "Select the Word, Excel, PowerPoint, PDF or other file you wish to convert. Just drag and drop it into the box above or browse from your device."
+          },
+          {
+            "title": "Start processing",
+            "text": "Our free online PDF converter will convert your document to PDF or from PDF in seconds, accurately preserving your tables, rows, and columns."
+          },
+          {
+            "title": "Download",
+            "text": "Your new document will be ready to download immediately. After the download is complete, any remaining files you uploaded will be purged from our server."
+          }
         ]
       },
-      "features": {
-        "heading": "Why use our converter",
+      "benefits": {
+        "heading": "The Best Free PDF Converter",
+        "intro": "No matter what types of files you need to convert, our online file converter is more than just a PDF to Excel converter. It's the go-to solution for all of your document and file conversion needs.",
         "items": [
-          { "title": "Free", "text": "Convert PDF to Excel with no cost and no sign-up." },
-          { "title": "Secure", "text": "Your files are processed securely and deleted after conversion." },
-          { "title": "Accurate", "text": "We preserve rows, columns, and data as faithfully as possible." }
+          {
+            "title": "Start a free trial",
+            "text": "With a free trial of our online PDF converter, you can convert files to and from PDF for free, or sign up for one of our memberships for limitless access to our file converter's full suite of tools. You also get unlimited file sizes as well as the ability to upload and batch-convert several files to PDF at the same time."
+          },
+          {
+            "title": "Encrypted files",
+            "text": "We care about the privacy of your data. 256-bit SSL encryption of all your files means that your files, documents, and data are secure during every upload and download. We also won't give or share any of your data with other parties."
+          },
+          {
+            "title": "Automatic deletion of your files",
+            "text": "After you convert a document to PDF or to Excel, you'll be able to download and delete your files from our servers. If you happen to forget about deleting your files, they will be deleted from our server automatically after three hours to keep your information secure."
+          },
+          {
+            "title": "Universal conversion",
+            "text": "Our free file converter works on any operating system, including Windows, Mac, and Linux. Because of this, you can convert PDF files to Excel from any OS, browser, or device — desktop, tablet, or phone — as long as you have an internet connection."
+          },
+          {
+            "title": "A suite of helpful file conversion tools",
+            "text": "Our PDF file converter does much more than convert PDF to Excel. From compression and rotation to merging two PDFs and splitting one PDF into two, you can easily edit and manage your PDF files with our suite of online tools in the blink of an eye."
+          }
         ]
       }
     }

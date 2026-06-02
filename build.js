@@ -88,13 +88,19 @@ for (const locale of config.locales) {
         t.pages[page.id].slug || ""
       )}" />`;
 
-    const stepsList = pdata.steps.items
-      .map((s) => `<li>${s}</li>`)
+    const howToList = pdata.howTo.steps
+      .map(
+        (s, i) =>
+          `<li class="step">
+          <span class="step-num">${i + 1}</span>
+          <div class="step-body"><h3>${s.title}</h3><p>${s.text}</p></div>
+        </li>`
+      )
       .join("\n        ");
-    const featuresList = pdata.features.items
+    const benefitsList = pdata.benefits.items
       .map(
         (f) =>
-          `<div class="feature"><h3>${f.title}</h3><p>${f.text}</p></div>`
+          `<div class="benefit"><h3>${f.title}</h3><p>${f.text}</p></div>`
       )
       .join("\n        ");
 
@@ -109,11 +115,20 @@ for (const locale of config.locales) {
       year: new Date().getFullYear(),
       siteName: t.site.name,
       navHome: t.nav.home,
+      navAllTools: t.nav.allTools,
+      navPricing: t.nav.pricing,
       languageLabel: t.common.languageLabel,
       langOptions,
       footerRights: t.footer.rights,
+      footerTagline: t.footer.tagline,
+      footerToolsHeading: t.footer.toolsHeading,
+      footerCompanyHeading: t.footer.companyHeading,
+      footerLegalHeading: t.footer.legalHeading,
+      footerAbout: t.footer.about,
+      footerContact: t.footer.contact,
       footerPrivacy: t.footer.privacy,
       footerTerms: t.footer.terms,
+      navPdfToExcel: t.nav.pdfToExcel,
       // page
       title: pdata.title,
       metaDescription: pdata.metaDescription,
@@ -128,10 +143,11 @@ for (const locale of config.locales) {
       uploaderErrorGeneric: pdata.uploader.errorGeneric,
       uploaderErrorFileType: pdata.uploader.errorFileType,
       uploaderErrorTooLarge: pdata.uploader.errorTooLarge,
-      stepsHeading: pdata.steps.heading,
-      stepsList,
-      featuresHeading: pdata.features.heading,
-      featuresList
+      howToHeading: pdata.howTo.heading,
+      howToList,
+      benefitsHeading: pdata.benefits.heading,
+      benefitsIntro: pdata.benefits.intro,
+      benefitsList
     };
 
     ctx.header = render(headerTpl, ctx);

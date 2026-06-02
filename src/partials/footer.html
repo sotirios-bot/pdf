@@ -1,12 +1,28 @@
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; {{year}} {{siteName}}. {{footerRights}}</p>
-    <nav class="footer-nav">
-      <a href="{{homeHref}}">{{navHome}}</a>
-      <span aria-hidden="true">·</span>
+  <div class="container footer-top">
+    <div class="footer-brand">
+      <span class="brand-mark">📄</span>
+      <span class="brand-name">{{siteName}}</span>
+      <p class="footer-tagline">{{footerTagline}}</p>
+    </div>
+    <div class="footer-col">
+      <h4>{{footerToolsHeading}}</h4>
+      <a href="{{homeHref}}">{{navPdfToExcel}}</a>
+      <a href="#">{{navAllTools}}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{{footerCompanyHeading}}</h4>
+      <a href="#">{{footerAbout}}</a>
+      <a href="#">{{footerContact}}</a>
+      <a href="#">{{navPricing}}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{{footerLegalHeading}}</h4>
       <a href="#">{{footerPrivacy}}</a>
-      <span aria-hidden="true">·</span>
       <a href="#">{{footerTerms}}</a>
-    </nav>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; {{year}} {{siteName}}. {{footerRights}}</p>
   </div>
 </footer>

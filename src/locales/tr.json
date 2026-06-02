@@ -3,49 +3,88 @@
   "dir": "ltr",
   "localeName": "Türkçe",
   "site": {
-    "name": "PDF Tools",
-    "tagline": "TODO: Ücretsiz çevrimiçi PDF araçları"
+    "name": "PDF Convert",
+    "tagline": "Ücretsiz çevrimiçi PDF dönüştürücü"
   },
   "nav": {
-    "home": "TODO: Ana Sayfa",
-    "pdfToExcel": "TODO: PDF'den Excel'e"
+    "home": "Ana Sayfa",
+    "pdfToExcel": "PDF'den Excel'e",
+    "allTools": "Tüm Araçlar",
+    "pricing": "Fiyatlandırma"
   },
   "footer": {
-    "rights": "TODO: Tüm hakları saklıdır.",
-    "privacy": "TODO: Gizlilik Politikası",
-    "terms": "TODO: Kullanım Şartları"
+    "rights": "Tüm hakları saklıdır.",
+    "tagline": "Ücretsiz çevrimiçi dosya dönüştürücü — PDF'yi Excel, Word ve daha fazlasına dönüştürün.",
+    "toolsHeading": "Araçlar",
+    "companyHeading": "Şirket",
+    "legalHeading": "Yasal",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları"
   },
   "common": {
-    "languageLabel": "TODO: Dil"
+    "languageLabel": "Dil"
   },
   "pages": {
     "home": {
       "slug": "",
-      "title": "TODO: PDF'yi Excel'e Dönüştür — Ücretsiz Çevrimiçi Dönüştürücü",
-      "metaDescription": "TODO: Turkish meta description",
-      "h1": "TODO: PDF'den Excel'e Dönüştürücü",
-      "subtitle": "TODO: Turkish subtitle",
+      "title": "PDF'yi Excel'e Dönüştür — Ücretsiz Çevrimiçi PDF'den Excel'e Dönüştürücü (XLSX)",
+      "metaDescription": "PDF'yi çevrimiçi olarak ücretsiz Excel'e dönüştürün. PDF tablolarını saniyeler içinde düzenlenebilir XLSX elektronik tablolarına çevirin — kurulum ve kayıt gerekmez. Her cihazda hızlı, doğru ve güvenli dosya dönüştürme.",
+      "h1": "PDF'yi Excel'e Dönüştür",
+      "subtitle": "PDF tablolarını saniyeler içinde tamamen düzenlenebilir Excel (XLSX) elektronik tablolarına dönüştürün — ücretsiz, çevrimiçi ve güvenli.",
       "uploader": {
-        "dropText": "TODO",
-        "hint": "TODO",
-        "button": "TODO",
-        "converting": "TODO",
-        "downloadReady": "TODO",
-        "download": "TODO",
-        "errorGeneric": "TODO",
-        "errorFileType": "TODO",
-        "errorTooLarge": "TODO"
+        "dropText": "PDF'nizi buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
+        "button": "Excel'e Dönüştür",
+        "converting": "PDF'niz dönüştürülüyor…",
+        "downloadReady": "Tamamlandı! Excel elektronik tablonuz hazır.",
+        "download": "XLSX İndir",
+        "errorGeneric": "Dönüştürme sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
       },
-      "steps": {
-        "heading": "TODO",
-        "items": ["TODO", "TODO", "TODO"]
+      "howTo": {
+        "heading": "Dosyalar PDF'ye ve PDF'den Nasıl Ücretsiz Dönüştürülür",
+        "steps": [
+          {
+            "title": "Yükleyin",
+            "text": "Dönüştürmek istediğiniz Word, Excel, PowerPoint, PDF veya başka bir dosyayı seçin. Yukarıdaki kutuya sürükleyip bırakın ya da cihazınızdan seçin."
+          },
+          {
+            "title": "İşlemi başlatın",
+            "text": "Ücretsiz çevrimiçi PDF dönüştürücümüz, belgenizi saniyeler içinde PDF'ye veya PDF'den dönüştürür ve tablolarınızı, satırlarınızı ve sütunlarınızı doğru bir şekilde korur."
+          },
+          {
+            "title": "İndirin",
+            "text": "Yeni belgeniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan dosyalar sunucumuzdan silinecektir."
+          }
+        ]
       },
-      "features": {
-        "heading": "TODO",
+      "benefits": {
+        "heading": "En İyi Ücretsiz PDF Dönüştürücü",
+        "intro": "Hangi tür dosyaları dönüştürmeniz gerekirse gereksin, çevrimiçi dosya dönüştürücümüz yalnızca bir PDF'den Excel'e dönüştürücüden çok daha fazlasıdır. Tüm belge ve dosya dönüştürme ihtiyaçlarınız için başvuracağınız çözümdür.",
         "items": [
-          { "title": "TODO", "text": "TODO" },
-          { "title": "TODO", "text": "TODO" },
-          { "title": "TODO", "text": "TODO" }
+          {
+            "title": "Ücretsiz denemeye başlayın",
+            "text": "Çevrimiçi PDF dönüştürücümüzün ücretsiz denemesiyle dosyaları ücretsiz olarak PDF'ye ve PDF'den dönüştürebilir veya dönüştürücümüzün tüm araç paketine sınırsız erişim için üyeliklerimizden birine kaydolabilirsiniz. Ayrıca sınırsız dosya boyutu ve aynı anda birden fazla dosyayı yükleyip toplu olarak PDF'ye dönüştürme imkânı elde edersiniz."
+          },
+          {
+            "title": "Şifrelenmiş dosyalar",
+            "text": "Verilerinizin gizliliğini önemsiyoruz. Tüm dosyalarınızın 256 bit SSL şifrelemesi, dosyalarınızın, belgelerinizin ve verilerinizin her yükleme ve indirme sırasında güvende olduğu anlamına gelir. Ayrıca verilerinizi üçüncü taraflarla paylaşmaz veya vermeyiz."
+          },
+          {
+            "title": "Dosyalarınızın otomatik olarak silinmesi",
+            "text": "Bir belgeyi PDF'ye veya Excel'e dönüştürdükten sonra dosyalarınızı sunucularımızdan indirebilir ve silebilirsiniz. Dosyalarınızı silmeyi unutursanız, bilgilerinizi güvende tutmak için üç saat sonra sunucumuzdan otomatik olarak silinirler."
+          },
+          {
+            "title": "Evrensel dönüştürme",
+            "text": "Ücretsiz dosya dönüştürücümüz Windows, Mac ve Linux dahil her işletim sisteminde çalışır. Bu sayede, internet bağlantınız olduğu sürece PDF dosyalarını herhangi bir işletim sisteminden, tarayıcıdan veya cihazdan — masaüstü, tablet ya da telefon — Excel'e dönüştürebilirsiniz."
+          },
+          {
+            "title": "Yararlı dosya dönüştürme araçları paketi",
+            "text": "PDF dosya dönüştürücümüz, PDF'yi Excel'e dönüştürmekten çok daha fazlasını yapar. Sıkıştırma ve döndürmeden iki PDF'yi birleştirmeye ve bir PDF'yi ikiye bölmeye kadar, çevrimiçi araç paketimizle PDF dosyalarınızı göz açıp kapayıncaya kadar kolayca düzenleyebilir ve yönetebilirsiniz."
+          }
         ]
       }
     }

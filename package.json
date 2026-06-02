@@ -7,7 +7,8 @@
   "scripts": {
     "build": "node build.js",
     "dev": "node build.js && node scripts/serve.js",
-    "clean": "rm -rf public"
+    "preview": "node build.js && node scripts/preview.js",
+    "clean": "rm -rf public previews"
   },
   "engines": {
     "node": ">=18"
