@@ -2,6 +2,48 @@
 (function () {
   "use strict";
 
+  var lang = document.documentElement.lang || "en";
+
+  // Push a custom event to the GTM dataLayer (for GA4 tracking).
+  function track(event, params) {
+    window.dataLayer = window.dataLayer || [];
+    var payload = { event: event };
+    if (params) for (var k in params) payload[k] = params[k];
+    window.dataLayer.push(payload);
+  }
+
+  function formatCount(n) {
+    try {
+      return new Intl.NumberFormat(lang).format(n);
+    } catch (e) {
+      return String(n);
+    }
+  }
+
+  // ----- Footer download counter (runs on every page) -----
+  var counterWrap = document.querySelector(".footer-counter");
+  var countEl = document.getElementById("dl-count");
+
+  function showCount(n) {
+    if (!counterWrap || !countEl || typeof n !== "number") return;
+    countEl.textContent = formatCount(n);
+    counterWrap.hidden = false;
+  }
+
+  if (counterWrap && countEl) {
+    fetch("/api/counter")
+      .then(function (r) { return r.json(); })
+      .then(function (d) { if (d && typeof d.count === "number") showCount(d.count); })
+      .catch(function () { /* leave counter hidden */ });
+  }
+
+  function bumpCounter() {
+    fetch("/api/counter", { method: "POST" })
+      .then(function (r) { return r.json(); })
+      .then(function (d) { if (d && typeof d.count === "number") showCount(d.count); })
+      .catch(function () {});
+  }
+
   // Language switcher: navigate to the selected locale route.
   var langSelect = document.getElementById("langSelect");
   if (langSelect) {
@@ -10,6 +52,7 @@
     });
   }
 
+  // ----- Converter (home page only) -----
   var form = document.getElementById("convertForm");
   if (!form) return;
 
@@ -37,9 +80,7 @@
   }
 
   function isPdf(file) {
-    return (
-      file.type === "application/pdf" || /\.pdf$/i.test(file.name)
-    );
+    return file.type === "application/pdf" || /\.pdf$/i.test(file.name);
   }
 
   function chooseFile(file) {
@@ -85,6 +126,12 @@
     e.preventDefault();
     if (!selectedFile) return;
 
+    // GA4: a file was uploaded for conversion.
+    track("pdf_upload", {
+      language: lang,
+      file_size_mb: Math.round((selectedFile.size / 1048576) * 100) / 100
+    });
+
     convertBtn.disabled = true;
     downloadLink.hidden = true;
     setStatus(msg.converting);
@@ -113,5 +160,11 @@
         setStatus(msg.error, true);
         convertBtn.disabled = false;
       });
+  });
+
+  // GA4 + counter: the user clicked to download the converted file.
+  downloadLink.addEventListener("click", function () {
+    track("excel_download", { language: lang });
+    bumpCounter();
   });
 })();

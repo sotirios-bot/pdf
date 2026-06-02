@@ -14,7 +14,8 @@
     "tagline": "Bepul onlayn fayl konverteri - PDFni Excel va boshqa formatlarga aylantiring.",
     "legalHeading": "Huquqiy axborot",
     "privacy": "Maxfiylik siyosati",
-    "terms": "Xizmat shartlari"
+    "terms": "Xizmat shartlari",
+    "counter": "Hozirgacha {count} ta fayl yuklab olindi"
   },
   "common": {
     "languageLabel": "Til"

@@ -230,6 +230,7 @@ for (const locale of config.locales) {
       footerLegalHeading: t.footer.legalHeading,
       footerPrivacy: t.footer.privacy,
       footerTerms: t.footer.terms,
+      footerCounter: t.footer.counter.replace("{count}", '<span id="dl-count"></span>'),
       title: pdata.title,
       metaDescription: pdata.metaDescription,
       h1: pdata.h1
@@ -344,6 +345,7 @@ for (const locale of config.locales) {
     footerLegalHeading: t.footer.legalHeading,
     footerPrivacy: t.footer.privacy,
     footerTerms: t.footer.terms,
+    footerCounter: t.footer.counter.replace("{count}", '<span id="dl-count"></span>'),
     title: t.meta.notFoundTitle,
     metaDescription: t.meta.notFoundDescription,
     notFoundText: t.meta.notFoundText,

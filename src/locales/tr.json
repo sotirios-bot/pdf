@@ -14,7 +14,8 @@
     "tagline": "Ücretsiz çevrimiçi dosya dönüştürücü — PDF'yi Excel'e ve daha fazlasına dönüştürün.",
     "legalHeading": "Yasal",
     "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Şartları"
+    "terms": "Kullanım Şartları",
+    "counter": "Şu ana kadar {count} dosya indirildi"
   },
   "common": {
     "languageLabel": "Dil"

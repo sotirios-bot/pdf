@@ -216,6 +216,12 @@ body {
   text-align: center;
 }
 .footer-bottom p { margin: 0; }
+.footer-counter {
+  margin: 0 0 0.5rem !important;
+  font-weight: 600;
+  color: var(--text);
+}
+.footer-counter #dl-count { color: var(--primary); }
 
 /* FAQ */
 .faq { margin: 3.5rem 0; }

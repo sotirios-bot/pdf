@@ -14,7 +14,8 @@
     "tagline": "Free online file converter — convert PDF to Excel and more.",
     "legalHeading": "Legal",
     "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions"
+    "terms": "Terms and Conditions",
+    "counter": "{count} files downloaded so far"
   },
   "common": {
     "languageLabel": "Language"

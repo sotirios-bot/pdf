@@ -83,8 +83,32 @@ Edit `config` at the top of `build.js`:
 
 ## Conversion notes
 
-`api/convert.js` is a working **v1**: it extracts text with `pdf-parse` and
-writes rows/columns to an `.xlsx` with `exceljs`, using a whitespace-based
-column heuristic. It handles simple text-based tables. Planned improvements:
-position-based table detection and OCR for scanned PDFs (likely a Python
-service using `camelot`/`pdfplumber`).
+`api/convert.js` uses **PDF.js** (`pdfjs-dist`) to extract text with positions,
+reconstructs rows/columns into a grid (one worksheet per page), and writes an
+`.xlsx` with `exceljs`. It handles digital/text-based PDFs. Planned: a
+`pdfplumber` service for ruled tables and OCR for scanned PDFs.
+
+## Analytics (GA4 via GTM)
+
+Google Tag Manager (`GTM-TJTJW398`) is installed on every page. The front-end
+pushes two custom events to `window.dataLayer`:
+
+- **`pdf_upload`** — fired when a file is uploaded for conversion. Params:
+  `language`, `file_size_mb`.
+- **`excel_download`** — fired when the user clicks to download the result.
+  Param: `language`.
+
+In GTM, create a GA4 Event tag for each, triggered by a **Custom Event** with
+the matching name.
+
+## Footer download counter
+
+`api/counter.js` keeps a global count of downloads, backed by Redis over REST
+(Upstash or Vercel KV). The footer shows a localized total; clicking download
+increments it. Configure either env var pair (the function also degrades
+gracefully and hides the counter if unset):
+
+- `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` (Upstash), or
+- `KV_REST_API_URL` / `KV_REST_API_TOKEN` (Vercel KV)
+
+Endpoints: `GET /api/counter` (read) and `POST /api/counter` (atomic increment).
