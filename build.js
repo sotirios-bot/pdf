@@ -21,11 +21,11 @@ const config = {
   ogLocaleMap: { en: "en_US", ru: "ru_RU", tr: "tr_TR", kk: "kk_KZ", uz: "uz_UZ" },
   org: {
     name: "PDFConvertMe",
-    legalName: "XYZ LAB PTE. LTD.",
+    legalName: "Mytheon Technologies",
     email: "hello@xyzlab.com",
-    street: "160 Robinson Road, #14-04, Singapore Business Federation Center",
-    postalCode: "068914",
-    country: "SG"
+    street: "133/1 Gagarin Avenue",
+    locality: "Almaty",
+    country: "KZ"
   },
   // Pages to render. Each maps a locale `pages.<id>` block to a template.
   // `locales` restricts which languages a page is built for (default: all).
@@ -117,7 +117,7 @@ const orgLd = {
   address: {
     "@type": "PostalAddress",
     streetAddress: config.org.street,
-    postalCode: config.org.postalCode,
+    addressLocality: config.org.locality,
     addressCountry: config.org.country
   }
 };
