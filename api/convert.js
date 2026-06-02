@@ -9,7 +9,10 @@
 // (e.g. position-based clustering, or a Python service using camelot/pdfplumber)
 // and handle scanned/image PDFs via OCR.
 
-import pdf from "pdf-parse";
+// NOTE: import the library entry directly (not the package root). pdf-parse's
+// index.js runs a debug branch that tries to read a bundled sample PDF when it
+// thinks it's the main module, which crashes in a serverless/ESM context.
+import pdf from "pdf-parse/lib/pdf-parse.js";
 import ExcelJS from "exceljs";
 
 export const config = {
