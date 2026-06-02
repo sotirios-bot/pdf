@@ -9,8 +9,8 @@
   "nav": {
     "home": "Негізгі",
     "convertPdf": "PDF түрлендіру",
-    "pdfToExcel": "PDF-ті Excel-ге",
-    "pdfToWord": "PDF-ті Word-қа"
+    "pdfToExcel": "PDF-тен Excel-ге",
+    "pdfToWord": "PDF-тен Word-қа"
   },
   "footer": {
     "rights": "Барлық құқықтар қорғалған.",
@@ -31,6 +31,18 @@
     "notFoundHome": "Басты бетке оралу"
   },
   "pages": {
+    "home": {
+      "slug": "",
+      "title": "PDFConvertMe — Тегін онлайн PDF түрлендіру құралдары",
+      "metaDescription": "PDFConvertMe-тен тегін онлайн PDF құралдары. PDF-ті Excel-ге, PDF-ті Word-қа және т.б. түрлендіріңіз — жылдам, дәл, қауіпсіз және тегін, тіркелусіз.",
+      "h1": "Тегін онлайн PDF құралдары",
+      "subtitle": "PDF файлдарыңызды бірнеше секундта түрлендіріңіз — тегін, онлайн және қауіпсіз. Бастау үшін құралды таңдаңыз.",
+      "toolsHeading": "Құралды таңдау",
+      "tools": [
+        { "id": "pdfToExcel", "name": "PDF-тен Excel-ге", "description": "PDF кестелерін толық редакцияланатын XLSX кестелеріне түрлендіру.", "badge": "" },
+        { "id": "pdfToWord", "name": "PDF-тен Word-қа", "description": "PDF құжаттарын редакцияланатын Word (DOCX) файлдарына айналдырыңыз.", "badge": "Жаңа" }
+      ]
+    },
     "pdfToExcel": {
       "slug": "pdf-to-excel",
       "title": "PDF-ті Excel-ге түрлендіру — PDF-ті Excel-ге (XLSX) тегін онлайн түрлендіргіш",
