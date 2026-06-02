@@ -7,14 +7,18 @@
     "tagline": "PDF-ті тегін онлайн түрлендіргіш"
   },
   "nav": {
-    "home": "Негізгі"
+    "home": "Негізгі",
+    "convertPdf": "PDF түрлендіру",
+    "pdfToExcel": "PDF-ті Excel-ге",
+    "pdfToWord": "PDF-ті Word-қа"
   },
   "footer": {
     "rights": "Барлық құқықтар қорғалған.",
     "tagline": "Тегін онлайн файл түрлендіргіші — PDF-ті Excel және басқа форматтарға түрлендіріңіз.",
     "legalHeading": "Құқықтық ақпарат",
     "privacy": "Құпиялылық саясаты",
-    "terms": "Пайдалану шарттары"
+    "terms": "Пайдалану шарттары",
+    "toolsHeading": "Құралдар"
   },
   "common": {
     "languageLabel": "Тіл"

@@ -7,14 +7,18 @@
     "tagline": "Бесплатный онлайн-конвертер PDF"
   },
   "nav": {
-    "home": "Главная"
+    "home": "Главная",
+    "convertPdf": "Конвертировать PDF",
+    "pdfToExcel": "PDF в Excel",
+    "pdfToWord": "PDF в Word"
   },
   "footer": {
     "rights": "Все права защищены.",
     "tagline": "Бесплатный онлайн-конвертер файлов — конвертируйте PDF в Excel и другие форматы.",
     "legalHeading": "Правовая информация",
     "privacy": "Политика конфиденциальности",
-    "terms": "Условия использования"
+    "terms": "Условия использования",
+    "toolsHeading": "Инструменты"
   },
   "common": {
     "languageLabel": "Язык"

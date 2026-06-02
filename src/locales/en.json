@@ -7,14 +7,18 @@
     "tagline": "Free online PDF converter"
   },
   "nav": {
-    "home": "Home"
+    "home": "Home",
+    "convertPdf": "Convert PDF",
+    "pdfToExcel": "PDF to Excel",
+    "pdfToWord": "PDF to Word"
   },
   "footer": {
     "rights": "All rights reserved.",
     "tagline": "Free online file converter — convert PDF to Excel and more.",
     "legalHeading": "Legal",
     "privacy": "Privacy Policy",
-    "terms": "Terms and Conditions"
+    "terms": "Terms and Conditions",
+    "toolsHeading": "Tools"
   },
   "common": {
     "languageLabel": "Language"

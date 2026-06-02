@@ -7,14 +7,18 @@
     "tagline": "Ücretsiz çevrimiçi PDF dönüştürücü"
   },
   "nav": {
-    "home": "Ana Sayfa"
+    "home": "Ana Sayfa",
+    "convertPdf": "PDF Dönüştür",
+    "pdfToExcel": "PDF'den Excel'e",
+    "pdfToWord": "PDF'den Word'e"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
     "tagline": "Ücretsiz çevrimiçi dosya dönüştürücü — PDF'yi Excel'e ve daha fazlasına dönüştürün.",
     "legalHeading": "Yasal",
     "privacy": "Gizlilik Politikası",
-    "terms": "Kullanım Şartları"
+    "terms": "Kullanım Şartları",
+    "toolsHeading": "Araçlar"
   },
   "common": {
     "languageLabel": "Dil"

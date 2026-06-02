@@ -83,6 +83,14 @@ const footerTpl = read(path.join(SRC, "partials", "footer.html"));
 const allLocales = config.locales.map((l) => loadLocale(l));
 const defaultT = allLocales.find((l) => l.lang === config.defaultLocale);
 const getLocale = (code) => allLocales.find((l) => l.lang === code);
+// URL of a tool page in a given locale, falling back to the default locale
+// when that language doesn't have the page.
+function toolHref(locale, pageId) {
+  const loc = getLocale(locale);
+  if (loc.pages[pageId]) return urlPath(locale, loc.pages[pageId].slug || "");
+  const d = getLocale(config.defaultLocale);
+  return urlPath(config.defaultLocale, d.pages[pageId].slug || "");
+}
 const ogImageAbs = `${config.baseUrl}${config.ogImage}`;
 const buildDate = new Date().toISOString().slice(0, 10);
 
@@ -229,10 +237,16 @@ for (const locale of config.locales) {
       year: new Date().getFullYear(),
       siteName: t.site.name,
       navHome: t.nav.home,
+      navConvertPdf: t.nav.convertPdf,
+      navPdfToExcel: t.nav.pdfToExcel,
+      navPdfToWord: t.nav.pdfToWord,
+      excelHref: toolHref(locale, "pdfToExcel"),
+      wordHref: toolHref(locale, "pdfToWord"),
       languageLabel: t.common.languageLabel,
       langOptions,
       footerRights: t.footer.rights,
       footerTagline: t.footer.tagline,
+      footerToolsHeading: t.footer.toolsHeading,
       footerLegalHeading: t.footer.legalHeading,
       footerPrivacy: t.footer.privacy,
       footerTerms: t.footer.terms,
@@ -363,10 +377,16 @@ for (const locale of config.locales) {
     year: new Date().getFullYear(),
     siteName: t.site.name,
     navHome: t.nav.home,
+    navConvertPdf: t.nav.convertPdf,
+    navPdfToExcel: t.nav.pdfToExcel,
+    navPdfToWord: t.nav.pdfToWord,
+    excelHref: toolHref(t.lang, "pdfToExcel"),
+    wordHref: toolHref(t.lang, "pdfToWord"),
     languageLabel: t.common.languageLabel,
     langOptions,
     footerRights: t.footer.rights,
     footerTagline: t.footer.tagline,
+    footerToolsHeading: t.footer.toolsHeading,
     footerLegalHeading: t.footer.legalHeading,
     footerPrivacy: t.footer.privacy,
     footerTerms: t.footer.terms,

@@ -42,7 +42,8 @@ body {
 .header-inner {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
   padding: 0.75rem 1rem;
 }
 .brand {
@@ -54,9 +55,50 @@ body {
   color: var(--text);
 }
 .brand-mark { font-size: 1.4rem; }
-.main-nav { margin-left: auto; }
-.main-nav a { color: var(--muted); text-decoration: none; margin-right: 1rem; }
-.main-nav a:hover { color: var(--text); }
+.main-nav { margin-left: auto; display: flex; align-items: center; gap: 1.5rem; }
+.main-nav > a,
+.nav-dropbtn {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.main-nav > a:hover,
+.nav-dropbtn:hover { color: var(--text); }
+.caret { font-size: 0.7rem; }
+.nav-dropdown { position: relative; }
+.nav-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 210px;
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 30;
+}
+.nav-dropdown:hover .nav-menu,
+.nav-dropdown:focus-within .nav-menu { display: block; }
+.nav-menu a {
+  display: block;
+  padding: 0.55rem 0.75rem;
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-menu a:hover { background: #f0f6ff; color: var(--primary); }
 .lang-switcher select {
   padding: 0.4rem 0.6rem;
   border: 1px solid var(--border);
@@ -132,16 +174,16 @@ body {
 .tools h2 { text-align: center; margin-bottom: 1.5rem; }
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.25rem;
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 auto;
 }
 .tool-card {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  padding: 1.5rem;
+  align-items: flex-start;
+  padding: 1.75rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -151,23 +193,38 @@ body {
 }
 .tool-card:hover {
   border-color: var(--primary);
-  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.1);
-  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(37, 99, 235, 0.12);
+  transform: translateY(-3px);
 }
-.tool-icon { font-size: 2rem; }
-.tool-name { font-weight: 700; font-size: 1.15rem; }
-.tool-desc { color: var(--muted); }
+.tool-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin-bottom: 1.1rem;
+  font-size: 1.5rem;
+  background: #eef2ff;
+  border-radius: 14px;
+}
+.tool-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+.tool-desc { color: var(--muted); font-size: 0.95rem; line-height: 1.45; }
 .tool-badge {
-  display: inline-block;
-  margin-left: 0.5rem;
   padding: 0.1rem 0.5rem;
   font-size: 0.7rem;
   font-weight: 700;
-  vertical-align: middle;
   color: #fff;
   background: #16a34a;
   border-radius: 999px;
 }
+@media (max-width: 560px) { .tools-grid { grid-template-columns: 1fr; } }
 
 /* How-to steps */
 .how-to { margin: 3.5rem 0; }
@@ -235,7 +292,7 @@ body {
 }
 .footer-top {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 2rem;
   padding: 2.5rem 1rem 1.5rem;
 }
@@ -297,6 +354,10 @@ body {
 .legal-section p { margin: 0 0 0.75rem; color: #374151; }
 
 @media (max-width: 720px) {
-  .footer-top { grid-template-columns: 1fr; }
+  .footer-top { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
   .hero h1 { font-size: 1.75rem; }
+  /* Header: brand + language on the first row, nav centered on the second */
+  .lang-switcher { margin-left: auto; }
+  .main-nav { order: 3; width: 100%; margin-left: 0; justify-content: center; gap: 1.75rem; }
 }

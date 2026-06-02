@@ -7,14 +7,18 @@
     "tagline": "Bepul onlayn PDF konverteri"
   },
   "nav": {
-    "home": "Bosh sahifa"
+    "home": "Bosh sahifa",
+    "convertPdf": "PDF o‘girish",
+    "pdfToExcel": "PDFni Excelga",
+    "pdfToWord": "PDFni Wordga"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
     "tagline": "Bepul onlayn fayl konverteri - PDFni Excel va boshqa formatlarga aylantiring.",
     "legalHeading": "Huquqiy axborot",
     "privacy": "Maxfiylik siyosati",
-    "terms": "Xizmat shartlari"
+    "terms": "Xizmat shartlari",
+    "toolsHeading": "Vositalar"
   },
   "common": {
     "languageLabel": "Til"
