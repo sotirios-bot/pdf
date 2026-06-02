@@ -13,9 +13,12 @@ const config = {
   // Used for canonical URLs / hreflang / sitemap. Update to your real domain.
   baseUrl: "https://pdfconvertme.com",
   defaultLocale: "en",
-  locales: ["en", "ru", "tr"],
+  locales: ["en", "ru", "tr", "kk"],
+  // Languages a page falls back to when it isn't translated for a locale
+  // (e.g. Kazakh has no legal pages → its footer links point here).
+  legalFallbackLocale: "en",
   ogImage: "/assets/og-image.png",
-  ogLocaleMap: { en: "en_US", ru: "ru_RU", tr: "tr_TR" },
+  ogLocaleMap: { en: "en_US", ru: "ru_RU", tr: "tr_TR", kk: "kk_KZ" },
   org: {
     name: "PDFConvertMe",
     legalName: "XYZ LAB PTE. LTD.",
@@ -25,10 +28,11 @@ const config = {
     country: "SG"
   },
   // Pages to render. Each maps a locale `pages.<id>` block to a template.
+  // `locales` restricts which languages a page is built for (default: all).
   pages: [
     { id: "home", template: "home.html", type: "home" },
-    { id: "terms", template: "legal.html", type: "legal" },
-    { id: "privacy", template: "legal.html", type: "legal" }
+    { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
+    { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]
 };
 
@@ -51,6 +55,8 @@ function urlPath(locale, slug) {
   return `/${localePart}${slugPart}`;
 }
 const absUrl = (loc, slug) => `${config.baseUrl}${urlPath(loc, slug)}`;
+// Locales a given page is built for (defaults to all configured locales).
+const pageLocales = (page) => page.locales || config.locales;
 
 function copyDir(from, to) {
   fs.mkdirSync(to, { recursive: true });
@@ -74,15 +80,21 @@ const headerTpl = read(path.join(SRC, "partials", "header.html"));
 const footerTpl = read(path.join(SRC, "partials", "footer.html"));
 const allLocales = config.locales.map((l) => loadLocale(l));
 const defaultT = allLocales.find((l) => l.lang === config.defaultLocale);
+const getLocale = (code) => allLocales.find((l) => l.lang === code);
 const ogImageAbs = `${config.baseUrl}${config.ogImage}`;
 const buildDate = new Date().toISOString().slice(0, 10);
 
-// Precompute hreflang alternates per page id (same for every locale of a page).
+// Locales that have legal pages (used for footer link fallback).
+const legalLocales = pageLocales(config.pages.find((p) => p.id === "privacy"));
+const privacySlug = defaultT.pages.privacy.slug || "privacy";
+const termsSlug = defaultT.pages.terms.slug || "terms";
+
+// Precompute hreflang alternates per page id (only the locales it's built for).
 const altsByPage = {};
 for (const page of config.pages) {
-  const links = allLocales.map((o) => ({
-    hreflang: o.lang,
-    href: absUrl(o.lang, o.pages[page.id].slug || "")
+  const links = pageLocales(page).map((code) => ({
+    hreflang: code,
+    href: absUrl(code, getLocale(code).pages[page.id].slug || "")
   }));
   links.push({
     hreflang: "x-default",
@@ -114,16 +126,19 @@ for (const locale of config.locales) {
   const t = loadLocale(locale);
 
   for (const page of config.pages) {
+    const locs = pageLocales(page);
+    if (!locs.includes(locale)) continue; // page not built for this language
     const pdata = t.pages[page.id];
     const slug = pdata.slug || "";
     const route = urlPath(locale, slug);
     const canonical = `${config.baseUrl}${route}`;
 
-    const langOptions = allLocales
-      .map((other) => {
-        const otherRoute = urlPath(other.lang, other.pages[page.id].slug || "");
-        const selected = other.lang === locale ? " selected" : "";
-        return `<option value="${otherRoute}"${selected}>${other.localeName}</option>`;
+    const langOptions = locs
+      .map((code) => {
+        const o = getLocale(code);
+        const otherRoute = urlPath(code, o.pages[page.id].slug || "");
+        const selected = code === locale ? " selected" : "";
+        return `<option value="${otherRoute}"${selected}>${o.localeName}</option>`;
       })
       .join("\n        ");
 
@@ -131,13 +146,19 @@ for (const locale of config.locales) {
       .map((a) => `<link rel="alternate" hreflang="${a.hreflang}" href="${a.href}" />`)
       .join("\n  ");
 
-    const ogLocaleAlternates = allLocales
-      .filter((o) => o.lang !== locale)
+    const ogLocaleAlternates = locs
+      .filter((code) => code !== locale)
       .map(
-        (o) =>
-          `<meta property="og:locale:alternate" content="${config.ogLocaleMap[o.lang]}" />`
+        (code) =>
+          `<meta property="og:locale:alternate" content="${config.ogLocaleMap[code]}" />`
       )
       .join("\n  ");
+
+    // Legal links fall back to the configured locale when this language
+    // has no legal pages of its own (e.g. Kazakh → English).
+    const legalLoc = legalLocales.includes(locale)
+      ? locale
+      : config.legalFallbackLocale;
 
     // ----- structured data (JSON-LD) -----
     const websiteLd = {
@@ -190,8 +211,8 @@ for (const locale of config.locales) {
       lang: t.lang,
       dir: t.dir,
       homeHref: urlPath(locale, ""),
-      privacyHref: urlPath(locale, t.pages.privacy.slug || ""),
-      termsHref: urlPath(locale, t.pages.terms.slug || ""),
+      privacyHref: urlPath(legalLoc, privacySlug),
+      termsHref: urlPath(legalLoc, termsSlug),
       canonical,
       robots: "",
       hreflang,

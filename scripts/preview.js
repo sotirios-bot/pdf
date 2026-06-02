@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const PUB = path.join(ROOT, "public");
 const OUT = path.join(ROOT, "previews");
-const KNOWN_LOCALES = ["ru", "tr"]; // non-default locale prefixes
+const KNOWN_LOCALES = ["ru", "tr", "kk"]; // non-default locale prefixes
 
 const css = fs.readFileSync(path.join(PUB, "assets/css/styles.css"), "utf8");
 const js = fs.readFileSync(path.join(PUB, "assets/js/app.js"), "utf8");
