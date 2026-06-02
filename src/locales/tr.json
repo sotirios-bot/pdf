@@ -7,19 +7,12 @@
     "tagline": "Ücretsiz çevrimiçi PDF dönüştürücü"
   },
   "nav": {
-    "home": "Ana Sayfa",
-    "pdfToExcel": "PDF'den Excel'e",
-    "allTools": "Tüm Araçlar",
-    "pricing": "Fiyatlandırma"
+    "home": "Ana Sayfa"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
-    "tagline": "Ücretsiz çevrimiçi dosya dönüştürücü — PDF'yi Excel, Word ve daha fazlasına dönüştürün.",
-    "toolsHeading": "Araçlar",
-    "companyHeading": "Şirket",
+    "tagline": "Ücretsiz çevrimiçi dosya dönüştürücü — PDF'yi Excel'e ve daha fazlasına dönüştürün. XYZ LAB PTE. LTD. tarafından sağlanmaktadır.",
     "legalHeading": "Yasal",
-    "about": "Hakkımızda",
-    "contact": "İletişim",
     "privacy": "Gizlilik Politikası",
     "terms": "Kullanım Şartları"
   },
@@ -30,9 +23,9 @@
     "home": {
       "slug": "",
       "title": "PDF'yi Excel'e Dönüştür — Ücretsiz Çevrimiçi PDF'den Excel'e Dönüştürücü (XLSX)",
-      "metaDescription": "PDF'yi çevrimiçi olarak ücretsiz Excel'e dönüştürün. PDF tablolarını saniyeler içinde düzenlenebilir XLSX elektronik tablolarına çevirin — kurulum ve kayıt gerekmez. Her cihazda hızlı, doğru ve güvenli dosya dönüştürme.",
+      "metaDescription": "PDF'yi çevrimiçi olarak ücretsiz Excel'e dönüştürün. PDF dosyalarını saniyeler içinde düzenlenebilir XLSX elektronik tablolarına çevirin — kurulum ve kayıt gerekmez. Her cihazda hızlı, doğru ve güvenli dosya dönüştürme.",
       "h1": "PDF'yi Excel'e Dönüştür",
-      "subtitle": "PDF tablolarını saniyeler içinde tamamen düzenlenebilir Excel (XLSX) elektronik tablolarına dönüştürün — ücretsiz, çevrimiçi ve güvenli.",
+      "subtitle": "PDF dosyalarını saniyeler içinde tamamen düzenlenebilir Excel (XLSX) elektronik tablolarına dönüştürün — ücretsiz, çevrimiçi ve güvenli.",
       "uploader": {
         "dropText": "PDF'nizi buraya bırakın veya yüklemek için tıklayın",
         "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
@@ -87,6 +80,176 @@
           }
         ]
       }
+    },
+    "terms": {
+      "slug": "terms",
+      "title": "Kullanım Şartları — XYZ LAB PTE. LTD. tarafından PDF Convert",
+      "metaDescription": "XYZ LAB PTE. LTD. tarafından işletilen PDF Convert çevrimiçi dosya dönüştürme hizmetinin Kullanım Şartlarını okuyun.",
+      "h1": "Kullanım Şartları",
+      "lastUpdatedLabel": "Son güncelleme",
+      "lastUpdated": "2 Haziran 2026",
+      "sections": [
+        {
+          "heading": "1. Şartların Kabulü",
+          "body": [
+            "Bu Kullanım Şartları (\"Şartlar\"), bu web sitesine ve dosya dönüştürme hizmetlerine (\"Hizmet\") erişiminizi ve bunları kullanımınızı düzenler. Hizmete erişerek veya Hizmeti kullanarak bu Şartlara bağlı kalmayı kabul edersiniz. Bu Şartların herhangi bir bölümünü kabul etmiyorsanız, lütfen Hizmeti kullanmayın."
+          ]
+        },
+        {
+          "heading": "2. Hakkımızda",
+          "body": [
+            "Hizmet, Singapur'da kayıtlı ve kayıtlı adresi 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 olan XYZ LAB PTE. LTD. (\"XYZ Lab\", \"biz\" veya \"bizim\") tarafından işletilmektedir."
+          ]
+        },
+        {
+          "heading": "3. Hizmetin Kullanımı",
+          "body": [
+            "Hizmet, PDF dosyalarını Excel elektronik tablolarına dönüştürmenize ve ilgili dosya dönüştürme araçlarını kullanmanıza olanak tanır. Hizmet ücretsiz olarak sunulmaktadır. Gönderdiğiniz herhangi bir dosyayı yükleme ve dönüştürme konusunda yasal hakka sahip olmaktan siz sorumlusunuz."
+          ]
+        },
+        {
+          "heading": "4. Kabul Edilebilir Kullanım",
+          "body": [
+            "Hizmeti herhangi bir yasa dışı amaçla kullanmamayı veya başkalarının haklarını ihlal eden, kötü amaçlı yazılım içeren ya da geçerli herhangi bir yasayı ihlal eden dosyalar yüklememeyi kabul edersiniz. Hizmeti veya altında yatan sistemleri kesintiye uğratmaya, aşırı yüklemeye, tersine mühendislik yapmaya veya bunlara yetkisiz erişim sağlamaya çalışmamalısınız."
+          ]
+        },
+        {
+          "heading": "5. Dosyalarınız ve İçeriğiniz",
+          "body": [
+            "Yüklediğiniz dosyalar üzerindeki tüm mülkiyet haklarını elinizde tutarsınız. İçeriğiniz üzerinde mülkiyet iddia etmiyoruz ve dosyalarınızı yalnızca talep ettiğiniz dönüştürmeyi gerçekleştirmek için işliyoruz. Yüklenen dosyalar ve bunların dönüştürülmüş çıktıları, Gizlilik Politikamızda açıklandığı şekilde kısa bir süre içinde sunucularımızdan otomatik olarak silinir."
+          ]
+        },
+        {
+          "heading": "6. Fikri Mülkiyet",
+          "body": [
+            "Yüklediğiniz dosyalar hariç olmak üzere, Hizmetin bir parçasını oluşturan tüm yazılım, tasarım, metin, grafik ve diğer materyaller XYZ Lab'a aittir veya lisanslanmıştır ve geçerli fikri mülkiyet yasalarıyla korunmaktadır. Bunları önceden yazılı iznimiz olmadan kopyalayamaz, değiştiremez veya dağıtamazsınız."
+          ]
+        },
+        {
+          "heading": "7. Garantilerin Reddi",
+          "body": [
+            "Hizmet, açık veya zımni hiçbir garanti olmaksızın \"olduğu gibi\" ve \"mevcut olduğu şekilde\" sunulmaktadır. Hizmetin kesintisiz veya hatasız olacağını ya da dönüştürme sonuçlarının doğru veya herhangi bir özel amaca uygun olacağını garanti etmiyoruz."
+          ]
+        },
+        {
+          "heading": "8. Sorumluluğun Sınırlandırılması",
+          "body": [
+            "Yasaların izin verdiği azami ölçüde, XYZ Lab; Hizmeti kullanımınızdan kaynaklanan veya bununla bağlantılı herhangi bir dolaylı, arızi, özel veya sonuç olarak ortaya çıkan zarardan ya da herhangi bir veri, kâr veya iş kaybından sorumlu olmayacaktır."
+          ]
+        },
+        {
+          "heading": "9. Gizlilik",
+          "body": [
+            "Hizmeti kullanımınız ayrıca, bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklayan Gizlilik Politikamıza tabidir."
+          ]
+        },
+        {
+          "heading": "10. Bu Şartlardaki Değişiklikler",
+          "body": [
+            "Bu Şartları zaman zaman güncelleyebiliriz. Her türlü değişiklik, güncellenmiş bir yürürlük tarihiyle bu sayfada yayınlanacaktır. Değişiklikler yürürlüğe girdikten sonra Hizmeti kullanmaya devam etmeniz, gözden geçirilmiş Şartları kabul ettiğiniz anlamına gelir."
+          ]
+        },
+        {
+          "heading": "11. Geçerli Hukuk",
+          "body": [
+            "Bu Şartlar, Singapur yasalarına göre yönetilir ve yorumlanır ve Singapur mahkemelerinin münhasır yargı yetkisini kabul edersiniz."
+          ]
+        },
+        {
+          "heading": "12. Bize Ulaşın",
+          "body": [
+            "Bu Şartlarla ilgili herhangi bir sorunuz varsa, lütfen XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 adresinden veya support@xyzlab.com e-posta adresinden bizimle iletişime geçin."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "slug": "privacy",
+      "title": "Gizlilik Politikası — XYZ LAB PTE. LTD. tarafından PDF Convert",
+      "metaDescription": "XYZ LAB PTE. LTD. tarafından işletilen PDF Convert çevrimiçi dosya dönüştürme hizmetinin Gizlilik Politikasını okuyun. Verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin.",
+      "h1": "Gizlilik Politikası",
+      "lastUpdatedLabel": "Son güncelleme",
+      "lastUpdated": "2 Haziran 2026",
+      "sections": [
+        {
+          "heading": "1. Giriş",
+          "body": [
+            "Bu Gizlilik Politikası, bu web sitesini ve dosya dönüştürme hizmetlerini (\"Hizmet\") kullandığınızda kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu açıklar. Gizliliğinizi korumayı ve verilerinizi sorumlu bir şekilde işlemeyi taahhüt ediyoruz."
+          ]
+        },
+        {
+          "heading": "2. Biz Kimiz",
+          "body": [
+            "Hizmet, veri sorumlusu olan ve Singapur'da kayıtlı, kayıtlı adresi 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 olan XYZ LAB PTE. LTD. tarafından işletilmektedir."
+          ]
+        },
+        {
+          "heading": "3. Topladığımız Bilgiler",
+          "body": [
+            "Dönüştürme için yüklediğiniz dosyaları toplarız. Ayrıca Hizmeti işletmek ve geliştirmek amacıyla çerezler ve benzeri teknolojiler aracılığıyla IP adresiniz, tarayıcı türünüz, cihaz bilgileriniz ve kullanım verileriniz gibi sınırlı teknik bilgileri otomatik olarak toplayabiliriz."
+          ]
+        },
+        {
+          "heading": "4. Bilgilerinizi Nasıl Kullanırız",
+          "body": [
+            "Yüklediğiniz dosyaları yalnızca talep ettiğiniz dönüştürmeyi gerçekleştirmek için kullanırız. Teknik bilgileri ve kullanım bilgilerini Hizmeti sağlamak, sürdürmek, güvenliğini sağlamak ve geliştirmek ile yasal yükümlülüklerimize uymak için kullanırız."
+          ]
+        },
+        {
+          "heading": "5. Dosyaların İşlenmesi ve Saklanması",
+          "body": [
+            "Yüklediğiniz dosyalar ve bunların dönüştürülmüş çıktıları otomatik olarak işlenir ve personelimiz tarafından incelenmez. Dosyalar, yüklemeden sonra üç saat içinde sunucularımızdan otomatik olarak silinir ve indirme işleminiz tamamlandığında bunları daha erken de silebilirsiniz."
+          ]
+        },
+        {
+          "heading": "6. Çerezler",
+          "body": [
+            "Temel işlevselliği etkinleştirmek, tercihlerinizi hatırlamak ve Hizmetin nasıl kullanıldığını analiz etmek için çerezler ve benzeri teknolojiler kullanırız. Çerezleri tarayıcı ayarlarınız aracılığıyla kontrol edebilir veya devre dışı bırakabilirsiniz; ancak bunun sonucunda bazı özellikler düzgün çalışmayabilir."
+          ]
+        },
+        {
+          "heading": "7. Veri Güvenliği",
+          "body": [
+            "Verilerinizi aktarım sırasında korumak için 256 bit SSL şifrelemesi dahil olmak üzere sektör standardı güvenlik önlemleri kullanırız. Ancak hiçbir aktarım veya saklama yöntemi tamamen güvenli değildir ve mutlak güvenliği garanti edemeyiz."
+          ]
+        },
+        {
+          "heading": "8. Bilgilerinizin Paylaşılması",
+          "body": [
+            "Kişisel bilgilerinizi satmaz veya kiralamayız. Hizmeti işletmemize yardımcı olan güvenilir hizmet sağlayıcılarla veya yasaların gerektirdiği durumlarda sınırlı bilgileri paylaşabiliriz. Bu tür sağlayıcılar uygun gizlilik ve veri koruma yükümlülüklerine tabidir."
+          ]
+        },
+        {
+          "heading": "9. Uluslararası Veri Aktarımları",
+          "body": [
+            "Singapur'da bulunmaktayız ve bilgileriniz Singapur'da veya diğer ülkelerde işlenebilir. Verileri uluslararası olarak aktardığımızda, geçerli veri koruma yasalarına uygun olarak korunmalarını sağlamak için adımlar atarız."
+          ]
+        },
+        {
+          "heading": "10. Haklarınız",
+          "body": [
+            "Bulunduğunuz yere bağlı olarak, kişisel bilgilerinize erişme, bunları düzeltme veya silme ya da belirli işlemlere itiraz etme veya bunları kısıtlama hakkına sahip olabilirsiniz. Bu hakları kullanmak için lütfen aşağıdaki bilgileri kullanarak bizimle iletişime geçin."
+          ]
+        },
+        {
+          "heading": "11. Çocukların Gizliliği",
+          "body": [
+            "Hizmet, 13 yaşın altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel bilgi toplamayız. Bir çocuğun bize kişisel bilgi verdiğini düşünüyorsanız, silebilmemiz için lütfen bizimle iletişime geçin."
+          ]
+        },
+        {
+          "heading": "12. Bu Politikadaki Değişiklikler",
+          "body": [
+            "Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Her türlü değişiklik, güncellenmiş bir yürürlük tarihiyle bu sayfada yayınlanacaktır."
+          ]
+        },
+        {
+          "heading": "13. Bize Ulaşın",
+          "body": [
+            "Bu Gizlilik Politikası veya verilerinizi nasıl ele aldığımız hakkında herhangi bir sorunuz varsa, lütfen XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 adresinden veya support@xyzlab.com e-posta adresinden bizimle iletişime geçin."
+          ]
+        }
+      ]
     }
   }
 }

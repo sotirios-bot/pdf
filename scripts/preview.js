@@ -1,6 +1,6 @@
-// Generates self-contained, openable preview HTML files for each locale.
-// CSS + JS are inlined and links are rewired to local files so you can open
-// them directly in a browser (no server needed) and switch languages.
+// Generates self-contained, openable preview HTML files for every built page.
+// CSS + JS are inlined and internal links are rewired to local files so you can
+// open them directly in a browser (no server needed) and navigate/switch langs.
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -9,22 +9,47 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, "..");
 const PUB = path.join(ROOT, "public");
 const OUT = path.join(ROOT, "previews");
+const KNOWN_LOCALES = ["ru", "tr"]; // non-default locale prefixes
 
 const css = fs.readFileSync(path.join(PUB, "assets/css/styles.css"), "utf8");
 const js = fs.readFileSync(path.join(PUB, "assets/js/app.js"), "utf8");
 
-const locales = [
-  { code: "en", src: "index.html", file: "preview-en.html" },
-  { code: "ru", src: "ru/index.html", file: "preview-ru.html" },
-  { code: "tr", src: "tr/index.html", file: "preview-tr.html" }
-];
-const fileFor = { "/": "preview-en.html", "/ru/": "preview-ru.html", "/tr/": "preview-tr.html" };
+// Find every generated index.html and derive its route.
+function findPages(dir, base = "/") {
+  const out = [];
+  for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+    if (entry.name === "assets") continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      out.push(...findPages(full, `${base}${entry.name}/`));
+    } else if (entry.name === "index.html") {
+      out.push({ route: base, src: full });
+    }
+  }
+  return out;
+}
+
+// Route -> local preview filename, e.g. "/ru/terms/" -> "preview-ru-terms.html".
+function fileFor(route) {
+  const segs = route.split("/").filter(Boolean);
+  let locale = "en";
+  let rest = segs;
+  if (KNOWN_LOCALES.includes(segs[0])) {
+    locale = segs[0];
+    rest = segs.slice(1);
+  }
+  const page = rest.length ? rest.join("-") : "home";
+  return `preview-${locale}-${page}.html`;
+}
+
+const pages = findPages(PUB);
+const routeMap = Object.fromEntries(pages.map((p) => [p.route, fileFor(p.route)]));
 
 fs.rmSync(OUT, { recursive: true, force: true });
 fs.mkdirSync(OUT, { recursive: true });
 
-for (const loc of locales) {
-  let html = fs.readFileSync(path.join(PUB, loc.src), "utf8");
+for (const { route, src } of pages) {
+  let html = fs.readFileSync(src, "utf8");
 
   // Inline CSS and JS.
   html = html.replace(
@@ -36,13 +61,15 @@ for (const loc of locales) {
     `<script>\n${js}\n</script>`
   );
 
-  // Rewire language-switcher option values + home links to local preview files.
-  for (const [route, file] of Object.entries(fileFor)) {
-    html = html.replaceAll(`value="${route}"`, `value="${file}"`);
-    html = html.replaceAll(`href="${route}"`, `href="${file}"`);
+  // Rewire internal links + language-switcher values to local preview files.
+  // Sort longest-first so "/ru/terms/" is replaced before "/ru/".
+  for (const r of Object.keys(routeMap).sort((a, b) => b.length - a.length)) {
+    html = html.replaceAll(`value="${r}"`, `value="${routeMap[r]}"`);
+    html = html.replaceAll(`href="${r}"`, `href="${routeMap[r]}"`);
   }
 
-  fs.writeFileSync(path.join(OUT, loc.file), html);
-  console.log(`✓ ${loc.file}`);
+  fs.writeFileSync(path.join(OUT, routeMap[route]), html);
+  console.log(`✓ ${routeMap[route]}  (${route})`);
 }
-console.log("\nPreviews written to previews/");
+
+console.log(`\n${pages.length} previews written to previews/`);

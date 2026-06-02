@@ -15,8 +15,11 @@ const config = {
   defaultLocale: "en",
   locales: ["en", "ru", "tr"],
   // Pages to render. Each maps a locale `pages.<id>` block to a template.
+  // `type` selects how the page-specific content is rendered.
   pages: [
-    { id: "home", template: "home.html" }
+    { id: "home", template: "home.html", type: "home" },
+    { id: "terms", template: "legal.html", type: "legal" },
+    { id: "privacy", template: "legal.html", type: "legal" }
   ]
 };
 
@@ -88,67 +91,71 @@ for (const locale of config.locales) {
         t.pages[page.id].slug || ""
       )}" />`;
 
-    const howToList = pdata.howTo.steps
-      .map(
-        (s, i) =>
-          `<li class="step">
-          <span class="step-num">${i + 1}</span>
-          <div class="step-body"><h3>${s.title}</h3><p>${s.text}</p></div>
-        </li>`
-      )
-      .join("\n        ");
-    const benefitsList = pdata.benefits.items
-      .map(
-        (f) =>
-          `<div class="benefit"><h3>${f.title}</h3><p>${f.text}</p></div>`
-      )
-      .join("\n        ");
-
-    // Flat context shared by template + partials.
+    // Context shared by every page + the partials.
     const ctx = {
       lang: t.lang,
       dir: t.dir,
       assetBase: "/",
       homeHref: urlPath(locale, ""),
+      privacyHref: urlPath(locale, t.pages.privacy.slug || ""),
+      termsHref: urlPath(locale, t.pages.terms.slug || ""),
       canonical: `${config.baseUrl}${route}`,
       hreflang,
       year: new Date().getFullYear(),
       siteName: t.site.name,
       navHome: t.nav.home,
-      navAllTools: t.nav.allTools,
-      navPricing: t.nav.pricing,
       languageLabel: t.common.languageLabel,
       langOptions,
       footerRights: t.footer.rights,
       footerTagline: t.footer.tagline,
-      footerToolsHeading: t.footer.toolsHeading,
-      footerCompanyHeading: t.footer.companyHeading,
       footerLegalHeading: t.footer.legalHeading,
-      footerAbout: t.footer.about,
-      footerContact: t.footer.contact,
       footerPrivacy: t.footer.privacy,
       footerTerms: t.footer.terms,
-      navPdfToExcel: t.nav.pdfToExcel,
-      // page
+      // page meta
       title: pdata.title,
       metaDescription: pdata.metaDescription,
-      h1: pdata.h1,
-      subtitle: pdata.subtitle,
-      uploaderDropText: pdata.uploader.dropText,
-      uploaderHint: pdata.uploader.hint,
-      uploaderButton: pdata.uploader.button,
-      uploaderConverting: pdata.uploader.converting,
-      uploaderDownloadReady: pdata.uploader.downloadReady,
-      uploaderDownload: pdata.uploader.download,
-      uploaderErrorGeneric: pdata.uploader.errorGeneric,
-      uploaderErrorFileType: pdata.uploader.errorFileType,
-      uploaderErrorTooLarge: pdata.uploader.errorTooLarge,
-      howToHeading: pdata.howTo.heading,
-      howToList,
-      benefitsHeading: pdata.benefits.heading,
-      benefitsIntro: pdata.benefits.intro,
-      benefitsList
+      h1: pdata.h1
     };
+
+    if (page.type === "home") {
+      ctx.subtitle = pdata.subtitle;
+      ctx.uploaderDropText = pdata.uploader.dropText;
+      ctx.uploaderHint = pdata.uploader.hint;
+      ctx.uploaderButton = pdata.uploader.button;
+      ctx.uploaderConverting = pdata.uploader.converting;
+      ctx.uploaderDownloadReady = pdata.uploader.downloadReady;
+      ctx.uploaderDownload = pdata.uploader.download;
+      ctx.uploaderErrorGeneric = pdata.uploader.errorGeneric;
+      ctx.uploaderErrorFileType = pdata.uploader.errorFileType;
+      ctx.uploaderErrorTooLarge = pdata.uploader.errorTooLarge;
+      ctx.howToHeading = pdata.howTo.heading;
+      ctx.howToList = pdata.howTo.steps
+        .map(
+          (s, i) =>
+            `<li class="step">
+          <span class="step-num">${i + 1}</span>
+          <div class="step-body"><h3>${s.title}</h3><p>${s.text}</p></div>
+        </li>`
+        )
+        .join("\n        ");
+      ctx.benefitsHeading = pdata.benefits.heading;
+      ctx.benefitsIntro = pdata.benefits.intro;
+      ctx.benefitsList = pdata.benefits.items
+        .map((f) => `<div class="benefit"><h3>${f.title}</h3><p>${f.text}</p></div>`)
+        .join("\n        ");
+    } else if (page.type === "legal") {
+      ctx.lastUpdatedLabel = pdata.lastUpdatedLabel;
+      ctx.lastUpdated = pdata.lastUpdated;
+      ctx.sectionsHtml = pdata.sections
+        .map(
+          (s) =>
+            `<section class="legal-section">
+          <h2>${s.heading}</h2>
+          ${s.body.map((p) => `<p>${p}</p>`).join("\n          ")}
+        </section>`
+        )
+        .join("\n        ");
+    }
 
     ctx.header = render(headerTpl, ctx);
     ctx.footer = render(footerTpl, ctx);

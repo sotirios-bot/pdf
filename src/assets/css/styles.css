@@ -193,7 +193,7 @@ body {
 }
 .footer-top {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 2rem;
   padding: 2.5rem 1rem 1.5rem;
 }
@@ -216,8 +216,15 @@ body {
 }
 .footer-bottom p { margin: 0; }
 
+/* Legal pages (terms / privacy) */
+.legal { max-width: 760px; padding-top: 2.5rem; padding-bottom: 2rem; }
+.legal h1 { margin-bottom: 0.25rem; }
+.legal .last-updated { color: var(--muted); margin: 0 0 2rem; font-size: 0.9rem; }
+.legal-section { margin: 0 0 1.75rem; }
+.legal-section h2 { font-size: 1.25rem; margin: 0 0 0.6rem; }
+.legal-section p { margin: 0 0 0.75rem; color: #374151; }
+
 @media (max-width: 720px) {
-  .main-nav { display: none; }
-  .footer-top { grid-template-columns: 1fr 1fr; }
+  .footer-top { grid-template-columns: 1fr; }
   .hero h1 { font-size: 1.75rem; }
 }

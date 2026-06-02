@@ -7,21 +7,14 @@
     "tagline": "Free online PDF converter"
   },
   "nav": {
-    "home": "Home",
-    "pdfToExcel": "PDF to Excel",
-    "allTools": "All Tools",
-    "pricing": "Pricing"
+    "home": "Home"
   },
   "footer": {
     "rights": "All rights reserved.",
-    "tagline": "Free online file converter — convert PDF to Excel, Word, and more.",
-    "toolsHeading": "Tools",
-    "companyHeading": "Company",
+    "tagline": "Free online file converter — convert PDF to Excel and more. Powered by XYZ LAB PTE. LTD.",
     "legalHeading": "Legal",
-    "about": "About",
-    "contact": "Contact",
     "privacy": "Privacy Policy",
-    "terms": "Terms of Service"
+    "terms": "Terms and Conditions"
   },
   "common": {
     "languageLabel": "Language"
@@ -30,9 +23,9 @@
     "home": {
       "slug": "",
       "title": "Convert PDF to Excel — Free Online PDF to Excel Converter (XLSX)",
-      "metaDescription": "Convert PDF to Excel online for free. Turn PDF tables into editable XLSX spreadsheets in seconds — no installation, no sign-up. Fast, accurate, and secure file conversion on any device.",
+      "metaDescription": "Convert PDF to Excel online for free. Turn PDF files into editable XLSX spreadsheets in seconds — no installation, no sign-up. Fast, accurate, and secure file conversion on any device.",
       "h1": "Convert PDF to Excel",
-      "subtitle": "Turn PDF tables into fully editable Excel spreadsheets (XLSX) in seconds — free, online, and secure.",
+      "subtitle": "Turn PDF files into fully editable Excel spreadsheets (XLSX) in seconds — free, online, and secure.",
       "uploader": {
         "dropText": "Drop your PDF here or click to upload",
         "hint": "Maximum file size: 20 MB · Your file is processed securely",
@@ -87,6 +80,176 @@
           }
         ]
       }
+    },
+    "terms": {
+      "slug": "terms",
+      "title": "Terms and Conditions — PDF Convert by XYZ LAB PTE. LTD.",
+      "metaDescription": "Read the Terms and Conditions for using the PDF Convert online file conversion service, operated by XYZ LAB PTE. LTD.",
+      "h1": "Terms and Conditions",
+      "lastUpdatedLabel": "Last updated",
+      "lastUpdated": "2 June 2026",
+      "sections": [
+        {
+          "heading": "1. Acceptance of Terms",
+          "body": [
+            "These Terms and Conditions (\"Terms\") govern your access to and use of this website and its file conversion services (the \"Service\"). By accessing or using the Service, you agree to be bound by these Terms. If you do not agree with any part of these Terms, please do not use the Service."
+          ]
+        },
+        {
+          "heading": "2. About Us",
+          "body": [
+            "The Service is operated by XYZ LAB PTE. LTD., a company registered in Singapore with its registered office at 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914 (\"XYZ Lab\", \"we\", \"us\", or \"our\")."
+          ]
+        },
+        {
+          "heading": "3. Use of the Service",
+          "body": [
+            "The Service allows you to convert PDF files into Excel spreadsheets and to use related file conversion tools. The Service is provided free of charge. You are responsible for ensuring that you have the legal right to upload and convert any file you submit."
+          ]
+        },
+        {
+          "heading": "4. Acceptable Use",
+          "body": [
+            "You agree not to use the Service for any unlawful purpose or to upload any file that infringes the rights of others, contains malware, or violates any applicable law. You must not attempt to disrupt, overload, reverse engineer, or gain unauthorised access to the Service or its underlying systems."
+          ]
+        },
+        {
+          "heading": "5. Your Files and Content",
+          "body": [
+            "You retain all ownership rights in the files you upload. We do not claim ownership of your content and process your files solely to provide the conversion you request. Uploaded files and their converted outputs are automatically deleted from our servers within a short period, as described in our Privacy Policy."
+          ]
+        },
+        {
+          "heading": "6. Intellectual Property",
+          "body": [
+            "All software, design, text, graphics, and other materials that form part of the Service, excluding your uploaded files, are owned by or licensed to XYZ Lab and are protected by applicable intellectual property laws. You may not copy, modify, or distribute them without our prior written consent."
+          ]
+        },
+        {
+          "heading": "7. Disclaimer of Warranties",
+          "body": [
+            "The Service is provided \"as is\" and \"as available\" without warranties of any kind, whether express or implied. We do not warrant that the Service will be uninterrupted or error-free, or that conversion results will be accurate or fit for any particular purpose."
+          ]
+        },
+        {
+          "heading": "8. Limitation of Liability",
+          "body": [
+            "To the maximum extent permitted by law, XYZ Lab shall not be liable for any indirect, incidental, special, or consequential damages, or for any loss of data, profits, or business arising out of or in connection with your use of the Service."
+          ]
+        },
+        {
+          "heading": "9. Privacy",
+          "body": [
+            "Your use of the Service is also governed by our Privacy Policy, which explains how we collect, use, and protect your information."
+          ]
+        },
+        {
+          "heading": "10. Changes to These Terms",
+          "body": [
+            "We may update these Terms from time to time. Any changes will be posted on this page with an updated effective date. Your continued use of the Service after changes take effect constitutes acceptance of the revised Terms."
+          ]
+        },
+        {
+          "heading": "11. Governing Law",
+          "body": [
+            "These Terms are governed by and construed in accordance with the laws of Singapore, and you submit to the exclusive jurisdiction of the courts of Singapore."
+          ]
+        },
+        {
+          "heading": "12. Contact Us",
+          "body": [
+            "If you have any questions about these Terms, please contact us at XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914, or by email at support@xyzlab.com."
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "slug": "privacy",
+      "title": "Privacy Policy — PDF Convert by XYZ LAB PTE. LTD.",
+      "metaDescription": "Read the Privacy Policy for the PDF Convert online file conversion service, operated by XYZ LAB PTE. LTD. Learn how we collect, use, and protect your data.",
+      "h1": "Privacy Policy",
+      "lastUpdatedLabel": "Last updated",
+      "lastUpdated": "2 June 2026",
+      "sections": [
+        {
+          "heading": "1. Introduction",
+          "body": [
+            "This Privacy Policy explains how we collect, use, and protect your personal information when you use this website and its file conversion services (the \"Service\"). We are committed to protecting your privacy and handling your data responsibly."
+          ]
+        },
+        {
+          "heading": "2. Who We Are",
+          "body": [
+            "The Service is operated by XYZ LAB PTE. LTD., the data controller, registered in Singapore with its registered office at 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914."
+          ]
+        },
+        {
+          "heading": "3. Information We Collect",
+          "body": [
+            "We collect the files you upload for conversion. We may also automatically collect limited technical information such as your IP address, browser type, device information, and usage data through cookies and similar technologies, in order to operate and improve the Service."
+          ]
+        },
+        {
+          "heading": "4. How We Use Your Information",
+          "body": [
+            "We use the files you upload solely to perform the conversion you request. We use technical and usage information to provide, maintain, secure, and improve the Service, and to comply with our legal obligations."
+          ]
+        },
+        {
+          "heading": "5. File Handling and Retention",
+          "body": [
+            "Your uploaded files and their converted outputs are processed automatically and are not reviewed by our staff. Files are deleted from our servers automatically within three hours of upload, and you may delete them sooner once your download is complete."
+          ]
+        },
+        {
+          "heading": "6. Cookies",
+          "body": [
+            "We use cookies and similar technologies to enable core functionality, remember your preferences, and analyse how the Service is used. You can control or disable cookies through your browser settings, although some features may not function properly as a result."
+          ]
+        },
+        {
+          "heading": "7. Data Security",
+          "body": [
+            "We use industry-standard security measures, including 256-bit SSL encryption, to protect your data during transmission. However, no method of transmission or storage is completely secure, and we cannot guarantee absolute security."
+          ]
+        },
+        {
+          "heading": "8. Sharing of Your Information",
+          "body": [
+            "We do not sell or rent your personal information. We may share limited information with trusted service providers who help us operate the Service, or where we are required to do so by law. Any such providers are bound by appropriate confidentiality and data protection obligations."
+          ]
+        },
+        {
+          "heading": "9. International Data Transfers",
+          "body": [
+            "We are based in Singapore, and your information may be processed in Singapore or other countries. Where we transfer data internationally, we take steps to ensure it is protected in accordance with applicable data protection laws."
+          ]
+        },
+        {
+          "heading": "10. Your Rights",
+          "body": [
+            "Depending on your location, you may have the right to access, correct, or delete your personal information, or to object to or restrict certain processing. To exercise these rights, please contact us using the details below."
+          ]
+        },
+        {
+          "heading": "11. Children's Privacy",
+          "body": [
+            "The Service is not directed to children under the age of 13, and we do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us so that we can delete it."
+          ]
+        },
+        {
+          "heading": "12. Changes to This Policy",
+          "body": [
+            "We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date."
+          ]
+        },
+        {
+          "heading": "13. Contact Us",
+          "body": [
+            "If you have any questions about this Privacy Policy or how we handle your data, please contact us at XYZ LAB PTE. LTD., 160, Robinson Road, #14-04, Singapore Business Federation Center, Singapore 068914, or by email at support@xyzlab.com."
+          ]
+        }
+      ]
     }
   }
 }
