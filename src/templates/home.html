@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{title}}</title>
+  <meta name="description" content="{{metaDescription}}" />
+  <link rel="canonical" href="{{canonical}}" />
+  {{hreflang}}
+  <link rel="stylesheet" href="{{assetBase}}assets/css/styles.css" />
+</head>
+<body>
+  {{header}}
+
+  <main class="container">
+    <section class="hero">
+      <h1>{{h1}}</h1>
+      <p class="subtitle">{{subtitle}}</p>
+    </section>
+
+    <section class="converter">
+      <form id="convertForm"
+            data-endpoint="/api/convert"
+            data-msg-converting="{{uploaderConverting}}"
+            data-msg-ready="{{uploaderDownloadReady}}"
+            data-msg-error="{{uploaderErrorGeneric}}"
+            data-msg-filetype="{{uploaderErrorFileType}}"
+            data-msg-toolarge="{{uploaderErrorTooLarge}}">
+        <label id="dropZone" class="drop-zone" for="fileInput">
+          <span class="drop-icon">⬆️</span>
+          <span class="drop-text">{{uploaderDropText}}</span>
+          <span class="drop-hint">{{uploaderHint}}</span>
+          <input id="fileInput" type="file" accept="application/pdf,.pdf" hidden />
+        </label>
+        <p id="fileName" class="file-name" hidden></p>
+        <button id="convertBtn" type="submit" class="btn-primary" disabled>{{uploaderButton}}</button>
+        <p id="statusMsg" class="status-msg" role="status" aria-live="polite"></p>
+        <a id="downloadLink" class="btn-download" hidden download>{{uploaderDownload}}</a>
+      </form>
+    </section>
+
+    <section class="steps">
+      <h2>{{stepsHeading}}</h2>
+      <ol class="steps-list">
+        {{stepsList}}
+      </ol>
+    </section>
+
+    <section class="features">
+      <h2>{{featuresHeading}}</h2>
+      <div class="features-grid">
+        {{featuresList}}
+      </div>
+    </section>
+  </main>
+
+  {{footer}}
+  <script src="{{assetBase}}assets/js/app.js"></script>
+</body>
+</html>

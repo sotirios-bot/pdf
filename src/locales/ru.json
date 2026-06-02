@@ -1,0 +1,53 @@
+{
+  "lang": "ru",
+  "dir": "ltr",
+  "localeName": "Русский",
+  "site": {
+    "name": "PDF Tools",
+    "tagline": "TODO: Бесплатные онлайн-инструменты для PDF"
+  },
+  "nav": {
+    "home": "TODO: Главная",
+    "pdfToExcel": "TODO: PDF в Excel"
+  },
+  "footer": {
+    "rights": "TODO: Все права защищены.",
+    "privacy": "TODO: Политика конфиденциальности",
+    "terms": "TODO: Условия использования"
+  },
+  "common": {
+    "languageLabel": "TODO: Язык"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "TODO: Конвертировать PDF в Excel — Бесплатный онлайн-конвертер",
+      "metaDescription": "TODO: Russian meta description",
+      "h1": "TODO: Конвертер PDF в Excel",
+      "subtitle": "TODO: Russian subtitle",
+      "uploader": {
+        "dropText": "TODO",
+        "hint": "TODO",
+        "button": "TODO",
+        "converting": "TODO",
+        "downloadReady": "TODO",
+        "download": "TODO",
+        "errorGeneric": "TODO",
+        "errorFileType": "TODO",
+        "errorTooLarge": "TODO"
+      },
+      "steps": {
+        "heading": "TODO",
+        "items": ["TODO", "TODO", "TODO"]
+      },
+      "features": {
+        "heading": "TODO",
+        "items": [
+          { "title": "TODO", "text": "TODO" },
+          { "title": "TODO", "text": "TODO" },
+          { "title": "TODO", "text": "TODO" }
+        ]
+      }
+    }
+  }
+}

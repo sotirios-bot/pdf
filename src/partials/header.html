@@ -1,0 +1,17 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{homeHref}}">
+      <span class="brand-mark">📄</span>
+      <span class="brand-name">{{siteName}}</span>
+    </a>
+    <nav class="main-nav">
+      <a href="{{homeHref}}">{{navHome}}</a>
+    </nav>
+    <div class="lang-switcher">
+      <label for="langSelect" class="visually-hidden">{{languageLabel}}</label>
+      <select id="langSelect" aria-label="{{languageLabel}}">
+        {{langOptions}}
+      </select>
+    </div>
+  </div>
+</header>

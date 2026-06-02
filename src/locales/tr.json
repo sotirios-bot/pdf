@@ -1,0 +1,53 @@
+{
+  "lang": "tr",
+  "dir": "ltr",
+  "localeName": "Türkçe",
+  "site": {
+    "name": "PDF Tools",
+    "tagline": "TODO: Ücretsiz çevrimiçi PDF araçları"
+  },
+  "nav": {
+    "home": "TODO: Ana Sayfa",
+    "pdfToExcel": "TODO: PDF'den Excel'e"
+  },
+  "footer": {
+    "rights": "TODO: Tüm hakları saklıdır.",
+    "privacy": "TODO: Gizlilik Politikası",
+    "terms": "TODO: Kullanım Şartları"
+  },
+  "common": {
+    "languageLabel": "TODO: Dil"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "TODO: PDF'yi Excel'e Dönüştür — Ücretsiz Çevrimiçi Dönüştürücü",
+      "metaDescription": "TODO: Turkish meta description",
+      "h1": "TODO: PDF'den Excel'e Dönüştürücü",
+      "subtitle": "TODO: Turkish subtitle",
+      "uploader": {
+        "dropText": "TODO",
+        "hint": "TODO",
+        "button": "TODO",
+        "converting": "TODO",
+        "downloadReady": "TODO",
+        "download": "TODO",
+        "errorGeneric": "TODO",
+        "errorFileType": "TODO",
+        "errorTooLarge": "TODO"
+      },
+      "steps": {
+        "heading": "TODO",
+        "items": ["TODO", "TODO", "TODO"]
+      },
+      "features": {
+        "heading": "TODO",
+        "items": [
+          { "title": "TODO", "text": "TODO" },
+          { "title": "TODO", "text": "TODO" },
+          { "title": "TODO", "text": "TODO" }
+        ]
+      }
+    }
+  }
+}

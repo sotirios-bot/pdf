@@ -1,0 +1,57 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "localeName": "English",
+  "site": {
+    "name": "PDF Tools",
+    "tagline": "Free online PDF tools"
+  },
+  "nav": {
+    "home": "Home",
+    "pdfToExcel": "PDF to Excel"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "common": {
+    "languageLabel": "Language"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "Convert PDF to Excel — Free Online PDF to Excel Converter",
+      "metaDescription": "Convert your PDF files to Excel spreadsheets (XLSX) online for free. Fast, accurate, and secure. No installation required.",
+      "h1": "PDF to Excel Converter",
+      "subtitle": "Turn your PDF tables into editable Excel spreadsheets in seconds.",
+      "uploader": {
+        "dropText": "Drop your PDF here or click to browse",
+        "hint": "Maximum file size: 20 MB",
+        "button": "Convert to Excel",
+        "converting": "Converting…",
+        "downloadReady": "Your Excel file is ready",
+        "download": "Download XLSX",
+        "errorGeneric": "Something went wrong. Please try again.",
+        "errorFileType": "Please choose a PDF file.",
+        "errorTooLarge": "That file is too large."
+      },
+      "steps": {
+        "heading": "How to convert PDF to Excel",
+        "items": [
+          "Upload your PDF file using the box above.",
+          "We extract the tables and data from your document.",
+          "Download your converted Excel (XLSX) file."
+        ]
+      },
+      "features": {
+        "heading": "Why use our converter",
+        "items": [
+          { "title": "Free", "text": "Convert PDF to Excel with no cost and no sign-up." },
+          { "title": "Secure", "text": "Your files are processed securely and deleted after conversion." },
+          { "title": "Accurate", "text": "We preserve rows, columns, and data as faithfully as possible." }
+        ]
+      }
+    }
+  }
+}

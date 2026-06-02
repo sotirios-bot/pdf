@@ -1,0 +1,166 @@
+// build.js — generates the static site from templates + locale JSON.
+// Zero dependencies. Run with: npm run build
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const SRC = path.join(__dirname, "src");
+const OUT = path.join(__dirname, "public");
+
+// ----- Site configuration -------------------------------------------------
+const config = {
+  // Used for canonical URLs / hreflang / sitemap. Update to your real domain.
+  baseUrl: "https://example.com",
+  defaultLocale: "en",
+  locales: ["en", "ru", "tr"],
+  // Pages to render. Each maps a locale `pages.<id>` block to a template.
+  pages: [
+    { id: "home", template: "home.html" }
+  ]
+};
+
+// ----- Helpers -------------------------------------------------------------
+const read = (p) => fs.readFileSync(p, "utf8");
+const loadLocale = (loc) =>
+  JSON.parse(read(path.join(SRC, "locales", `${loc}.json`)));
+
+// Replace every {{key}} in `str` using the flat `ctx` object.
+function render(str, ctx) {
+  return str.replace(/\{\{\s*([\w.]+)\s*\}\}/g, (_, key) =>
+    key in ctx ? ctx[key] : ""
+  );
+}
+
+// URL path (root-relative) for a given locale + page slug.
+function urlPath(locale, slug) {
+  const localePart = locale === config.defaultLocale ? "" : `${locale}/`;
+  const slugPart = slug ? `${slug}/` : "";
+  return `/${localePart}${slugPart}`;
+}
+
+function copyDir(from, to) {
+  fs.mkdirSync(to, { recursive: true });
+  for (const entry of fs.readdirSync(from, { withFileTypes: true })) {
+    const s = path.join(from, entry.name);
+    const d = path.join(to, entry.name);
+    if (entry.isDirectory()) copyDir(s, d);
+    else fs.copyFileSync(s, d);
+  }
+}
+
+// ----- Build ---------------------------------------------------------------
+fs.rmSync(OUT, { recursive: true, force: true });
+fs.mkdirSync(OUT, { recursive: true });
+
+const headerTpl = read(path.join(SRC, "partials", "header.html"));
+const footerTpl = read(path.join(SRC, "partials", "footer.html"));
+const allLocales = config.locales.map((l) => loadLocale(l));
+const sitemapUrls = [];
+
+for (const locale of config.locales) {
+  const t = loadLocale(locale);
+
+  for (const page of config.pages) {
+    const pdata = t.pages[page.id];
+    const slug = pdata.slug || "";
+    const route = urlPath(locale, slug);
+
+    // Language switcher options (point to the same page in each locale).
+    const langOptions = allLocales
+      .map((other) => {
+        const otherRoute = urlPath(other.lang, other.pages[page.id].slug || "");
+        const selected = other.lang === locale ? " selected" : "";
+        return `<option value="${otherRoute}"${selected}>${other.localeName}</option>`;
+      })
+      .join("\n        ");
+
+    // hreflang alternates for SEO.
+    const hreflang =
+      allLocales
+        .map((other) => {
+          const otherRoute = urlPath(other.lang, other.pages[page.id].slug || "");
+          return `<link rel="alternate" hreflang="${other.lang}" href="${config.baseUrl}${otherRoute}" />`;
+        })
+        .join("\n  ") +
+      `\n  <link rel="alternate" hreflang="x-default" href="${config.baseUrl}${urlPath(
+        config.defaultLocale,
+        t.pages[page.id].slug || ""
+      )}" />`;
+
+    const stepsList = pdata.steps.items
+      .map((s) => `<li>${s}</li>`)
+      .join("\n        ");
+    const featuresList = pdata.features.items
+      .map(
+        (f) =>
+          `<div class="feature"><h3>${f.title}</h3><p>${f.text}</p></div>`
+      )
+      .join("\n        ");
+
+    // Flat context shared by template + partials.
+    const ctx = {
+      lang: t.lang,
+      dir: t.dir,
+      assetBase: "/",
+      homeHref: urlPath(locale, ""),
+      canonical: `${config.baseUrl}${route}`,
+      hreflang,
+      year: new Date().getFullYear(),
+      siteName: t.site.name,
+      navHome: t.nav.home,
+      languageLabel: t.common.languageLabel,
+      langOptions,
+      footerRights: t.footer.rights,
+      footerPrivacy: t.footer.privacy,
+      footerTerms: t.footer.terms,
+      // page
+      title: pdata.title,
+      metaDescription: pdata.metaDescription,
+      h1: pdata.h1,
+      subtitle: pdata.subtitle,
+      uploaderDropText: pdata.uploader.dropText,
+      uploaderHint: pdata.uploader.hint,
+      uploaderButton: pdata.uploader.button,
+      uploaderConverting: pdata.uploader.converting,
+      uploaderDownloadReady: pdata.uploader.downloadReady,
+      uploaderDownload: pdata.uploader.download,
+      uploaderErrorGeneric: pdata.uploader.errorGeneric,
+      uploaderErrorFileType: pdata.uploader.errorFileType,
+      uploaderErrorTooLarge: pdata.uploader.errorTooLarge,
+      stepsHeading: pdata.steps.heading,
+      stepsList,
+      featuresHeading: pdata.features.heading,
+      featuresList
+    };
+
+    ctx.header = render(headerTpl, ctx);
+    ctx.footer = render(footerTpl, ctx);
+
+    const tpl = read(path.join(SRC, "templates", page.template));
+    const html = render(tpl, ctx);
+
+    const outDir = path.join(OUT, route);
+    fs.mkdirSync(outDir, { recursive: true });
+    fs.writeFileSync(path.join(outDir, "index.html"), html);
+    sitemapUrls.push(`${config.baseUrl}${route}`);
+    console.log(`✓ ${locale}/${page.id} → ${route}`);
+  }
+}
+
+// Static assets
+copyDir(path.join(SRC, "assets"), path.join(OUT, "assets"));
+
+// sitemap.xml + robots.txt
+const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${sitemapUrls.map((u) => `  <url><loc>${u}</loc></url>`).join("\n")}
+</urlset>
+`;
+fs.writeFileSync(path.join(OUT, "sitemap.xml"), sitemap);
+fs.writeFileSync(
+  path.join(OUT, "robots.txt"),
+  `User-agent: *\nAllow: /\nSitemap: ${config.baseUrl}/sitemap.xml\n`
+);
+
+console.log("\nBuild complete → public/");

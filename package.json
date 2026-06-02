@@ -1,0 +1,19 @@
+{
+  "name": "pdf-tools",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Online PDF tools — starting with PDF to Excel. Multilingual (EN/RU/TR), built to grow.",
+  "type": "module",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && node scripts/serve.js",
+    "clean": "rm -rf public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "pdf-parse": "^1.1.1"
+  }
+}
