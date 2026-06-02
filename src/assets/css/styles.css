@@ -258,12 +258,6 @@ body {
   text-align: center;
 }
 .footer-bottom p { margin: 0; }
-.footer-counter {
-  margin: 0 0 0.5rem !important;
-  font-weight: 600;
-  color: var(--text);
-}
-.footer-counter #dl-count { color: var(--primary); }
 .powered-by { color: var(--primary); text-decoration: none; font-weight: 600; }
 .powered-by:hover { text-decoration: underline; }
 

@@ -12,38 +12,6 @@
     window.dataLayer.push(payload);
   }
 
-  function formatCount(n) {
-    try {
-      return new Intl.NumberFormat(lang).format(n);
-    } catch (e) {
-      return String(n);
-    }
-  }
-
-  // ----- Footer download counter (runs on every page) -----
-  var counterWrap = document.querySelector(".footer-counter");
-  var countEl = document.getElementById("dl-count");
-
-  function showCount(n) {
-    if (!counterWrap || !countEl || typeof n !== "number") return;
-    countEl.textContent = formatCount(n);
-    counterWrap.hidden = false;
-  }
-
-  if (counterWrap && countEl) {
-    fetch("/api/counter")
-      .then(function (r) { return r.json(); })
-      .then(function (d) { if (d && typeof d.count === "number") showCount(d.count); })
-      .catch(function () { /* leave counter hidden */ });
-  }
-
-  function bumpCounter() {
-    fetch("/api/counter", { method: "POST" })
-      .then(function (r) { return r.json(); })
-      .then(function (d) { if (d && typeof d.count === "number") showCount(d.count); })
-      .catch(function () {});
-  }
-
   // Language switcher: navigate to the selected locale route.
   var langSelect = document.getElementById("langSelect");
   if (langSelect) {
@@ -163,9 +131,9 @@
       });
   });
 
-  // GA4 + counter: the user clicked to download the converted file.
+  // GA4: the user clicked to download the converted file. The event name is
+  // per-tool (e.g. excel_download, download_word) via data-download-event.
   downloadLink.addEventListener("click", function () {
-    track("excel_download", { language: lang });
-    bumpCounter();
+    track(form.dataset.downloadEvent || "file_download", { language: lang });
   });
 })();

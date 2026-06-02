@@ -91,24 +91,15 @@ reconstructs rows/columns into a grid (one worksheet per page), and writes an
 ## Analytics (GA4 via GTM)
 
 Google Tag Manager (`GTM-TJTJW398`) is installed on every page. The front-end
-pushes two custom events to `window.dataLayer`:
+pushes custom events to `window.dataLayer`:
 
 - **`pdf_upload`** — fired when a file is uploaded for conversion. Params:
   `language`, `file_size_mb`.
-- **`excel_download`** — fired when the user clicks to download the result.
-  Param: `language`.
+- **`excel_download`** — fired when an Excel result is downloaded. Param:
+  `language`.
+- **`download_word`** — fired when a Word result is downloaded. Param:
+  `language`.
 
-In GTM, create a GA4 Event tag for each, triggered by a **Custom Event** with
-the matching name.
-
-## Footer download counter
-
-`api/counter.js` keeps a global count of downloads, backed by Redis over REST
-(Upstash or Vercel KV). The footer shows a localized total; clicking download
-increments it. Configure either env var pair (the function also degrades
-gracefully and hides the counter if unset):
-
-- `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` (Upstash), or
-- `KV_REST_API_URL` / `KV_REST_API_TOKEN` (Vercel KV)
-
-Endpoints: `GET /api/counter` (read) and `POST /api/counter` (atomic increment).
+Each converter page sets its own download event via `data-download-event` on
+the form (see `config.pages` in `build.js`). In GTM, create a GA4 Event tag for
+each, triggered by a **Custom Event** with the matching name.

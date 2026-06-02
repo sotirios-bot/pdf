@@ -31,8 +31,8 @@ const config = {
   // `locales` restricts which languages a page is built for (default: all).
   pages: [
     { id: "home", template: "hub.html", type: "hub", locales: ["en"] },
-    { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx" },
-    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", locales: ["en", "ru", "tr", "kk", "uz"] },
+    { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download" },
+    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", locales: ["en", "ru", "tr", "kk", "uz"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]
@@ -135,10 +135,14 @@ for (const locale of config.locales) {
     const route = urlPath(locale, slug);
     const canonical = `${config.baseUrl}${route}`;
 
-    const langOptions = locs
+    // The hub homepage offers every language (pointing to each language's
+    // root); other pages only list the locales they're actually built for.
+    const switcherLocales = page.type === "hub" ? config.locales : locs;
+    const langOptions = switcherLocales
       .map((code) => {
         const o = getLocale(code);
-        const otherRoute = urlPath(code, o.pages[page.id].slug || "");
+        const otherRoute =
+          page.type === "hub" ? urlPath(code, "") : urlPath(code, o.pages[page.id].slug || "");
         const selected = code === locale ? " selected" : "";
         return `<option value="${otherRoute}"${selected}>${o.localeName}</option>`;
       })
@@ -232,7 +236,6 @@ for (const locale of config.locales) {
       footerLegalHeading: t.footer.legalHeading,
       footerPrivacy: t.footer.privacy,
       footerTerms: t.footer.terms,
-      footerCounter: t.footer.counter.replace("{count}", '<span id="dl-count"></span>'),
       title: pdata.title,
       metaDescription: pdata.metaDescription,
       h1: pdata.h1
@@ -241,6 +244,7 @@ for (const locale of config.locales) {
     if (page.type === "converter") {
       ctx.endpoint = page.endpoint;
       ctx.downloadExt = page.ext;
+      ctx.downloadEvent = page.downloadEvent;
       ctx.subtitle = pdata.subtitle;
       ctx.uploaderDropText = pdata.uploader.dropText;
       ctx.uploaderHint = pdata.uploader.hint;
@@ -366,7 +370,6 @@ for (const locale of config.locales) {
     footerLegalHeading: t.footer.legalHeading,
     footerPrivacy: t.footer.privacy,
     footerTerms: t.footer.terms,
-    footerCounter: t.footer.counter.replace("{count}", '<span id="dl-count"></span>'),
     title: t.meta.notFoundTitle,
     metaDescription: t.meta.notFoundDescription,
     notFoundText: t.meta.notFoundText,
