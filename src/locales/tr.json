@@ -10,7 +10,8 @@
     "home": "Ana Sayfa",
     "convertPdf": "PDF Dönüştür",
     "pdfToExcel": "PDF'ten Excel'e",
-    "pdfToWord": "PDF'ten Word'a"
+    "pdfToWord": "PDF'ten Word'a",
+    "pdfToPpt": "PDF'ten PowerPoint'e"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
@@ -40,7 +41,8 @@
       "toolsHeading": "Bir araç seçin",
       "tools": [
         { "id": "pdfToExcel", "name": "PDF'ten Excel'e", "description": "PDF tablolarını tamamen düzenlenebilir XLSX tablolarına dönüştürün.", "badge": "" },
-        { "id": "pdfToWord", "name": "PDF'ten Word'a", "description": "PDF belgelerini düzenlenebilir Word (DOCX) dosyalarına dönüştürün.", "badge": "Yeni" }
+        { "id": "pdfToWord", "name": "PDF'ten Word'a", "description": "PDF belgelerini düzenlenebilir Word (DOCX) dosyalarına dönüştürün.", "badge": "" },
+        { "id": "pdfToPpt", "name": "PDF'ten PowerPoint'e", "description": "PDF sayfalarını düzenlenebilir PowerPoint (PPTX) slaytlarına dönüştürün.", "badge": "Yeni" }
       ]
     },
     "pdfToExcel": {
@@ -123,6 +125,43 @@
           { "q": "Dosyalarım güvenli ve gizli mi?", "a": "Dosyanız şifreli (SSL) bir bağlantı üzerinden gönderilir ve kimse incelemeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
           { "q": "Taranmış bir PDF'yi dönüştürebilir miyim?", "a": "Dönüştürücü en iyi dijital, metin tabanlı PDF'lerle çalışır. Taranmış veya yalnızca görüntü içeren PDF'lerde metin katmanı yoktur, bu nedenle henüz dönüştürülemeyebilir — OCR desteği planlanmaktadır." },
           { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle her işletim sisteminde ve cihazda çalışır — Windows, Mac, Linux, Android ve iOS." }
+        ]
+      }
+    },
+    "pdfToPpt": {
+      "slug": "pdf-to-ppt",
+      "title": "PDF'yi PowerPoint'e Dönüştür — Ücretsiz Çevrimiçi PDF'den PowerPoint'e Dönüştürücü (PPTX)",
+      "metaDescription": "PDF'yi çevrimiçi olarak ücretsiz PowerPoint'e dönüştürün. PDF sayfalarını saniyeler içinde düzenlenebilir PPTX slaytlarına çevirin — kurulum ve kayıt gerekmez. Hızlı, doğru ve güvenli.",
+      "h1": "PDF'i ücretsiz olarak PowerPoint'e dönüştürün",
+      "subtitle": "PDF dosyalarını saniyeler içinde düzenlenebilir PowerPoint sunumlarına (PPTX) dönüştürün - ücretsiz, çevrimiçi ve güvenli.",
+      "uploader": {
+        "dropText": "PDF'i buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işleniyor",
+        "button": "PowerPoint'e dönüştür",
+        "converting": "PDF'niz dönüştürülüyor…",
+        "downloadReady": "Tamamlandı! PowerPoint sunumunuz hazır.",
+        "download": "PPTX İndir",
+        "errorGeneric": "Dönüştürme sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PDF'yi PowerPoint'e Nasıl Ücretsiz Dönüştürülür",
+        "steps": [
+          { "title": "Yükleyin", "text": "Çevrilmek istediğiniz PDF dosyasını seçin. Onu yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın." },
+          { "title": "İşlemi başlatın", "text": "Ücretsiz çevrimiçi dönüştürücümüz içeriği PDF'inizden çıkarır ve her sayfayı saniyeler içinde düzenlenebilir bir PowerPoint slaydı hâline getirir." },
+          { "title": "İndirin", "text": "Yeni PowerPoint sunumunuz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir." }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          { "q": "PDF'i PowerPoint'e nasıl dönüştürürüm?", "a": "PDF'inizi yukarıdaki kutuya yükleyin, \"PowerPoint'e Dönüştür\" düğmesine tıklayın ve elde edilen PPTX sunumunu indirin. Tüm süreç sadece birkaç saniye sürer." },
+          { "q": "PDF'i PowerPoint'e dönüştürücü ücretsiz mi?", "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir." },
+          { "q": "Slaytlar düzenlenebilir mi olacak?", "a": "Evet. Her PDF sayfasındaki metni, özgürce yeniden işleyebilmeniz için kendi düzenlenebilir PowerPoint slaydına yerleştiririz." },
+          { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
+          { "q": "Taranmış bir PDF dönüştürebilir miyim?", "a": "Dönüştürücü, dijital, metin tabanlı PDF'ler ile en iyi şekilde çalışır. Taranmış veya yalnızca görüntü içeren PDF'lerin metin katmanı yoktur, bu nedenle henüz dönüştürülemeyebilir — OCR desteği planlanmaktadır." },
+          { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
         ]
       }
     },
