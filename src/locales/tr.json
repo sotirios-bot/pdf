@@ -12,7 +12,8 @@
     "pdfToExcel": "PDF'ten Excel'e",
     "pdfToWord": "PDF'ten Word'a",
     "pdfToPpt": "PDF'ten PowerPoint'e",
-    "jpgToPdf": "JPG'den PDF'e"
+    "jpgToPdf": "JPG'den PDF'e",
+    "pngToPdf": "PNG'den PDF'e"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
@@ -44,7 +45,8 @@
         { "id": "pdfToExcel", "name": "PDF'ten Excel'e", "description": "PDF tablolarını tamamen düzenlenebilir XLSX tablolarına dönüştürün.", "badge": "" },
         { "id": "pdfToWord", "name": "PDF'ten Word'a", "description": "PDF belgelerini düzenlenebilir Word (DOCX) dosyalarına dönüştürün.", "badge": "" },
         { "id": "pdfToPpt", "name": "PDF'ten PowerPoint'e", "description": "PDF sayfalarını düzenlenebilir PowerPoint (PPTX) slaytlarına dönüştürün.", "badge": "Yeni" },
-        { "id": "jpgToPdf", "name": "JPG'den PDF'e", "description": "JPG resmini PDF belgesine dönüştürün.", "badge": "Yeni" }
+        { "id": "jpgToPdf", "name": "JPG'den PDF'e", "description": "JPG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
+        { "id": "pngToPdf", "name": "PNG'den PDF'e", "description": "PNG resmini PDF belgesine dönüştürün.", "badge": "Yeni" }
       ]
     },
     "pdfToExcel": {
@@ -198,6 +200,42 @@
           { "q": "JPG'yi PDF'e nasıl dönüştürürüm?", "a": "JPG'yi yukarıdaki kutuya yükleyin, \"PDF'e dönüştür\" düğmesine tıklayın ve elde edilen PDF'i indirin. Tüm süreç sadece birkaç saniye sürer." },
           { "q": "JPG'den PDF'e dönüştürücü ücretsiz mi?", "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir." },
           { "q": "Görüntü kalitem korunacak mı?", "a": "Evet. Görüntünüz PDF'e tam kalitede yerleştirilir ve görüntü bozulmadan sayfaya uymak için ölçeklendirilir." },
+          { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
+          { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
+        ]
+      }
+    },
+    "pngToPdf": {
+      "slug": "png-to-pdf",
+      "title": "PNG'yi PDF'e Dönüştür — Ücretsiz Çevrimiçi PNG'den PDF'e Dönüştürücü",
+      "metaDescription": "PNG'yi çevrimiçi olarak ücretsiz PDF'e dönüştürün. PNG resimlerinizi saniyeler içinde PDF belgesine çevirin — kurulum ve kayıt gerekmez. Hızlı, güvenli ve her cihazda çalışır.",
+      "h1": "PNG'yi ücretsiz olarak PDF'e dönüştürün",
+      "subtitle": "PNG resimlerinizi saniyeler içinde PDF belgesine dönüştürün — ücretsiz, çevrimiçi ve güvenli.",
+      "uploader": {
+        "dropText": "PNG'nizi buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işleniyor",
+        "button": "PDF'e dönüştür",
+        "converting": "Resminiz dönüştürülüyor…",
+        "downloadReady": "Tamamlandı! PDF'iniz hazır.",
+        "download": "PDF İndir",
+        "errorGeneric": "Dönüştürme sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PNG resmi seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PNG'yi PDF'e Nasıl Ücretsiz Dönüştürülür",
+        "steps": [
+          { "title": "Yükleyin", "text": "Çevirmek istediğiniz PNG resmini seçin. Onu yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın." },
+          { "title": "İşlemi başlatın", "text": "Ücretsiz çevrimiçi dönüştürücümüz, görüntünüzü saniyeler içinde temiz, doğru boyutlu bir PDF sayfasına yerleştirir." },
+          { "title": "İndirin", "text": "Yeni PDF'iniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir." }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          { "q": "PNG'yi PDF'e nasıl dönüştürürüm?", "a": "PNG'yi yukarıdaki kutuya yükleyin, \"PDF'e dönüştür\" düğmesine tıklayın ve elde edilen PDF'i indirin. Tüm süreç sadece birkaç saniye sürer." },
+          { "q": "PNG'den PDF'e dönüştürücü ücretsiz mi?", "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir." },
+          { "q": "Şeffaflık sağlanacak mı?", "a": "PNG'niz PDF'e yerleştirilir ve sayfaya uyacak şekilde ölçeklendirilir; şeffaf alanlar sayfanın beyaz arka planında görünür." },
           { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
           { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
         ]
