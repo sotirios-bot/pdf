@@ -11,7 +11,8 @@
     "convertPdf": "PDF o‘girish",
     "pdfToExcel": "PDFdan Excelga",
     "pdfToWord": "PDFdan Wordga",
-    "pdfToPpt": "PDFdan PowerPointga"
+    "pdfToPpt": "PDFdan PowerPointga",
+    "jpgToPdf": "JPGdan PDFga"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
@@ -42,7 +43,8 @@
       "tools": [
         { "id": "pdfToExcel", "name": "PDFdan Excelga", "description": "PDF jadvallarni to‘liq tahrirlanadigan XLSX elektron jadvallariga aylantiring.", "badge": "" },
         { "id": "pdfToWord", "name": "PDFdan Wordga", "description": "PDF hujjatlarni tahrirlanadigan Word (DOCX) fayllariga aylantiring.", "badge": "" },
-        { "id": "pdfToPpt", "name": "PDFdan PowerPointga", "description": "PDF sahifalarini tahrirlanadigan PowerPoint (PPTX) slaydlariga aylantiring.", "badge": "Yangi" }
+        { "id": "pdfToPpt", "name": "PDFdan PowerPointga", "description": "PDF sahifalarini tahrirlanadigan PowerPoint (PPTX) slaydlariga aylantiring.", "badge": "Yangi" },
+        { "id": "jpgToPdf", "name": "JPGdan PDFga", "description": "JPG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" }
       ]
     },
     "pdfToExcel": {
@@ -161,6 +163,42 @@
           { "q": "Slaydlarni tahrirlash mumkinmi?", "a": "Ha. Biz har bir PDF sahifasidagi matnni o‘zingizning tahrirlanadigan PowerPoint slaydingizga joylashtiramiz, shunda siz uni erkin qayta ishlashingiz mumkin." },
           { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi." },
           { "q": "Skanerlangan PDF faylni o‘girish mumkinmi?", "a": "Konvertor raqamli, matnli PDF fayllar bilan yaxshi ishlaydi. Skanerlangan yoki faqat rasmli PDF fayllarda matn qatlami mavjud emas, shuning uchun ular hali o‘girilmasligi mumkin — OCR qo‘llab-quvvatlanishi rejalashtirilgan." },
+          { "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi." }
+        ]
+      }
+    },
+    "jpgToPdf": {
+      "slug": "jpg-to-pdf",
+      "title": "JPGni PDFga o‘girish - Bepul onlayn JPGdan PDFga o‘girish vositasi",
+      "metaDescription": "JPGni bepul PDFga aylantiring. JPG rasmlaringizni bir necha soniyada PDF hujjatiga aylantiring — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez, xavfsiz va har qanday qurilmada ishlaydi.",
+      "h1": "JPG formatini PDFga BEPUL aylantiring",
+      "subtitle": "JPG rasmlaringizni bir necha soniyada PDF hujjatiga aylantiring — bepul, onlayn va xavfsiz.",
+      "uploader": {
+        "dropText": "JPG faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "PDFga o‘girish",
+        "converting": "Rasmingiz o‘girilmoqda…",
+        "downloadReady": "Tayyor! PDF faylingiz tayyor.",
+        "download": "PDF faylni yuklab olish",
+        "errorGeneric": "O‘girish vaqtida xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "JPG rasmini tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "JPGni PDFga bepul qanday o‘girish mumkin",
+        "steps": [
+          { "title": "Yuklash", "text": "O‘girmoqchi bo‘lgan JPG tasvirni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan kezing." },
+          { "title": "Qayta ishlashni boshlash", "text": "Bepul onlayn konvertorimiz rasmingizni bir necha soniya ichida toza, to‘g‘ri o‘lchamli PDF sahifasiga joylashtiradi." },
+          { "title": "Yuklab olish", "text": "Yangi PDF fayl darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan tozalab tashlanadi." }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          { "q": "JPGni PDFga qanday o‘girish mumkin?", "a": "Yuqoridagi maydonga JPG faylni yuklang, \"PDFga o‘girish\" tugmasini bosing va hosil bo‘lgan PDF faylni yuklab oling. Butun jarayon atigi bir necha soniya vaqt oladi." },
+          { "q": "JPG-PDF konverteri bepulmi?", "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul." },
+          { "q": "Rasm sifati saqlanib qoladimi?", "a": "Ha. Rasmingiz PDF faylga to‘liq sifatda joylashtiriladi va sahifaga moslash uchun masshtablanadi." },
+          { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi." },
           { "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi." }
         ]
       }
