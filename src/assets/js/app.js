@@ -40,6 +40,8 @@
     tooLarge: form.dataset.msgToolarge
   };
   var endpoint = form.dataset.endpoint || "/api/convert";
+  var outputExt = form.dataset.ext || "pdf";
+  var acceptRe = new RegExp("\\.(" + (form.dataset.acceptExt || "pdf") + ")$", "i");
   var selectedFile = null;
 
   function setStatus(text, isError) {
@@ -47,13 +49,13 @@
     statusMsg.classList.toggle("error", !!isError);
   }
 
-  function isPdf(file) {
-    return file.type === "application/pdf" || /\.pdf$/i.test(file.name);
+  function isAccepted(file) {
+    return acceptRe.test(file.name);
   }
 
   function chooseFile(file) {
     if (!file) return;
-    if (!isPdf(file)) {
+    if (!isAccepted(file)) {
       setStatus(msg.fileType, true);
       return;
     }
@@ -107,7 +109,7 @@
     fetch(endpoint, {
       method: "POST",
       headers: {
-        "Content-Type": "application/pdf",
+        "Content-Type": selectedFile.type || "application/octet-stream",
         "X-Filename": encodeURIComponent(selectedFile.name)
       },
       body: selectedFile
@@ -120,7 +122,7 @@
         var url = URL.createObjectURL(blob);
         downloadLink.href = url;
         downloadLink.download =
-          selectedFile.name.replace(/\.pdf$/i, "") + "." + (form.dataset.ext || "xlsx");
+          selectedFile.name.replace(/\.[^.]+$/, "") + "." + outputExt;
         downloadLink.hidden = false;
         setStatus(msg.ready);
         convertBtn.disabled = false;

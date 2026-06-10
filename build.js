@@ -31,8 +31,11 @@ const config = {
   // `locales` restricts which languages a page is built for (default: all).
   pages: [
     { id: "home", template: "hub.html", type: "hub", locales: ["en", "ru", "tr", "kk", "uz"] },
-    { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download" },
-    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", locales: ["en", "ru", "tr", "kk", "uz"] },
+    { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf" },
+    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz"] },
+    { id: "pdfToPpt", template: "converter.html", type: "converter", endpoint: "/api/convert-ppt", ext: "pptx", downloadEvent: "download_ppt", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en"] },
+    { id: "jpgToPdf", template: "converter.html", type: "converter", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "jpg_to_pdf_download", inputAccept: "image/jpeg,.jpg,.jpeg", acceptExt: "jpe?g", locales: ["en"] },
+    { id: "pngToPdf", template: "converter.html", type: "converter", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "png_to_pdf_download", inputAccept: "image/png,.png", acceptExt: "png", locales: ["en"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]
@@ -90,6 +93,18 @@ function toolHref(locale, pageId) {
   if (loc.pages[pageId]) return urlPath(locale, loc.pages[pageId].slug || "");
   const d = getLocale(config.defaultLocale);
   return urlPath(config.defaultLocale, d.pages[pageId].slug || "");
+}
+
+// All converter pages, in config order.
+const toolPages = config.pages.filter((p) => p.type === "converter");
+// <a> links to every tool available in `locale`, labelled from that locale.
+function toolLinks(locale, t) {
+  return toolPages
+    .filter((p) => pageLocales(p).includes(locale))
+    .map(
+      (p) =>
+        `<a href="${urlPath(locale, getLocale(locale).pages[p.id].slug || "")}">${t.nav[p.id]}</a>`
+    );
 }
 const ogImageAbs = `${config.baseUrl}${config.ogImage}`;
 const buildDate = new Date().toISOString().slice(0, 10);
@@ -238,10 +253,8 @@ for (const locale of config.locales) {
       siteName: t.site.name,
       navHome: t.nav.home,
       navConvertPdf: t.nav.convertPdf,
-      navPdfToExcel: t.nav.pdfToExcel,
-      navPdfToWord: t.nav.pdfToWord,
-      excelHref: toolHref(locale, "pdfToExcel"),
-      wordHref: toolHref(locale, "pdfToWord"),
+      navToolLinks: toolLinks(locale, t).join("\n          "),
+      footerToolLinks: toolLinks(locale, t).join("\n      "),
       languageLabel: t.common.languageLabel,
       langOptions,
       footerRights: t.footer.rights,
@@ -259,6 +272,8 @@ for (const locale of config.locales) {
       ctx.endpoint = page.endpoint;
       ctx.downloadExt = page.ext;
       ctx.downloadEvent = page.downloadEvent;
+      ctx.inputAccept = page.inputAccept;
+      ctx.acceptExt = page.acceptExt;
       ctx.subtitle = pdata.subtitle;
       ctx.uploaderDropText = pdata.uploader.dropText;
       ctx.uploaderHint = pdata.uploader.hint;
@@ -311,7 +326,7 @@ for (const locale of config.locales) {
     } else if (page.type === "hub") {
       ctx.subtitle = pdata.subtitle;
       ctx.toolsHeading = pdata.toolsHeading;
-      const icons = { pdfToExcel: "📊", pdfToWord: "📝" };
+      const icons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️" };
       ctx.toolsList = pdata.tools
         .map((tool) => {
           const href = urlPath(locale, getLocale(locale).pages[tool.id].slug || "");
@@ -378,10 +393,8 @@ for (const locale of config.locales) {
     siteName: t.site.name,
     navHome: t.nav.home,
     navConvertPdf: t.nav.convertPdf,
-    navPdfToExcel: t.nav.pdfToExcel,
-    navPdfToWord: t.nav.pdfToWord,
-    excelHref: toolHref(t.lang, "pdfToExcel"),
-    wordHref: toolHref(t.lang, "pdfToWord"),
+    navToolLinks: toolLinks(t.lang, t).join("\n          "),
+    footerToolLinks: toolLinks(t.lang, t).join("\n      "),
     languageLabel: t.common.languageLabel,
     langOptions,
     footerRights: t.footer.rights,

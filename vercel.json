@@ -10,6 +10,12 @@
     },
     "api/convert-word.js": {
       "maxDuration": 30
+    },
+    "api/convert-ppt.js": {
+      "maxDuration": 30
+    },
+    "api/image-to-pdf.js": {
+      "maxDuration": 30
     }
   },
   "headers": [

@@ -16,6 +16,8 @@
   "dependencies": {
     "docx": "^9.7.1",
     "exceljs": "^4.4.0",
-    "pdfjs-dist": "^3.11.174"
+    "pdf-lib": "^1.17.1",
+    "pdfjs-dist": "^3.11.174",
+    "pptxgenjs": "^4.0.1"
   }
 }

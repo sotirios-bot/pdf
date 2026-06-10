@@ -18,6 +18,7 @@
       <form id="convertForm"
             data-endpoint="{{endpoint}}"
             data-ext="{{downloadExt}}"
+            data-accept-ext="{{acceptExt}}"
             data-download-event="{{downloadEvent}}"
             data-msg-converting="{{uploaderConverting}}"
             data-msg-ready="{{uploaderDownloadReady}}"
@@ -28,7 +29,7 @@
           <span class="drop-icon">⬆️</span>
           <span class="drop-text">{{uploaderDropText}}</span>
           <span class="drop-hint">{{uploaderHint}}</span>
-          <input id="fileInput" type="file" accept="application/pdf,.pdf" hidden />
+          <input id="fileInput" type="file" accept="{{inputAccept}}" hidden />
         </label>
         <p id="fileName" class="file-name" hidden></p>
         <button id="convertBtn" type="submit" class="btn-primary" disabled>{{uploaderButton}}</button>
