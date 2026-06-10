@@ -33,7 +33,7 @@ const config = {
     { id: "home", template: "hub.html", type: "hub", locales: ["en", "ru", "tr", "kk", "uz"] },
     { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf" },
     { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz"] },
-    { id: "pdfToPpt", template: "converter.html", type: "converter", endpoint: "/api/convert-ppt", ext: "pptx", downloadEvent: "download_ppt", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "tr", "ru", "kk"] },
+    { id: "pdfToPpt", template: "converter.html", type: "converter", endpoint: "/api/convert-ppt", ext: "pptx", downloadEvent: "download_ppt", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "tr", "ru", "kk", "uz"] },
     { id: "jpgToPdf", template: "converter.html", type: "converter", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "jpg_to_pdf_download", inputAccept: "image/jpeg,.jpg,.jpeg", acceptExt: "jpe?g", locales: ["en"] },
     { id: "pngToPdf", template: "converter.html", type: "converter", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "png_to_pdf_download", inputAccept: "image/png,.png", acceptExt: "png", locales: ["en"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },

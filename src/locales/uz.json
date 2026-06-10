@@ -10,7 +10,8 @@
     "home": "Bosh sahifa",
     "convertPdf": "PDF o‘girish",
     "pdfToExcel": "PDFdan Excelga",
-    "pdfToWord": "PDFdan Wordga"
+    "pdfToWord": "PDFdan Wordga",
+    "pdfToPpt": "PDFdan PowerPointga"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
@@ -40,7 +41,8 @@
       "toolsHeading": "Vosita tanlang",
       "tools": [
         { "id": "pdfToExcel", "name": "PDFdan Excelga", "description": "PDF jadvallarni to‘liq tahrirlanadigan XLSX elektron jadvallariga aylantiring.", "badge": "" },
-        { "id": "pdfToWord", "name": "PDFdan Wordga", "description": "PDF hujjatlarni tahrirlanadigan Word (DOCX) fayllariga aylantiring.", "badge": "Yangi" }
+        { "id": "pdfToWord", "name": "PDFdan Wordga", "description": "PDF hujjatlarni tahrirlanadigan Word (DOCX) fayllariga aylantiring.", "badge": "" },
+        { "id": "pdfToPpt", "name": "PDFdan PowerPointga", "description": "PDF sahifalarini tahrirlanadigan PowerPoint (PPTX) slaydlariga aylantiring.", "badge": "Yangi" }
       ]
     },
     "pdfToExcel": {
@@ -120,6 +122,43 @@
           { "q": "PDFni Wordga qanday o‘tkazaman?", "a": "Yuqoridagi katakchaga PDF faylingizni yuklang, \"Wordga o‘girish\" tugmasini bosing va hosil bo‘lgan DOCX hujjatini yuklab oling. Butun jarayon atigi bir necha soniya vaqt oladi." },
           { "q": "PDFni Wordga aylantirish bepulmi?", "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul." },
           { "q": "Mening matnimni Wordda tahrirlash mumkin bo‘ladimi?", "a": "Ha. PDF faylingizdan matnni ajratib olamiz va uni tahrirlash mumkin bo‘lgan Word hujjatiga joylashtiramiz, shunda siz uni erkin o‘zgartirish, nusxalash va qayta formatlashingiz mumkin." },
+          { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi." },
+          { "q": "Skanerlangan PDF faylni o‘girish mumkinmi?", "a": "Konvertor raqamli, matnli PDF fayllar bilan yaxshi ishlaydi. Skanerlangan yoki faqat rasmli PDF fayllarda matn qatlami mavjud emas, shuning uchun ular hali o‘girilmasligi mumkin — OCR qo‘llab-quvvatlanishi rejalashtirilgan." },
+          { "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi." }
+        ]
+      }
+    },
+    "pdfToPpt": {
+      "slug": "pdf-to-ppt",
+      "title": "PDFni PowerPointga o‘girish - Bepul onlayn PDFni PowerPointga o‘girish vositasi (PPTX)",
+      "metaDescription": "PDF faylni bepul PowerPoint formatiga aylantiring. O‘rnatish va ro‘yxatdan o‘tmasdan bir necha soniyada PDF sahifalarini tahrirlanadigan PowerPoint (PPTX) slaydlariga aylantiring. Tez, aniq va xavfsiz.",
+      "h1": "PDFni PowerPointga BEPUL aylantiring",
+      "subtitle": "PDF fayllarni bir necha soniyada tahrirlanadigan PowerPoint taqdimotlariga (PPTX) aylantiring — bepul, onlayn va xavfsiz.",
+      "uploader": {
+        "dropText": "PDF faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "PowerPointga o‘girish",
+        "converting": "PDFingiz o‘girilmoqda…",
+        "downloadReady": "Tayyor! PowerPoint taqdimotingiz tayyor.",
+        "download": "PPTX faylni yuklab olish",
+        "errorGeneric": "O‘girish vaqtida xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "PDFni PowerPointga bepul qanday o‘girish mumkin",
+        "steps": [
+          { "title": "Yuklash", "text": "O‘girmoqchi bo‘lgan PDF faylingizni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan kezing." },
+          { "title": "Qayta ishlashni boshlash", "text": "Bepul onlayn konvertorimiz PDF faylingizdan kontentni ajratib oladi va har bir sahifani bir necha soniyada tahrirlanadigan PowerPoint slaydiga aylantiradi." },
+          { "title": "Yuklab olish", "text": "Yangi PowerPoint taqdimoti darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan tozalab tashlanadi." }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          { "q": "PDFni PowerPointga qanday o‘tkazaman?", "a": "Yuqoridagi katakchaga PDF faylingizni yuklang, \"PowerPointga o‘girish\" tugmasini bosing va hosil bo‘lgan PPTX taqdimotini yuklab oling. Butun jarayon atigi bir necha soniya vaqt oladi." },
+          { "q": "PDFni PowerPointga aylantirish bepulmi?", "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul." },
+          { "q": "Slaydlarni tahrirlash mumkinmi?", "a": "Ha. Biz har bir PDF sahifasidagi matnni o‘zingizning tahrirlanadigan PowerPoint slaydingizga joylashtiramiz, shunda siz uni erkin qayta ishlashingiz mumkin." },
           { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi." },
           { "q": "Skanerlangan PDF faylni o‘girish mumkinmi?", "a": "Konvertor raqamli, matnli PDF fayllar bilan yaxshi ishlaydi. Skanerlangan yoki faqat rasmli PDF fayllarda matn qatlami mavjud emas, shuning uchun ular hali o‘girilmasligi mumkin — OCR qo‘llab-quvvatlanishi rejalashtirilgan." },
           { "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi." }
