@@ -24,7 +24,8 @@
     "toolsHeading": "Tools"
   },
   "common": {
-    "languageLabel": "Language"
+    "languageLabel": "Language",
+    "relatedTools": "Related tools"
   },
   "meta": {
     "manifestDescription": "Convert PDF to Excel for free — fast, online, and secure.",

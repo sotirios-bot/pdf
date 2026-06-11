@@ -24,7 +24,8 @@
     "toolsHeading": "Araçlar"
   },
   "common": {
-    "languageLabel": "Dil"
+    "languageLabel": "Dil",
+    "relatedTools": "İlgili Araçlar"
   },
   "meta": {
     "manifestDescription": "PDF'yi ücretsiz Excel'e dönüştürün — hızlı, çevrimiçi ve güvenli.",

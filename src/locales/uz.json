@@ -24,7 +24,8 @@
     "toolsHeading": "Asboblar"
   },
   "common": {
-    "languageLabel": "Til"
+    "languageLabel": "Til",
+    "relatedTools": "Aloqador vositalar"
   },
   "meta": {
     "manifestDescription": "PDFni bepul Excelga aylantiring - tez, onlayn va xavfsiz.",

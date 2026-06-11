@@ -24,7 +24,8 @@
     "toolsHeading": "Құралдар"
   },
   "common": {
-    "languageLabel": "Тіл"
+    "languageLabel": "Тіл",
+    "relatedTools": "Сәйкес құралдар"
   },
   "meta": {
     "manifestDescription": "PDF-ті Excel-ге тегін түрлендіріңіз — жылдам, онлайн және қауіпсіз.",

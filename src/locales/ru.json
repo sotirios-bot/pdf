@@ -24,7 +24,8 @@
     "toolsHeading": "Инструменты"
   },
   "common": {
-    "languageLabel": "Язык"
+    "languageLabel": "Язык",
+    "relatedTools": "Похожие инструменты"
   },
   "meta": {
     "manifestDescription": "Конвертируйте PDF в Excel бесплатно — быстро, онлайн и безопасно.",

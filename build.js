@@ -98,6 +98,7 @@ function toolHref(locale, pageId) {
 
 // All converter pages, in config order.
 const toolPages = config.pages.filter((p) => p.type === "converter");
+const toolIcons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️" };
 // <a> links to every tool available in `locale`, labelled from that locale.
 function toolLinks(locale, t) {
   return toolPages
@@ -106,6 +107,35 @@ function toolLinks(locale, t) {
       (p) =>
         `<a href="${urlPath(locale, getLocale(locale).pages[p.id].slug || "")}">${t.nav[p.id]}</a>`
     );
+}
+
+// "Related tools" section: 3 other tools (cyclic from the current one),
+// localized, linking to the same-language pages. Card text reuses the hub's
+// localized tool names/descriptions. Returns "" if none are available.
+function relatedSection(locale, t, currentId) {
+  const order = toolPages.map((p) => p.id);
+  const idx = order.indexOf(currentId);
+  const cards = [];
+  for (let i = 1; i < order.length && cards.length < 3; i++) {
+    const id = order[(idx + i) % order.length];
+    const cfg = config.pages.find((p) => p.id === id);
+    if (!pageLocales(cfg).includes(locale)) continue;
+    const meta = (t.pages.home.tools || []).find((c) => c.id === id);
+    const page = t.pages[id];
+    if (!meta || !page) continue;
+    cards.push(`<a class="tool-card" href="${urlPath(locale, page.slug || "")}">
+          <span class="tool-icon">${toolIcons[id] || "📄"}</span>
+          <span class="tool-name">${meta.name}</span>
+          <span class="tool-desc">${meta.description}</span>
+        </a>`);
+  }
+  if (!cards.length) return "";
+  return `<section class="related">
+      <h2>${t.common.relatedTools}</h2>
+      <div class="related-grid">
+        ${cards.join("\n        ")}
+      </div>
+    </section>`;
 }
 const ogImageAbs = `${config.baseUrl}${config.ogImage}`;
 const buildDate = new Date().toISOString().slice(0, 10);
@@ -288,6 +318,7 @@ for (const locale of config.locales) {
 
     if (page.type === "converter") {
       ctx.breadcrumbName = t.nav[page.id];
+      ctx.relatedSection = relatedSection(locale, t, page.id);
       ctx.endpoint = page.endpoint;
       ctx.downloadExt = page.ext;
       ctx.downloadEvent = page.downloadEvent;
@@ -345,7 +376,7 @@ for (const locale of config.locales) {
     } else if (page.type === "hub") {
       ctx.subtitle = pdata.subtitle;
       ctx.toolsHeading = pdata.toolsHeading;
-      const icons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️" };
+      const icons = toolIcons;
       ctx.toolsList = pdata.tools
         .map((tool) => {
           const href = urlPath(locale, getLocale(locale).pages[tool.id].slug || "");
