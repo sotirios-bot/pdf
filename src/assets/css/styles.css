@@ -176,6 +176,12 @@ body {
 .btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
 .btn-primary:disabled { opacity: 0.5; cursor: not-allowed; }
 
+.trust-note {
+  text-align: center;
+  margin: 1rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
 .status-msg { margin: 1rem 0 0; min-height: 1.2em; color: var(--muted); }
 .status-msg.error { color: #dc2626; }
 
