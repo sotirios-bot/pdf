@@ -9,6 +9,12 @@
   {{header}}
 
   <main class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="{{homeHref}}">{{navHome}}</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">{{breadcrumbName}}</span>
+    </nav>
+
     <section class="hero">
       <h1>{{h1}}</h1>
       <p class="subtitle">{{subtitle}}</p>

@@ -231,6 +231,14 @@ for (const locale of config.locales) {
           }))
         });
       }
+      ldBlocks.push({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: t.nav.home, item: absUrl(locale, "") },
+          { "@type": "ListItem", position: 2, name: t.nav[page.id], item: canonical }
+        ]
+      });
     } else if (page.type === "legal") {
       ldBlocks.push({
         "@context": "https://schema.org",
@@ -279,6 +287,7 @@ for (const locale of config.locales) {
     };
 
     if (page.type === "converter") {
+      ctx.breadcrumbName = t.nav[page.id];
       ctx.endpoint = page.endpoint;
       ctx.downloadExt = page.ext;
       ctx.downloadEvent = page.downloadEvent;

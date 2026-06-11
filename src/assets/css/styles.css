@@ -116,6 +116,17 @@ body {
   background: var(--card);
 }
 
+/* Breadcrumb */
+.breadcrumb {
+  padding: 1rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); text-decoration: underline; }
+.breadcrumb-sep { margin: 0 0.5rem; }
+.breadcrumb [aria-current="page"] { color: var(--text); font-weight: 600; }
+
 /* Hero */
 .hero { text-align: center; padding: 3rem 0 1.5rem; }
 .hero h1 { font-size: 2.25rem; margin: 0 0 0.5rem; }
