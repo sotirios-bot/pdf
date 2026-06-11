@@ -90,6 +90,16 @@ body {
 }
 .nav-dropdown:hover .nav-menu,
 .nav-dropdown:focus-within .nav-menu { display: block; }
+/* Invisible bridge spanning the gap between the button and the menu, so the
+   dropdown stays open while the cursor travels from one to the other. */
+.nav-menu::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -0.65rem;
+  height: 0.65rem;
+}
 .nav-menu a {
   display: block;
   padding: 0.55rem 0.75rem;
