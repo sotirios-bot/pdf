@@ -26,7 +26,7 @@
   "common": {
     "languageLabel": "Dil",
     "relatedTools": "İlgili Araçlar",
-    "trustNote": "🔒 Dosyalar SSL üzerinden işlenir ve saat içinde silinir - kayıt yaptırmak gerekmez"
+    "trustNote": "🔒 {type} dosyaları SSL üzerinden işlenir ve saat içinde silinir - kayıt yaptırmak gerekmez"
   },
   "meta": {
     "manifestDescription": "PDF'yi ücretsiz Excel'e dönüştürün — hızlı, çevrimiçi ve güvenli.",

@@ -26,7 +26,7 @@
   "common": {
     "languageLabel": "Til",
     "relatedTools": "Aloqador vositalar",
-    "trustNote": "🔒 Fayllar SSL orqali qayta ishlanadi va soat ichida o‘chirib tashlanadi — ro‘yxatdan o‘tish shart emas"
+    "trustNote": "🔒 {type} fayllar SSL orqali qayta ishlanadi va soat ichida o‘chirib tashlanadi — ro‘yxatdan o‘tish shart emas"
   },
   "meta": {
     "manifestDescription": "PDFni bepul Excelga aylantiring - tez, onlayn va xavfsiz.",

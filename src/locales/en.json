@@ -26,7 +26,7 @@
   "common": {
     "languageLabel": "Language",
     "relatedTools": "Related tools",
-    "trustNote": "🔒 Files processed over SSL and deleted within hours — no sign-up"
+    "trustNote": "🔒 {type} Files processed over SSL and deleted within hours — no sign-up"
   },
   "meta": {
     "manifestDescription": "Convert PDF to Excel for free — fast, online, and secure.",

@@ -318,7 +318,10 @@ for (const locale of config.locales) {
 
     if (page.type === "converter") {
       ctx.breadcrumbName = t.nav[page.id];
-      ctx.trustNote = t.common.trustNote;
+      ctx.trustNote = t.common.trustNote.replace(
+        "{type}",
+        { pdf: "PDF", "jpe?g": "JPG", png: "PNG" }[page.acceptExt] || ""
+      );
       ctx.relatedSection = relatedSection(locale, t, page.id);
       ctx.endpoint = page.endpoint;
       ctx.downloadExt = page.ext;
