@@ -367,7 +367,7 @@ for (const locale of config.locales) {
         ${pdata.faq.items
           .map(
             (it) =>
-              `<details class="faq-item"><summary>${it.q}</summary><p>${it.a}</p></details>`
+              `<details class="faq-item" open><summary>${it.q}</summary><p>${it.a}</p></details>`
           )
           .join("\n        ")}
       </div>
