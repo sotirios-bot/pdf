@@ -2,6 +2,7 @@
 // Zero dependencies. Run with: npm run build
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -108,6 +109,13 @@ function toolLinks(locale, t) {
 }
 const ogImageAbs = `${config.baseUrl}${config.ogImage}`;
 const buildDate = new Date().toISOString().slice(0, 10);
+
+// Content-hash the CSS/JS into the URL (?v=hash) so browsers/CDN always fetch
+// the latest after a change, while still allowing long caching.
+const assetVer = (rel) =>
+  crypto.createHash("md5").update(read(path.join(SRC, rel))).digest("hex").slice(0, 8);
+const cssHref = `/assets/css/styles.css?v=${assetVer("assets/css/styles.css")}`;
+const jsHref = `/assets/js/app.js?v=${assetVer("assets/js/app.js")}`;
 
 // Locales that have legal pages (used for footer link fallback).
 const legalLocales = pageLocales(config.pages.find((p) => p.id === "privacy"));
@@ -251,6 +259,8 @@ for (const locale of config.locales) {
       jsonLd,
       year: new Date().getFullYear(),
       siteName: t.site.name,
+      cssHref,
+      jsHref,
       navHome: t.nav.home,
       navConvertPdf: t.nav.convertPdf,
       navToolLinks: toolLinks(locale, t).join("\n          "),
@@ -391,6 +401,8 @@ for (const locale of config.locales) {
     jsonLd: "",
     year: new Date().getFullYear(),
     siteName: t.site.name,
+    cssHref,
+    jsHref,
     navHome: t.nav.home,
     navConvertPdf: t.nav.convertPdf,
     navToolLinks: toolLinks(t.lang, t).join("\n          "),
