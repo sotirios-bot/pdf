@@ -13,7 +13,8 @@
     "pdfToWord": "PDFdan Wordga",
     "pdfToPpt": "PDFdan PowerPointga",
     "jpgToPdf": "JPGdan PDFga",
-    "pngToPdf": "PNGdan PDFga"
+    "pngToPdf": "PNGdan PDFga",
+    "editPdf": "PDF tahrirlash"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",

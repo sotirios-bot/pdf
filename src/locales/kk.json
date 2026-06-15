@@ -13,7 +13,8 @@
     "pdfToWord": "PDF-тен Word-қа",
     "pdfToPpt": "PDF-тен PowerPoint-ке",
     "jpgToPdf": "JPG-ден PDF-ке",
-    "pngToPdf": "PNG-ден PDF-ке"
+    "pngToPdf": "PNG-ден PDF-ке",
+    "editPdf": "PDF өңдеу"
   },
   "footer": {
     "rights": "Барлық құқықтар қорғалған.",

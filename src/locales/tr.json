@@ -13,7 +13,8 @@
     "pdfToWord": "PDF'ten Word'a",
     "pdfToPpt": "PDF'ten PowerPoint'e",
     "jpgToPdf": "JPG'den PDF'e",
-    "pngToPdf": "PNG'den PDF'e"
+    "pngToPdf": "PNG'den PDF'e",
+    "editPdf": "PDF Düzenle"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",

@@ -42,7 +42,9 @@
   var endpoint = form.dataset.endpoint || "/api/convert";
   var outputExt = form.dataset.ext || "pdf";
   var acceptRe = new RegExp("\\.(" + (form.dataset.acceptExt || "pdf") + ")$", "i");
-  var selectedFile = null;
+  var multiple = fileInput.multiple;
+  var paramInput = document.getElementById("paramInput");
+  var selectedFiles = [];
 
   function setStatus(text, isError) {
     statusMsg.textContent = text || "";
@@ -53,18 +55,21 @@
     return acceptRe.test(file.name);
   }
 
-  function chooseFile(file) {
-    if (!file) return;
-    if (!isAccepted(file)) {
+  function chooseFiles(list) {
+    var arr = Array.prototype.slice.call(list || []).filter(isAccepted);
+    if (!arr.length) {
       setStatus(msg.fileType, true);
       return;
     }
-    if (file.size > MAX_BYTES) {
-      setStatus(msg.tooLarge, true);
-      return;
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i].size > MAX_BYTES) {
+        setStatus(msg.tooLarge, true);
+        return;
+      }
     }
-    selectedFile = file;
-    fileNameEl.textContent = file.name;
+    if (!multiple) arr = arr.slice(0, 1);
+    selectedFiles = arr;
+    fileNameEl.textContent = arr.length === 1 ? arr[0].name : arr.length + " files";
     fileNameEl.hidden = false;
     convertBtn.disabled = false;
     setStatus("");
@@ -72,7 +77,7 @@
   }
 
   fileInput.addEventListener("change", function () {
-    chooseFile(this.files[0]);
+    chooseFiles(this.files);
   });
 
   // Drag & drop
@@ -89,40 +94,73 @@
     });
   });
   dropZone.addEventListener("drop", function (e) {
-    if (e.dataTransfer.files.length) chooseFile(e.dataTransfer.files[0]);
+    if (e.dataTransfer.files.length) chooseFiles(e.dataTransfer.files);
   });
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
-    if (!selectedFile) return;
+    if (!selectedFiles.length) return;
+    if (multiple && selectedFiles.length < 2) {
+      setStatus(form.dataset.msgMin || msg.error, true);
+      return;
+    }
+    var paramVal = "";
+    if (paramInput) {
+      paramVal = paramInput.value.trim();
+      if (!paramVal) {
+        setStatus(paramInput.placeholder, true);
+        return;
+      }
+    }
 
-    // GA4: a file was uploaded for conversion.
-    track("pdf_upload", {
-      language: lang,
-      file_size_mb: Math.round((selectedFile.size / 1048576) * 100) / 100
-    });
+    // GA4: file(s) uploaded for processing.
+    track(
+      "pdf_upload",
+      multiple
+        ? { language: lang, file_count: selectedFiles.length }
+        : { language: lang, file_size_mb: Math.round((selectedFiles[0].size / 1048576) * 100) / 100 }
+    );
 
     convertBtn.disabled = true;
     downloadLink.hidden = true;
     setStatus(msg.converting);
 
-    fetch(endpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": selectedFile.type || "application/octet-stream",
-        "X-Filename": encodeURIComponent(selectedFile.name)
-      },
-      body: selectedFile
-    })
+    var request;
+    if (multiple) {
+      var fd = new FormData();
+      selectedFiles.forEach(function (f) {
+        fd.append("files", f);
+      });
+      request = fetch(endpoint, { method: "POST", body: fd });
+    } else {
+      var url = endpoint;
+      if (paramVal) {
+        url +=
+          (url.indexOf("?") >= 0 ? "&" : "?") +
+          encodeURIComponent(paramInput.dataset.param) +
+          "=" +
+          encodeURIComponent(paramVal);
+      }
+      request = fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": selectedFiles[0].type || "application/octet-stream",
+          "X-Filename": encodeURIComponent(selectedFiles[0].name)
+        },
+        body: selectedFiles[0]
+      });
+    }
+
+    request
       .then(function (res) {
         if (!res.ok) throw new Error("HTTP " + res.status);
         return res.blob();
       })
       .then(function (blob) {
-        var url = URL.createObjectURL(blob);
-        downloadLink.href = url;
-        downloadLink.download =
-          selectedFile.name.replace(/\.[^.]+$/, "") + "." + outputExt;
+        var url2 = URL.createObjectURL(blob);
+        downloadLink.href = url2;
+        var base = multiple ? "merged" : selectedFiles[0].name.replace(/\.[^.]+$/, "");
+        downloadLink.download = base + "." + outputExt;
         downloadLink.hidden = false;
         setStatus(msg.ready);
         convertBtn.disabled = false;

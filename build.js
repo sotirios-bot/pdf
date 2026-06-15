@@ -32,11 +32,14 @@ const config = {
   // `locales` restricts which languages a page is built for (default: all).
   pages: [
     { id: "home", template: "hub.html", type: "hub", locales: ["en", "ru", "tr", "kk", "uz"] },
-    { id: "pdfToExcel", template: "converter.html", type: "converter", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf" },
-    { id: "pdfToWord", template: "converter.html", type: "converter", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz"] },
-    { id: "pdfToPpt", template: "converter.html", type: "converter", endpoint: "/api/convert-ppt", ext: "pptx", downloadEvent: "download_ppt", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "tr", "ru", "kk", "uz"] },
-    { id: "jpgToPdf", template: "converter.html", type: "converter", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "jpg_to_pdf_download", inputAccept: "image/jpeg,.jpg,.jpeg", acceptExt: "jpe?g", locales: ["en", "uz", "kk", "ru", "tr"] },
-    { id: "pngToPdf", template: "converter.html", type: "converter", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "png_to_pdf_download", inputAccept: "image/png,.png", acceptExt: "png", locales: ["en", "ru", "tr", "kk", "uz"] },
+    { id: "pdfToExcel", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf" },
+    { id: "pdfToWord", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz"] },
+    { id: "pdfToPpt", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert-ppt", ext: "pptx", downloadEvent: "download_ppt", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "tr", "ru", "kk", "uz"] },
+    { id: "jpgToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "jpg_to_pdf_download", inputAccept: "image/jpeg,.jpg,.jpeg", acceptExt: "jpe?g", locales: ["en", "uz", "kk", "ru", "tr"] },
+    { id: "pngToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "png_to_pdf_download", inputAccept: "image/png,.png", acceptExt: "png", locales: ["en", "ru", "tr", "kk", "uz"] },
+    { id: "mergePdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/merge-pdf", ext: "pdf", downloadEvent: "merge_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", multiple: true, locales: ["en"] },
+    { id: "splitPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/split-pdf", ext: "zip", downloadEvent: "split_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en"] },
+    { id: "deletePdfPages", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/delete-pdf-pages", ext: "pdf", downloadEvent: "delete_pages_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", param: "pages", locales: ["en"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]
@@ -98,15 +101,33 @@ function toolHref(locale, pageId) {
 
 // All converter pages, in config order.
 const toolPages = config.pages.filter((p) => p.type === "converter");
-const toolIcons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️" };
-// <a> links to every tool available in `locale`, labelled from that locale.
-function toolLinks(locale, t) {
+const toolIcons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️", mergePdf: "🔗", splitPdf: "✂️", deletePdfPages: "🗑️" };
+// <a> links to the tools in `category` available in `locale` (labelled locally).
+function toolLinksFor(locale, t, category) {
   return toolPages
-    .filter((p) => pageLocales(p).includes(locale))
+    .filter((p) => (p.category || "convert") === category && pageLocales(p).includes(locale))
     .map(
       (p) =>
         `<a href="${urlPath(locale, getLocale(locale).pages[p.id].slug || "")}">${t.nav[p.id]}</a>`
     );
+}
+// Header dropdown + footer column for a category, or "" if it has no tools
+// in this locale (e.g. Edit PDF on non-English pages).
+function navGroup(locale, t, category, label) {
+  const links = toolLinksFor(locale, t, category);
+  if (!links.length) return { dropdown: "", footerCol: "" };
+  return {
+    dropdown: `<div class="nav-dropdown">
+        <button type="button" class="nav-dropbtn" aria-haspopup="true">${label}<span class="caret" aria-hidden="true">▾</span></button>
+        <div class="nav-menu">
+          ${links.join("\n          ")}
+        </div>
+      </div>`,
+    footerCol: `<div class="footer-col">
+      <h4>${label}</h4>
+      ${links.join("\n      ")}
+    </div>`
+  };
 }
 
 // "Related tools" section: 3 other tools (cyclic from the current one),
@@ -301,13 +322,14 @@ for (const locale of config.locales) {
       jsHref,
       navHome: t.nav.home,
       navConvertPdf: t.nav.convertPdf,
-      navToolLinks: toolLinks(locale, t).join("\n          "),
-      footerToolLinks: toolLinks(locale, t).join("\n      "),
+      navConvertLinks: toolLinksFor(locale, t, "convert").join("\n          "),
+      footerConvertLinks: toolLinksFor(locale, t, "convert").join("\n      "),
+      editDropdown: navGroup(locale, t, "edit", t.nav.editPdf).dropdown,
+      footerEditCol: navGroup(locale, t, "edit", t.nav.editPdf).footerCol,
       languageLabel: t.common.languageLabel,
       langOptions,
       footerRights: t.footer.rights,
       footerTagline: t.footer.tagline,
-      footerToolsHeading: t.footer.toolsHeading,
       footerLegalHeading: t.footer.legalHeading,
       footerPrivacy: t.footer.privacy,
       footerTerms: t.footer.terms,
@@ -328,6 +350,10 @@ for (const locale of config.locales) {
       ctx.downloadEvent = page.downloadEvent;
       ctx.inputAccept = page.inputAccept;
       ctx.acceptExt = page.acceptExt;
+      ctx.fileMultiple = page.multiple ? " multiple" : "";
+      ctx.paramField = page.param
+        ? `<input id="paramInput" class="param-input" type="text" data-param="${page.param}" placeholder="${pdata.paramPlaceholder || ""}" aria-label="${pdata.paramPlaceholder || ""}" />`
+        : "";
       ctx.subtitle = pdata.subtitle;
       ctx.uploaderDropText = pdata.uploader.dropText;
       ctx.uploaderHint = pdata.uploader.hint;
@@ -338,6 +364,7 @@ for (const locale of config.locales) {
       ctx.uploaderErrorGeneric = pdata.uploader.errorGeneric;
       ctx.uploaderErrorFileType = pdata.uploader.errorFileType;
       ctx.uploaderErrorTooLarge = pdata.uploader.errorTooLarge;
+      ctx.uploaderErrorMin = pdata.uploader.errorMin || "";
       ctx.howToHeading = pdata.howTo.heading;
       ctx.howToList = pdata.howTo.steps
         .map(
@@ -449,13 +476,14 @@ for (const locale of config.locales) {
     jsHref,
     navHome: t.nav.home,
     navConvertPdf: t.nav.convertPdf,
-    navToolLinks: toolLinks(t.lang, t).join("\n          "),
-    footerToolLinks: toolLinks(t.lang, t).join("\n      "),
+    navConvertLinks: toolLinksFor(t.lang, t, "convert").join("\n          "),
+    footerConvertLinks: toolLinksFor(t.lang, t, "convert").join("\n      "),
+    editDropdown: navGroup(t.lang, t, "edit", t.nav.editPdf).dropdown,
+    footerEditCol: navGroup(t.lang, t, "edit", t.nav.editPdf).footerCol,
     languageLabel: t.common.languageLabel,
     langOptions,
     footerRights: t.footer.rights,
     footerTagline: t.footer.tagline,
-    footerToolsHeading: t.footer.toolsHeading,
     footerLegalHeading: t.footer.legalHeading,
     footerPrivacy: t.footer.privacy,
     footerTerms: t.footer.terms,

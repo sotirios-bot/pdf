@@ -16,6 +16,15 @@
     },
     "api/image-to-pdf.js": {
       "maxDuration": 30
+    },
+    "api/merge-pdf.js": {
+      "maxDuration": 30
+    },
+    "api/split-pdf.js": {
+      "maxDuration": 30
+    },
+    "api/delete-pdf-pages.js": {
+      "maxDuration": 30
     }
   },
   "headers": [

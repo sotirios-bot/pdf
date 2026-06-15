@@ -13,7 +13,8 @@
     "pdfToWord": "PDF в Word",
     "pdfToPpt": "PDF в PowerPoint",
     "jpgToPdf": "JPG в PDF",
-    "pngToPdf": "PNG в PDF"
+    "pngToPdf": "PNG в PDF",
+    "editPdf": "Редактировать PDF"
   },
   "footer": {
     "rights": "Все права защищены.",

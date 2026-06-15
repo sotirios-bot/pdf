@@ -160,6 +160,16 @@ body {
 .drop-text { font-weight: 600; }
 .drop-hint { color: var(--muted); font-size: 0.9rem; }
 .file-name { font-weight: 600; margin: 1rem 0 0; }
+.param-input {
+  display: block;
+  width: 100%;
+  margin: 1rem 0 0;
+  padding: 0.75rem 0.9rem;
+  font-size: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.param-input:focus { outline: none; border-color: var(--primary); }
 
 .btn-primary {
   margin-top: 1.25rem;
@@ -318,11 +328,13 @@ body {
   margin-top: 3rem;
 }
 .footer-top {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   padding: 2.5rem 1rem 1.5rem;
 }
+.footer-brand { flex: 2 1 280px; }
+.footer-col { flex: 1 1 150px; }
 .footer-brand .brand-name { font-weight: 700; }
 .footer-tagline { color: var(--muted); font-size: 0.9rem; margin: 0.75rem 0 0; max-width: 320px; }
 .footer-col h4 { margin: 0 0 0.75rem; font-size: 0.95rem; }
@@ -393,8 +405,8 @@ body {
 .legal-section p { margin: 0 0 0.75rem; color: #374151; }
 
 @media (max-width: 720px) {
-  .footer-top { grid-template-columns: 1fr 1fr; }
-  .footer-brand { grid-column: 1 / -1; }
+  .footer-brand { flex-basis: 100%; }
+  .footer-col { flex-basis: 40%; }
   .hero h1 { font-size: 1.75rem; }
   /* Header: brand + language on the first row, nav centered on the second */
   .lang-switcher { margin-left: auto; }

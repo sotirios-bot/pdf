@@ -13,7 +13,11 @@
     "pdfToWord": "PDF to Word",
     "pdfToPpt": "PDF to PowerPoint",
     "jpgToPdf": "JPG to PDF",
-    "pngToPdf": "PNG to PDF"
+    "pngToPdf": "PNG to PDF",
+    "editPdf": "Edit PDF",
+    "mergePdf": "Merge PDF",
+    "splitPdf": "Split PDF",
+    "deletePdfPages": "Delete PDF Pages"
   },
   "footer": {
     "rights": "All rights reserved.",
@@ -46,9 +50,12 @@
       "tools": [
         { "id": "pdfToExcel", "name": "PDF to Excel", "description": "Convert PDF tables into fully editable XLSX spreadsheets.", "badge": "" },
         { "id": "pdfToWord", "name": "PDF to Word", "description": "Turn PDF documents into editable Word (DOCX) files.", "badge": "" },
-        { "id": "pdfToPpt", "name": "PDF to PowerPoint", "description": "Convert PDF pages into editable PowerPoint (PPTX) slides.", "badge": "New" },
-        { "id": "jpgToPdf", "name": "JPG to PDF", "description": "Turn a JPG image into a PDF document.", "badge": "New" },
-        { "id": "pngToPdf", "name": "PNG to PDF", "description": "Turn a PNG image into a PDF document.", "badge": "New" }
+        { "id": "pdfToPpt", "name": "PDF to PowerPoint", "description": "Convert PDF pages into editable PowerPoint (PPTX) slides.", "badge": "" },
+        { "id": "jpgToPdf", "name": "JPG to PDF", "description": "Turn a JPG image into a PDF document.", "badge": "" },
+        { "id": "pngToPdf", "name": "PNG to PDF", "description": "Turn a PNG image into a PDF document.", "badge": "" },
+        { "id": "mergePdf", "name": "Merge PDF", "description": "Combine several PDF files into one document.", "badge": "New" },
+        { "id": "splitPdf", "name": "Split PDF", "description": "Split a PDF into separate one-page files (ZIP).", "badge": "New" },
+        { "id": "deletePdfPages", "name": "Delete PDF Pages", "description": "Remove specific pages from a PDF document.", "badge": "New" }
       ]
     },
     "pdfToExcel": {
@@ -238,6 +245,116 @@
           { "q": "How do I convert a PNG to PDF?", "a": "Upload your PNG in the box above, click \"Convert to PDF\", and download the resulting PDF. The whole process takes just a few seconds." },
           { "q": "Is the PNG to PDF converter free?", "a": "Yes. PDFConvertMe is completely free to use, with no sign-up, no subscription, and no hidden fees." },
           { "q": "Will transparency be handled?", "a": "Your PNG is embedded into the PDF and scaled to fit the page; transparent areas appear on a white page background." },
+          { "q": "Are my files secure and private?", "a": "Your file is sent over an encrypted (SSL) connection and processed automatically without anyone reviewing it. Uploaded files are deleted from our servers automatically within a few hours." },
+          { "q": "Does it work on Windows, Mac, and mobile?", "a": "Yes. PDFConvertMe runs entirely in your browser, so it works on any operating system or device — Windows, Mac, Linux, Android, and iOS." }
+        ]
+      }
+    },
+    "mergePdf": {
+      "slug": "merge-pdf",
+      "title": "Merge PDF — Free Online PDF Merger",
+      "metaDescription": "Merge PDF files online for free. Combine several PDFs into a single document in seconds — no installation, no sign-up. Fast and secure.",
+      "h1": "Merge PDF for FREE",
+      "subtitle": "Combine several PDF files into one document in seconds — free, online, and secure.",
+      "uploader": {
+        "dropText": "Drop your PDFs here or click to upload",
+        "hint": "Select 2 or more PDFs · Maximum 40 MB total · Processed securely",
+        "button": "Merge PDFs",
+        "converting": "Merging your PDFs…",
+        "downloadReady": "Done! Your merged PDF is ready.",
+        "download": "Download PDF",
+        "errorGeneric": "Something went wrong while merging. Please try again.",
+        "errorFileType": "Please choose PDF files.",
+        "errorTooLarge": "Those files are too large. The maximum total is 40 MB.",
+        "errorMin": "Please select at least two PDF files."
+      },
+      "howTo": {
+        "heading": "How to Merge PDF Files Free",
+        "steps": [
+          { "title": "Upload", "text": "Select two or more PDF files you want to combine. Drag and drop them into the box above or browse from your device." },
+          { "title": "Start processing", "text": "Our free online tool joins your PDFs, in the order you selected, into a single document in seconds." },
+          { "title": "Download", "text": "Your merged PDF will be ready to download immediately. After the download is complete, any remaining files you uploaded will be purged from our server." }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions",
+        "items": [
+          { "q": "How do I merge PDF files?", "a": "Upload two or more PDFs in the box above, click \"Merge PDFs\", and download the combined document. The whole process takes just a few seconds." },
+          { "q": "Is the PDF merger free?", "a": "Yes. PDFConvertMe is completely free to use, with no sign-up, no subscription, and no hidden fees." },
+          { "q": "In what order are the PDFs combined?", "a": "They are merged in the order you select them, so choose your files in the sequence you want them to appear." },
+          { "q": "Are my files secure and private?", "a": "Your files are sent over an encrypted (SSL) connection and processed automatically without anyone reviewing them. Uploaded files are deleted from our servers automatically within a few hours." },
+          { "q": "Does it work on Windows, Mac, and mobile?", "a": "Yes. PDFConvertMe runs entirely in your browser, so it works on any operating system or device — Windows, Mac, Linux, Android, and iOS." }
+        ]
+      }
+    },
+    "splitPdf": {
+      "slug": "split-pdf",
+      "title": "Split PDF — Free Online PDF Splitter",
+      "metaDescription": "Split PDF files online for free. Separate a PDF into individual one-page files in seconds — no installation, no sign-up. Fast and secure.",
+      "h1": "Split PDF for FREE",
+      "subtitle": "Split a PDF into separate one-page files in seconds — free, online, and secure.",
+      "uploader": {
+        "dropText": "Drop your PDF here or click to upload",
+        "hint": "Maximum file size: 20 MB · Your file is processed securely",
+        "button": "Split PDF",
+        "converting": "Splitting your PDF…",
+        "downloadReady": "Done! Your split pages (ZIP) are ready.",
+        "download": "Download ZIP",
+        "errorGeneric": "Something went wrong while splitting. Please try again.",
+        "errorFileType": "Please choose a PDF file.",
+        "errorTooLarge": "That file is too large. The maximum size is 20 MB."
+      },
+      "howTo": {
+        "heading": "How to Split a PDF Free",
+        "steps": [
+          { "title": "Upload", "text": "Select the PDF file you wish to split. Drag and drop it into the box above or browse from your device." },
+          { "title": "Start processing", "text": "Our free online tool separates every page of your PDF into its own file and bundles them into a ZIP in seconds." },
+          { "title": "Download", "text": "Your ZIP of single-page PDFs will be ready to download immediately. After the download is complete, any remaining files you uploaded will be purged from our server." }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions",
+        "items": [
+          { "q": "How do I split a PDF?", "a": "Upload your PDF in the box above, click \"Split PDF\", and download the resulting ZIP — it contains one PDF per page. The whole process takes just a few seconds." },
+          { "q": "Is the PDF splitter free?", "a": "Yes. PDFConvertMe is completely free to use, with no sign-up, no subscription, and no hidden fees." },
+          { "q": "What do I get back?", "a": "A ZIP file containing each page of your PDF as a separate, single-page PDF (page-1.pdf, page-2.pdf, and so on)." },
+          { "q": "Are my files secure and private?", "a": "Your file is sent over an encrypted (SSL) connection and processed automatically without anyone reviewing it. Uploaded files are deleted from our servers automatically within a few hours." },
+          { "q": "Does it work on Windows, Mac, and mobile?", "a": "Yes. PDFConvertMe runs entirely in your browser, so it works on any operating system or device — Windows, Mac, Linux, Android, and iOS." }
+        ]
+      }
+    },
+    "deletePdfPages": {
+      "slug": "delete-pdf-pages",
+      "title": "Delete PDF Pages — Free Online PDF Page Remover",
+      "metaDescription": "Delete pages from a PDF online for free. Remove specific pages from your PDF in seconds — no installation, no sign-up. Fast and secure.",
+      "h1": "Delete PDF Pages for FREE",
+      "subtitle": "Remove specific pages from a PDF document in seconds — free, online, and secure.",
+      "paramPlaceholder": "Pages to delete, e.g. 2, 5-7",
+      "uploader": {
+        "dropText": "Drop your PDF here or click to upload",
+        "hint": "Maximum file size: 20 MB · Your file is processed securely",
+        "button": "Delete Pages",
+        "converting": "Removing pages…",
+        "downloadReady": "Done! Your edited PDF is ready.",
+        "download": "Download PDF",
+        "errorGeneric": "Something went wrong. Please try again.",
+        "errorFileType": "Please choose a PDF file.",
+        "errorTooLarge": "That file is too large. The maximum size is 20 MB."
+      },
+      "howTo": {
+        "heading": "How to Delete Pages from a PDF Free",
+        "steps": [
+          { "title": "Upload", "text": "Select the PDF file you wish to edit. Drag and drop it into the box above or browse from your device." },
+          { "title": "Choose pages", "text": "Type the pages you want to remove — single pages and ranges both work, for example 2, 5-7." },
+          { "title": "Download", "text": "Your new PDF without those pages will be ready to download immediately. After the download is complete, any remaining files you uploaded will be purged from our server." }
+        ]
+      },
+      "faq": {
+        "heading": "Frequently Asked Questions",
+        "items": [
+          { "q": "How do I delete pages from a PDF?", "a": "Upload your PDF, enter the pages to remove (e.g. 2, 5-7), click \"Delete Pages\", and download the edited PDF. The whole process takes just a few seconds." },
+          { "q": "How do I specify the pages?", "a": "Use 1-based page numbers separated by commas. You can mix single pages and ranges, for example: 1, 4, 8-10." },
+          { "q": "Is the PDF page remover free?", "a": "Yes. PDFConvertMe is completely free to use, with no sign-up, no subscription, and no hidden fees." },
           { "q": "Are my files secure and private?", "a": "Your file is sent over an encrypted (SSL) connection and processed automatically without anyone reviewing it. Uploaded files are deleted from our servers automatically within a few hours." },
           { "q": "Does it work on Windows, Mac, and mobile?", "a": "Yes. PDFConvertMe runs entirely in your browser, so it works on any operating system or device — Windows, Mac, Linux, Android, and iOS." }
         ]

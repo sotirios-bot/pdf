@@ -30,14 +30,16 @@
             data-msg-ready="{{uploaderDownloadReady}}"
             data-msg-error="{{uploaderErrorGeneric}}"
             data-msg-filetype="{{uploaderErrorFileType}}"
-            data-msg-toolarge="{{uploaderErrorTooLarge}}">
+            data-msg-toolarge="{{uploaderErrorTooLarge}}"
+            data-msg-min="{{uploaderErrorMin}}">
         <label id="dropZone" class="drop-zone" for="fileInput">
           <span class="drop-icon">⬆️</span>
           <span class="drop-text">{{uploaderDropText}}</span>
           <span class="drop-hint">{{uploaderHint}}</span>
-          <input id="fileInput" type="file" accept="{{inputAccept}}" hidden />
+          <input id="fileInput" type="file" accept="{{inputAccept}}"{{fileMultiple}} hidden />
         </label>
         <p id="fileName" class="file-name" hidden></p>
+        {{paramField}}
         <button id="convertBtn" type="submit" class="btn-primary" disabled>{{uploaderButton}}</button>
         <p id="statusMsg" class="status-msg" role="status" aria-live="polite"></p>
         <a id="downloadLink" class="btn-download" hidden download>{{uploaderDownload}}</a>
