@@ -14,7 +14,8 @@
     "pdfToPpt": "PDF'ten PowerPoint'e",
     "jpgToPdf": "JPG'den PDF'e",
     "pngToPdf": "PNG'den PDF'e",
-    "editPdf": "PDF Düzenle"
+    "editPdf": "PDF Düzenle",
+    "mergePdf": "PDF Birleştir"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
@@ -49,7 +50,8 @@
         { "id": "pdfToWord", "name": "PDF'ten Word'a", "description": "PDF belgelerini düzenlenebilir Word (DOCX) dosyalarına dönüştürün.", "badge": "" },
         { "id": "pdfToPpt", "name": "PDF'ten PowerPoint'e", "description": "PDF sayfalarını düzenlenebilir PowerPoint (PPTX) slaytlarına dönüştürün.", "badge": "Yeni" },
         { "id": "jpgToPdf", "name": "JPG'den PDF'e", "description": "JPG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
-        { "id": "pngToPdf", "name": "PNG'den PDF'e", "description": "PNG resmini PDF belgesine dönüştürün.", "badge": "Yeni" }
+        { "id": "pngToPdf", "name": "PNG'den PDF'e", "description": "PNG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
+        { "id": "mergePdf", "name": "PDF Birleştir", "description": "Birkaç PDF dosyasını tek bir belgede birleştirin.", "badge": "Yeni" }
       ]
     },
     "pdfToExcel": {
@@ -240,6 +242,43 @@
           { "q": "PNG'den PDF'e dönüştürücü ücretsiz mi?", "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir." },
           { "q": "Şeffaflık sağlanacak mı?", "a": "PNG'niz PDF'e yerleştirilir ve sayfaya uyacak şekilde ölçeklendirilir; şeffaf alanlar sayfanın beyaz arka planında görünür." },
           { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
+          { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
+        ]
+      }
+    },
+    "mergePdf": {
+      "slug": "merge-pdf",
+      "title": "PDF Birleştir — Ücretsiz Çevrimiçi PDF Birleştirici",
+      "metaDescription": "PDF dosyalarını çevrimiçi olarak ücretsiz birleştirin. Birkaç PDF'yi saniyeler içinde tek bir belgede birleştirin — kurulum ve kayıt gerekmez. Hızlı ve güvenli.",
+      "h1": "PDF'i ücretsiz birleştirin",
+      "subtitle": "Birkaç PDF dosyasını saniyeler içinde tek bir belgeye birleştirin - ücretsiz, çevrimiçi ve güvenli bir şekilde.",
+      "uploader": {
+        "dropText": "PDF'lerinizi buraya bırakın veya yüklemek için tıklayın",
+        "hint": "2 veya daha fazla PDF seçin · Maksimum toplam 40 MB · Güvenli bir şekilde işlenir",
+        "button": "PDF'leri birleştir",
+        "converting": "PDF'leriniz birleştiriliyor…",
+        "downloadReady": "Tamamlandı! Birleştirilmiş PDF'iniz hazır.",
+        "download": "PDF İndir",
+        "errorGeneric": "Birleştirme sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen PDF dosyaları seçin.",
+        "errorTooLarge": "Bu dosyalar çok büyük. Maksimum toplam 40 MB'dir.",
+        "errorMin": "Lütfen en az iki PDF dosyası seçin."
+      },
+      "howTo": {
+        "heading": "PDF Dosyaları Nasıl Ücretsiz Birleştirilir",
+        "steps": [
+          { "title": "Yükleyin", "text": "Birleştirmek istediğiniz iki veya daha fazla PDF dosyasını seçin. Onları yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın." },
+          { "title": "İşlemi başlatın", "text": "Ücretsiz çevrimiçi aracımız, seçtiğiniz sırayla PDF'lerinizi saniyeler içinde tek bir belgeye birleştirir." },
+          { "title": "İndirin", "text": "Birleştirilmiş PDF'iniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir." }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          { "q": "PDF dosyalarını nasıl birleştirebilirim?", "a": "Yukarıdaki kutuya iki veya daha fazla PDF yükleyin, \"PDF'leri birleştir\" düğmesine tıklayın ve birleşik belgeyi indirin. Tüm süreç sadece birkaç saniye sürer." },
+          { "q": "PDF birleştirme ücretsiz mi?", "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir." },
+          { "q": "PDF'ler hangi sırayla birleştirilir?", "a": "Onları seçtiğiniz sırayla birleştirilir, bu yüzden dosyalarınızı görünmesini istediğiniz sırayla seçin." },
+          { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyalarınız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
           { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
         ]
       }
