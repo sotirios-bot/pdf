@@ -40,7 +40,7 @@ const config = {
     { id: "mergePdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/merge-pdf", ext: "pdf", downloadEvent: "merge_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", multiple: true, locales: ["en", "ru", "tr", "kk", "uz"] },
     { id: "splitPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/split-pdf", ext: "zip", downloadEvent: "split_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz"] },
     { id: "deletePdfPages", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/delete-pdf-pages", ext: "pdf", downloadEvent: "delete_pages_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", param: "pages", locales: ["en", "ru", "tr", "kk", "uz"] },
-    { id: "compressPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/compress-pdf", ext: "pdf", downloadEvent: "compress_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en"] },
+    { id: "compressPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/compress-pdf", ext: "pdf", downloadEvent: "compress_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]

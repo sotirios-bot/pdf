@@ -17,7 +17,8 @@
     "editPdf": "PDF tahrirlash",
     "mergePdf": "PDF birlashtirish",
     "splitPdf": "PDF ajratish",
-    "deletePdfPages": "PDF sahifalarni o‘chirish"
+    "deletePdfPages": "PDF sahifalarni o‘chirish",
+    "compressPdf": "PDF siqish"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
@@ -55,7 +56,8 @@
         { "id": "pngToPdf", "name": "PNGdan PDFga", "description": "PNG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "mergePdf", "name": "PDF birlashtirish", "description": "Bir nechta PDF faylni bitta hujjatga birlashtiring.", "badge": "Yangi" },
         { "id": "splitPdf", "name": "PDF ajratish", "description": "PDFni alohida bir sahifali fayllarga ajrating (ZIP).", "badge": "Yangi" },
-        { "id": "deletePdfPages", "name": "PDF sahifalarni o‘chirish", "description": "PDF hujjatdan muayyan sahifalarni olib tashlang.", "badge": "Yangi" }
+        { "id": "deletePdfPages", "name": "PDF sahifalarni o‘chirish", "description": "PDF hujjatdan muayyan sahifalarni olib tashlang.", "badge": "Yangi" },
+        { "id": "compressPdf", "name": "PDF siqish", "description": "PDF hujjatning fayl hajmini kichraytiring.", "badge": "Yangi" }
       ]
     },
     "pdfToExcel": {
@@ -371,6 +373,66 @@
           },
           {
             "q": "PDF sahifalarni olib tashlash vositasi bepulmi?",
+            "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul."
+          },
+          {
+            "q": "Fayllarim xavfsiz va maxfiymi?",
+            "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi."
+          },
+          {
+            "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?",
+            "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi."
+          }
+        ]
+      }
+    },
+    "compressPdf": {
+      "slug": "compress-pdf",
+      "title": "PDF siqish — Bepul onlayn PDF siqqich",
+      "metaDescription": "PDF fayllarni bepul onlayn siqing. PDF fayl hajmini bir necha soniyada kichraytiring — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez va xavfsiz.",
+      "h1": "PDF faylni BEPUL siqish",
+      "subtitle": "PDF fayl hajmini bir necha soniyada qisqartiring — bepul, onlayn va xavfsiz.",
+      "uploader": {
+        "dropText": "PDF faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "PDF faylni siqish",
+        "converting": "PDF faylingiz siqilmoqda…",
+        "downloadReady": "Tayyor! Siqilgan PDF faylingiz tayyor.",
+        "download": "PDF yuklab olish",
+        "errorGeneric": "Siqish vaqtida xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "PDF faylni qanday qilib bepul siqish mumkin",
+        "steps": [
+          {
+            "title": "Yuklash",
+            "text": "Siqiladigan PDF faylni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan tanlang."
+          },
+          {
+            "title": "Qayta ishlashni boshlash",
+            "text": "Bepul onlayn vositamiz PDF faylingizning ichki tuzilishini fayl hajmini bir necha soniyada kamaytirish uchun optimallashtiradi."
+          },
+          {
+            "title": "Yuklab olish",
+            "text": "Kichikroq PDF fayl darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan o‘chirib tashlanadi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          {
+            "q": "PDF faylni qanday siqish mumkin?",
+            "a": "Yuqoridagi maydonga PDF faylingizni yuklang, «PDF faylni siqish» tugmasini bosing va kichikroq faylni yuklab oling. Butun jarayon atigi bir necha soniya vaqt oladi."
+          },
+          {
+            "q": "PDF qanchaga kichrayadi?",
+            "a": "Bu faylga bog‘liq. PDF fayl hajmini kamaytirish uchun uning ichki tuzilishini optimallashtiramiz, shuning uchun optimallashtirilmagan PDF fayllar sezilarli darajada kichrayishi mumkin, yuqori darajada optimallashtirilgan yoki tasvirlarga boy PDF fayllar esa kamroq kichrayishi mumkin. Biz hech qachon asl nusxadan kattaroq faylni qaytarmaymiz."
+          },
+          {
+            "q": "PDF kompressori bepulmi?",
             "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul."
           },
           {
