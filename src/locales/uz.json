@@ -15,7 +15,8 @@
     "jpgToPdf": "JPGdan PDFga",
     "pngToPdf": "PNGdan PDFga",
     "editPdf": "PDF tahrirlash",
-    "mergePdf": "PDF birlashtirish"
+    "mergePdf": "PDF birlashtirish",
+    "splitPdf": "PDF ajratish"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
@@ -51,7 +52,8 @@
         { "id": "pdfToPpt", "name": "PDFdan PowerPointga", "description": "PDF sahifalarini tahrirlanadigan PowerPoint (PPTX) slaydlariga aylantiring.", "badge": "Yangi" },
         { "id": "jpgToPdf", "name": "JPGdan PDFga", "description": "JPG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "pngToPdf", "name": "PNGdan PDFga", "description": "PNG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" },
-        { "id": "mergePdf", "name": "PDF birlashtirish", "description": "Bir nechta PDF faylni bitta hujjatga birlashtiring.", "badge": "Yangi" }
+        { "id": "mergePdf", "name": "PDF birlashtirish", "description": "Bir nechta PDF faylni bitta hujjatga birlashtiring.", "badge": "Yangi" },
+        { "id": "splitPdf", "name": "PDF ajratish", "description": "PDFni alohida bir sahifali fayllarga ajrating (ZIP).", "badge": "Yangi" }
       ]
     },
     "pdfToExcel": {
@@ -279,6 +281,42 @@
           { "q": "PDF birlashtirish bepulmi?", "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul." },
           { "q": "PDF fayllar qanday tartibda birlashtiriladi?", "a": "Ular siz tanlagan tartibda birlashtiriladi, shuning uchun fayllarni siz xohlagan tartibda tanlang." },
           { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Fayllaringiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi." },
+          { "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi." }
+        ]
+      }
+    },
+    "splitPdf": {
+      "slug": "split-pdf",
+      "title": "PDFni ajratish - Bepul onlayn PDF ajratish vositasi",
+      "metaDescription": "PDF fayllarni bepul onlayn ajrating. PDFni alohida bir sahifali fayllarga ajrating — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez va xavfsiz.",
+      "h1": "PDF faylni BEPUL ajratish",
+      "subtitle": "PDF faylni bir necha soniyada alohida bir sahifali fayllarga ajrating — bepul, onlayn va xavfsiz.",
+      "uploader": {
+        "dropText": "PDF faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "PDF faylni ajratish",
+        "converting": "PDF faylingiz ajratilmoqda…",
+        "downloadReady": "Tayyor! Sahifalaringiz (ZIP) tayyor.",
+        "download": "ZIP yuklab olish",
+        "errorGeneric": "Ajratish vaqtida xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "PDF faylni bepul qanday ajratish mumkin",
+        "steps": [
+          { "title": "Yuklash", "text": "Ajratmoqchi bo‘lgan PDF faylni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan kezing." },
+          { "title": "Qayta ishlashni boshlash", "text": "Bepul onlayn vositamiz PDF faylingizning har bir sahifasini alohida faylga ajratadi va ularni bir necha soniya ichida ZIP formatida jamlaydi." },
+          { "title": "Yuklab olish", "text": "Bir sahifali PDF fayllarning ZIP fayli darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan tozalab tashlanadi." }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          { "q": "PDF faylni qanday ajratish mumkin?", "a": "PDF faylingizni yuqoridagi katakchaga yuklang, \"PDF faylni ajratish\" tugmasini bosing va hosil bo‘lgan ZIP faylni yuklab oling — u har bir sahifada bitta PDF fayldan iborat. Butun jarayon atigi bir necha soniya vaqt oladi." },
+          { "q": "PDF bo‘lish bepulmi?", "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul." },
+          { "q": "Men nima olaman?", "a": "PDF faylingizning har bir sahifasini alohida, bir sahifali PDF sifatida o‘z ichiga olgan ZIP fayl (sahifa-1.pdf, sahifa-2.pdf va hokazo)." },
+          { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi." },
           { "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi." }
         ]
       }

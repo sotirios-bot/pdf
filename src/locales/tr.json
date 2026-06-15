@@ -15,7 +15,8 @@
     "jpgToPdf": "JPG'den PDF'e",
     "pngToPdf": "PNG'den PDF'e",
     "editPdf": "PDF Düzenle",
-    "mergePdf": "PDF Birleştir"
+    "mergePdf": "PDF Birleştir",
+    "splitPdf": "PDF Böl"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
@@ -51,7 +52,8 @@
         { "id": "pdfToPpt", "name": "PDF'ten PowerPoint'e", "description": "PDF sayfalarını düzenlenebilir PowerPoint (PPTX) slaytlarına dönüştürün.", "badge": "Yeni" },
         { "id": "jpgToPdf", "name": "JPG'den PDF'e", "description": "JPG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
         { "id": "pngToPdf", "name": "PNG'den PDF'e", "description": "PNG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
-        { "id": "mergePdf", "name": "PDF Birleştir", "description": "Birkaç PDF dosyasını tek bir belgede birleştirin.", "badge": "Yeni" }
+        { "id": "mergePdf", "name": "PDF Birleştir", "description": "Birkaç PDF dosyasını tek bir belgede birleştirin.", "badge": "Yeni" },
+        { "id": "splitPdf", "name": "PDF Böl", "description": "Bir PDF'yi ayrı tek sayfalık dosyalara bölün (ZIP).", "badge": "Yeni" }
       ]
     },
     "pdfToExcel": {
@@ -279,6 +281,42 @@
           { "q": "PDF birleştirme ücretsiz mi?", "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir." },
           { "q": "PDF'ler hangi sırayla birleştirilir?", "a": "Onları seçtiğiniz sırayla birleştirilir, bu yüzden dosyalarınızı görünmesini istediğiniz sırayla seçin." },
           { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyalarınız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
+          { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
+        ]
+      }
+    },
+    "splitPdf": {
+      "slug": "split-pdf",
+      "title": "PDF Böl — Ücretsiz Çevrimiçi PDF Bölücü",
+      "metaDescription": "PDF dosyalarını çevrimiçi olarak ücretsiz bölün. Bir PDF'yi tek sayfalık dosyalara saniyeler içinde ayırın — kurulum ve kayıt gerekmez. Hızlı ve güvenli.",
+      "h1": "PDF'i ücretsiz olarak bölün",
+      "subtitle": "Bir PDF'i saniyeler içinde ayrı bir sayfalık dosyalara ayırın - ücretsiz, çevrimiçi ve güvenli bir şekilde.",
+      "uploader": {
+        "dropText": "PDF'i buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
+        "button": "PDF'i böl",
+        "converting": "PDF'iniz bölünüyor…",
+        "downloadReady": "Tamamlandı! Sayfalarınız (ZIP) hazır.",
+        "download": "ZIP İndir",
+        "errorGeneric": "Bölme sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PDF Nasıl Ücretsiz Bölünür",
+        "steps": [
+          { "title": "Yükleyin", "text": "Bölmek istediğiniz PDF dosyasını seçin. Onu yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın." },
+          { "title": "İşlemi başlatın", "text": "Ücretsiz çevrimiçi aracımız PDF'inizin her sayfasını kendi dosyasına ayırır ve onları saniyeler içinde ZIP'e toplar." },
+          { "title": "İndirin", "text": "Tek sayfalı PDF'lerin ZIP'i hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir." }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          { "q": "Bir PDF'i nasıl bölerim?", "a": "PDF'inizi yukarıdaki kutuya yükleyin, \"PDF'i böl\" düğmesine tıklayın ve elde edilen ZIP'i indirin — her sayfada bir PDF bulunur. Tüm süreç sadece birkaç saniye sürer." },
+          { "q": "PDF bölme ücretsiz mi?", "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir." },
+          { "q": "Karşılığında ne alacağım?", "a": "PDF'inizin her sayfasını ayrı, tek sayfalı PDF olarak içeren bir ZIP dosyası (sayfa-1.pdf, sayfa-2.pdf ve benzeri)." },
+          { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
           { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
         ]
       }
