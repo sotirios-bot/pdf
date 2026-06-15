@@ -16,7 +16,8 @@
     "pngToPdf": "PNG'den PDF'e",
     "editPdf": "PDF Düzenle",
     "mergePdf": "PDF Birleştir",
-    "splitPdf": "PDF Böl"
+    "splitPdf": "PDF Böl",
+    "deletePdfPages": "PDF Sayfalarını Sil"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
@@ -53,7 +54,8 @@
         { "id": "jpgToPdf", "name": "JPG'den PDF'e", "description": "JPG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
         { "id": "pngToPdf", "name": "PNG'den PDF'e", "description": "PNG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
         { "id": "mergePdf", "name": "PDF Birleştir", "description": "Birkaç PDF dosyasını tek bir belgede birleştirin.", "badge": "Yeni" },
-        { "id": "splitPdf", "name": "PDF Böl", "description": "Bir PDF'yi ayrı tek sayfalık dosyalara bölün (ZIP).", "badge": "Yeni" }
+        { "id": "splitPdf", "name": "PDF Böl", "description": "Bir PDF'yi ayrı tek sayfalık dosyalara bölün (ZIP).", "badge": "Yeni" },
+        { "id": "deletePdfPages", "name": "PDF Sayfalarını Sil", "description": "Bir PDF belgesinden belirli sayfaları kaldırın.", "badge": "Yeni" }
       ]
     },
     "pdfToExcel": {
@@ -318,6 +320,67 @@
           { "q": "Karşılığında ne alacağım?", "a": "PDF'inizin her sayfasını ayrı, tek sayfalı PDF olarak içeren bir ZIP dosyası (sayfa-1.pdf, sayfa-2.pdf ve benzeri)." },
           { "q": "Dosyalarım güvenli ve özel mi?", "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir." },
           { "q": "Windows, Mac ve mobil cihazlarda çalışır mı?", "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır." }
+        ]
+      }
+    },
+    "deletePdfPages": {
+      "slug": "delete-pdf-pages",
+      "title": "PDF Sayfalarını Sil — Ücretsiz Çevrimiçi PDF Sayfa Silici",
+      "metaDescription": "PDF'ten sayfaları çevrimiçi olarak ücretsiz silin. Belirli sayfaları bir PDF'ten saniyeler içinde kaldırın — kurulum ve kayıt gerekmez. Hızlı ve güvenli.",
+      "h1": "PDF Sayfalarını ÜCRETSİZ Silin",
+      "subtitle": "PDF belgesinden belirli sayfaları saniyeler içinde silin — ücretsiz, çevrimiçi ve güvenli bir şekilde.",
+      "paramPlaceholder": "Silinecek sayfalar, örn. 2, 5-7",
+      "uploader": {
+        "dropText": "PDF'i buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
+        "button": "Sayfaları Sil",
+        "converting": "Sayfalar kaldırılıyor…",
+        "downloadReady": "Tamamlandı! Düzenlenen PDF'iniz hazır.",
+        "download": "PDF İndir",
+        "errorGeneric": "Sayfalar silinirken bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PDF'ten Sayfalar Nasıl Ücretsiz Silinir",
+        "steps": [
+          {
+            "title": "Yükleyin",
+            "text": "Düzenlemek istediğiniz PDF dosyasını seçin. Onu yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın."
+          },
+          {
+            "title": "Sayfaları seçin",
+            "text": "Silmek istediğiniz sayfaları yazın — hem tek sayfalar hem de aralıklar çalışır, örneğin 2, 5-7."
+          },
+          {
+            "title": "İndirin",
+            "text": "Bu sayfalar olmadan yeni PDF'iniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          {
+            "q": "PDF'ten sayfaları nasıl silerim?",
+            "a": "PDF'i yükleyin, silinecek sayfaları girin (örn. 2, 5-7), \"Sayfaları Sil\" düğmesine tıklayın ve düzenlenen PDF'i indirin. Tüm süreç sadece birkaç saniye sürer."
+          },
+          {
+            "q": "Sayfaları nasıl belirlerim?",
+            "a": "Virgülle ayrılmış 1 tabanlı sayfa numaralarını kullanın. Tek sayfaları ve aralıkları karıştırabilirsiniz, örneğin: 1, 4, 8-10."
+          },
+          {
+            "q": "PDF sayfa silici ücretsiz mi?",
+            "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir."
+          },
+          {
+            "q": "Dosyalarım güvenli ve özel mi?",
+            "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir."
+          },
+          {
+            "q": "Windows, Mac ve mobil cihazlarda çalışıyor mu?",
+            "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır."
+          }
         ]
       }
     },

@@ -16,7 +16,8 @@
     "pngToPdf": "PNGdan PDFga",
     "editPdf": "PDF tahrirlash",
     "mergePdf": "PDF birlashtirish",
-    "splitPdf": "PDF ajratish"
+    "splitPdf": "PDF ajratish",
+    "deletePdfPages": "PDF sahifalarni o‘chirish"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
@@ -53,7 +54,8 @@
         { "id": "jpgToPdf", "name": "JPGdan PDFga", "description": "JPG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "pngToPdf", "name": "PNGdan PDFga", "description": "PNG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "mergePdf", "name": "PDF birlashtirish", "description": "Bir nechta PDF faylni bitta hujjatga birlashtiring.", "badge": "Yangi" },
-        { "id": "splitPdf", "name": "PDF ajratish", "description": "PDFni alohida bir sahifali fayllarga ajrating (ZIP).", "badge": "Yangi" }
+        { "id": "splitPdf", "name": "PDF ajratish", "description": "PDFni alohida bir sahifali fayllarga ajrating (ZIP).", "badge": "Yangi" },
+        { "id": "deletePdfPages", "name": "PDF sahifalarni o‘chirish", "description": "PDF hujjatdan muayyan sahifalarni olib tashlang.", "badge": "Yangi" }
       ]
     },
     "pdfToExcel": {
@@ -318,6 +320,67 @@
           { "q": "Men nima olaman?", "a": "PDF faylingizning har bir sahifasini alohida, bir sahifali PDF sifatida o‘z ichiga olgan ZIP fayl (sahifa-1.pdf, sahifa-2.pdf va hokazo)." },
           { "q": "Fayllarim xavfsiz va maxfiymi?", "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi." },
           { "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?", "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi." }
+        ]
+      }
+    },
+    "deletePdfPages": {
+      "slug": "delete-pdf-pages",
+      "title": "PDF sahifalarni o‘chirish — Bepul onlayn PDF sahifa o‘chirgich",
+      "metaDescription": "PDF'dan sahifalarni bepul onlayn o‘chiring. Muayyan sahifalarni PDF'dan bir necha soniyada olib tashlang — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez va xavfsiz.",
+      "h1": "PDF sahifalarni BEPUL o‘chirish",
+      "subtitle": "PDF hujjatdan muayyan sahifalarni bir necha soniyada olib tashlang — bepul, onlayn va xavfsiz.",
+      "paramPlaceholder": "O‘chiriladigan sahifalar, masalan: 2, 5-7",
+      "uploader": {
+        "dropText": "PDF faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "Sahifalarni o‘chirish",
+        "converting": "Sahifalar o‘chirilmoqda…",
+        "downloadReady": "Tayyor! Tahrirlangan PDF faylingiz tayyor.",
+        "download": "PDF yuklab olish",
+        "errorGeneric": "Sahifalarni o‘chirishda xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "PDF fayldan sahifalarni qanday bepul o‘chirish mumkin",
+        "steps": [
+          {
+            "title": "Yuklash",
+            "text": "Tahrirlanadigan PDF faylni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan tanlang."
+          },
+          {
+            "title": "Sahifalarni tanlash",
+            "text": "Olib tashlanadigan sahifalarni kiriting — alohida sahifalar ham, oraliqlar ham ishlaydi, masalan, 2, 5-7."
+          },
+          {
+            "title": "Yuklab olish",
+            "text": "Bu sahifalarsiz yangi PDF darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan o‘chirib tashlanadi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          {
+            "q": "PDFdan sahifalarni qanday o‘chirish mumkin?",
+            "a": "PDF faylingizni yuklang, olib tashlanadigan sahifalarni kiriting (masalan, 2, 5-7), «Sahifalarni o‘chirish» tugmasini bosing va tahrirlangan PDF faylni yuklab oling. Butun jarayon atigi bir necha soniya vaqt oladi."
+          },
+          {
+            "q": "Sahifalarni qanday ko‘rsatish mumkin?",
+            "a": "Vergul bilan ajratilgan 1 raqamli sahifa raqamlaridan foydalaning. Siz bitta sahifa va oraliqlarni aralashtirishingiz mumkin, masalan: 1, 4, 8-10."
+          },
+          {
+            "q": "PDF sahifalarni olib tashlash vositasi bepulmi?",
+            "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul."
+          },
+          {
+            "q": "Fayllarim xavfsiz va maxfiymi?",
+            "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi."
+          },
+          {
+            "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?",
+            "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi."
+          }
         ]
       }
     }
