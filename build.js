@@ -40,6 +40,7 @@ const config = {
     { id: "mergePdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/merge-pdf", ext: "pdf", downloadEvent: "merge_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", multiple: true, locales: ["en"] },
     { id: "splitPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/split-pdf", ext: "zip", downloadEvent: "split_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en"] },
     { id: "deletePdfPages", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/delete-pdf-pages", ext: "pdf", downloadEvent: "delete_pages_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", param: "pages", locales: ["en"] },
+    { id: "compressPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/compress-pdf", ext: "pdf", downloadEvent: "compress_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]
@@ -101,7 +102,7 @@ function toolHref(locale, pageId) {
 
 // All converter pages, in config order.
 const toolPages = config.pages.filter((p) => p.type === "converter");
-const toolIcons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️", mergePdf: "🔗", splitPdf: "✂️", deletePdfPages: "🗑️" };
+const toolIcons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️", mergePdf: "🔗", splitPdf: "✂️", deletePdfPages: "🗑️", compressPdf: "🗜️" };
 // <a> links to the tools in `category` available in `locale` (labelled locally).
 function toolLinksFor(locale, t, category) {
   return toolPages

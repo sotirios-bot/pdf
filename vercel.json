@@ -25,6 +25,9 @@
     },
     "api/delete-pdf-pages.js": {
       "maxDuration": 30
+    },
+    "api/compress-pdf.js": {
+      "maxDuration": 30
     }
   },
   "headers": [
