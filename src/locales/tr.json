@@ -16,6 +16,7 @@
     "pngToPdf": "PNG'den PDF'e",
     "mdToPdf": "Markdown'dan PDF'e",
     "textToPdf": "TXT'den PDF'e",
+    "pdfToText": "PDF'ten TXT'ye",
     "editPdf": "PDF Düzenle",
     "mergePdf": "PDF Birleştir",
     "splitPdf": "PDF Böl",
@@ -58,6 +59,7 @@
         { "id": "pngToPdf", "name": "PNG'den PDF'e", "description": "PNG resmini PDF belgesine dönüştürün.", "badge": "Yeni" },
         { "id": "mdToPdf", "name": "Markdown'dan PDF'e", "description": "Bir Markdown (.md) dosyasını formatlı bir PDF'e dönüştürün.", "badge": "Yeni" },
         { "id": "textToPdf", "name": "TXT'den PDF'e", "description": "Düz bir metin (.txt) dosyasını PDF belgesine dönüştürün.", "badge": "Yeni" },
+        { "id": "pdfToText", "name": "PDF'ten TXT'ye", "description": "PDF'teki metni basit bir .txt dosyasına çıkarın.", "badge": "Yeni" },
         { "id": "mergePdf", "name": "PDF Birleştir", "description": "Birkaç PDF dosyasını tek bir belgede birleştirin.", "badge": "Yeni" },
         { "id": "splitPdf", "name": "PDF Böl", "description": "Bir PDF'yi ayrı tek sayfalık dosyalara bölün (ZIP).", "badge": "Yeni" },
         { "id": "deletePdfPages", "name": "PDF Sayfalarını Sil", "description": "Bir PDF belgesinden belirli sayfaları kaldırın.", "badge": "Yeni" },
@@ -558,6 +560,66 @@
           {
             "q": "TXT'den PDF'e dönüştürücü ücretsiz mi?",
             "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir."
+          },
+          {
+            "q": "Dosyalarım güvenli ve özel mi?",
+            "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir."
+          },
+          {
+            "q": "Windows, Mac ve mobil cihazlarda çalışır mı?",
+            "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır."
+          }
+        ]
+      }
+    },
+    "pdfToText": {
+      "slug": "pdf-to-text",
+      "title": "PDF'i Metne Dönüştür — Ücretsiz Çevrimiçi PDF'ten Metne Dönüştürücü",
+      "metaDescription": "PDF'i çevrimiçi olarak ücretsiz metne dönüştürün. Bir PDF'ten metni saniyeler içinde basit bir .txt dosyasına çıkarın — kurulum ve kayıt gerekmez. Hızlı ve güvenli.",
+      "h1": "PDF'i Metne ÜCRETSİZ Dönüştürün",
+      "subtitle": "Bir PDF'ten metni saniyeler içinde basit bir .txt dosyasına çıkarın — ücretsiz, çevrimiçi ve güvenli.",
+      "uploader": {
+        "dropText": "PDF'i buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
+        "button": "Metne Dönüştür",
+        "converting": "Metniniz çıkarılıyor…",
+        "downloadReady": "Tamamlandı! Metin dosyanız hazır.",
+        "download": "TXT İndir",
+        "errorGeneric": "Dönüştürme sırasında bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PDF Metne Nasıl Ücretsiz Dönüştürülür",
+        "steps": [
+          {
+            "title": "Yükleyin",
+            "text": "Dönüştürmek istediğiniz PDF dosyasını seçin. Onu yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın."
+          },
+          {
+            "title": "İşlemeye başlayın",
+            "text": "Ücretsiz çevrimiçi dönüştürücümüz PDF'inizin metin katmanını okur ve onu saniyeler içinde temiz, basit bir .txt dosyasına çıkarır."
+          },
+          {
+            "title": "İndirin",
+            "text": "Yeni metin dosyanız hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          {
+            "q": "PDF'i metne nasıl dönüştürürüm?",
+            "a": "PDF'inizi yukarıdaki kutuya yükleyin, \"Metne Dönüştür\" düğmesine tıklayın ve elde edilen .txt dosyasını indirin. Tüm süreç sadece birkaç saniye sürer."
+          },
+          {
+            "q": "Düzen korunacak mı?",
+            "a": "Okunabilir metni okuma sırasına göre çıkarırız. Düz metin sütunları, tabloları veya stilleri tutamaz, bu yüzden karmaşık düzenler metin satırlarına düzleştirilir."
+          },
+          {
+            "q": "Taranmış bir PDF'i dönüştürebilir miyim?",
+            "a": "Dönüştürücü dijital, metin tabanlı PDF'ler ile en iyi şekilde çalışır. Taranmış veya yalnızca görüntü içeren PDF'lerin metin katmanı yoktur, bu nedenle henüz dönüştürülemeyebilirler — OCR desteği planlanıyor."
           },
           {
             "q": "Dosyalarım güvenli ve özel mi?",
