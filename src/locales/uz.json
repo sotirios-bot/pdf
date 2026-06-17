@@ -17,6 +17,7 @@
     "mdToPdf": "Markdown'dan PDFga",
     "textToPdf": "TXTdan PDFga",
     "pdfToText": "PDFdan TXTga",
+    "pdfToAutocad": "PDF to AutoCAD",
     "editPdf": "PDF tahrirlash",
     "mergePdf": "PDF birlashtirish",
     "splitPdf": "PDF ajratish",
@@ -60,6 +61,7 @@
         { "id": "mdToPdf", "name": "Markdown'dan PDFga", "description": "Markdown (.md) faylini formatlangan PDFga aylantiring.", "badge": "Yangi" },
         { "id": "textToPdf", "name": "TXTdan PDFga", "description": "Oddiy matn (.txt) faylini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "pdfToText", "name": "PDFdan TXTga", "description": "PDF fayldan matnni oddiy .txt fayliga ajratib oling.", "badge": "Yangi" },
+        { "id": "pdfToAutocad", "name": "PDF to AutoCAD", "description": "Vektorli PDFni AutoCAD DXF tahrirlanadigan chizmasiga aylantiring.", "badge": "Yangi" },
         { "id": "mergePdf", "name": "PDF birlashtirish", "description": "Bir nechta PDF faylni bitta hujjatga birlashtiring.", "badge": "Yangi" },
         { "id": "splitPdf", "name": "PDF ajratish", "description": "PDFni alohida bir sahifali fayllarga ajrating (ZIP).", "badge": "Yangi" },
         { "id": "deletePdfPages", "name": "PDF sahifalarni o‘chirish", "description": "PDF hujjatdan muayyan sahifalarni olib tashlang.", "badge": "Yangi" },
@@ -620,6 +622,70 @@
           {
             "q": "Skanerlangan PDF faylni o‘girish mumkinmi?",
             "a": "Konvertor raqamli, matnli PDF fayllar bilan yaxshi ishlaydi. Skanerlangan yoki faqat rasmli PDF fayllarda matn qatlami mavjud emas, shuning uchun ular hali o‘girilmasligi mumkin — OCR qo‘llab-quvvatlanishi rejalashtirilgan."
+          },
+          {
+            "q": "Fayllarim xavfsiz va maxfiymi?",
+            "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi."
+          },
+          {
+            "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?",
+            "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi."
+          }
+        ]
+      }
+    },
+    "pdfToAutocad": {
+      "slug": "pdf-to-autocad",
+      "title": "PDF'ni AutoCADga aylantirish — Bepul onlayn PDF'dan DXF'ga konvertor",
+      "metaDescription": "PDF'ni bepul onlayn AutoCADga aylantiring. Vektorli PDF fayllarni AutoCADda ochiladigan tahrirlanadigan DXF chizmalariga bir necha soniyada aylantiring — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez va xavfsiz.",
+      "h1": "PDFni AutoCADga BEPUL aylantiring",
+      "subtitle": "Vektorli PDF fayllarni bir necha soniyada tahrirlanadigan AutoCAD DXF chizmalariga aylantiring — bepul, onlayn va xavfsiz.",
+      "uploader": {
+        "dropText": "PDF faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "DXFga o‘girish",
+        "converting": "PDF aylantirilmoqda…",
+        "downloadReady": "Tayyor! DXF chizmangiz tayyor.",
+        "download": "DXF yuklab olish",
+        "errorGeneric": "Aylantirish vaqtida xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "PDFni AutoCADga qanday qilib bepul aylantirish mumkin",
+        "steps": [
+          {
+            "title": "Yuklash",
+            "text": "O‘girmoqchi bo‘lgan PDF faylingizni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan tanlang."
+          },
+          {
+            "title": "Qayta ishlashni boshlash",
+            "text": "Bizning bepul onlayn konvertorimiz PDF faylingizdan vektor chiziqlari, shakllar va matnni ajratib oladi va ularni bir necha soniya ichida CAD obyektlari sifatida qayta yaratadi."
+          },
+          {
+            "title": "Yuklab olish",
+            "text": "Yangi DXF chizmangiz darhol yuklab olishga tayyor bo‘ladi — uni AutoCAD yoki istalgan CAD ilovasida oching. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan o‘chirib tashlanadi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          {
+            "q": "PDFni AutoCADga qanday o‘tkazaman?",
+            "a": "PDF faylingizni yuqoridagi katakchaga yuklang, «DXFga o‘girish» tugmasini bosing va hosil bo‘lgan DXF faylini yuklab oling. Uni bevosita AutoCAD yoki istalgan CAD dasturida oching. Butun jarayon atigi bir necha soniya vaqt oladi."
+          },
+          {
+            "q": "DWG yoki DXF faylini olamanmi?",
+            "a": "Siz DXF faylini olasiz. DWG — Autodesk’ning xususiy binar formati, DXF esa AutoCAD va deyarli har bir boshqa CAD dasturi nativ tarzda ochadigan ochiq CAD almashinuv formatidir. Agar kerak bo‘lsa, uni AutoCAD ichidan DWG sifatida qayta saqlashingiz mumkin."
+          },
+          {
+            "q": "Nima aylantiriladi?",
+            "a": "Vektor geometriyasi — chiziqlar, polichiziqlar, to‘g‘ri to‘rtburchaklar va egri chiziqlar — matn bilan birga dastlabki koordinatalarida joylashtirilgan tahrirlanadigan CAD obyektlariga aylantiriladi. Ranglar, qatlamlar, chiziqlar qalinligi va shtrixlar soddalashtiriladi."
+          },
+          {
+            "q": "Skanerlangan PDF faylni o‘girish mumkinmi?",
+            "a": "Yo‘q. Skanerlangan yoki faqat rasmli PDF fayllar vektor qatlamiga ega bo‘lmagan rastrli rasmlardir, shuning uchun ajratib olish uchun hech narsa yo‘q. Bu vosita CAD yoki dizayn dasturidan eksport qilingan vektorli PDF fayllar bilan ishlaydi."
           },
           {
             "q": "Fayllarim xavfsiz va maxfiymi?",
