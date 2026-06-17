@@ -15,6 +15,7 @@
     "jpgToPdf": "JPGdan PDFga",
     "pngToPdf": "PNGdan PDFga",
     "mdToPdf": "Markdown'dan PDFga",
+    "textToPdf": "TXTdan PDFga",
     "editPdf": "PDF tahrirlash",
     "mergePdf": "PDF birlashtirish",
     "splitPdf": "PDF ajratish",
@@ -56,6 +57,7 @@
         { "id": "jpgToPdf", "name": "JPGdan PDFga", "description": "JPG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "pngToPdf", "name": "PNGdan PDFga", "description": "PNG rasmini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "mdToPdf", "name": "Markdown'dan PDFga", "description": "Markdown (.md) faylini formatlangan PDFga aylantiring.", "badge": "Yangi" },
+        { "id": "textToPdf", "name": "TXTdan PDFga", "description": "Oddiy matn (.txt) faylini PDF hujjatiga aylantiring.", "badge": "Yangi" },
         { "id": "mergePdf", "name": "PDF birlashtirish", "description": "Bir nechta PDF faylni bitta hujjatga birlashtiring.", "badge": "Yangi" },
         { "id": "splitPdf", "name": "PDF ajratish", "description": "PDFni alohida bir sahifali fayllarga ajrating (ZIP).", "badge": "Yangi" },
         { "id": "deletePdfPages", "name": "PDF sahifalarni o‘chirish", "description": "PDF hujjatdan muayyan sahifalarni olib tashlang.", "badge": "Yangi" },
@@ -495,6 +497,66 @@
           },
           {
             "q": "Markdown'dan PDFga konverter bepulmi?",
+            "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul."
+          },
+          {
+            "q": "Fayllarim xavfsiz va maxfiymi?",
+            "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi."
+          },
+          {
+            "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?",
+            "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi."
+          }
+        ]
+      }
+    },
+    "textToPdf": {
+      "slug": "text-to-pdf",
+      "title": "TXT'ni PDFga aylantirish — Bepul onlayn matndan PDFga konvertor",
+      "metaDescription": "TXT'ni bepul onlayn PDFga aylantiring. Oddiy matn (.txt) fayllarini bir necha soniyada toza, sahifali PDFga aylantiring — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez va xavfsiz.",
+      "h1": "TXT matnni PDFga BEPUL o‘girish",
+      "subtitle": "Oddiy matn (.txt) fayllarini bir necha soniyada toza, sahifali PDFga aylantiring — bepul, onlayn va xavfsiz.",
+      "uploader": {
+        "dropText": "Matnli faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "PDFga o‘girish",
+        "converting": "Matn aylantirilmoqda…",
+        "downloadReady": "Tayyor! PDF faylingiz tayyor.",
+        "download": "PDF yuklab olish",
+        "errorGeneric": "Aylantirish vaqtida xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "Matn (.txt) faylini tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "TXTni PDFga qanday qilib bepul aylantirish mumkin",
+        "steps": [
+          {
+            "title": "Yuklash",
+            "text": "O‘girmoqchi bo‘lgan matn (.txt) faylini tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan tanlang."
+          },
+          {
+            "title": "Qayta ishlashni boshlash",
+            "text": "Bizning bepul onlayn konvertorimiz matningizni toza A4 sahifalariga joylashtiradi, sahifalarga ajratadi va bir necha soniya ichida PDFga aylantiradi."
+          },
+          {
+            "title": "Yuklab olish",
+            "text": "Yangi PDF fayl darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan o‘chirib tashlanadi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          {
+            "q": "TXT faylni PDFga qanday o‘girish mumkin?",
+            "a": "Yuqoridagi maydonga .txt faylingizni yuklang, «PDFga o‘girish» tugmasini bosing va hosil bo‘lgan PDFni yuklab oling. Butun jarayon atigi bir necha soniya vaqt oladi."
+          },
+          {
+            "q": "Matn formati saqlanadimi?",
+            "a": "Satrlar va xatboshilar saqlanadi, uzun satrlar esa sahifaga moslashtiriladi. Oddiy matnda shrift yoki uslublar yo‘q, shuning uchun PDF bitta toza, o‘qiladigan shriftdan foydalanadi."
+          },
+          {
+            "q": "TXT'dan PDFga konverter bepulmi?",
             "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul."
           },
           {
