@@ -17,6 +17,15 @@
     "api/image-to-pdf.js": {
       "maxDuration": 30
     },
+    "api/md-to-pdf.js": {
+      "maxDuration": 30
+    },
+    "api/text-to-pdf.js": {
+      "maxDuration": 30
+    },
+    "api/pdf-to-text.js": {
+      "maxDuration": 30
+    },
     "api/merge-pdf.js": {
       "maxDuration": 30
     },
