@@ -26,6 +26,9 @@
     "api/pdf-to-text.js": {
       "maxDuration": 30
     },
+    "api/pdf-to-autocad.js": {
+      "maxDuration": 30
+    },
     "api/merge-pdf.js": {
       "maxDuration": 30
     },
