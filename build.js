@@ -630,4 +630,32 @@ Every tool page is available in English (\`/\`), Russian (\`/ru/\`), Turkish (\`
   fs.writeFileSync(path.join(OUT, "llms.txt"), llms);
 }
 
+// llms-full.txt — full English content of every tool inlined in one file, for
+// LLMs that prefer to read everything without crawling each page.
+{
+  const t = defaultT;
+  const parts = [
+    `# ${config.org.name}`,
+    "",
+    `> Free online PDF tools to convert, edit, merge, split, compress, and extract PDFs. Fast and secure, with no sign-up. Available in English, Russian, Turkish, Kazakh, and Uzbek.`,
+    "",
+    `${config.org.name} is operated by ${config.org.legalName} (${config.org.locality}, ${config.org.country}). Every tool runs in the browser over an encrypted (SSL) connection; uploaded files are processed automatically without review and deleted from the servers within a few hours. No registration, subscription, or hidden fees, and a 20 MB per-file limit. This file contains the full English content of every tool; each tool is also available in Russian (/ru/), Turkish (/tr/), Kazakh (/kk/), and Uzbek (/uz/) by adding the language prefix before the slug.`
+  ];
+  for (const p of toolPages) {
+    const pd = t.pages[p.id];
+    if (!pd) continue;
+    parts.push("", "---", "", `## ${pd.h1}`, "", `URL: ${absUrl(config.defaultLocale, pd.slug || "")}`);
+    if (pd.subtitle) parts.push("", pd.subtitle);
+    if (pd.howTo && pd.howTo.steps) {
+      parts.push("", `### ${pd.howTo.heading}`, "");
+      pd.howTo.steps.forEach((s, i) => parts.push(`${i + 1}. **${s.title}** — ${s.text}`));
+    }
+    if (pd.faq && pd.faq.items) {
+      parts.push("", `### ${pd.faq.heading}`, "");
+      pd.faq.items.forEach((it) => parts.push(`**${it.q}**`, "", it.a, ""));
+    }
+  }
+  fs.writeFileSync(path.join(OUT, "llms-full.txt"), parts.join("\n") + "\n");
+}
+
 console.log("\nBuild complete → public/");
