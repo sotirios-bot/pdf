@@ -572,4 +572,48 @@ fs.writeFileSync(
   `google.com, ${config.adsensePublisherId}, DIRECT, f08c47fec0942fa0\n`
 );
 
+// llms.txt — structured site summary for LLMs (https://llmstxt.org/).
+// Generated from the English locale so it stays in sync with the tool list.
+{
+  const t = defaultT;
+  const cardById = Object.fromEntries((t.pages.home.tools || []).map((c) => [c.id, c]));
+  const linkFor = (id) => {
+    const page = t.pages[id];
+    const c = cardById[id];
+    const name = c ? c.name : t.nav[id];
+    const desc = c && c.description ? `: ${c.description}` : "";
+    return `- [${name}](${absUrl(config.defaultLocale, page.slug || "")})${desc}`;
+  };
+  const convertLinks = toolPages
+    .filter((p) => (p.category || "convert") === "convert")
+    .map((p) => linkFor(p.id));
+  const editLinks = toolPages
+    .filter((p) => p.category === "edit")
+    .map((p) => linkFor(p.id));
+
+  const llms = `# ${config.org.name}
+
+> Free online PDF tools to convert, edit, merge, split, compress, and extract PDFs. Fast and secure, with no sign-up — available in English, Russian, Turkish, Kazakh, and Uzbek.
+
+${config.org.name} is operated by ${config.org.legalName} (${config.org.locality}, ${config.org.country}). Every tool runs in the browser over an encrypted (SSL) connection; uploaded files are processed automatically without review and deleted from the servers within a few hours. No registration, subscription, or hidden fees, and a 20 MB per-file limit.
+
+## Convert PDF
+${convertLinks.join("\n")}
+
+## Edit PDF
+${editLinks.join("\n")}
+
+## Legal
+- [Privacy Policy](${absUrl(config.defaultLocale, privacySlug)}): How ${config.org.name} handles your files and personal data.
+- [Terms and Conditions](${absUrl(config.defaultLocale, termsSlug)}): The terms governing use of ${config.org.name}.
+
+## Languages
+Every tool page is available in English (\`/\`), Russian (\`/ru/\`), Turkish (\`/tr/\`), Kazakh (\`/kk/\`), and Uzbek (\`/uz/\`). Add the tool slug after a language prefix — for example, ${config.baseUrl}/ru/merge-pdf/.
+
+## Optional
+- [Sitemap](${config.baseUrl}/sitemap.xml): Every page across all languages, with hreflang alternates.
+`;
+  fs.writeFileSync(path.join(OUT, "llms.txt"), llms);
+}
+
 console.log("\nBuild complete → public/");

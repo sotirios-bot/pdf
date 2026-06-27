@@ -44,7 +44,7 @@
   },
   "headers": [
     {
-      "source": "/(sitemap.xml|robots.txt|ads.txt)",
+      "source": "/(sitemap.xml|robots.txt|ads.txt|llms.txt)",
       "headers": [
         { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
       ]
