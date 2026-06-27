@@ -289,6 +289,20 @@ for (const locale of config.locales) {
           }))
         });
       }
+      if (pdata.howTo && pdata.howTo.steps) {
+        ldBlocks.push({
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          name: pdata.howTo.heading,
+          inLanguage: t.lang,
+          step: pdata.howTo.steps.map((s, i) => ({
+            "@type": "HowToStep",
+            position: i + 1,
+            name: s.title,
+            text: s.text
+          }))
+        });
+      }
       ldBlocks.push({
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
