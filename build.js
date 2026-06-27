@@ -13,6 +13,8 @@ const OUT = path.join(__dirname, "public");
 const config = {
   // Used for canonical URLs / hreflang / sitemap. Update to your real domain.
   baseUrl: "https://pdfconvertme.com",
+  // Google AdSense publisher id (also in the head meta tag). Used for ads.txt.
+  adsensePublisherId: "pub-5220550180754289",
   defaultLocale: "en",
   locales: ["en", "ru", "tr", "kk", "uz"],
   // Languages a page falls back to when it isn't translated for a locale
@@ -561,6 +563,13 @@ fs.writeFileSync(path.join(OUT, "sitemap.xml"), sitemap);
 fs.writeFileSync(
   path.join(OUT, "robots.txt"),
   `User-agent: *\nAllow: /\nSitemap: ${config.baseUrl}/sitemap.xml\n`
+);
+
+// ads.txt — authorizes Google AdSense to sell this site's inventory.
+// f08c47fec0942fa0 is Google's fixed AdSense certification authority id.
+fs.writeFileSync(
+  path.join(OUT, "ads.txt"),
+  `google.com, ${config.adsensePublisherId}, DIRECT, f08c47fec0942fa0\n`
 );
 
 console.log("\nBuild complete → public/");
