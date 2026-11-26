@@ -8,6 +8,7 @@
   },
   "nav": {
     "home": "Trang chủ",
+    "allTools": "Tất cả công cụ",
     "convertPdf": "Chuyển đổi PDF",
     "pdfToExcel": "PDF sang Excel",
     "pdfToWord": "PDF sang Word",

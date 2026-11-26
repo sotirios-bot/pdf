@@ -8,6 +8,7 @@
   },
   "nav": {
     "home": "Ana Sayfa",
+    "allTools": "Tüm Araçlar",
     "convertPdf": "PDF Dönüştür",
     "pdfToExcel": "PDF'ten Excel'e",
     "pdfToWord": "PDF'ten Word'a",

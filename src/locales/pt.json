@@ -8,6 +8,7 @@
   },
   "nav": {
     "home": "Início",
+    "allTools": "Todas as ferramentas",
     "convertPdf": "Converter PDF",
     "pdfToExcel": "PDF para Excel",
     "pdfToWord": "PDF para Word",

@@ -8,6 +8,7 @@
   },
   "nav": {
     "home": "Негізгі",
+    "allTools": "Барлық құралдар",
     "convertPdf": "PDF түрлендіру",
     "pdfToExcel": "PDF-тен Excel-ге",
     "pdfToWord": "PDF-тен Word-қа",

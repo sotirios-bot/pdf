@@ -120,6 +120,59 @@ function toolLinksFor(locale, t, category) {
         `<a href="${urlPath(locale, getLocale(locale).pages[p.id].slug || "")}">${t.nav[p.id]}</a>`
     );
 }
+// Flag emoji per locale, for the language mega menu.
+const flags = { en: "🇬🇧", ru: "🇷🇺", tr: "🇹🇷", kk: "🇰🇿", uz: "🇺🇿", es: "🇪🇸", pt: "🇧🇷", fr: "🇫🇷", de: "🇩🇪", pl: "🇵🇱", id: "🇮🇩", vi: "🇻🇳" };
+
+// "All Tools" mega menu: a wide dropdown with one column per tool category,
+// each listing its tools (with icons) that exist in this locale.
+function allToolsMenu(locale, t) {
+  const cats = [["convert", t.nav.convertPdf], ["edit", t.nav.editPdf]];
+  const cols = cats
+    .map(([cat, label]) => {
+      const items = toolPages
+        .filter((p) => (p.category || "convert") === cat && pageLocales(p).includes(locale))
+        .map(
+          (p) =>
+            `<a href="${urlPath(locale, getLocale(locale).pages[p.id].slug || "")}"><span class="mega-ico" aria-hidden="true">${toolIcons[p.id] || "📄"}</span>${t.nav[p.id]}</a>`
+        );
+      if (!items.length) return "";
+      return `<div class="mega-col">
+              <h4>${label}</h4>
+              ${items.join("\n              ")}
+            </div>`;
+    })
+    .filter(Boolean)
+    .join("\n            ");
+  return `<div class="nav-dropdown nav-dropdown--mega">
+        <button type="button" class="nav-dropbtn" aria-haspopup="true">${t.nav.allTools}<span class="caret" aria-hidden="true">▾</span></button>
+        <div class="nav-menu nav-mega">
+          <div class="mega-grid">
+            ${cols}
+          </div>
+        </div>
+      </div>`;
+}
+
+// Language mega menu: a flag + native-name grid. `items` is an array of
+// { code, href, current }. Shows the current language on the button.
+function langMenu(locale, label, items) {
+  const cur = getLocale(locale);
+  const links = items
+    .map(
+      (it) =>
+        `<a href="${it.href}"${it.current ? ' class="active" aria-current="true"' : ""}><span class="flag" aria-hidden="true">${flags[it.code]}</span>${getLocale(it.code).localeName}</a>`
+    )
+    .join("\n        ");
+  return `<div class="lang-dropdown">
+      <button type="button" class="lang-btn" aria-haspopup="true" aria-label="${label}">
+        <span class="flag" aria-hidden="true">${flags[locale]}</span><span class="lang-cur">${cur.localeName}</span><span class="caret" aria-hidden="true">▾</span>
+      </button>
+      <div class="nav-menu lang-mega">
+        ${links}
+      </div>
+    </div>`;
+}
+
 // Header dropdown + footer column for a category, or "" if it has no tools
 // in this locale (e.g. Edit PDF on non-English pages).
 function navGroup(locale, t, category, label) {
@@ -229,14 +282,14 @@ for (const locale of config.locales) {
     // The hub homepage offers every language (pointing to each language's
     // root); other pages only list the locales they're actually built for.
     const switcherLocales = page.type === "hub" ? config.locales : locs;
-    const langOptions = switcherLocales
-      .map((code) => {
-        const o = getLocale(code);
-        const otherRoute =
-          page.type === "hub" ? urlPath(code, "") : urlPath(code, o.pages[page.id].slug || "");
-        const selected = code === locale ? " selected" : "";
-        return `<option value="${otherRoute}"${selected}>${o.localeName}</option>`;
-      })
+    const langItems = switcherLocales.map((code) => {
+      const o = getLocale(code);
+      const href =
+        page.type === "hub" ? urlPath(code, "") : urlPath(code, o.pages[page.id].slug || "");
+      return { code, href, current: code === locale };
+    });
+    const langOptions = langItems
+      .map((it) => `<option value="${it.href}"${it.current ? " selected" : ""}>${getLocale(it.code).localeName}</option>`)
       .join("\n        ");
 
     const hreflang = altsByPage[page.id]
@@ -349,6 +402,8 @@ for (const locale of config.locales) {
       footerConvertLinks: toolLinksFor(locale, t, "convert").join("\n      "),
       editDropdown: navGroup(locale, t, "edit", t.nav.editPdf).dropdown,
       footerEditCol: navGroup(locale, t, "edit", t.nav.editPdf).footerCol,
+      allToolsMenu: allToolsMenu(locale, t),
+      langMenu: langMenu(locale, t.common.languageLabel, langItems),
       languageLabel: t.common.languageLabel,
       langOptions,
       footerRights: t.footer.rights,
@@ -474,11 +529,9 @@ for (const locale of config.locales) {
 // ----- 404 page (single, default locale, noindex) -----
 {
   const t = defaultT;
-  const langOptions = allLocales
-    .map(
-      (o) =>
-        `<option value="${urlPath(o.lang, "")}"${o.lang === t.lang ? " selected" : ""}>${o.localeName}</option>`
-    )
+  const langItems = config.locales.map((code) => ({ code, href: urlPath(code, ""), current: code === t.lang }));
+  const langOptions = langItems
+    .map((it) => `<option value="${it.href}"${it.current ? " selected" : ""}>${getLocale(it.code).localeName}</option>`)
     .join("\n        ");
   const ctx = {
     lang: t.lang,
@@ -503,6 +556,8 @@ for (const locale of config.locales) {
     footerConvertLinks: toolLinksFor(t.lang, t, "convert").join("\n      "),
     editDropdown: navGroup(t.lang, t, "edit", t.nav.editPdf).dropdown,
     footerEditCol: navGroup(t.lang, t, "edit", t.nav.editPdf).footerCol,
+    allToolsMenu: allToolsMenu(t.lang, t),
+    langMenu: langMenu(t.lang, t.common.languageLabel, langItems),
     languageLabel: t.common.languageLabel,
     langOptions,
     footerRights: t.footer.rights,

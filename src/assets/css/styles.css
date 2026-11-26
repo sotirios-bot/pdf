@@ -109,12 +109,60 @@ body {
   white-space: nowrap;
 }
 .nav-menu a:hover { background: #f0f6ff; color: var(--primary); }
-.lang-switcher select {
-  padding: 0.4rem 0.6rem;
+
+/* "All Tools" mega menu */
+.nav-mega { min-width: 440px; left: auto; right: 0; padding: 0.9rem; }
+.mega-grid { display: flex; gap: 1.5rem; }
+.mega-col { min-width: 180px; }
+.mega-col h4 {
+  margin: 0 0 0.35rem;
+  padding: 0 0.75rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.nav-mega a { display: flex; align-items: center; gap: 0.55rem; }
+.mega-ico { font-size: 1.05rem; width: 1.3rem; text-align: center; }
+
+/* Language mega menu with flags */
+.lang-dropdown { position: relative; margin-left: 1rem; }
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.7rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: var(--card);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
 }
+.lang-btn:hover { border-color: var(--primary); }
+.flag { font-size: 1.1rem; line-height: 1; }
+.lang-mega {
+  left: auto;
+  right: 0;
+  min-width: 300px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1rem;
+}
+.lang-dropdown:hover .lang-mega,
+.lang-dropdown:focus-within .lang-mega { display: grid; }
+.lang-mega a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.lang-mega a:hover { background: #f0f6ff; color: var(--primary); }
+.lang-mega a.active { background: #eef4ff; font-weight: 600; }
 
 /* Breadcrumb */
 .breadcrumb {
@@ -409,6 +457,20 @@ body {
   .footer-col { flex-basis: 40%; }
   .hero h1 { font-size: 1.75rem; }
   /* Header: brand + language on the first row, nav centered on the second */
-  .lang-switcher { margin-left: auto; }
+  .lang-dropdown { margin-left: auto; }
   .main-nav { order: 3; width: 100%; margin-left: 0; justify-content: center; gap: 1.75rem; }
+  /* On small screens, open the menus inline (full width) instead of as an
+     absolute panel, so nothing overflows the viewport. */
+  .nav-dropdown--mega, .lang-dropdown { position: static; }
+  .nav-mega, .lang-mega {
+    position: static;
+    width: 100%;
+    min-width: 0;
+    margin-top: 0.4rem;
+    box-shadow: none;
+    transform: none;
+  }
+  .mega-grid { flex-direction: column; gap: 0.75rem; }
+  .lang-dropdown { width: 100%; text-align: center; }
+  .lang-btn { margin: 0 auto; }
 }

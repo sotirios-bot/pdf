@@ -8,6 +8,7 @@
   },
   "nav": {
     "home": "Beranda",
+    "allTools": "Semua Alat",
     "convertPdf": "Konversi PDF",
     "pdfToExcel": "PDF ke Excel",
     "pdfToWord": "PDF ke Word",

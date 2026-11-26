@@ -8,6 +8,7 @@
   },
   "nav": {
     "home": "Bosh sahifa",
+    "allTools": "Barcha vositalar",
     "convertPdf": "PDF o‘girish",
     "pdfToExcel": "PDFdan Excelga",
     "pdfToWord": "PDFdan Wordga",

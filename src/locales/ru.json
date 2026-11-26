@@ -8,6 +8,7 @@
   },
   "nav": {
     "home": "Главная",
+    "allTools": "Все инструменты",
     "convertPdf": "Конвертировать PDF",
     "pdfToExcel": "PDF в Excel",
     "pdfToWord": "PDF в Word",
