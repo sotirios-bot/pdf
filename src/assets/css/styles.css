@@ -1,3 +1,13 @@
+/* Windows's system emoji font has no country-flag glyphs, so 🇬🇧-style flags
+   render as letters there. This color font supplies flag glyphs for exactly the
+   regional-indicator range, so the same emoji render as flags on every OS. */
+@font-face {
+  font-family: "Twemoji Country Flags";
+  unicode-range: U+1F1E6-1F1FF;
+  src: url("/assets/fonts/TwemojiCountryFlags.woff2") format("woff2");
+  font-display: swap;
+}
+
 :root {
   --bg: #f7f8fa;
   --card: #ffffff;
@@ -14,7 +24,7 @@
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Twemoji Country Flags", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--text);
   background: var(--bg);
   line-height: 1.5;
