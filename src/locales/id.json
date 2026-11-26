@@ -1,0 +1,935 @@
+{
+  "lang": "id",
+  "dir": "ltr",
+  "localeName": "Bahasa Indonesia",
+  "site": {
+    "name": "PDFConvertMe",
+    "tagline": "Konverter PDF online gratis"
+  },
+  "nav": {
+    "home": "Beranda",
+    "convertPdf": "Konversi PDF",
+    "pdfToExcel": "PDF ke Excel",
+    "pdfToWord": "PDF ke Word",
+    "pdfToPpt": "PDF ke PowerPoint",
+    "jpgToPdf": "JPG ke PDF",
+    "pngToPdf": "PNG ke PDF",
+    "mdToPdf": "Markdown ke PDF",
+    "textToPdf": "TXT ke PDF",
+    "pdfToText": "PDF ke TXT",
+    "pdfToAutocad": "PDF ke AutoCAD",
+    "editPdf": "Edit PDF",
+    "mergePdf": "Gabungkan PDF",
+    "splitPdf": "Pisahkan PDF",
+    "deletePdfPages": "Hapus Halaman PDF",
+    "compressPdf": "Kompres PDF"
+  },
+  "footer": {
+    "rights": "Semua hak dilindungi.",
+    "tagline": "Konverter file online gratis untuk file PDF, Excel, Word, PowerPoint, dan gambar. Konversi dokumen cepat dan aman tanpa unduhan, tanpa pendaftaran, dan penggunaan tanpa batas.",
+    "legalHeading": "Legal",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat dan Ketentuan",
+    "toolsHeading": "Alat"
+  },
+  "common": {
+    "languageLabel": "Bahasa",
+    "relatedTools": "Alat terkait",
+    "trustNote": "🔒 File {type} diproses melalui SSL dan dihapus dalam beberapa jam — tanpa pendaftaran"
+  },
+  "meta": {
+    "manifestDescription": "Konversi PDF ke Excel secara gratis – cepat, online, dan aman.",
+    "notFoundTitle": "404 – Halaman Tidak Ditemukan | PDFConvertMe",
+    "notFoundDescription": "Halaman yang Anda cari tidak dapat ditemukan.",
+    "notFoundText": "Maaf, halaman yang Anda cari tidak ada atau telah dipindahkan.",
+    "notFoundHome": "Kembali ke beranda"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "PDFConvertMe – Alat Konverter PDF Online Gratis",
+      "metaDescription": "Alat PDF online gratis dari PDFConvertMe. Konversi PDF ke Excel, PDF ke Word, dan lainnya – cepat, akurat, aman, dan gratis tanpa pendaftaran.",
+      "h1": "Alat PDF Online Gratis",
+      "subtitle": "Konversi PDF Anda dalam hitungan detik – gratis, online, dan aman. Pilih alat untuk memulai.",
+      "toolsHeading": "Pilih alat",
+      "tools": [
+        {
+          "id": "pdfToExcel",
+          "name": "PDF ke Excel",
+          "description": "Konversi tabel PDF menjadi spreadsheet XLSX yang sepenuhnya dapat diedit.",
+          "badge": ""
+        },
+        {
+          "id": "pdfToWord",
+          "name": "PDF ke Word",
+          "description": "Ubah dokumen PDF menjadi file Word (DOCX) yang dapat diedit.",
+          "badge": ""
+        },
+        {
+          "id": "pdfToPpt",
+          "name": "PDF ke PowerPoint",
+          "description": "Konversi halaman PDF menjadi slide PowerPoint (PPTX) yang dapat diedit.",
+          "badge": ""
+        },
+        {
+          "id": "jpgToPdf",
+          "name": "JPG ke PDF",
+          "description": "Ubah gambar JPG menjadi dokumen PDF.",
+          "badge": ""
+        },
+        {
+          "id": "pngToPdf",
+          "name": "PNG ke PDF",
+          "description": "Ubah gambar PNG menjadi dokumen PDF.",
+          "badge": ""
+        },
+        {
+          "id": "mdToPdf",
+          "name": "Markdown ke PDF",
+          "description": "Konversi file Markdown (.md) menjadi PDF yang terformat.",
+          "badge": "Baru"
+        },
+        {
+          "id": "textToPdf",
+          "name": "TXT ke PDF",
+          "description": "Ubah file teks biasa (.txt) menjadi dokumen PDF.",
+          "badge": "Baru"
+        },
+        {
+          "id": "pdfToText",
+          "name": "PDF ke TXT",
+          "description": "Ekstrak teks dari PDF ke file .txt biasa.",
+          "badge": "Baru"
+        },
+        {
+          "id": "pdfToAutocad",
+          "name": "PDF ke AutoCAD",
+          "description": "Konversi PDF vektor menjadi gambar DXF AutoCAD yang dapat diedit.",
+          "badge": "Baru"
+        },
+        {
+          "id": "mergePdf",
+          "name": "Gabungkan PDF",
+          "description": "Gabungkan beberapa file PDF menjadi satu dokumen.",
+          "badge": "Baru"
+        },
+        {
+          "id": "splitPdf",
+          "name": "Pisahkan PDF",
+          "description": "Pisahkan PDF menjadi file satu halaman terpisah (ZIP).",
+          "badge": "Baru"
+        },
+        {
+          "id": "deletePdfPages",
+          "name": "Hapus Halaman PDF",
+          "description": "Hapus halaman tertentu dari dokumen PDF.",
+          "badge": "Baru"
+        },
+        {
+          "id": "compressPdf",
+          "name": "Kompres PDF",
+          "description": "Kurangi ukuran file dokumen PDF.",
+          "badge": "Baru"
+        }
+      ]
+    },
+    "pdfToExcel": {
+      "slug": "pdf-to-excel",
+      "title": "Konversi PDF ke Excel – Konverter PDF ke Excel Online Gratis (XLSX)",
+      "metaDescription": "Konversi PDF ke Excel online secara gratis. Ubah file PDF menjadi spreadsheet XLSX yang dapat diedit dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Konversi file cepat, akurat, dan aman di perangkat apa pun.",
+      "h1": "Konversi PDF ke Excel GRATIS",
+      "subtitle": "Ubah file PDF menjadi spreadsheet Excel (XLSX) yang sepenuhnya dapat diedit dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke Excel",
+        "converting": "Mengonversi PDF Anda…",
+        "downloadReady": "Selesai! Spreadsheet Excel Anda sudah siap.",
+        "download": "Unduh XLSX",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi File ke dan dari PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter PDF online gratis kami mengonversi dokumen PDF Anda ke Excel dalam hitungan detik, dengan mempertahankan tabel, baris, dan kolom Anda secara akurat."
+          },
+          {
+            "title": "Unduh",
+            "text": "Dokumen Excel baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi PDF ke Excel?",
+            "a": "Unggah PDF Anda di kotak di atas, klik “Konversi ke Excel”, lalu unduh spreadsheet XLSX yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah konverter PDF ke Excel gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah tabel, baris, dan kolom saya akan dipertahankan?",
+            "a": "Ya. Kami mendeteksi posisi setiap bagian teks dan membangun kembali baris serta kolom menjadi spreadsheet yang sebenarnya, dan angka tetap berupa angka sehingga Anda bisa langsung menghitungnya."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Dapatkah saya mengonversi PDF hasil pindaian?",
+            "a": "Konverter bekerja paling baik dengan PDF digital berbasis teks. PDF hasil pindaian atau yang hanya berisi gambar tidak memiliki lapisan teks, sehingga mungkin belum dapat dikonversi – dukungan OCR sedang direncanakan."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "pdfToWord": {
+      "slug": "pdf-to-word",
+      "title": "Konversi PDF ke Word – Konverter PDF ke Word Online Gratis (DOCX)",
+      "metaDescription": "Konversi PDF ke Word online secara gratis. Ubah file PDF menjadi dokumen Word (DOCX) yang dapat diedit dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat, akurat, dan aman.",
+      "h1": "Konversi PDF ke Word GRATIS",
+      "subtitle": "Ubah file PDF menjadi dokumen Word (DOCX) yang sepenuhnya dapat diedit dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke Word",
+        "converting": "Mengonversi PDF Anda…",
+        "downloadReady": "Selesai! Dokumen Word Anda sudah siap.",
+        "download": "Unduh DOCX",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi PDF ke Word secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami mengekstrak teks dari PDF Anda dan membangunnya kembali menjadi dokumen Word yang dapat diedit dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "Dokumen Word baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi PDF ke Word?",
+            "a": "Unggah PDF Anda di kotak di atas, klik “Konversi ke Word”, lalu unduh dokumen DOCX yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah konverter PDF ke Word gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah teks saya dapat diedit di Word?",
+            "a": "Ya. Kami mengekstrak teks dari PDF Anda dan menempatkannya ke dalam dokumen Word yang dapat diedit sehingga Anda bisa mengubah, menyalin, dan memformatnya ulang dengan bebas."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Dapatkah saya mengonversi PDF hasil pindaian?",
+            "a": "Konverter bekerja paling baik dengan PDF digital berbasis teks. PDF hasil pindaian atau yang hanya berisi gambar tidak memiliki lapisan teks, sehingga mungkin belum dapat dikonversi – dukungan OCR sedang direncanakan."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "pdfToPpt": {
+      "slug": "pdf-to-ppt",
+      "title": "Konversi PDF ke PowerPoint – Konverter PDF ke PPT Online Gratis (PPTX)",
+      "metaDescription": "Konversi PDF ke PowerPoint online secara gratis. Ubah halaman PDF menjadi slide PPTX yang dapat diedit dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat, akurat, dan aman.",
+      "h1": "Konversi PDF ke PowerPoint GRATIS",
+      "subtitle": "Ubah file PDF menjadi presentasi PowerPoint (PPTX) yang dapat diedit dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke PowerPoint",
+        "converting": "Mengonversi PDF Anda…",
+        "downloadReady": "Selesai! Presentasi PowerPoint Anda sudah siap.",
+        "download": "Unduh PPTX",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi PDF ke PowerPoint secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami mengekstrak konten dari PDF Anda dan mengubah setiap halaman menjadi slide PowerPoint yang dapat diedit dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "Presentasi PowerPoint baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi PDF ke PowerPoint?",
+            "a": "Unggah PDF Anda di kotak di atas, klik “Konversi ke PowerPoint”, lalu unduh presentasi PPTX yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah konverter PDF ke PowerPoint gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah slide akan dapat diedit?",
+            "a": "Ya. Kami menempatkan teks dari setiap halaman PDF pada slide PowerPoint tersendiri yang dapat diedit sehingga Anda bisa mengerjakannya ulang dengan bebas."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Dapatkah saya mengonversi PDF hasil pindaian?",
+            "a": "Konverter bekerja paling baik dengan PDF digital berbasis teks. PDF hasil pindaian atau yang hanya berisi gambar tidak memiliki lapisan teks, sehingga mungkin belum dapat dikonversi – dukungan OCR sedang direncanakan."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "jpgToPdf": {
+      "slug": "jpg-to-pdf",
+      "title": "Konversi JPG ke PDF – Konverter JPG ke PDF Online Gratis",
+      "metaDescription": "Konversi JPG ke PDF online secara gratis. Ubah gambar JPG Anda menjadi dokumen PDF dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat, aman, dan berfungsi di perangkat apa pun.",
+      "h1": "Konversi JPG ke PDF GRATIS",
+      "subtitle": "Ubah gambar JPG Anda menjadi dokumen PDF dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan JPG Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke PDF",
+        "converting": "Mengonversi gambar Anda…",
+        "downloadReady": "Selesai! PDF Anda sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih gambar JPG.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi JPG ke PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih gambar JPG yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami menempatkan gambar Anda pada halaman PDF yang bersih dan berukuran tepat dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi JPG ke PDF?",
+            "a": "Unggah JPG Anda di kotak di atas, klik “Konversi ke PDF”, lalu unduh PDF yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah konverter JPG ke PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah kualitas gambar saya akan dipertahankan?",
+            "a": "Ya. Gambar Anda disematkan ke dalam PDF dengan kualitas penuh dan diskalakan agar pas di halaman tanpa distorsi."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "pngToPdf": {
+      "slug": "png-to-pdf",
+      "title": "Konversi PNG ke PDF – Konverter PNG ke PDF Online Gratis",
+      "metaDescription": "Konversi PNG ke PDF online secara gratis. Ubah gambar PNG Anda menjadi dokumen PDF dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat, aman, dan berfungsi di perangkat apa pun.",
+      "h1": "Konversi PNG ke PDF GRATIS",
+      "subtitle": "Ubah gambar PNG Anda menjadi dokumen PDF dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PNG Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke PDF",
+        "converting": "Mengonversi gambar Anda…",
+        "downloadReady": "Selesai! PDF Anda sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih gambar PNG.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi PNG ke PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih gambar PNG yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami menempatkan gambar Anda pada halaman PDF yang bersih dan berukuran tepat dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi PNG ke PDF?",
+            "a": "Unggah PNG Anda di kotak di atas, klik “Konversi ke PDF”, lalu unduh PDF yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah konverter PNG ke PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah transparansi akan ditangani?",
+            "a": "PNG Anda disematkan ke dalam PDF dan diskalakan agar pas di halaman; area transparan muncul di atas latar belakang halaman putih."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "mergePdf": {
+      "slug": "merge-pdf",
+      "title": "Gabungkan PDF – Alat Online Gratis untuk Menggabungkan PDF",
+      "metaDescription": "Gabungkan file PDF online secara gratis. Satukan beberapa PDF menjadi satu dokumen dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Gabungkan PDF GRATIS",
+      "subtitle": "Gabungkan beberapa file PDF menjadi satu dokumen dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan file-file PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Pilih 2 PDF atau lebih · Maksimum 40 MB total · Diproses dengan aman",
+        "button": "Gabungkan PDF",
+        "converting": "Menggabungkan PDF Anda…",
+        "downloadReady": "Selesai! PDF gabungan Anda sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan saat menggabungkan. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file-file PDF.",
+        "errorTooLarge": "File-file itu terlalu besar. Total maksimum adalah 40 MB.",
+        "errorMin": "Silakan pilih setidaknya dua file PDF."
+      },
+      "howTo": {
+        "heading": "Cara Menggabungkan File PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih dua file PDF atau lebih yang ingin Anda gabungkan. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Alat online gratis kami menggabungkan PDF Anda, dalam urutan yang Anda pilih, menjadi satu dokumen dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF gabungan Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara menggabungkan file PDF?",
+            "a": "Unggah dua PDF atau lebih di kotak di atas, klik “Gabungkan PDF”, lalu unduh dokumen gabungan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah alat penggabung PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Dalam urutan apa PDF digabungkan?",
+            "a": "Mereka digabungkan sesuai urutan Anda memilihnya, jadi pilih file Anda dalam urutan yang Anda inginkan agar muncul."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "splitPdf": {
+      "slug": "split-pdf",
+      "title": "Pisahkan PDF – Alat Online Gratis untuk Memisahkan PDF",
+      "metaDescription": "Pisahkan file PDF online secara gratis. Pecah PDF menjadi file satu halaman terpisah dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Pisahkan PDF GRATIS",
+      "subtitle": "Pisahkan PDF menjadi file satu halaman terpisah dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Pisahkan PDF",
+        "converting": "Memisahkan PDF Anda…",
+        "downloadReady": "Selesai! Halaman terpisah Anda (ZIP) sudah siap.",
+        "download": "Unduh ZIP",
+        "errorGeneric": "Terjadi kesalahan saat memisahkan. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Memisahkan PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda pisahkan. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Alat online gratis kami memisahkan setiap halaman PDF Anda ke dalam file tersendiri dan membundelnya menjadi ZIP dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "ZIP berisi PDF satu halaman Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara memisahkan PDF?",
+            "a": "Unggah PDF Anda di kotak di atas, klik “Pisahkan PDF”, lalu unduh ZIP yang dihasilkan – berisi satu PDF per halaman. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah alat pemisah PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apa yang saya dapatkan?",
+            "a": "File ZIP yang berisi setiap halaman PDF Anda sebagai PDF satu halaman terpisah (page-1.pdf, page-2.pdf, dan seterusnya)."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "deletePdfPages": {
+      "slug": "delete-pdf-pages",
+      "title": "Hapus Halaman PDF – Penghapus Halaman PDF Online Gratis",
+      "metaDescription": "Hapus halaman dari PDF online secara gratis. Hilangkan halaman tertentu dari PDF Anda dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Hapus Halaman PDF GRATIS",
+      "subtitle": "Hapus halaman tertentu dari dokumen PDF dalam hitungan detik – gratis, online, dan aman.",
+      "paramPlaceholder": "Halaman yang akan dihapus, mis. 2, 5-7",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Hapus Halaman",
+        "converting": "Menghapus halaman…",
+        "downloadReady": "Selesai! PDF yang telah diedit sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Menghapus Halaman dari PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda edit. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Pilih halaman",
+            "text": "Ketik halaman yang ingin Anda hapus – halaman tunggal maupun rentang keduanya berfungsi, misalnya 2, 5-7."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF baru Anda tanpa halaman tersebut akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara menghapus halaman dari PDF?",
+            "a": "Unggah PDF Anda, masukkan halaman yang akan dihapus (mis. 2, 5-7), klik “Hapus Halaman”, lalu unduh PDF yang telah diedit. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Bagaimana cara menentukan halaman?",
+            "a": "Gunakan nomor halaman berbasis 1, dipisahkan dengan koma. Anda bisa menggabungkan halaman tunggal dan rentang, misalnya: 1, 4, 8-10."
+          },
+          {
+            "q": "Apakah alat penghapus halaman PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "compressPdf": {
+      "slug": "compress-pdf",
+      "title": "Kompres PDF – Kompresor PDF Online Gratis",
+      "metaDescription": "Kompres file PDF online secara gratis. Kurangi ukuran file PDF Anda dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Kompres PDF GRATIS",
+      "subtitle": "Kurangi ukuran file PDF Anda dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Kompres PDF",
+        "converting": "Mengompres PDF Anda…",
+        "downloadReady": "Selesai! PDF terkompresi Anda sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan saat mengompres. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengompres PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda kompres. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Alat online gratis kami mengoptimalkan struktur internal PDF Anda untuk mengurangi ukuran filenya dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF Anda yang lebih kecil akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengompres PDF?",
+            "a": "Unggah PDF Anda di kotak di atas, klik “Kompres PDF”, lalu unduh file yang lebih kecil. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Seberapa kecil PDF saya akan menjadi?",
+            "a": "Itu tergantung pada filenya. Kami mengoptimalkan struktur internal PDF untuk mengurangi ukurannya, sehingga PDF yang belum dioptimalkan dapat menyusut secara nyata, sementara PDF yang sangat dioptimalkan atau penuh gambar mungkin menyusut lebih sedikit. Kami tidak pernah mengembalikan file yang lebih besar dari aslinya."
+          },
+          {
+            "q": "Apakah kompresor PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "mdToPdf": {
+      "slug": "md-to-pdf",
+      "title": "Markdown ke PDF – Konverter MD ke PDF Online Gratis",
+      "metaDescription": "Konversi Markdown ke PDF online secara gratis. Ubah file .md menjadi PDF yang bersih dan terformat dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Konversi Markdown ke PDF GRATIS",
+      "subtitle": "Ubah file Markdown (.md) Anda menjadi PDF yang bersih dan terformat dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan file Markdown Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke PDF",
+        "converting": "Mengonversi Markdown Anda…",
+        "downloadReady": "Selesai! PDF Anda sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file Markdown (.md).",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi Markdown ke PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file Markdown (.md) yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami merender Markdown Anda – judul, daftar, teks tebal, blok kode, dan lainnya – menjadi PDF yang terformat dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi Markdown ke PDF?",
+            "a": "Unggah file .md Anda di kotak di atas, klik “Konversi ke PDF”, lalu unduh PDF yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Fitur Markdown apa saja yang didukung?",
+            "a": "Judul, teks tebal dan miring, kode inline dan blok kode berpagar, daftar berurutan dan tidak berurutan, kutipan, garis horizontal, serta tautan semuanya dirender. Gambar dan tabel yang disematkan disederhanakan agar tata letak tetap bersih."
+          },
+          {
+            "q": "Apakah konverter Markdown ke PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "textToPdf": {
+      "slug": "text-to-pdf",
+      "title": "TXT ke PDF – Konverter Teks ke PDF Online Gratis",
+      "metaDescription": "Konversi TXT ke PDF online secara gratis. Ubah file teks biasa (.txt) menjadi PDF yang bersih dan berhalaman dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Konversi TXT ke PDF GRATIS",
+      "subtitle": "Ubah file teks biasa (.txt) menjadi PDF yang bersih dan berhalaman dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan file teks Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke PDF",
+        "converting": "Mengonversi teks Anda…",
+        "downloadReady": "Selesai! PDF Anda sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file teks (.txt).",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi TXT ke PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file teks (.txt) yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami membungkus dan membagi teks Anda menjadi halaman A4 yang bersih dan mengubahnya menjadi PDF dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi file TXT ke PDF?",
+            "a": "Unggah file .txt Anda di kotak di atas, klik “Konversi ke PDF”, lalu unduh PDF yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah format teks saya dipertahankan?",
+            "a": "Jeda baris dan paragraf dipertahankan, dan baris panjang dibungkus agar pas di halaman. Teks biasa tidak memiliki font atau gaya, jadi PDF menggunakan satu font yang bersih dan mudah dibaca."
+          },
+          {
+            "q": "Apakah konverter TXT ke PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "pdfToText": {
+      "slug": "pdf-to-text",
+      "title": "PDF ke TXT – Konverter PDF ke Teks Online Gratis",
+      "metaDescription": "Konversi PDF ke teks online secara gratis. Ekstrak teks dari PDF ke file .txt biasa dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Konversi PDF ke Teks GRATIS",
+      "subtitle": "Ekstrak teks dari PDF ke file .txt biasa dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke Teks",
+        "converting": "Mengekstrak teks Anda…",
+        "downloadReady": "Selesai! File teks Anda sudah siap.",
+        "download": "Unduh TXT",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi PDF ke Teks secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami membaca lapisan teks PDF Anda dan mengekstraknya menjadi file .txt yang bersih dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "File teks baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi PDF ke teks?",
+            "a": "Unggah PDF Anda di kotak di atas, klik “Konversi ke Teks”, lalu unduh file .txt yang dihasilkan. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah tata letak akan dipertahankan?",
+            "a": "Kami mengekstrak teks yang dapat dibaca dalam urutan membaca. Teks biasa tidak dapat memuat kolom, tabel, atau gaya, sehingga tata letak yang kompleks diratakan menjadi baris-baris teks."
+          },
+          {
+            "q": "Dapatkah saya mengonversi PDF hasil pindaian?",
+            "a": "Konverter bekerja paling baik dengan PDF digital berbasis teks. PDF hasil pindaian atau yang hanya berisi gambar tidak memiliki lapisan teks, sehingga mungkin belum dapat dikonversi – dukungan OCR sedang direncanakan."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "pdfToAutocad": {
+      "slug": "pdf-to-autocad",
+      "title": "PDF ke AutoCAD – Konverter PDF ke DXF Online Gratis",
+      "metaDescription": "Konversi PDF ke AutoCAD online secara gratis. Ubah PDF vektor menjadi gambar DXF yang dapat diedit dan dapat Anda buka di AutoCAD dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Konversi PDF ke AutoCAD GRATIS",
+      "subtitle": "Ubah PDF vektor menjadi gambar DXF AutoCAD yang dapat diedit dalam hitungan detik – gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Konversi ke DXF",
+        "converting": "Mengonversi PDF Anda…",
+        "downloadReady": "Selesai! Gambar DXF Anda sudah siap.",
+        "download": "Unduh DXF",
+        "errorGeneric": "Terjadi kesalahan saat konversi. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Mengonversi PDF ke AutoCAD secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda konversi. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Konverter online gratis kami mengekstrak garis vektor, bentuk, dan teks dari PDF Anda dan membangunnya kembali sebagai entitas CAD dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "Gambar DXF baru Anda akan siap diunduh segera – buka di AutoCAD atau aplikasi CAD apa pun. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara mengonversi PDF ke AutoCAD?",
+            "a": "Unggah PDF Anda di kotak di atas, klik “Konversi ke DXF”, lalu unduh file DXF yang dihasilkan. Buka langsung di AutoCAD atau aplikasi CAD apa pun. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Apakah saya mendapatkan file DWG atau DXF?",
+            "a": "Anda mendapatkan file DXF. DWG adalah format biner milik Autodesk, sedangkan DXF adalah format pertukaran CAD terbuka yang dibuka secara native oleh AutoCAD dan hampir semua program CAD lainnya. Jika perlu, Anda dapat menyimpannya kembali sebagai DWG dari dalam AutoCAD."
+          },
+          {
+            "q": "Apa yang dikonversi?",
+            "a": "Geometri vektor – garis, polyline, persegi panjang, dan kurva – beserta teks dikonversi menjadi entitas CAD yang dapat diedit yang ditempatkan pada koordinat aslinya. Warna, lapisan, ketebalan garis, dan isian arsir disederhanakan."
+          },
+          {
+            "q": "Dapatkah saya mengonversi PDF hasil pindaian?",
+            "a": "Tidak. PDF hasil pindaian atau yang hanya berisi gambar adalah gambar raster tanpa lapisan vektor, jadi tidak ada garis untuk diekstrak. Alat ini bekerja dengan PDF vektor yang diekspor dari perangkat lunak CAD atau desain."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    }
+  }
+}
