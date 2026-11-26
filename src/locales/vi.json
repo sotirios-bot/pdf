@@ -1,0 +1,935 @@
+{
+  "lang": "vi",
+  "dir": "ltr",
+  "localeName": "Tiếng Việt",
+  "site": {
+    "name": "PDFConvertMe",
+    "tagline": "Trình chuyển đổi PDF trực tuyến miễn phí"
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "convertPdf": "Chuyển đổi PDF",
+    "pdfToExcel": "PDF sang Excel",
+    "pdfToWord": "PDF sang Word",
+    "pdfToPpt": "PDF sang PowerPoint",
+    "jpgToPdf": "JPG sang PDF",
+    "pngToPdf": "PNG sang PDF",
+    "mdToPdf": "Markdown sang PDF",
+    "textToPdf": "TXT sang PDF",
+    "pdfToText": "PDF sang TXT",
+    "pdfToAutocad": "PDF sang AutoCAD",
+    "editPdf": "Chỉnh sửa PDF",
+    "mergePdf": "Gộp PDF",
+    "splitPdf": "Tách PDF",
+    "deletePdfPages": "Xóa trang PDF",
+    "compressPdf": "Nén PDF"
+  },
+  "footer": {
+    "rights": "Bảo lưu mọi quyền.",
+    "tagline": "Trình chuyển đổi tệp trực tuyến miễn phí cho tệp PDF, Excel, Word, PowerPoint và hình ảnh. Chuyển đổi tài liệu nhanh chóng, an toàn mà không cần tải xuống, không cần đăng ký và sử dụng không giới hạn.",
+    "legalHeading": "Pháp lý",
+    "privacy": "Chính sách quyền riêng tư",
+    "terms": "Điều khoản và điều kiện",
+    "toolsHeading": "Công cụ"
+  },
+  "common": {
+    "languageLabel": "Ngôn ngữ",
+    "relatedTools": "Công cụ liên quan",
+    "trustNote": "🔒 Tệp {type} được xử lý qua SSL và xóa trong vài giờ — không cần đăng ký"
+  },
+  "meta": {
+    "manifestDescription": "Chuyển đổi PDF sang Excel miễn phí – nhanh chóng, trực tuyến và an toàn.",
+    "notFoundTitle": "404 – Không tìm thấy trang | PDFConvertMe",
+    "notFoundDescription": "Không thể tìm thấy trang bạn đang tìm kiếm.",
+    "notFoundText": "Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.",
+    "notFoundHome": "Quay lại trang chủ"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "PDFConvertMe – Công cụ chuyển đổi PDF trực tuyến miễn phí",
+      "metaDescription": "Công cụ PDF trực tuyến miễn phí từ PDFConvertMe. Chuyển đổi PDF sang Excel, PDF sang Word và hơn thế nữa – nhanh chóng, chính xác, an toàn và miễn phí, không cần đăng ký.",
+      "h1": "Công cụ PDF trực tuyến miễn phí",
+      "subtitle": "Chuyển đổi PDF của bạn trong vài giây – miễn phí, trực tuyến và an toàn. Chọn một công cụ để bắt đầu.",
+      "toolsHeading": "Chọn một công cụ",
+      "tools": [
+        {
+          "id": "pdfToExcel",
+          "name": "PDF sang Excel",
+          "description": "Chuyển đổi bảng PDF thành bảng tính XLSX có thể chỉnh sửa hoàn toàn.",
+          "badge": ""
+        },
+        {
+          "id": "pdfToWord",
+          "name": "PDF sang Word",
+          "description": "Biến tài liệu PDF thành tệp Word (DOCX) có thể chỉnh sửa.",
+          "badge": ""
+        },
+        {
+          "id": "pdfToPpt",
+          "name": "PDF sang PowerPoint",
+          "description": "Chuyển đổi trang PDF thành slide PowerPoint (PPTX) có thể chỉnh sửa.",
+          "badge": ""
+        },
+        {
+          "id": "jpgToPdf",
+          "name": "JPG sang PDF",
+          "description": "Biến hình ảnh JPG thành tài liệu PDF.",
+          "badge": ""
+        },
+        {
+          "id": "pngToPdf",
+          "name": "PNG sang PDF",
+          "description": "Biến hình ảnh PNG thành tài liệu PDF.",
+          "badge": ""
+        },
+        {
+          "id": "mdToPdf",
+          "name": "Markdown sang PDF",
+          "description": "Chuyển đổi tệp Markdown (.md) thành PDF có định dạng.",
+          "badge": "Mới"
+        },
+        {
+          "id": "textToPdf",
+          "name": "TXT sang PDF",
+          "description": "Biến tệp văn bản thuần (.txt) thành tài liệu PDF.",
+          "badge": "Mới"
+        },
+        {
+          "id": "pdfToText",
+          "name": "PDF sang TXT",
+          "description": "Trích xuất văn bản từ PDF thành tệp .txt thuần túy.",
+          "badge": "Mới"
+        },
+        {
+          "id": "pdfToAutocad",
+          "name": "PDF sang AutoCAD",
+          "description": "Chuyển đổi PDF vector thành bản vẽ DXF AutoCAD có thể chỉnh sửa.",
+          "badge": "Mới"
+        },
+        {
+          "id": "mergePdf",
+          "name": "Gộp PDF",
+          "description": "Kết hợp nhiều tệp PDF thành một tài liệu.",
+          "badge": "Mới"
+        },
+        {
+          "id": "splitPdf",
+          "name": "Tách PDF",
+          "description": "Tách một tệp PDF thành các tệp một trang riêng biệt (ZIP).",
+          "badge": "Mới"
+        },
+        {
+          "id": "deletePdfPages",
+          "name": "Xóa trang PDF",
+          "description": "Xóa các trang cụ thể khỏi tài liệu PDF.",
+          "badge": "Mới"
+        },
+        {
+          "id": "compressPdf",
+          "name": "Nén PDF",
+          "description": "Giảm kích thước tệp của tài liệu PDF.",
+          "badge": "Mới"
+        }
+      ]
+    },
+    "pdfToExcel": {
+      "slug": "pdf-to-excel",
+      "title": "Chuyển đổi PDF sang Excel – Trình chuyển đổi PDF sang Excel trực tuyến miễn phí (XLSX)",
+      "metaDescription": "Chuyển đổi PDF sang Excel trực tuyến miễn phí. Biến tệp PDF thành bảng tính XLSX có thể chỉnh sửa trong vài giây – không cần cài đặt, không cần đăng ký. Chuyển đổi tệp nhanh chóng, chính xác và an toàn trên mọi thiết bị.",
+      "h1": "Chuyển đổi PDF sang Excel MIỄN PHÍ",
+      "subtitle": "Biến tệp PDF thành bảng tính Excel (XLSX) có thể chỉnh sửa hoàn toàn trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang Excel",
+        "converting": "Đang chuyển đổi PDF của bạn…",
+        "downloadReady": "Xong! Bảng tính Excel của bạn đã sẵn sàng.",
+        "download": "Tải xuống XLSX",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi tệp sang và từ PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi PDF trực tuyến miễn phí của chúng tôi chuyển đổi tài liệu PDF của bạn sang Excel trong vài giây, giữ nguyên chính xác các bảng, hàng và cột của bạn."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Tài liệu Excel mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi PDF sang Excel?",
+            "a": "Tải lên PDF của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang Excel” và tải xuống bảng tính XLSX thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Trình chuyển đổi PDF sang Excel có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Các bảng, hàng và cột của tôi có được giữ nguyên không?",
+            "a": "Có. Chúng tôi phát hiện vị trí của từng đoạn văn bản và tái tạo các hàng và cột thành một bảng tính thực sự, và các số được giữ nguyên là số để bạn có thể tính toán ngay với chúng."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Tôi có thể chuyển đổi PDF được quét không?",
+            "a": "Trình chuyển đổi hoạt động tốt nhất với các tệp PDF kỹ thuật số dựa trên văn bản. Các tệp PDF được quét hoặc chỉ có hình ảnh không có lớp văn bản, vì vậy có thể chưa chuyển đổi được – hỗ trợ OCR đang được lên kế hoạch."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "pdfToWord": {
+      "slug": "pdf-to-word",
+      "title": "Chuyển đổi PDF sang Word – Trình chuyển đổi PDF sang Word trực tuyến miễn phí (DOCX)",
+      "metaDescription": "Chuyển đổi PDF sang Word trực tuyến miễn phí. Biến tệp PDF thành tài liệu Word (DOCX) có thể chỉnh sửa trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng, chính xác và an toàn.",
+      "h1": "Chuyển đổi PDF sang Word MIỄN PHÍ",
+      "subtitle": "Biến tệp PDF thành tài liệu Word (DOCX) có thể chỉnh sửa hoàn toàn trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang Word",
+        "converting": "Đang chuyển đổi PDF của bạn…",
+        "downloadReady": "Xong! Tài liệu Word của bạn đã sẵn sàng.",
+        "download": "Tải xuống DOCX",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi PDF sang Word miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi trích xuất văn bản từ PDF của bạn và tái tạo nó thành tài liệu Word có thể chỉnh sửa trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Tài liệu Word mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi PDF sang Word?",
+            "a": "Tải lên PDF của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang Word” và tải xuống tài liệu DOCX thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Trình chuyển đổi PDF sang Word có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Văn bản của tôi có thể chỉnh sửa trong Word không?",
+            "a": "Có. Chúng tôi trích xuất văn bản từ PDF của bạn và đặt nó vào một tài liệu Word có thể chỉnh sửa để bạn có thể thay đổi, sao chép và định dạng lại một cách tự do."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Tôi có thể chuyển đổi PDF được quét không?",
+            "a": "Trình chuyển đổi hoạt động tốt nhất với các tệp PDF kỹ thuật số dựa trên văn bản. Các tệp PDF được quét hoặc chỉ có hình ảnh không có lớp văn bản, vì vậy có thể chưa chuyển đổi được – hỗ trợ OCR đang được lên kế hoạch."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "pdfToPpt": {
+      "slug": "pdf-to-ppt",
+      "title": "Chuyển đổi PDF sang PowerPoint – Trình chuyển đổi PDF sang PPT trực tuyến miễn phí (PPTX)",
+      "metaDescription": "Chuyển đổi PDF sang PowerPoint trực tuyến miễn phí. Biến trang PDF thành slide PPTX có thể chỉnh sửa trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng, chính xác và an toàn.",
+      "h1": "Chuyển đổi PDF sang PowerPoint MIỄN PHÍ",
+      "subtitle": "Biến tệp PDF thành bài thuyết trình PowerPoint (PPTX) có thể chỉnh sửa trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang PowerPoint",
+        "converting": "Đang chuyển đổi PDF của bạn…",
+        "downloadReady": "Xong! Bài thuyết trình PowerPoint của bạn đã sẵn sàng.",
+        "download": "Tải xuống PPTX",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi PDF sang PowerPoint miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi trích xuất nội dung từ PDF của bạn và biến mỗi trang thành một slide PowerPoint có thể chỉnh sửa trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Bài thuyết trình PowerPoint mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi PDF sang PowerPoint?",
+            "a": "Tải lên PDF của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang PowerPoint” và tải xuống bài thuyết trình PPTX thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Trình chuyển đổi PDF sang PowerPoint có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Các slide có thể chỉnh sửa không?",
+            "a": "Có. Chúng tôi đặt văn bản từ mỗi trang PDF lên slide PowerPoint có thể chỉnh sửa riêng để bạn có thể chỉnh sửa lại một cách tự do."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Tôi có thể chuyển đổi PDF được quét không?",
+            "a": "Trình chuyển đổi hoạt động tốt nhất với các tệp PDF kỹ thuật số dựa trên văn bản. Các tệp PDF được quét hoặc chỉ có hình ảnh không có lớp văn bản, vì vậy có thể chưa chuyển đổi được – hỗ trợ OCR đang được lên kế hoạch."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "jpgToPdf": {
+      "slug": "jpg-to-pdf",
+      "title": "Chuyển đổi JPG sang PDF – Trình chuyển đổi JPG sang PDF trực tuyến miễn phí",
+      "metaDescription": "Chuyển đổi JPG sang PDF trực tuyến miễn phí. Biến hình ảnh JPG của bạn thành tài liệu PDF trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng, an toàn và hoạt động trên mọi thiết bị.",
+      "h1": "Chuyển đổi JPG sang PDF MIỄN PHÍ",
+      "subtitle": "Biến hình ảnh JPG của bạn thành tài liệu PDF trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp JPG của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang PDF",
+        "converting": "Đang chuyển đổi hình ảnh của bạn…",
+        "downloadReady": "Xong! PDF của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một hình ảnh JPG.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi JPG sang PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn hình ảnh JPG bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi đặt hình ảnh của bạn lên một trang PDF gọn gàng, có kích thước phù hợp trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "PDF mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi JPG sang PDF?",
+            "a": "Tải lên JPG của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang PDF” và tải xuống PDF thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Trình chuyển đổi JPG sang PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Chất lượng hình ảnh của tôi có được giữ nguyên không?",
+            "a": "Có. Hình ảnh của bạn được nhúng vào PDF với chất lượng đầy đủ và được chia tỷ lệ để vừa với trang mà không bị méo."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "pngToPdf": {
+      "slug": "png-to-pdf",
+      "title": "Chuyển đổi PNG sang PDF – Trình chuyển đổi PNG sang PDF trực tuyến miễn phí",
+      "metaDescription": "Chuyển đổi PNG sang PDF trực tuyến miễn phí. Biến hình ảnh PNG của bạn thành tài liệu PDF trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng, an toàn và hoạt động trên mọi thiết bị.",
+      "h1": "Chuyển đổi PNG sang PDF MIỄN PHÍ",
+      "subtitle": "Biến hình ảnh PNG của bạn thành tài liệu PDF trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PNG của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang PDF",
+        "converting": "Đang chuyển đổi hình ảnh của bạn…",
+        "downloadReady": "Xong! PDF của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một hình ảnh PNG.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi PNG sang PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn hình ảnh PNG bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi đặt hình ảnh của bạn lên một trang PDF gọn gàng, có kích thước phù hợp trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "PDF mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi PNG sang PDF?",
+            "a": "Tải lên PNG của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang PDF” và tải xuống PDF thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Trình chuyển đổi PNG sang PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Độ trong suốt có được xử lý không?",
+            "a": "PNG của bạn được nhúng vào PDF và được chia tỷ lệ để vừa với trang; các vùng trong suốt xuất hiện trên nền trang màu trắng."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "mergePdf": {
+      "slug": "merge-pdf",
+      "title": "Gộp PDF – Công cụ trực tuyến miễn phí để gộp PDF",
+      "metaDescription": "Gộp tệp PDF trực tuyến miễn phí. Kết hợp nhiều tệp PDF thành một tài liệu trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Gộp PDF MIỄN PHÍ",
+      "subtitle": "Kết hợp nhiều tệp PDF thành một tài liệu trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả các tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Chọn 2 tệp PDF trở lên · Tối đa 40 MB tổng cộng · Xử lý an toàn",
+        "button": "Gộp PDF",
+        "converting": "Đang gộp các tệp PDF của bạn…",
+        "downloadReady": "Xong! Tệp PDF đã gộp của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi khi gộp. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn các tệp PDF.",
+        "errorTooLarge": "Các tệp đó quá lớn. Tổng tối đa là 40 MB.",
+        "errorMin": "Vui lòng chọn ít nhất hai tệp PDF."
+      },
+      "howTo": {
+        "heading": "Cách gộp tệp PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn hai hoặc nhiều tệp PDF bạn muốn kết hợp. Kéo và thả chúng vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Công cụ trực tuyến miễn phí của chúng tôi nối các tệp PDF của bạn, theo thứ tự bạn đã chọn, thành một tài liệu duy nhất trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Tệp PDF đã gộp của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để gộp tệp PDF?",
+            "a": "Tải lên hai hoặc nhiều tệp PDF vào ô bên trên, nhấp vào “Gộp PDF” và tải xuống tài liệu đã kết hợp. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Công cụ gộp PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Các tệp PDF được kết hợp theo thứ tự nào?",
+            "a": "Chúng được gộp theo thứ tự bạn chọn, vì vậy hãy chọn tệp của bạn theo trình tự bạn muốn chúng xuất hiện."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Các tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "splitPdf": {
+      "slug": "split-pdf",
+      "title": "Tách PDF – Công cụ trực tuyến miễn phí để tách PDF",
+      "metaDescription": "Tách tệp PDF trực tuyến miễn phí. Chia một tệp PDF thành các tệp một trang riêng biệt trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Tách PDF MIỄN PHÍ",
+      "subtitle": "Tách một tệp PDF thành các tệp một trang riêng biệt trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Tách PDF",
+        "converting": "Đang tách PDF của bạn…",
+        "downloadReady": "Xong! Các trang đã tách (ZIP) của bạn đã sẵn sàng.",
+        "download": "Tải xuống ZIP",
+        "errorGeneric": "Đã xảy ra lỗi khi tách. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách tách PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn tách. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Công cụ trực tuyến miễn phí của chúng tôi tách mỗi trang PDF của bạn thành một tệp riêng và gói chúng vào một tệp ZIP trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Tệp ZIP chứa các PDF một trang của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để tách PDF?",
+            "a": "Tải lên PDF của bạn vào ô bên trên, nhấp vào “Tách PDF” và tải xuống tệp ZIP thu được – nó chứa một PDF cho mỗi trang. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Công cụ tách PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Tôi nhận được gì?",
+            "a": "Một tệp ZIP chứa mỗi trang PDF của bạn dưới dạng một PDF một trang riêng biệt (page-1.pdf, page-2.pdf, v.v.)."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "deletePdfPages": {
+      "slug": "delete-pdf-pages",
+      "title": "Xóa trang PDF – Công cụ xóa trang PDF trực tuyến miễn phí",
+      "metaDescription": "Xóa trang khỏi tệp PDF trực tuyến miễn phí. Loại bỏ các trang cụ thể khỏi PDF của bạn trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Xóa trang PDF MIỄN PHÍ",
+      "subtitle": "Xóa các trang cụ thể khỏi tài liệu PDF trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "paramPlaceholder": "Các trang cần xóa, ví dụ: 2, 5-7",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Xóa trang",
+        "converting": "Đang xóa trang…",
+        "downloadReady": "Xong! PDF đã chỉnh sửa của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách xóa trang khỏi PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chỉnh sửa. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Chọn trang",
+            "text": "Nhập các trang bạn muốn xóa – cả trang đơn và dải trang đều hoạt động, ví dụ 2, 5-7."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "PDF mới của bạn không có các trang đó sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để xóa trang khỏi PDF?",
+            "a": "Tải lên PDF của bạn, nhập các trang cần xóa (ví dụ: 2, 5-7), nhấp vào “Xóa trang” và tải xuống PDF đã chỉnh sửa. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Làm cách nào để chỉ định các trang?",
+            "a": "Sử dụng số trang bắt đầu từ 1, phân tách bằng dấu phẩy. Bạn có thể kết hợp trang đơn và dải trang, ví dụ: 1, 4, 8-10."
+          },
+          {
+            "q": "Công cụ xóa trang PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "compressPdf": {
+      "slug": "compress-pdf",
+      "title": "Nén PDF – Công cụ nén PDF trực tuyến miễn phí",
+      "metaDescription": "Nén tệp PDF trực tuyến miễn phí. Giảm kích thước tệp PDF của bạn trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Nén PDF MIỄN PHÍ",
+      "subtitle": "Giảm kích thước tệp PDF của bạn trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Nén PDF",
+        "converting": "Đang nén PDF của bạn…",
+        "downloadReady": "Xong! PDF đã nén của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi khi nén. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách nén PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn nén. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Công cụ trực tuyến miễn phí của chúng tôi tối ưu hóa cấu trúc bên trong của PDF để giảm kích thước tệp trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Tệp PDF nhỏ hơn của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để nén PDF?",
+            "a": "Tải lên PDF của bạn vào ô bên trên, nhấp vào “Nén PDF” và tải xuống tệp nhỏ hơn. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "PDF của tôi sẽ nhỏ hơn bao nhiêu?",
+            "a": "Điều đó phụ thuộc vào tệp. Chúng tôi tối ưu hóa cấu trúc bên trong của PDF để giảm kích thước của nó, vì vậy các tệp PDF chưa được tối ưu hóa có thể thu nhỏ đáng kể, trong khi các tệp PDF đã được tối ưu hóa cao hoặc nhiều hình ảnh có thể thu nhỏ ít hơn. Chúng tôi không bao giờ trả về tệp lớn hơn tệp gốc."
+          },
+          {
+            "q": "Công cụ nén PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "mdToPdf": {
+      "slug": "md-to-pdf",
+      "title": "Markdown sang PDF – Trình chuyển đổi MD sang PDF trực tuyến miễn phí",
+      "metaDescription": "Chuyển đổi Markdown sang PDF trực tuyến miễn phí. Biến tệp .md thành PDF gọn gàng, có định dạng trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Chuyển đổi Markdown sang PDF MIỄN PHÍ",
+      "subtitle": "Biến tệp Markdown (.md) của bạn thành PDF gọn gàng, có định dạng trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp Markdown của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang PDF",
+        "converting": "Đang chuyển đổi Markdown của bạn…",
+        "downloadReady": "Xong! PDF của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp Markdown (.md).",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi Markdown sang PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp Markdown (.md) bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi hiển thị Markdown của bạn – tiêu đề, danh sách, chữ đậm, khối mã và hơn thế nữa – thành PDF có định dạng trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "PDF mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi Markdown sang PDF?",
+            "a": "Tải lên tệp .md của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang PDF” và tải xuống PDF thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Những tính năng Markdown nào được hỗ trợ?",
+            "a": "Tiêu đề, văn bản in đậm và in nghiêng, mã nội dòng và khối mã, danh sách có thứ tự và không có thứ tự, trích dẫn, đường kẻ ngang và liên kết đều được hiển thị. Hình ảnh và bảng được nhúng được đơn giản hóa để giữ bố cục gọn gàng."
+          },
+          {
+            "q": "Trình chuyển đổi Markdown sang PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "textToPdf": {
+      "slug": "text-to-pdf",
+      "title": "TXT sang PDF – Trình chuyển đổi văn bản sang PDF trực tuyến miễn phí",
+      "metaDescription": "Chuyển đổi TXT sang PDF trực tuyến miễn phí. Biến tệp văn bản thuần (.txt) thành PDF gọn gàng, phân trang trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Chuyển đổi TXT sang PDF MIỄN PHÍ",
+      "subtitle": "Biến tệp văn bản thuần (.txt) thành PDF gọn gàng, phân trang trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp văn bản của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang PDF",
+        "converting": "Đang chuyển đổi văn bản của bạn…",
+        "downloadReady": "Xong! PDF của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp văn bản (.txt).",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi TXT sang PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp văn bản (.txt) bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi ngắt dòng và phân trang văn bản của bạn lên các trang A4 gọn gàng và biến nó thành PDF trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "PDF mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi tệp TXT sang PDF?",
+            "a": "Tải lên tệp .txt của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang PDF” và tải xuống PDF thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Định dạng văn bản của tôi có được giữ nguyên không?",
+            "a": "Các dấu ngắt dòng và đoạn văn được giữ nguyên, và các dòng dài được ngắt để vừa với trang. Văn bản thuần túy không có phông chữ hay kiểu dáng, vì vậy PDF sử dụng một phông chữ sạch sẽ, dễ đọc duy nhất."
+          },
+          {
+            "q": "Trình chuyển đổi TXT sang PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "pdfToText": {
+      "slug": "pdf-to-text",
+      "title": "PDF sang TXT – Trình chuyển đổi PDF sang văn bản trực tuyến miễn phí",
+      "metaDescription": "Chuyển đổi PDF sang văn bản trực tuyến miễn phí. Trích xuất văn bản từ PDF thành tệp .txt thuần túy trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Chuyển đổi PDF sang văn bản MIỄN PHÍ",
+      "subtitle": "Trích xuất văn bản từ PDF thành tệp .txt thuần túy trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang văn bản",
+        "converting": "Đang trích xuất văn bản của bạn…",
+        "downloadReady": "Xong! Tệp văn bản của bạn đã sẵn sàng.",
+        "download": "Tải xuống TXT",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi PDF sang văn bản miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi đọc lớp văn bản của PDF và trích xuất nó thành tệp .txt gọn gàng trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Tệp văn bản mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi PDF sang văn bản?",
+            "a": "Tải lên PDF của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang văn bản” và tải xuống tệp .txt thu được. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Bố cục có được giữ nguyên không?",
+            "a": "Chúng tôi trích xuất văn bản có thể đọc được theo thứ tự đọc. Văn bản thuần túy không thể chứa cột, bảng hoặc kiểu dáng, vì vậy các bố cục phức tạp được làm phẳng thành các dòng văn bản."
+          },
+          {
+            "q": "Tôi có thể chuyển đổi PDF được quét không?",
+            "a": "Trình chuyển đổi hoạt động tốt nhất với các tệp PDF kỹ thuật số dựa trên văn bản. Các tệp PDF được quét hoặc chỉ có hình ảnh không có lớp văn bản, vì vậy có thể chưa chuyển đổi được – hỗ trợ OCR đang được lên kế hoạch."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "pdfToAutocad": {
+      "slug": "pdf-to-autocad",
+      "title": "PDF sang AutoCAD – Trình chuyển đổi PDF sang DXF trực tuyến miễn phí",
+      "metaDescription": "Chuyển đổi PDF sang AutoCAD trực tuyến miễn phí. Biến PDF vector thành bản vẽ DXF có thể chỉnh sửa mà bạn có thể mở trong AutoCAD trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Chuyển đổi PDF sang AutoCAD MIỄN PHÍ",
+      "subtitle": "Biến PDF vector thành bản vẽ DXF AutoCAD có thể chỉnh sửa trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Chuyển đổi sang DXF",
+        "converting": "Đang chuyển đổi PDF của bạn…",
+        "downloadReady": "Xong! Bản vẽ DXF của bạn đã sẵn sàng.",
+        "download": "Tải xuống DXF",
+        "errorGeneric": "Đã xảy ra lỗi trong quá trình chuyển đổi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách chuyển đổi PDF sang AutoCAD miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chuyển đổi. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Trình chuyển đổi trực tuyến miễn phí của chúng tôi trích xuất các đường vector, hình dạng và văn bản từ PDF của bạn và tái tạo chúng thành các đối tượng CAD trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "Bản vẽ DXF mới của bạn sẽ sẵn sàng tải xuống ngay lập tức – mở nó trong AutoCAD hoặc bất kỳ ứng dụng CAD nào. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để chuyển đổi PDF sang AutoCAD?",
+            "a": "Tải lên PDF của bạn vào ô bên trên, nhấp vào “Chuyển đổi sang DXF” và tải xuống tệp DXF thu được. Mở trực tiếp trong AutoCAD hoặc bất kỳ ứng dụng CAD nào. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Tôi nhận được tệp DWG hay DXF?",
+            "a": "Bạn nhận được tệp DXF. DWG là định dạng nhị phân độc quyền của Autodesk, trong khi DXF là định dạng trao đổi CAD mở mà AutoCAD và hầu hết mọi chương trình CAD khác đều mở được một cách tự nhiên. Nếu cần, bạn có thể lưu lại thành DWG từ trong AutoCAD."
+          },
+          {
+            "q": "Những gì được chuyển đổi?",
+            "a": "Hình học vector – đường thẳng, đa tuyến, hình chữ nhật và đường cong – cùng với văn bản được chuyển đổi thành các đối tượng CAD có thể chỉnh sửa được đặt tại tọa độ ban đầu của chúng. Màu sắc, lớp, độ dày đường và họa tiết tô được đơn giản hóa."
+          },
+          {
+            "q": "Tôi có thể chuyển đổi PDF được quét không?",
+            "a": "Không. Các tệp PDF được quét hoặc chỉ có hình ảnh là ảnh raster không có lớp vector, vì vậy không có đường nào để trích xuất. Công cụ này hoạt động với các tệp PDF vector được xuất từ phần mềm CAD hoặc thiết kế."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    }
+  }
+}
