@@ -22,7 +22,9 @@
     "mergePdf": "Fusionner PDF",
     "splitPdf": "Diviser PDF",
     "deletePdfPages": "Supprimer des pages PDF",
-    "compressPdf": "Compresser PDF"
+    "compressPdf": "Compresser PDF",
+    "rotatePdf": "Pivoter PDF",
+    "flattenPdf": "Aplatir PDF"
   },
   "footer": {
     "rights": "Tous droits réservés.",
@@ -129,6 +131,18 @@
           "id": "compressPdf",
           "name": "Compresser PDF",
           "description": "Réduisez la taille d’un document PDF.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "rotatePdf",
+          "name": "Pivoter PDF",
+          "description": "Faites pivoter toutes les pages d’un PDF de 90, 180 ou 270 degrés.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "flattenPdf",
+          "name": "Aplatir PDF",
+          "description": "Fusionnez les champs de formulaire dans la page afin qu’un PDF ne puisse plus être modifié.",
           "badge": "Nouveau"
         }
       ]
@@ -919,6 +933,127 @@
           {
             "q": "Puis-je convertir un PDF numérisé ?",
             "a": "Non. Les PDF numérisés ou composés uniquement d’images sont des images matricielles sans couche vectorielle, il n’y a donc aucune ligne à extraire. Cet outil fonctionne avec des PDF vectoriels exportés depuis un logiciel de CAO ou de conception."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "Pivoter un PDF — Outil en ligne gratuit pour pivoter des PDF",
+      "metaDescription": "Faites pivoter les pages d’un PDF en ligne gratuitement. Tournez les pages d’un PDF de 90, 180 ou 270 degrés en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Faites pivoter un PDF GRATUITEMENT",
+      "subtitle": "Faites pivoter les pages d’un PDF de 90, 180 ou 270 degrés en quelques secondes : gratuit, en ligne et sécurisé.",
+      "paramPlaceholder": "Angle de rotation : 90, 180 ou 270",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Pivoter PDF",
+        "converting": "Rotation de votre PDF…",
+        "downloadReady": "Terminé ! Votre PDF pivoté est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment faire pivoter un PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez modifier. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Saisissez l’angle de rotation — 90, 180 ou 270 degrés dans le sens des aiguilles d’une montre — et notre outil en ligne gratuit fait pivoter chaque page pour vous en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau PDF sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment faire pivoter un PDF ?",
+            "a": "Importez votre PDF, saisissez l’angle (90, 180 ou 270), cliquez sur « Pivoter PDF » et téléchargez le fichier pivoté. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Quels angles puis-je utiliser ?",
+            "a": "Vous pouvez pivoter de 90, 180 ou 270 degrés dans le sens des aiguilles d’une montre. L’angle est appliqué à chaque page du document."
+          },
+          {
+            "q": "L’outil de rotation de PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "Aplatir un PDF — Outil en ligne gratuit pour aplatir des PDF",
+      "metaDescription": "Aplatissez des fichiers PDF en ligne gratuitement. Fusionnez les champs de formulaire et les annotations dans la page en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Aplatissez un PDF GRATUITEMENT",
+      "subtitle": "Fusionnez les champs de formulaire et les annotations dans la page afin que votre PDF ne puisse pas être modifié : en quelques secondes, gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Aplatir PDF",
+        "converting": "Aplatissement de votre PDF…",
+        "downloadReady": "Terminé ! Votre PDF aplati est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment aplatir un PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez modifier. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre outil en ligne gratuit fusionne les champs de formulaire avec le contenu de la page afin que le PDF soit identique partout et ne puisse plus être modifié ni rempli."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau PDF sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "À quoi sert l’aplatissement d’un PDF ?",
+            "a": "L’aplatissement fusionne les champs de formulaire interactifs avec la page elle-même, de sorte que le contenu est identique partout et ne peut plus être modifié ni rempli."
+          },
+          {
+            "q": "Les données que j’ai saisies dans le formulaire seront-elles conservées ?",
+            "a": "Oui. Les valeurs actuellement affichées dans les champs de formulaire sont intégrées à la page, elles restent donc visibles — elles ne peuvent simplement plus être modifiées."
+          },
+          {
+            "q": "L’outil d’aplatissement de PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
           },
           {
             "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",

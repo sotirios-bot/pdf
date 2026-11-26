@@ -40,6 +40,12 @@
     },
     "api/compress-pdf.js": {
       "maxDuration": 30
+    },
+    "api/rotate-pdf.js": {
+      "maxDuration": 30
+    },
+    "api/flatten-pdf.js": {
+      "maxDuration": 30
     }
   },
   "headers": [

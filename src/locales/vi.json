@@ -22,7 +22,9 @@
     "mergePdf": "Gộp PDF",
     "splitPdf": "Tách PDF",
     "deletePdfPages": "Xóa trang PDF",
-    "compressPdf": "Nén PDF"
+    "compressPdf": "Nén PDF",
+    "rotatePdf": "Xoay PDF",
+    "flattenPdf": "Làm phẳng PDF"
   },
   "footer": {
     "rights": "Bảo lưu mọi quyền.",
@@ -129,6 +131,18 @@
           "id": "compressPdf",
           "name": "Nén PDF",
           "description": "Giảm kích thước tệp của tài liệu PDF.",
+          "badge": "Mới"
+        },
+        {
+          "id": "rotatePdf",
+          "name": "Xoay PDF",
+          "description": "Xoay tất cả các trang của PDF 90, 180 hoặc 270 độ.",
+          "badge": "Mới"
+        },
+        {
+          "id": "flattenPdf",
+          "name": "Làm phẳng PDF",
+          "description": "Hợp nhất các trường biểu mẫu vào trang để PDF không thể chỉnh sửa được nữa.",
           "badge": "Mới"
         }
       ]
@@ -919,6 +933,127 @@
           {
             "q": "Tôi có thể chuyển đổi PDF được quét không?",
             "a": "Không. Các tệp PDF được quét hoặc chỉ có hình ảnh là ảnh raster không có lớp vector, vì vậy không có đường nào để trích xuất. Công cụ này hoạt động với các tệp PDF vector được xuất từ phần mềm CAD hoặc thiết kế."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "Xoay PDF — Công cụ xoay PDF trực tuyến miễn phí",
+      "metaDescription": "Xoay các trang PDF trực tuyến miễn phí. Xoay các trang của PDF 90, 180 hoặc 270 độ trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Xoay PDF MIỄN PHÍ",
+      "subtitle": "Xoay các trang của PDF 90, 180 hoặc 270 độ trong vài giây – miễn phí, trực tuyến và an toàn.",
+      "paramPlaceholder": "Góc xoay: 90, 180 hoặc 270",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Xoay PDF",
+        "converting": "Đang xoay PDF của bạn…",
+        "downloadReady": "Xong! PDF đã xoay của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách xoay PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chỉnh sửa. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Nhập góc xoay — 90, 180 hoặc 270 độ theo chiều kim đồng hồ — và công cụ trực tuyến miễn phí của chúng tôi xoay từng trang cho bạn trong vài giây."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "PDF mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm cách nào để xoay PDF?",
+            "a": "Tải lên PDF của bạn, nhập góc (90, 180 hoặc 270), nhấp vào \"Xoay PDF\" và tải xuống tệp đã xoay. Toàn bộ quá trình chỉ mất vài giây."
+          },
+          {
+            "q": "Tôi có thể dùng những góc nào?",
+            "a": "Bạn có thể xoay 90, 180 hoặc 270 độ theo chiều kim đồng hồ. Góc được áp dụng cho mọi trang của tài liệu."
+          },
+          {
+            "q": "Công cụ xoay PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
+          },
+          {
+            "q": "Tệp của tôi có an toàn và riêng tư không?",
+            "a": "Tệp của bạn được gửi qua kết nối được mã hóa (SSL) và được xử lý tự động mà không có ai xem xét. Các tệp đã tải lên được tự động xóa khỏi máy chủ của chúng tôi trong vòng vài giờ."
+          },
+          {
+            "q": "Nó có hoạt động trên Windows, Mac và di động không?",
+            "a": "Có. PDFConvertMe chạy hoàn toàn trong trình duyệt của bạn, vì vậy nó hoạt động trên mọi hệ điều hành hoặc thiết bị – Windows, Mac, Linux, Android và iOS."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "Làm phẳng PDF — Công cụ làm phẳng PDF trực tuyến miễn phí",
+      "metaDescription": "Làm phẳng tệp PDF trực tuyến miễn phí. Hợp nhất các trường biểu mẫu và chú thích vào trang trong vài giây – không cần cài đặt, không cần đăng ký. Nhanh chóng và an toàn.",
+      "h1": "Làm phẳng PDF MIỄN PHÍ",
+      "subtitle": "Hợp nhất các trường biểu mẫu và chú thích vào trang để PDF của bạn không thể chỉnh sửa – trong vài giây, miễn phí, trực tuyến và an toàn.",
+      "uploader": {
+        "dropText": "Thả tệp PDF của bạn vào đây hoặc nhấp để tải lên",
+        "hint": "Kích thước tệp tối đa: 20 MB · Tệp của bạn được xử lý an toàn",
+        "button": "Làm phẳng PDF",
+        "converting": "Đang làm phẳng PDF của bạn…",
+        "downloadReady": "Xong! PDF đã làm phẳng của bạn đã sẵn sàng.",
+        "download": "Tải xuống PDF",
+        "errorGeneric": "Đã xảy ra lỗi. Vui lòng thử lại.",
+        "errorFileType": "Vui lòng chọn một tệp PDF.",
+        "errorTooLarge": "Tệp đó quá lớn. Kích thước tối đa là 20 MB."
+      },
+      "howTo": {
+        "heading": "Cách làm phẳng PDF miễn phí",
+        "steps": [
+          {
+            "title": "Tải lên",
+            "text": "Chọn tệp PDF bạn muốn chỉnh sửa. Kéo và thả vào ô bên trên hoặc duyệt từ thiết bị của bạn."
+          },
+          {
+            "title": "Bắt đầu xử lý",
+            "text": "Công cụ trực tuyến miễn phí của chúng tôi hợp nhất các trường biểu mẫu vào nội dung trang để PDF trông giống nhau ở mọi nơi và không thể chỉnh sửa hoặc điền vào được nữa."
+          },
+          {
+            "title": "Tải xuống",
+            "text": "PDF mới của bạn sẽ sẵn sàng tải xuống ngay lập tức. Sau khi tải xuống hoàn tất, mọi tệp còn lại bạn đã tải lên sẽ bị xóa khỏi máy chủ của chúng tôi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Câu hỏi thường gặp",
+        "items": [
+          {
+            "q": "Làm phẳng PDF có tác dụng gì?",
+            "a": "Làm phẳng hợp nhất các trường biểu mẫu tương tác vào chính trang đó, nên nội dung trông giống hệt nhau ở mọi nơi và không thể chỉnh sửa hoặc điền vào được nữa."
+          },
+          {
+            "q": "Dữ liệu biểu mẫu tôi đã điền có được giữ lại không?",
+            "a": "Có. Các giá trị hiện hiển thị trong các trường biểu mẫu được ghi cố định vào trang, nên chúng vẫn hiển thị — chỉ là không thể thay đổi được nữa."
+          },
+          {
+            "q": "Công cụ làm phẳng PDF có miễn phí không?",
+            "a": "Có. PDFConvertMe hoàn toàn miễn phí sử dụng, không cần đăng ký, không cần đăng ký thuê bao và không có phí ẩn."
           },
           {
             "q": "Tệp của tôi có an toàn và riêng tư không?",

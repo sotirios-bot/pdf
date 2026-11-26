@@ -22,7 +22,9 @@
     "mergePdf": "PDF zusammenführen",
     "splitPdf": "PDF teilen",
     "deletePdfPages": "PDF-Seiten löschen",
-    "compressPdf": "PDF komprimieren"
+    "compressPdf": "PDF komprimieren",
+    "rotatePdf": "PDF drehen",
+    "flattenPdf": "PDF glätten"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
@@ -129,6 +131,18 @@
           "id": "compressPdf",
           "name": "PDF komprimieren",
           "description": "Reduzieren Sie die Dateigröße eines PDF-Dokuments.",
+          "badge": "Neu"
+        },
+        {
+          "id": "rotatePdf",
+          "name": "PDF drehen",
+          "description": "Drehen Sie alle Seiten eines PDFs um 90, 180 oder 270 Grad.",
+          "badge": "Neu"
+        },
+        {
+          "id": "flattenPdf",
+          "name": "PDF glätten",
+          "description": "Führen Sie Formularfelder in die Seite ein, sodass ein PDF nicht mehr bearbeitet werden kann.",
           "badge": "Neu"
         }
       ]
@@ -919,6 +933,127 @@
           {
             "q": "Kann ich ein gescanntes PDF umwandeln?",
             "a": "Nein. Gescannte oder reine Bild-PDFs sind Rasterbilder ohne Vektorebene, daher gibt es keine Linien zu extrahieren. Dieses Tool funktioniert mit Vektor-PDFs, die aus CAD- oder Designsoftware exportiert wurden."
+          },
+          {
+            "q": "Sind meine Dateien sicher und vertraulich?",
+            "a": "Ihre Datei wird über eine verschlüsselte (SSL) Verbindung gesendet und automatisch verarbeitet, ohne dass sie jemand einsieht. Hochgeladene Dateien werden automatisch innerhalb weniger Stunden von unseren Servern gelöscht."
+          },
+          {
+            "q": "Funktioniert es auf Windows, Mac und Mobilgeräten?",
+            "a": "Ja. PDFConvertMe läuft vollständig in Ihrem Browser und funktioniert daher auf jedem Betriebssystem und Gerät – Windows, Mac, Linux, Android und iOS."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "PDF drehen – Kostenloses Online-Tool zum Drehen von PDF",
+      "metaDescription": "Drehen Sie PDF-Seiten online kostenlos. Drehen Sie die Seiten eines PDFs in Sekunden um 90, 180 oder 270 Grad – ohne Installation, ohne Registrierung. Schnell und sicher.",
+      "h1": "PDF KOSTENLOS drehen",
+      "subtitle": "Drehen Sie die Seiten eines PDFs in Sekunden um 90, 180 oder 270 Grad – kostenlos, online und sicher.",
+      "paramPlaceholder": "Drehwinkel: 90, 180 oder 270",
+      "uploader": {
+        "dropText": "PDF hier ablegen oder zum Hochladen klicken",
+        "hint": "Maximale Dateigröße: 20 MB · Ihre Datei wird sicher verarbeitet",
+        "button": "PDF drehen",
+        "converting": "Ihr PDF wird gedreht…",
+        "downloadReady": "Fertig! Ihr gedrehtes PDF ist bereit.",
+        "download": "PDF herunterladen",
+        "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+        "errorFileType": "Bitte wählen Sie eine PDF-Datei.",
+        "errorTooLarge": "Diese Datei ist zu groß. Die maximale Größe beträgt 20 MB."
+      },
+      "howTo": {
+        "heading": "So drehen Sie ein PDF kostenlos",
+        "steps": [
+          {
+            "title": "Hochladen",
+            "text": "Wählen Sie die PDF-Datei, die Sie bearbeiten möchten. Ziehen Sie sie in das Feld oben oder suchen Sie sie auf Ihrem Gerät."
+          },
+          {
+            "title": "Verarbeitung starten",
+            "text": "Geben Sie den Drehwinkel ein – 90, 180 oder 270 Grad im Uhrzeigersinn – und unser kostenloses Online-Tool dreht jede Seite in Sekunden für Sie."
+          },
+          {
+            "title": "Herunterladen",
+            "text": "Ihr neues PDF steht sofort zum Download bereit. Nach Abschluss des Downloads werden alle verbleibenden von Ihnen hochgeladenen Dateien von unserem Server gelöscht."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "q": "Wie drehe ich ein PDF?",
+            "a": "Laden Sie Ihr PDF hoch, geben Sie den Winkel ein (90, 180 oder 270), klicken Sie auf „PDF drehen“ und laden Sie die gedrehte Datei herunter. Der gesamte Vorgang dauert nur wenige Sekunden."
+          },
+          {
+            "q": "Welche Winkel kann ich verwenden?",
+            "a": "Sie können um 90, 180 oder 270 Grad im Uhrzeigersinn drehen. Der Winkel wird auf jede Seite des Dokuments angewendet."
+          },
+          {
+            "q": "Ist das PDF-Dreh-Tool kostenlos?",
+            "a": "Ja. PDFConvertMe ist völlig kostenlos nutzbar, ohne Registrierung, ohne Abonnement und ohne versteckte Gebühren."
+          },
+          {
+            "q": "Sind meine Dateien sicher und vertraulich?",
+            "a": "Ihre Datei wird über eine verschlüsselte (SSL) Verbindung gesendet und automatisch verarbeitet, ohne dass sie jemand einsieht. Hochgeladene Dateien werden automatisch innerhalb weniger Stunden von unseren Servern gelöscht."
+          },
+          {
+            "q": "Funktioniert es auf Windows, Mac und Mobilgeräten?",
+            "a": "Ja. PDFConvertMe läuft vollständig in Ihrem Browser und funktioniert daher auf jedem Betriebssystem und Gerät – Windows, Mac, Linux, Android und iOS."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "PDF glätten – Kostenloses Online-Tool zum Glätten von PDF",
+      "metaDescription": "Glätten Sie PDF-Dateien online kostenlos. Führen Sie Formularfelder und Anmerkungen in Sekunden in die Seite ein – ohne Installation, ohne Registrierung. Schnell und sicher.",
+      "h1": "PDF KOSTENLOS glätten",
+      "subtitle": "Führen Sie Formularfelder und Anmerkungen in die Seite ein, sodass Ihr PDF nicht bearbeitet werden kann – in Sekunden, kostenlos, online und sicher.",
+      "uploader": {
+        "dropText": "PDF hier ablegen oder zum Hochladen klicken",
+        "hint": "Maximale Dateigröße: 20 MB · Ihre Datei wird sicher verarbeitet",
+        "button": "PDF glätten",
+        "converting": "Ihr PDF wird geglättet…",
+        "downloadReady": "Fertig! Ihr geglättetes PDF ist bereit.",
+        "download": "PDF herunterladen",
+        "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+        "errorFileType": "Bitte wählen Sie eine PDF-Datei.",
+        "errorTooLarge": "Diese Datei ist zu groß. Die maximale Größe beträgt 20 MB."
+      },
+      "howTo": {
+        "heading": "So glätten Sie ein PDF kostenlos",
+        "steps": [
+          {
+            "title": "Hochladen",
+            "text": "Wählen Sie die PDF-Datei, die Sie bearbeiten möchten. Ziehen Sie sie in das Feld oben oder suchen Sie sie auf Ihrem Gerät."
+          },
+          {
+            "title": "Verarbeitung starten",
+            "text": "Unser kostenloses Online-Tool führt die Formularfelder in den Seiteninhalt ein, sodass das PDF überall gleich aussieht und nicht mehr bearbeitet oder ausgefüllt werden kann."
+          },
+          {
+            "title": "Herunterladen",
+            "text": "Ihr neues PDF steht sofort zum Download bereit. Nach Abschluss des Downloads werden alle verbleibenden von Ihnen hochgeladenen Dateien von unserem Server gelöscht."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "q": "Was bewirkt das Glätten eines PDFs?",
+            "a": "Das Glätten führt interaktive Formularfelder in die Seite selbst ein, sodass der Inhalt überall identisch aussieht und nicht mehr bearbeitet oder ausgefüllt werden kann."
+          },
+          {
+            "q": "Bleiben meine ausgefüllten Formulardaten erhalten?",
+            "a": "Ja. Die aktuell in den Formularfeldern angezeigten Werte werden in die Seite eingebettet, sodass sie sichtbar bleiben – sie können nur nicht mehr geändert werden."
+          },
+          {
+            "q": "Ist das PDF-Glätt-Tool kostenlos?",
+            "a": "Ja. PDFConvertMe ist völlig kostenlos nutzbar, ohne Registrierung, ohne Abonnement und ohne versteckte Gebühren."
           },
           {
             "q": "Sind meine Dateien sicher und vertraulich?",

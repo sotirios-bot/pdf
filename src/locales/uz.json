@@ -22,7 +22,9 @@
     "mergePdf": "PDF birlashtirish",
     "splitPdf": "PDF ajratish",
     "deletePdfPages": "PDF sahifalarni o‘chirish",
-    "compressPdf": "PDF siqish"
+    "compressPdf": "PDF siqish",
+    "rotatePdf": "PDF aylantirish",
+    "flattenPdf": "PDF tekislash"
   },
   "footer": {
     "rights": "Barcha huquqlar himoyalangan.",
@@ -65,7 +67,9 @@
         { "id": "mergePdf", "name": "PDF birlashtirish", "description": "Bir nechta PDF faylni bitta hujjatga birlashtiring.", "badge": "Yangi" },
         { "id": "splitPdf", "name": "PDF ajratish", "description": "PDFni alohida bir sahifali fayllarga ajrating (ZIP).", "badge": "Yangi" },
         { "id": "deletePdfPages", "name": "PDF sahifalarni o‘chirish", "description": "PDF hujjatdan muayyan sahifalarni olib tashlang.", "badge": "Yangi" },
-        { "id": "compressPdf", "name": "PDF siqish", "description": "PDF hujjatning fayl hajmini kichraytiring.", "badge": "Yangi" }
+        { "id": "compressPdf", "name": "PDF siqish", "description": "PDF hujjatning fayl hajmini kichraytiring.", "badge": "Yangi" },
+        { "id": "rotatePdf", "name": "PDF aylantirish", "description": "PDF ning barcha sahifalarini 90, 180 yoki 270 gradusga aylantiring.", "badge": "Yangi" },
+        { "id": "flattenPdf", "name": "PDF tekislash", "description": "Shakl maydonlarini sahifa bilan birlashtiring, shunda PDF endi tahrir qilib bo‘lmaydi.", "badge": "Yangi" }
       ]
     },
     "pdfToExcel": {
@@ -686,6 +690,127 @@
           {
             "q": "Skanerlangan PDF faylni o‘girish mumkinmi?",
             "a": "Yo‘q. Skanerlangan yoki faqat rasmli PDF fayllar vektor qatlamiga ega bo‘lmagan rastrli rasmlardir, shuning uchun ajratib olish uchun hech narsa yo‘q. Bu vosita CAD yoki dizayn dasturidan eksport qilingan vektorli PDF fayllar bilan ishlaydi."
+          },
+          {
+            "q": "Fayllarim xavfsiz va maxfiymi?",
+            "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi."
+          },
+          {
+            "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?",
+            "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "PDF aylantirish — Bepul onlayn PDF aylantirgich",
+      "metaDescription": "PDF sahifalarini bepul onlayn aylantiring. PDF sahifalarini bir necha soniyada 90, 180 yoki 270 gradusga buring — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez va xavfsiz.",
+      "h1": "PDFni BEPUL aylantiring",
+      "subtitle": "PDF sahifalarini bir necha soniyada 90, 180 yoki 270 gradusga aylantiring — bepul, onlayn va xavfsiz.",
+      "paramPlaceholder": "Aylantirish burchagi: 90, 180 yoki 270",
+      "uploader": {
+        "dropText": "PDF faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "PDF aylantirish",
+        "converting": "PDF aylantirilmoqda…",
+        "downloadReady": "Tayyor! Aylantirilgan PDF faylingiz tayyor.",
+        "download": "PDF yuklab olish",
+        "errorGeneric": "Sahifalarni o‘chirishda xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "PDFni qanday qilib bepul aylantirish mumkin",
+        "steps": [
+          {
+            "title": "Yuklash",
+            "text": "Tahrirlanadigan PDF faylni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan tanlang."
+          },
+          {
+            "title": "Qayta ishlashni boshlash",
+            "text": "Aylantirish burchagini kiriting — soat yo‘nalishi bo‘yicha 90, 180 yoki 270 gradus — va bepul onlayn vositamiz har bir sahifani bir necha soniyada siz uchun aylantiradi."
+          },
+          {
+            "title": "Yuklab olish",
+            "text": "Yangi PDF fayl darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan o‘chirib tashlanadi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          {
+            "q": "PDFni qanday aylantiraman?",
+            "a": "PDF faylingizni yuklang, burchakni kiriting (90, 180 yoki 270), «PDF aylantirish» tugmasini bosing va aylantirilgan faylni yuklab oling. Butun jarayon atigi bir necha soniya vaqt oladi."
+          },
+          {
+            "q": "Qaysi burchaklardan foydalanishim mumkin?",
+            "a": "Siz soat yo‘nalishi bo‘yicha 90, 180 yoki 270 gradusga aylantirishingiz mumkin. Burchak hujjatning har bir sahifasiga qo‘llaniladi."
+          },
+          {
+            "q": "PDF aylantirgich bepulmi?",
+            "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul."
+          },
+          {
+            "q": "Fayllarim xavfsiz va maxfiymi?",
+            "a": "Faylingiz shifrlangan (SSL) ulanish orqali yuboriladi va hech kim tekshirmasdan avtomatik ravishda qayta ishlanadi. Yuklangan fayllar bir necha soat ichida serverlarimizdan avtomatik ravishda o‘chirib tashlanadi."
+          },
+          {
+            "q": "U Windows, Mac va mobil qurilmalarda ishlaydimi?",
+            "a": "Ha. PDFConvertMe butunlay brauzeringizda ishlaydi, shuning uchun u har qanday operatsion tizim yoki qurilmada - Windows, Mac, Linux, Android va iOS tizimlarida ishlaydi."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "PDF tekislash — Bepul onlayn PDF tekislagich",
+      "metaDescription": "PDF fayllarni bepul onlayn tekislang. Shakl maydonlari va izohlarni bir necha soniyada sahifa bilan birlashtiring — o‘rnatish va ro‘yxatdan o‘tmasdan. Tez va xavfsiz.",
+      "h1": "PDFni BEPUL tekislang",
+      "subtitle": "Shakl maydonlari va izohlarni sahifa bilan birlashtiring, shunda PDFingizni tahrir qilib bo‘lmaydi — bir necha soniyada, bepul, onlayn va xavfsiz.",
+      "uploader": {
+        "dropText": "PDF faylni shu yerga tashlang yoki yuklash uchun bosing",
+        "hint": "Maksimal fayl hajmi: 20 MB · Faylingiz xavfsiz qayta ishlanadi",
+        "button": "PDF tekislash",
+        "converting": "PDF tekislanmoqda…",
+        "downloadReady": "Tayyor! Tekislangan PDF faylingiz tayyor.",
+        "download": "PDF yuklab olish",
+        "errorGeneric": "Sahifalarni o‘chirishda xatolik yuz berdi. Iltimos, qaytadan urinib ko‘ring.",
+        "errorFileType": "PDF faylni tanlang.",
+        "errorTooLarge": "Bu fayl juda katta. Maksimal hajmi 20 MB."
+      },
+      "howTo": {
+        "heading": "PDFni qanday qilib bepul tekislash mumkin",
+        "steps": [
+          {
+            "title": "Yuklash",
+            "text": "Tahrirlanadigan PDF faylni tanlang. Uni yuqoridagi katakchaga tortib tashlang yoki qurilmangizdan tanlang."
+          },
+          {
+            "title": "Qayta ishlashni boshlash",
+            "text": "Bepul onlayn vositamiz shakl maydonlarini sahifa mazmuni bilan birlashtiradi, shunda PDF hamma joyda bir xil ko‘rinadi va endi tahrir qilib yoki to‘ldirib bo‘lmaydi."
+          },
+          {
+            "title": "Yuklab olish",
+            "text": "Yangi PDF fayl darhol yuklab olishga tayyor bo‘ladi. Yuklab olish yakunlangach, siz yuklagan har qanday qolgan fayllar serverimizdan o‘chirib tashlanadi."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Savol-javob",
+        "items": [
+          {
+            "q": "PDFni tekislash nima qiladi?",
+            "a": "Tekislash interaktiv shakl maydonlarini sahifaning o‘ziga birlashtiradi, shunda mazmun hamma joyda bir xil ko‘rinadi va endi tahrir qilib yoki to‘ldirib bo‘lmaydi."
+          },
+          {
+            "q": "To‘ldirilgan shakl ma’lumotlarim saqlanadimi?",
+            "a": "Ha. Hozirda shakl maydonlarida ko‘rsatilgan qiymatlar sahifaga joylashtiriladi, shuning uchun ular ko‘rinib turadi — faqat endi ularni o‘zgartirib bo‘lmaydi."
+          },
+          {
+            "q": "PDF tekislagich bepulmi?",
+            "a": "Ha. PDFConvertMe ro‘yxatdan o‘tish, obuna va yashirin to‘lovlarsiz foydalanish uchun mutlaqo bepul."
           },
           {
             "q": "Fayllarim xavfsiz va maxfiymi?",

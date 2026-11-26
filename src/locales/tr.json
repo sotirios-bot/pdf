@@ -22,7 +22,9 @@
     "mergePdf": "PDF Birleştir",
     "splitPdf": "PDF Böl",
     "deletePdfPages": "PDF Sayfalarını Sil",
-    "compressPdf": "PDF Sıkıştır"
+    "compressPdf": "PDF Sıkıştır",
+    "rotatePdf": "PDF Döndür",
+    "flattenPdf": "PDF Düzleştir"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır.",
@@ -65,7 +67,9 @@
         { "id": "mergePdf", "name": "PDF Birleştir", "description": "Birkaç PDF dosyasını tek bir belgede birleştirin.", "badge": "Yeni" },
         { "id": "splitPdf", "name": "PDF Böl", "description": "Bir PDF'yi ayrı tek sayfalık dosyalara bölün (ZIP).", "badge": "Yeni" },
         { "id": "deletePdfPages", "name": "PDF Sayfalarını Sil", "description": "Bir PDF belgesinden belirli sayfaları kaldırın.", "badge": "Yeni" },
-        { "id": "compressPdf", "name": "PDF Sıkıştır", "description": "Bir PDF belgesinin dosya boyutunu küçültün.", "badge": "Yeni" }
+        { "id": "compressPdf", "name": "PDF Sıkıştır", "description": "Bir PDF belgesinin dosya boyutunu küçültün.", "badge": "Yeni" },
+        { "id": "rotatePdf", "name": "PDF Döndür", "description": "Bir PDF'nin tüm sayfalarını 90, 180 veya 270 derece döndürün.", "badge": "Yeni" },
+        { "id": "flattenPdf", "name": "PDF Düzleştir", "description": "Form alanlarını sayfayla birleştirin, böylece PDF artık düzenlenemez.", "badge": "Yeni" }
       ]
     },
     "pdfToExcel": {
@@ -686,6 +690,127 @@
           {
             "q": "Taranmış bir PDF'i dönüştürebilir miyim?",
             "a": "Hayır. Taranmış veya yalnızca görüntü içeren PDF'ler, vektör katmanı olmayan raster resimlerdir, bu nedenle çıkarılacak çizgi yoktur. Bu araç, CAD veya tasarım yazılımından dışa aktarılan vektör PDF'ler ile çalışır."
+          },
+          {
+            "q": "Dosyalarım güvenli ve özel mi?",
+            "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir."
+          },
+          {
+            "q": "Windows, Mac ve mobil cihazlarda çalışır mı?",
+            "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "PDF Döndür — Ücretsiz Çevrimiçi PDF Döndürücü",
+      "metaDescription": "PDF sayfalarını çevrimiçi olarak ücretsiz döndürün. Bir PDF'nin sayfalarını saniyeler içinde 90, 180 veya 270 derece çevirin — kurulum ve kayıt gerekmez. Hızlı ve güvenli.",
+      "h1": "PDF'yi ÜCRETSİZ Döndürün",
+      "subtitle": "Bir PDF'nin sayfalarını saniyeler içinde 90, 180 veya 270 derece döndürün — ücretsiz, çevrimiçi ve güvenli.",
+      "paramPlaceholder": "Döndürme açısı: 90, 180 veya 270",
+      "uploader": {
+        "dropText": "PDF'i buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
+        "button": "PDF Döndür",
+        "converting": "PDF'niz döndürülüyor…",
+        "downloadReady": "Tamamlandı! Döndürülen PDF'iniz hazır.",
+        "download": "PDF İndir",
+        "errorGeneric": "Sayfalar silinirken bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PDF Nasıl Ücretsiz Döndürülür",
+        "steps": [
+          {
+            "title": "Yükleyin",
+            "text": "Düzenlemek istediğiniz PDF dosyasını seçin. Onu yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın."
+          },
+          {
+            "title": "İşlemeye başlayın",
+            "text": "Döndürme açısını girin — saat yönünde 90, 180 veya 270 derece — ve ücretsiz çevrimiçi aracımız her sayfayı saniyeler içinde sizin için çevirsin."
+          },
+          {
+            "title": "İndirin",
+            "text": "Yeni PDF'iniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          {
+            "q": "Bir PDF'yi nasıl döndürürüm?",
+            "a": "PDF'inizi yükleyin, açıyı girin (90, 180 veya 270), \"PDF Döndür\" düğmesine tıklayın ve döndürülen dosyayı indirin. Tüm süreç sadece birkaç saniye sürer."
+          },
+          {
+            "q": "Hangi açıları kullanabilirim?",
+            "a": "Saat yönünde 90, 180 veya 270 derece döndürebilirsiniz. Açı, belgenin her sayfasına uygulanır."
+          },
+          {
+            "q": "PDF döndürücü ücretsiz mi?",
+            "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir."
+          },
+          {
+            "q": "Dosyalarım güvenli ve özel mi?",
+            "a": "Dosyanız şifrelenmiş (SSL) bağlantı üzerinden gönderilir ve kimse tarafından gözden geçirilmeden otomatik olarak işlenir. Yüklenen dosyalar birkaç saat içinde sunucularımızdan otomatik olarak silinir."
+          },
+          {
+            "q": "Windows, Mac ve mobil cihazlarda çalışır mı?",
+            "a": "Evet. PDFConvertMe tamamen tarayıcınızda çalışır, bu nedenle herhangi bir işletim sistemi veya cihazda — Windows, Mac, Linux, Android ve iOS — çalışır."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "PDF Düzleştir — Ücretsiz Çevrimiçi PDF Düzleştirici",
+      "metaDescription": "PDF dosyalarını çevrimiçi olarak ücretsiz düzleştirin. Form alanlarını ve ek açıklamaları saniyeler içinde sayfayla birleştirin — kurulum ve kayıt gerekmez. Hızlı ve güvenli.",
+      "h1": "PDF'yi ÜCRETSİZ Düzleştirin",
+      "subtitle": "Form alanlarını ve ek açıklamaları sayfayla birleştirin, böylece PDF'niz düzenlenemez — saniyeler içinde, ücretsiz, çevrimiçi ve güvenli.",
+      "uploader": {
+        "dropText": "PDF'i buraya bırakın veya yüklemek için tıklayın",
+        "hint": "Maksimum dosya boyutu: 20 MB · Dosyanız güvenli bir şekilde işlenir",
+        "button": "PDF Düzleştir",
+        "converting": "PDF'niz düzleştiriliyor…",
+        "downloadReady": "Tamamlandı! Düzleştirilen PDF'iniz hazır.",
+        "download": "PDF İndir",
+        "errorGeneric": "Sayfalar silinirken bir hata oluştu. Lütfen tekrar deneyin.",
+        "errorFileType": "Lütfen bir PDF dosyası seçin.",
+        "errorTooLarge": "Bu dosya çok büyük. Maksimum boyut 20 MB'dir."
+      },
+      "howTo": {
+        "heading": "PDF Nasıl Ücretsiz Düzleştirilir",
+        "steps": [
+          {
+            "title": "Yükleyin",
+            "text": "Düzenlemek istediğiniz PDF dosyasını seçin. Onu yukarıdaki kutuya sürükleyip bırakın veya cihazınızdan göz atın."
+          },
+          {
+            "title": "İşlemeye başlayın",
+            "text": "Ücretsiz çevrimiçi aracımız form alanlarını sayfa içeriğiyle birleştirir, böylece PDF her yerde aynı görünür ve artık düzenlenemez veya doldurulamaz."
+          },
+          {
+            "title": "İndirin",
+            "text": "Yeni PDF'iniz hemen indirilmeye hazır olacak. İndirme tamamlandıktan sonra, yüklediğiniz kalan tüm dosyalar sunucumuzdan silinecektir."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Sıkça Sorulan Sorular",
+        "items": [
+          {
+            "q": "PDF düzleştirme ne işe yarar?",
+            "a": "Düzleştirme, etkileşimli form alanlarını sayfanın kendisiyle birleştirir, böylece içerik her yerde aynı görünür ve artık düzenlenemez veya doldurulamaz."
+          },
+          {
+            "q": "Doldurduğum form verileri korunur mu?",
+            "a": "Evet. Form alanlarında şu anda gösterilen değerler sayfaya gömülür, böylece görünür kalır — yalnızca artık değiştirilemezler."
+          },
+          {
+            "q": "PDF düzleştirici ücretsiz mi?",
+            "a": "Evet. PDFConvertMe, kayıt yaptırmadan, abonelik yapmadan ve gizli ücret almadan tamamen ücretsizdir."
           },
           {
             "q": "Dosyalarım güvenli ve özel mi?",

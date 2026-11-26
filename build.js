@@ -47,6 +47,8 @@ const config = {
     { id: "splitPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/split-pdf", ext: "zip", downloadEvent: "split_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr", "de", "pl", "id", "vi"] },
     { id: "deletePdfPages", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/delete-pdf-pages", ext: "pdf", downloadEvent: "delete_pages_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", param: "pages", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr", "de", "pl", "id", "vi"] },
     { id: "compressPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/compress-pdf", ext: "pdf", downloadEvent: "compress_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr", "de", "pl", "id", "vi"] },
+    { id: "rotatePdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/rotate-pdf", ext: "pdf", downloadEvent: "rotate_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", param: "angle", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr", "de", "pl", "id", "vi"] },
+    { id: "flattenPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/flatten-pdf", ext: "pdf", downloadEvent: "flatten_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr", "de", "pl", "id", "vi"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]
@@ -108,7 +110,7 @@ function toolHref(locale, pageId) {
 
 // All converter pages, in config order.
 const toolPages = config.pages.filter((p) => p.type === "converter");
-const toolIcons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️", mdToPdf: "📑", textToPdf: "📄", pdfToText: "🔤", pdfToAutocad: "📐", mergePdf: "🔗", splitPdf: "✂️", deletePdfPages: "🗑️", compressPdf: "🗜️" };
+const toolIcons = { pdfToExcel: "📊", pdfToWord: "📝", pdfToPpt: "📽️", jpgToPdf: "🖼️", pngToPdf: "🖼️", mdToPdf: "📑", textToPdf: "📄", pdfToText: "🔤", pdfToAutocad: "📐", mergePdf: "🔗", splitPdf: "✂️", deletePdfPages: "🗑️", compressPdf: "🗜️", rotatePdf: "🔄", flattenPdf: "📃" };
 // <a> links to the tools in `category` available in `locale` (labelled locally).
 function toolLinksFor(locale, t, category) {
   return toolPages

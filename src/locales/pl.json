@@ -22,7 +22,9 @@
     "mergePdf": "Połącz PDF",
     "splitPdf": "Podziel PDF",
     "deletePdfPages": "Usuń strony PDF",
-    "compressPdf": "Kompresuj PDF"
+    "compressPdf": "Kompresuj PDF",
+    "rotatePdf": "Obróć PDF",
+    "flattenPdf": "Spłaszcz PDF"
   },
   "footer": {
     "rights": "Wszelkie prawa zastrzeżone.",
@@ -129,6 +131,18 @@
           "id": "compressPdf",
           "name": "Kompresuj PDF",
           "description": "Zmniejsz rozmiar pliku dokumentu PDF.",
+          "badge": "Nowość"
+        },
+        {
+          "id": "rotatePdf",
+          "name": "Obróć PDF",
+          "description": "Obróć wszystkie strony PDF o 90, 180 lub 270 stopni.",
+          "badge": "Nowość"
+        },
+        {
+          "id": "flattenPdf",
+          "name": "Spłaszcz PDF",
+          "description": "Scal pola formularza ze stroną, aby pliku PDF nie można było już edytować.",
           "badge": "Nowość"
         }
       ]
@@ -919,6 +933,127 @@
           {
             "q": "Czy mogę przekonwertować zeskanowany plik PDF?",
             "a": "Nie. Zeskanowane pliki PDF lub zawierające wyłącznie obrazy to obrazy rastrowe bez warstwy wektorowej, więc nie ma linii do wyodrębnienia. To narzędzie działa z wektorowymi plikami PDF wyeksportowanymi z oprogramowania CAD lub projektowego."
+          },
+          {
+            "q": "Czy moje pliki są bezpieczne i prywatne?",
+            "a": "Twój plik jest wysyłany przez szyfrowane połączenie (SSL) i przetwarzany automatycznie, bez przeglądania przez nikogo. Przesłane pliki są automatycznie usuwane z naszych serwerów w ciągu kilku godzin."
+          },
+          {
+            "q": "Czy działa na Windows, Mac i urządzeniach mobilnych?",
+            "a": "Tak. PDFConvertMe działa w całości w Twojej przeglądarce, więc działa w każdym systemie operacyjnym i na każdym urządzeniu – Windows, Mac, Linux, Android i iOS."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "Obróć PDF – Darmowe narzędzie online do obracania PDF",
+      "metaDescription": "Obracaj strony PDF online za darmo. Obróć strony PDF o 90, 180 lub 270 stopni w kilka sekund – bez instalacji, bez rejestracji. Szybko i bezpiecznie.",
+      "h1": "Obróć PDF ZA DARMO",
+      "subtitle": "Obróć strony PDF o 90, 180 lub 270 stopni w kilka sekund – za darmo, online i bezpiecznie.",
+      "paramPlaceholder": "Kąt obrotu: 90, 180 lub 270",
+      "uploader": {
+        "dropText": "Upuść tutaj plik PDF lub kliknij, aby przesłać",
+        "hint": "Maksymalny rozmiar pliku: 20 MB · Twój plik jest przetwarzany bezpiecznie",
+        "button": "Obróć PDF",
+        "converting": "Obracanie pliku PDF…",
+        "downloadReady": "Gotowe! Twój obrócony plik PDF jest gotowy.",
+        "download": "Pobierz PDF",
+        "errorGeneric": "Coś poszło nie tak. Spróbuj ponownie.",
+        "errorFileType": "Wybierz plik PDF.",
+        "errorTooLarge": "Ten plik jest za duży. Maksymalny rozmiar to 20 MB."
+      },
+      "howTo": {
+        "heading": "Jak obrócić PDF za darmo",
+        "steps": [
+          {
+            "title": "Prześlij",
+            "text": "Wybierz plik PDF, który chcesz edytować. Przeciągnij i upuść go w polu powyżej lub wyszukaj na swoim urządzeniu."
+          },
+          {
+            "title": "Rozpocznij przetwarzanie",
+            "text": "Wpisz kąt obrotu – 90, 180 lub 270 stopni zgodnie z ruchem wskazówek zegara – a nasze darmowe narzędzie online obróci każdą stronę za Ciebie w kilka sekund."
+          },
+          {
+            "title": "Pobierz",
+            "text": "Twój nowy plik PDF będzie gotowy do pobrania natychmiast. Po zakończeniu pobierania wszystkie pozostałe przesłane przez Ciebie pliki zostaną usunięte z naszego serwera."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Najczęściej zadawane pytania",
+        "items": [
+          {
+            "q": "Jak obrócić plik PDF?",
+            "a": "Prześlij swój plik PDF, wpisz kąt (90, 180 lub 270), kliknij „Obróć PDF” i pobierz obrócony plik. Cały proces trwa tylko kilka sekund."
+          },
+          {
+            "q": "Jakich kątów mogę użyć?",
+            "a": "Możesz obrócić o 90, 180 lub 270 stopni zgodnie z ruchem wskazówek zegara. Kąt jest stosowany do każdej strony dokumentu."
+          },
+          {
+            "q": "Czy narzędzie do obracania PDF jest darmowe?",
+            "a": "Tak. PDFConvertMe jest całkowicie darmowy, bez rejestracji, bez subskrypcji i bez ukrytych opłat."
+          },
+          {
+            "q": "Czy moje pliki są bezpieczne i prywatne?",
+            "a": "Twój plik jest wysyłany przez szyfrowane połączenie (SSL) i przetwarzany automatycznie, bez przeglądania przez nikogo. Przesłane pliki są automatycznie usuwane z naszych serwerów w ciągu kilku godzin."
+          },
+          {
+            "q": "Czy działa na Windows, Mac i urządzeniach mobilnych?",
+            "a": "Tak. PDFConvertMe działa w całości w Twojej przeglądarce, więc działa w każdym systemie operacyjnym i na każdym urządzeniu – Windows, Mac, Linux, Android i iOS."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "Spłaszcz PDF – Darmowe narzędzie online do spłaszczania PDF",
+      "metaDescription": "Spłaszczaj pliki PDF online za darmo. Scal pola formularza i adnotacje ze stroną w kilka sekund – bez instalacji, bez rejestracji. Szybko i bezpiecznie.",
+      "h1": "Spłaszcz PDF ZA DARMO",
+      "subtitle": "Scal pola formularza i adnotacje ze stroną, aby Twojego pliku PDF nie można było edytować – w kilka sekund, za darmo, online i bezpiecznie.",
+      "uploader": {
+        "dropText": "Upuść tutaj plik PDF lub kliknij, aby przesłać",
+        "hint": "Maksymalny rozmiar pliku: 20 MB · Twój plik jest przetwarzany bezpiecznie",
+        "button": "Spłaszcz PDF",
+        "converting": "Spłaszczanie pliku PDF…",
+        "downloadReady": "Gotowe! Twój spłaszczony plik PDF jest gotowy.",
+        "download": "Pobierz PDF",
+        "errorGeneric": "Coś poszło nie tak. Spróbuj ponownie.",
+        "errorFileType": "Wybierz plik PDF.",
+        "errorTooLarge": "Ten plik jest za duży. Maksymalny rozmiar to 20 MB."
+      },
+      "howTo": {
+        "heading": "Jak spłaszczyć PDF za darmo",
+        "steps": [
+          {
+            "title": "Prześlij",
+            "text": "Wybierz plik PDF, który chcesz edytować. Przeciągnij i upuść go w polu powyżej lub wyszukaj na swoim urządzeniu."
+          },
+          {
+            "title": "Rozpocznij przetwarzanie",
+            "text": "Nasze darmowe narzędzie online scala pola formularza z treścią strony, dzięki czemu plik PDF wygląda tak samo wszędzie i nie można go już edytować ani wypełniać."
+          },
+          {
+            "title": "Pobierz",
+            "text": "Twój nowy plik PDF będzie gotowy do pobrania natychmiast. Po zakończeniu pobierania wszystkie pozostałe przesłane przez Ciebie pliki zostaną usunięte z naszego serwera."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Najczęściej zadawane pytania",
+        "items": [
+          {
+            "q": "Co robi spłaszczanie pliku PDF?",
+            "a": "Spłaszczanie scala interaktywne pola formularza z samą stroną, dzięki czemu treść wygląda identycznie wszędzie i nie można jej już edytować ani wypełniać."
+          },
+          {
+            "q": "Czy wypełnione przeze mnie dane formularza zostaną zachowane?",
+            "a": "Tak. Wartości obecnie wyświetlane w polach formularza są wtapiane w stronę, więc pozostają widoczne – po prostu nie można ich już zmienić."
+          },
+          {
+            "q": "Czy narzędzie do spłaszczania PDF jest darmowe?",
+            "a": "Tak. PDFConvertMe jest całkowicie darmowy, bez rejestracji, bez subskrypcji i bez ukrytych opłat."
           },
           {
             "q": "Czy moje pliki są bezpieczne i prywatne?",

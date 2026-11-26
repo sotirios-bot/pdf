@@ -22,7 +22,9 @@
     "mergePdf": "Gabungkan PDF",
     "splitPdf": "Pisahkan PDF",
     "deletePdfPages": "Hapus Halaman PDF",
-    "compressPdf": "Kompres PDF"
+    "compressPdf": "Kompres PDF",
+    "rotatePdf": "Putar PDF",
+    "flattenPdf": "Ratakan PDF"
   },
   "footer": {
     "rights": "Semua hak dilindungi.",
@@ -129,6 +131,18 @@
           "id": "compressPdf",
           "name": "Kompres PDF",
           "description": "Kurangi ukuran file dokumen PDF.",
+          "badge": "Baru"
+        },
+        {
+          "id": "rotatePdf",
+          "name": "Putar PDF",
+          "description": "Putar semua halaman PDF sebesar 90, 180, atau 270 derajat.",
+          "badge": "Baru"
+        },
+        {
+          "id": "flattenPdf",
+          "name": "Ratakan PDF",
+          "description": "Gabungkan bidang formulir ke dalam halaman sehingga PDF tidak dapat diedit lagi.",
           "badge": "Baru"
         }
       ]
@@ -919,6 +933,127 @@
           {
             "q": "Dapatkah saya mengonversi PDF hasil pindaian?",
             "a": "Tidak. PDF hasil pindaian atau yang hanya berisi gambar adalah gambar raster tanpa lapisan vektor, jadi tidak ada garis untuk diekstrak. Alat ini bekerja dengan PDF vektor yang diekspor dari perangkat lunak CAD atau desain."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "Putar PDF — Pemutar PDF Online Gratis",
+      "metaDescription": "Putar halaman PDF online secara gratis. Putar halaman PDF sebesar 90, 180, atau 270 derajat dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Putar PDF GRATIS",
+      "subtitle": "Putar halaman PDF sebesar 90, 180, atau 270 derajat dalam hitungan detik – gratis, online, dan aman.",
+      "paramPlaceholder": "Sudut putar: 90, 180, atau 270",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Putar PDF",
+        "converting": "Memutar PDF Anda…",
+        "downloadReady": "Selesai! PDF Anda yang telah diputar sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Memutar PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda edit. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Masukkan sudut putar — 90, 180, atau 270 derajat searah jarum jam — dan alat online gratis kami memutar setiap halaman untuk Anda dalam hitungan detik."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Bagaimana cara memutar PDF?",
+            "a": "Unggah PDF Anda, masukkan sudut (90, 180, atau 270), klik \"Putar PDF\", lalu unduh file yang telah diputar. Seluruh proses hanya memakan waktu beberapa detik."
+          },
+          {
+            "q": "Sudut apa saja yang dapat saya gunakan?",
+            "a": "Anda dapat memutar sebesar 90, 180, atau 270 derajat searah jarum jam. Sudut diterapkan ke setiap halaman dokumen."
+          },
+          {
+            "q": "Apakah pemutar PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
+          },
+          {
+            "q": "Apakah file saya aman dan privat?",
+            "a": "File Anda dikirim melalui koneksi terenkripsi (SSL) dan diproses secara otomatis tanpa ditinjau oleh siapa pun. File yang diunggah dihapus dari server kami secara otomatis dalam beberapa jam."
+          },
+          {
+            "q": "Apakah berfungsi di Windows, Mac, dan ponsel?",
+            "a": "Ya. PDFConvertMe berjalan sepenuhnya di browser Anda, jadi berfungsi di sistem operasi atau perangkat apa pun – Windows, Mac, Linux, Android, dan iOS."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "Ratakan PDF — Perata PDF Online Gratis",
+      "metaDescription": "Ratakan file PDF online secara gratis. Gabungkan bidang formulir dan anotasi ke dalam halaman dalam hitungan detik – tanpa instalasi, tanpa pendaftaran. Cepat dan aman.",
+      "h1": "Ratakan PDF GRATIS",
+      "subtitle": "Gabungkan bidang formulir dan anotasi ke dalam halaman sehingga PDF Anda tidak dapat diedit – dalam hitungan detik, gratis, online, dan aman.",
+      "uploader": {
+        "dropText": "Letakkan PDF Anda di sini atau klik untuk mengunggah",
+        "hint": "Ukuran file maksimum: 20 MB · File Anda diproses dengan aman",
+        "button": "Ratakan PDF",
+        "converting": "Meratakan PDF Anda…",
+        "downloadReady": "Selesai! PDF Anda yang telah diratakan sudah siap.",
+        "download": "Unduh PDF",
+        "errorGeneric": "Terjadi kesalahan. Silakan coba lagi.",
+        "errorFileType": "Silakan pilih file PDF.",
+        "errorTooLarge": "File itu terlalu besar. Ukuran maksimum adalah 20 MB."
+      },
+      "howTo": {
+        "heading": "Cara Meratakan PDF secara Gratis",
+        "steps": [
+          {
+            "title": "Unggah",
+            "text": "Pilih file PDF yang ingin Anda edit. Seret dan letakkan ke dalam kotak di atas atau telusuri dari perangkat Anda."
+          },
+          {
+            "title": "Mulai proses",
+            "text": "Alat online gratis kami menggabungkan bidang formulir ke dalam konten halaman sehingga PDF terlihat sama di mana saja dan tidak dapat diedit atau diisi lagi."
+          },
+          {
+            "title": "Unduh",
+            "text": "PDF baru Anda akan siap diunduh segera. Setelah unduhan selesai, semua file tersisa yang Anda unggah akan dihapus dari server kami."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Pertanyaan yang Sering Diajukan",
+        "items": [
+          {
+            "q": "Apa yang dilakukan perataan PDF?",
+            "a": "Perataan menggabungkan bidang formulir interaktif ke dalam halaman itu sendiri, sehingga konten terlihat identik di mana saja dan tidak dapat diedit atau diisi lagi."
+          },
+          {
+            "q": "Apakah data formulir yang saya isi akan dipertahankan?",
+            "a": "Ya. Nilai yang saat ini ditampilkan di bidang formulir disematkan ke dalam halaman, sehingga tetap terlihat — hanya saja tidak dapat diubah lagi."
+          },
+          {
+            "q": "Apakah perata PDF gratis?",
+            "a": "Ya. PDFConvertMe sepenuhnya gratis digunakan, tanpa pendaftaran, tanpa langganan, dan tanpa biaya tersembunyi."
           },
           {
             "q": "Apakah file saya aman dan privat?",

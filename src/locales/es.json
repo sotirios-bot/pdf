@@ -22,7 +22,9 @@
     "mergePdf": "Unir PDF",
     "splitPdf": "Dividir PDF",
     "deletePdfPages": "Eliminar páginas de PDF",
-    "compressPdf": "Comprimir PDF"
+    "compressPdf": "Comprimir PDF",
+    "rotatePdf": "Rotar PDF",
+    "flattenPdf": "Aplanar PDF"
   },
   "footer": {
     "rights": "Todos los derechos reservados.",
@@ -129,6 +131,18 @@
           "id": "compressPdf",
           "name": "Comprimir PDF",
           "description": "Reduce el tamaño de archivo de un documento PDF.",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "rotatePdf",
+          "name": "Rotar PDF",
+          "description": "Rota todas las páginas de un PDF 90, 180 o 270 grados.",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "flattenPdf",
+          "name": "Aplanar PDF",
+          "description": "Combina los campos de formulario con la página para que un PDF ya no se pueda editar.",
           "badge": "Nuevo"
         }
       ]
@@ -919,6 +933,127 @@
           {
             "q": "¿Puedo convertir un PDF escaneado?",
             "a": "No. Los PDF escaneados o que solo contienen imágenes son imágenes rasterizadas sin capa vectorial, por lo que no hay líneas que extraer. Esta herramienta funciona con PDF vectoriales exportados desde software CAD o de diseño."
+          },
+          {
+            "q": "¿Mis archivos son seguros y privados?",
+            "a": "Tu archivo se envía a través de una conexión cifrada (SSL) y se procesa automáticamente sin que nadie lo revise. Los archivos subidos se eliminan de nuestros servidores automáticamente en unas horas."
+          },
+          {
+            "q": "¿Funciona en Windows, Mac y móviles?",
+            "a": "Sí. PDFConvertMe funciona totalmente en tu navegador, así que funciona en cualquier sistema operativo o dispositivo: Windows, Mac, Linux, Android e iOS."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "Rotar PDF — Rotador de PDF en línea gratis",
+      "metaDescription": "Rota las páginas de un PDF en línea gratis. Gira las páginas de un PDF 90, 180 o 270 grados en segundos, sin instalación ni registro. Rápido y seguro.",
+      "h1": "Rota PDF GRATIS",
+      "subtitle": "Rota las páginas de un PDF 90, 180 o 270 grados en segundos: gratis, en línea y seguro.",
+      "paramPlaceholder": "Ángulo de rotación: 90, 180 o 270",
+      "uploader": {
+        "dropText": "Suelta tu PDF aquí o haz clic para subirlo",
+        "hint": "Tamaño máximo de archivo: 20 MB · Tu archivo se procesa de forma segura",
+        "button": "Rotar PDF",
+        "converting": "Rotando tu PDF…",
+        "downloadReady": "¡Listo! Tu PDF rotado está listo.",
+        "download": "Descargar PDF",
+        "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+        "errorFileType": "Elige un archivo PDF.",
+        "errorTooLarge": "Ese archivo es demasiado grande. El tamaño máximo es 20 MB."
+      },
+      "howTo": {
+        "heading": "Cómo rotar un PDF gratis",
+        "steps": [
+          {
+            "title": "Sube el archivo",
+            "text": "Selecciona el archivo PDF que quieres editar. Arrástralo al recuadro de arriba o búscalo en tu dispositivo."
+          },
+          {
+            "title": "Inicia el procesamiento",
+            "text": "Introduce el ángulo de rotación —90, 180 o 270 grados en el sentido de las agujas del reloj— y nuestra herramienta en línea gratuita gira cada página por ti en segundos."
+          },
+          {
+            "title": "Descarga",
+            "text": "Tu nuevo PDF estará listo para descargar de inmediato. Una vez completada la descarga, los archivos que hayas subido se eliminarán de nuestro servidor."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Preguntas frecuentes",
+        "items": [
+          {
+            "q": "¿Cómo roto un PDF?",
+            "a": "Sube tu PDF, introduce el ángulo (90, 180 o 270), haz clic en «Rotar PDF» y descarga el archivo rotado. Todo el proceso dura solo unos segundos."
+          },
+          {
+            "q": "¿Qué ángulos puedo usar?",
+            "a": "Puedes rotar 90, 180 o 270 grados en el sentido de las agujas del reloj. El ángulo se aplica a todas las páginas del documento."
+          },
+          {
+            "q": "¿El rotador de PDF es gratis?",
+            "a": "Sí. PDFConvertMe es completamente gratis, sin registro, sin suscripción y sin comisiones ocultas."
+          },
+          {
+            "q": "¿Mis archivos son seguros y privados?",
+            "a": "Tu archivo se envía a través de una conexión cifrada (SSL) y se procesa automáticamente sin que nadie lo revise. Los archivos subidos se eliminan de nuestros servidores automáticamente en unas horas."
+          },
+          {
+            "q": "¿Funciona en Windows, Mac y móviles?",
+            "a": "Sí. PDFConvertMe funciona totalmente en tu navegador, así que funciona en cualquier sistema operativo o dispositivo: Windows, Mac, Linux, Android e iOS."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "Aplanar PDF — Aplanador de PDF en línea gratis",
+      "metaDescription": "Aplana archivos PDF en línea gratis. Combina los campos de formulario y las anotaciones con la página en segundos, sin instalación ni registro. Rápido y seguro.",
+      "h1": "Aplana PDF GRATIS",
+      "subtitle": "Combina los campos de formulario y las anotaciones con la página para que tu PDF no se pueda editar: en segundos, gratis, en línea y seguro.",
+      "uploader": {
+        "dropText": "Suelta tu PDF aquí o haz clic para subirlo",
+        "hint": "Tamaño máximo de archivo: 20 MB · Tu archivo se procesa de forma segura",
+        "button": "Aplanar PDF",
+        "converting": "Aplanando tu PDF…",
+        "downloadReady": "¡Listo! Tu PDF aplanado está listo.",
+        "download": "Descargar PDF",
+        "errorGeneric": "Algo salió mal. Inténtalo de nuevo.",
+        "errorFileType": "Elige un archivo PDF.",
+        "errorTooLarge": "Ese archivo es demasiado grande. El tamaño máximo es 20 MB."
+      },
+      "howTo": {
+        "heading": "Cómo aplanar un PDF gratis",
+        "steps": [
+          {
+            "title": "Sube el archivo",
+            "text": "Selecciona el archivo PDF que quieres editar. Arrástralo al recuadro de arriba o búscalo en tu dispositivo."
+          },
+          {
+            "title": "Inicia el procesamiento",
+            "text": "Nuestra herramienta en línea gratuita combina los campos de formulario con el contenido de la página para que el PDF se vea igual en todas partes y ya no se pueda editar ni rellenar."
+          },
+          {
+            "title": "Descarga",
+            "text": "Tu nuevo PDF estará listo para descargar de inmediato. Una vez completada la descarga, los archivos que hayas subido se eliminarán de nuestro servidor."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Preguntas frecuentes",
+        "items": [
+          {
+            "q": "¿Qué hace aplanar un PDF?",
+            "a": "Aplanar combina los campos de formulario interactivos con la propia página, de modo que el contenido se ve idéntico en todas partes y ya no se puede editar ni rellenar."
+          },
+          {
+            "q": "¿Se conservarán los datos que rellené en el formulario?",
+            "a": "Sí. Los valores que se muestran actualmente en los campos de formulario quedan fijados en la página, por lo que siguen visibles: simplemente ya no se pueden cambiar."
+          },
+          {
+            "q": "¿El aplanador de PDF es gratis?",
+            "a": "Sí. PDFConvertMe es completamente gratis, sin registro, sin suscripción y sin comisiones ocultas."
           },
           {
             "q": "¿Mis archivos son seguros y privados?",

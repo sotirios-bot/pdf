@@ -22,7 +22,9 @@
     "mergePdf": "Juntar PDF",
     "splitPdf": "Dividir PDF",
     "deletePdfPages": "Excluir páginas de PDF",
-    "compressPdf": "Comprimir PDF"
+    "compressPdf": "Comprimir PDF",
+    "rotatePdf": "Girar PDF",
+    "flattenPdf": "Achatar PDF"
   },
   "footer": {
     "rights": "Todos os direitos reservados.",
@@ -129,6 +131,18 @@
           "id": "compressPdf",
           "name": "Comprimir PDF",
           "description": "Reduza o tamanho do arquivo de um documento PDF.",
+          "badge": "Novo"
+        },
+        {
+          "id": "rotatePdf",
+          "name": "Girar PDF",
+          "description": "Gire todas as páginas de um PDF em 90, 180 ou 270 graus.",
+          "badge": "Novo"
+        },
+        {
+          "id": "flattenPdf",
+          "name": "Achatar PDF",
+          "description": "Combine os campos de formulário com a página para que um PDF não possa mais ser editado.",
           "badge": "Novo"
         }
       ]
@@ -919,6 +933,127 @@
           {
             "q": "Posso converter um PDF digitalizado?",
             "a": "Não. PDFs digitalizados ou apenas com imagens são imagens rasterizadas sem camada vetorial, portanto não há linhas a extrair. Esta ferramenta funciona com PDFs vetoriais exportados de softwares CAD ou de design."
+          },
+          {
+            "q": "Meus arquivos são seguros e privados?",
+            "a": "Seu arquivo é enviado por uma conexão criptografada (SSL) e processado automaticamente sem que ninguém o revise. Os arquivos enviados são excluídos dos nossos servidores automaticamente em poucas horas."
+          },
+          {
+            "q": "Funciona no Windows, Mac e celular?",
+            "a": "Sim. A PDFConvertMe funciona totalmente no seu navegador, então funciona em qualquer sistema operacional ou dispositivo — Windows, Mac, Linux, Android e iOS."
+          }
+        ]
+      }
+    },
+    "rotatePdf": {
+      "slug": "rotate-pdf",
+      "title": "Girar PDF — Ferramenta online grátis para girar PDF",
+      "metaDescription": "Gire páginas de PDF online de graça. Vire as páginas de um PDF em 90, 180 ou 270 graus em segundos, sem instalação nem cadastro. Rápido e seguro.",
+      "h1": "Gire PDF GRÁTIS",
+      "subtitle": "Gire as páginas de um PDF em 90, 180 ou 270 graus em segundos: grátis, online e seguro.",
+      "paramPlaceholder": "Ângulo de rotação: 90, 180 ou 270",
+      "uploader": {
+        "dropText": "Solte seu PDF aqui ou clique para enviar",
+        "hint": "Tamanho máximo do arquivo: 20 MB · Seu arquivo é processado com segurança",
+        "button": "Girar PDF",
+        "converting": "Girando seu PDF…",
+        "downloadReady": "Pronto! Seu PDF girado está pronto.",
+        "download": "Baixar PDF",
+        "errorGeneric": "Algo deu errado. Tente novamente.",
+        "errorFileType": "Escolha um arquivo PDF.",
+        "errorTooLarge": "Esse arquivo é muito grande. O tamanho máximo é 20 MB."
+      },
+      "howTo": {
+        "heading": "Como girar um PDF grátis",
+        "steps": [
+          {
+            "title": "Envie o arquivo",
+            "text": "Selecione o arquivo PDF que você quer editar. Arraste e solte na caixa acima ou procure no seu dispositivo."
+          },
+          {
+            "title": "Inicie o processamento",
+            "text": "Informe o ângulo de rotação — 90, 180 ou 270 graus no sentido horário — e nossa ferramenta online gratuita gira cada página para você em segundos."
+          },
+          {
+            "title": "Baixe",
+            "text": "Seu novo PDF estará pronto para baixar imediatamente. Após a conclusão do download, os arquivos que você enviou serão removidos do nosso servidor."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Perguntas frequentes",
+        "items": [
+          {
+            "q": "Como giro um PDF?",
+            "a": "Envie seu PDF, informe o ângulo (90, 180 ou 270), clique em «Girar PDF» e baixe o arquivo girado. Todo o processo leva apenas alguns segundos."
+          },
+          {
+            "q": "Quais ângulos posso usar?",
+            "a": "Você pode girar em 90, 180 ou 270 graus no sentido horário. O ângulo é aplicado a cada página do documento."
+          },
+          {
+            "q": "A ferramenta de girar PDF é gratuita?",
+            "a": "Sim. A PDFConvertMe é totalmente gratuita, sem cadastro, sem assinatura e sem taxas ocultas."
+          },
+          {
+            "q": "Meus arquivos são seguros e privados?",
+            "a": "Seu arquivo é enviado por uma conexão criptografada (SSL) e processado automaticamente sem que ninguém o revise. Os arquivos enviados são excluídos dos nossos servidores automaticamente em poucas horas."
+          },
+          {
+            "q": "Funciona no Windows, Mac e celular?",
+            "a": "Sim. A PDFConvertMe funciona totalmente no seu navegador, então funciona em qualquer sistema operacional ou dispositivo — Windows, Mac, Linux, Android e iOS."
+          }
+        ]
+      }
+    },
+    "flattenPdf": {
+      "slug": "flatten-pdf",
+      "title": "Achatar PDF — Ferramenta online grátis para achatar PDF",
+      "metaDescription": "Achate arquivos PDF online de graça. Combine os campos de formulário e as anotações com a página em segundos, sem instalação nem cadastro. Rápido e seguro.",
+      "h1": "Achate PDF GRÁTIS",
+      "subtitle": "Combine os campos de formulário e as anotações com a página para que seu PDF não possa ser editado: em segundos, grátis, online e seguro.",
+      "uploader": {
+        "dropText": "Solte seu PDF aqui ou clique para enviar",
+        "hint": "Tamanho máximo do arquivo: 20 MB · Seu arquivo é processado com segurança",
+        "button": "Achatar PDF",
+        "converting": "Achatando seu PDF…",
+        "downloadReady": "Pronto! Seu PDF achatado está pronto.",
+        "download": "Baixar PDF",
+        "errorGeneric": "Algo deu errado. Tente novamente.",
+        "errorFileType": "Escolha um arquivo PDF.",
+        "errorTooLarge": "Esse arquivo é muito grande. O tamanho máximo é 20 MB."
+      },
+      "howTo": {
+        "heading": "Como achatar um PDF grátis",
+        "steps": [
+          {
+            "title": "Envie o arquivo",
+            "text": "Selecione o arquivo PDF que você quer editar. Arraste e solte na caixa acima ou procure no seu dispositivo."
+          },
+          {
+            "title": "Inicie o processamento",
+            "text": "Nossa ferramenta online gratuita combina os campos de formulário com o conteúdo da página para que o PDF fique igual em todos os lugares e não possa mais ser editado ou preenchido."
+          },
+          {
+            "title": "Baixe",
+            "text": "Seu novo PDF estará pronto para baixar imediatamente. Após a conclusão do download, os arquivos que você enviou serão removidos do nosso servidor."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Perguntas frequentes",
+        "items": [
+          {
+            "q": "O que achatar um PDF faz?",
+            "a": "O achatamento combina os campos de formulário interativos com a própria página, de modo que o conteúdo fica idêntico em todos os lugares e não pode mais ser editado ou preenchido."
+          },
+          {
+            "q": "Os dados que preenchi no formulário serão mantidos?",
+            "a": "Sim. Os valores atualmente exibidos nos campos de formulário são incorporados à página, então permanecem visíveis — apenas não podem mais ser alterados."
+          },
+          {
+            "q": "A ferramenta de achatar PDF é gratuita?",
+            "a": "Sim. A PDFConvertMe é totalmente gratuita, sem cadastro, sem assinatura e sem taxas ocultas."
           },
           {
             "q": "Meus arquivos são seguros e privados?",
