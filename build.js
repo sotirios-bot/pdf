@@ -16,7 +16,7 @@ const config = {
   // Google AdSense publisher id (also in the head meta tag). Used for ads.txt.
   adsensePublisherId: "pub-5220550180754289",
   defaultLocale: "en",
-  locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"],
+  locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"],
   // Languages a page falls back to when it isn't translated for a locale
   // (e.g. Kazakh has no legal pages → its footer links point here).
   legalFallbackLocale: "en",
@@ -33,20 +33,20 @@ const config = {
   // Pages to render. Each maps a locale `pages.<id>` block to a template.
   // `locales` restricts which languages a page is built for (default: all).
   pages: [
-    { id: "home", template: "hub.html", type: "hub", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
+    { id: "home", template: "hub.html", type: "hub", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
     { id: "pdfToExcel", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert", ext: "xlsx", downloadEvent: "excel_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf" },
-    { id: "pdfToWord", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "pdfToPpt", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert-ppt", ext: "pptx", downloadEvent: "download_ppt", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "tr", "ru", "kk", "uz", "es", "pt"] },
-    { id: "jpgToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "jpg_to_pdf_download", inputAccept: "image/jpeg,.jpg,.jpeg", acceptExt: "jpe?g", locales: ["en", "uz", "kk", "ru", "tr", "es", "pt"] },
-    { id: "pngToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "png_to_pdf_download", inputAccept: "image/png,.png", acceptExt: "png", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "mdToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/md-to-pdf", ext: "pdf", downloadEvent: "md_to_pdf_download", inputAccept: ".md,.markdown,text/markdown,text/x-markdown", acceptExt: "md|markdown", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "textToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/text-to-pdf", ext: "pdf", downloadEvent: "text_to_pdf_download", inputAccept: "text/plain,.txt", acceptExt: "txt", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "pdfToText", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/pdf-to-text", ext: "txt", downloadEvent: "pdf_to_text_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "pdfToAutocad", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/pdf-to-autocad", ext: "dxf", downloadEvent: "pdf_to_autocad_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "mergePdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/merge-pdf", ext: "pdf", downloadEvent: "merge_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", multiple: true, locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "splitPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/split-pdf", ext: "zip", downloadEvent: "split_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "deletePdfPages", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/delete-pdf-pages", ext: "pdf", downloadEvent: "delete_pages_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", param: "pages", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
-    { id: "compressPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/compress-pdf", ext: "pdf", downloadEvent: "compress_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt"] },
+    { id: "pdfToWord", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert-word", ext: "docx", downloadEvent: "download_word", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "pdfToPpt", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/convert-ppt", ext: "pptx", downloadEvent: "download_ppt", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "tr", "ru", "kk", "uz", "es", "pt", "fr"] },
+    { id: "jpgToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "jpg_to_pdf_download", inputAccept: "image/jpeg,.jpg,.jpeg", acceptExt: "jpe?g", locales: ["en", "uz", "kk", "ru", "tr", "es", "pt", "fr"] },
+    { id: "pngToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/image-to-pdf", ext: "pdf", downloadEvent: "png_to_pdf_download", inputAccept: "image/png,.png", acceptExt: "png", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "mdToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/md-to-pdf", ext: "pdf", downloadEvent: "md_to_pdf_download", inputAccept: ".md,.markdown,text/markdown,text/x-markdown", acceptExt: "md|markdown", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "textToPdf", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/text-to-pdf", ext: "pdf", downloadEvent: "text_to_pdf_download", inputAccept: "text/plain,.txt", acceptExt: "txt", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "pdfToText", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/pdf-to-text", ext: "txt", downloadEvent: "pdf_to_text_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "pdfToAutocad", template: "converter.html", type: "converter", category: "convert", endpoint: "/api/pdf-to-autocad", ext: "dxf", downloadEvent: "pdf_to_autocad_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "mergePdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/merge-pdf", ext: "pdf", downloadEvent: "merge_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", multiple: true, locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "splitPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/split-pdf", ext: "zip", downloadEvent: "split_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "deletePdfPages", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/delete-pdf-pages", ext: "pdf", downloadEvent: "delete_pages_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", param: "pages", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
+    { id: "compressPdf", template: "converter.html", type: "converter", category: "edit", endpoint: "/api/compress-pdf", ext: "pdf", downloadEvent: "compress_pdf_download", inputAccept: "application/pdf,.pdf", acceptExt: "pdf", locales: ["en", "ru", "tr", "kk", "uz", "es", "pt", "fr"] },
     { id: "terms", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] },
     { id: "privacy", template: "legal.html", type: "legal", locales: ["en", "ru", "tr"] }
   ]

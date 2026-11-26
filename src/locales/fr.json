@@ -1,0 +1,935 @@
+{
+  "lang": "fr",
+  "dir": "ltr",
+  "localeName": "Français",
+  "site": {
+    "name": "PDFConvertMe",
+    "tagline": "Convertisseur PDF en ligne gratuit"
+  },
+  "nav": {
+    "home": "Accueil",
+    "convertPdf": "Convertir PDF",
+    "pdfToExcel": "PDF en Excel",
+    "pdfToWord": "PDF en Word",
+    "pdfToPpt": "PDF en PowerPoint",
+    "jpgToPdf": "JPG en PDF",
+    "pngToPdf": "PNG en PDF",
+    "mdToPdf": "Markdown en PDF",
+    "textToPdf": "TXT en PDF",
+    "pdfToText": "PDF en TXT",
+    "pdfToAutocad": "PDF en AutoCAD",
+    "editPdf": "Modifier PDF",
+    "mergePdf": "Fusionner PDF",
+    "splitPdf": "Diviser PDF",
+    "deletePdfPages": "Supprimer des pages PDF",
+    "compressPdf": "Compresser PDF"
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "tagline": "Convertisseur de fichiers en ligne gratuit pour les fichiers PDF, Excel, Word, PowerPoint et images. Conversion de documents rapide et sécurisée, sans téléchargement, sans inscription et en utilisation illimitée.",
+    "legalHeading": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions générales",
+    "toolsHeading": "Outils"
+  },
+  "common": {
+    "languageLabel": "Langue",
+    "relatedTools": "Outils associés",
+    "trustNote": "🔒 Les fichiers {type} sont traités via SSL et supprimés en quelques heures — sans inscription"
+  },
+  "meta": {
+    "manifestDescription": "Convertissez un PDF en Excel gratuitement : rapide, en ligne et sécurisé.",
+    "notFoundTitle": "404 — Page introuvable | PDFConvertMe",
+    "notFoundDescription": "La page que vous recherchez est introuvable.",
+    "notFoundText": "Désolé, la page que vous recherchez n’existe pas ou a été déplacée.",
+    "notFoundHome": "Retour à l’accueil"
+  },
+  "pages": {
+    "home": {
+      "slug": "",
+      "title": "PDFConvertMe — Outils gratuits de conversion de PDF en ligne",
+      "metaDescription": "Outils PDF gratuits en ligne de PDFConvertMe. Convertissez un PDF en Excel, un PDF en Word et plus encore : rapide, précis, sécurisé et gratuit, sans inscription.",
+      "h1": "Outils PDF gratuits en ligne",
+      "subtitle": "Convertissez vos PDF en quelques secondes : gratuit, en ligne et sécurisé. Choisissez un outil pour commencer.",
+      "toolsHeading": "Choisissez un outil",
+      "tools": [
+        {
+          "id": "pdfToExcel",
+          "name": "PDF en Excel",
+          "description": "Convertissez les tableaux PDF en feuilles de calcul XLSX entièrement modifiables.",
+          "badge": ""
+        },
+        {
+          "id": "pdfToWord",
+          "name": "PDF en Word",
+          "description": "Transformez des documents PDF en fichiers Word (DOCX) modifiables.",
+          "badge": ""
+        },
+        {
+          "id": "pdfToPpt",
+          "name": "PDF en PowerPoint",
+          "description": "Convertissez les pages PDF en diapositives PowerPoint (PPTX) modifiables.",
+          "badge": ""
+        },
+        {
+          "id": "jpgToPdf",
+          "name": "JPG en PDF",
+          "description": "Transformez une image JPG en document PDF.",
+          "badge": ""
+        },
+        {
+          "id": "pngToPdf",
+          "name": "PNG en PDF",
+          "description": "Transformez une image PNG en document PDF.",
+          "badge": ""
+        },
+        {
+          "id": "mdToPdf",
+          "name": "Markdown en PDF",
+          "description": "Convertissez un fichier Markdown (.md) en PDF mis en forme.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "textToPdf",
+          "name": "TXT en PDF",
+          "description": "Transformez un fichier texte (.txt) en document PDF.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "pdfToText",
+          "name": "PDF en TXT",
+          "description": "Extrayez le texte d’un PDF vers un fichier .txt.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "pdfToAutocad",
+          "name": "PDF en AutoCAD",
+          "description": "Convertissez un PDF vectoriel en dessin DXF AutoCAD modifiable.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "mergePdf",
+          "name": "Fusionner PDF",
+          "description": "Combinez plusieurs fichiers PDF en un seul document.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "splitPdf",
+          "name": "Diviser PDF",
+          "description": "Divisez un PDF en fichiers d’une page distincts (ZIP).",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "deletePdfPages",
+          "name": "Supprimer des pages PDF",
+          "description": "Supprimez des pages précises d’un document PDF.",
+          "badge": "Nouveau"
+        },
+        {
+          "id": "compressPdf",
+          "name": "Compresser PDF",
+          "description": "Réduisez la taille d’un document PDF.",
+          "badge": "Nouveau"
+        }
+      ]
+    },
+    "pdfToExcel": {
+      "slug": "pdf-to-excel",
+      "title": "Convertir un PDF en Excel — Convertisseur PDF en Excel en ligne gratuit (XLSX)",
+      "metaDescription": "Convertissez un PDF en Excel en ligne gratuitement. Transformez des fichiers PDF en feuilles de calcul XLSX modifiables en quelques secondes, sans installation ni inscription. Conversion de fichiers rapide, précise et sécurisée sur n’importe quel appareil.",
+      "h1": "Convertissez un PDF en Excel GRATUITEMENT",
+      "subtitle": "Transformez des fichiers PDF en feuilles de calcul Excel (XLSX) entièrement modifiables en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en Excel",
+        "converting": "Conversion de votre PDF…",
+        "downloadReady": "Terminé ! Votre feuille de calcul Excel est prête.",
+        "download": "Télécharger le XLSX",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir des fichiers vers et depuis le PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez convertir. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur PDF en ligne gratuit convertit votre document PDF en Excel en quelques secondes, en préservant fidèlement vos tableaux, lignes et colonnes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau document Excel sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un PDF en Excel ?",
+            "a": "Importez votre PDF dans la zone ci-dessus, cliquez sur « Convertir en Excel » et téléchargez la feuille de calcul XLSX obtenue. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Le convertisseur PDF en Excel est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Mes tableaux, lignes et colonnes seront-ils préservés ?",
+            "a": "Oui. Nous détectons la position de chaque fragment de texte et reconstruisons les lignes et les colonnes en une véritable feuille de calcul, et les nombres sont conservés comme des nombres pour que vous puissiez calculer avec eux immédiatement."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Puis-je convertir un PDF numérisé ?",
+            "a": "Le convertisseur fonctionne mieux avec des PDF numériques basés sur du texte. Les PDF numérisés ou composés uniquement d’images n’ont pas de couche de texte, ils ne se convertissent donc peut-être pas encore — la prise en charge de l’OCR est prévue."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "pdfToWord": {
+      "slug": "pdf-to-word",
+      "title": "Convertir un PDF en Word — Convertisseur PDF en Word en ligne gratuit (DOCX)",
+      "metaDescription": "Convertissez un PDF en Word en ligne gratuitement. Transformez des fichiers PDF en documents Word (DOCX) modifiables en quelques secondes, sans installation ni inscription. Rapide, précis et sécurisé.",
+      "h1": "Convertissez un PDF en Word GRATUITEMENT",
+      "subtitle": "Transformez des fichiers PDF en documents Word (DOCX) entièrement modifiables en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en Word",
+        "converting": "Conversion de votre PDF…",
+        "downloadReady": "Terminé ! Votre document Word est prêt.",
+        "download": "Télécharger le DOCX",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir un PDF en Word gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez convertir. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit extrait le texte de votre PDF et le reconstruit en un document Word modifiable en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau document Word sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un PDF en Word ?",
+            "a": "Importez votre PDF dans la zone ci-dessus, cliquez sur « Convertir en Word » et téléchargez le document DOCX obtenu. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Le convertisseur PDF en Word est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Mon texte sera-t-il modifiable dans Word ?",
+            "a": "Oui. Nous extrayons le texte de votre PDF et le plaçons dans un document Word modifiable afin que vous puissiez le modifier, le copier et le reformater librement."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Puis-je convertir un PDF numérisé ?",
+            "a": "Le convertisseur fonctionne mieux avec des PDF numériques basés sur du texte. Les PDF numérisés ou composés uniquement d’images n’ont pas de couche de texte, ils ne se convertissent donc peut-être pas encore — la prise en charge de l’OCR est prévue."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "pdfToPpt": {
+      "slug": "pdf-to-ppt",
+      "title": "Convertir un PDF en PowerPoint — Convertisseur PDF en PPT en ligne gratuit (PPTX)",
+      "metaDescription": "Convertissez un PDF en PowerPoint en ligne gratuitement. Transformez les pages PDF en diapositives PPTX modifiables en quelques secondes, sans installation ni inscription. Rapide, précis et sécurisé.",
+      "h1": "Convertissez un PDF en PowerPoint GRATUITEMENT",
+      "subtitle": "Transformez des fichiers PDF en présentations PowerPoint (PPTX) modifiables en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en PowerPoint",
+        "converting": "Conversion de votre PDF…",
+        "downloadReady": "Terminé ! Votre présentation PowerPoint est prête.",
+        "download": "Télécharger le PPTX",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir un PDF en PowerPoint gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez convertir. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit extrait le contenu de votre PDF et transforme chaque page en une diapositive PowerPoint modifiable en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouvelle présentation PowerPoint sera prête à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un PDF en PowerPoint ?",
+            "a": "Importez votre PDF dans la zone ci-dessus, cliquez sur « Convertir en PowerPoint » et téléchargez la présentation PPTX obtenue. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Le convertisseur PDF en PowerPoint est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Les diapositives seront-elles modifiables ?",
+            "a": "Oui. Nous plaçons le texte de chaque page PDF sur sa propre diapositive PowerPoint modifiable afin que vous puissiez la retravailler librement."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Puis-je convertir un PDF numérisé ?",
+            "a": "Le convertisseur fonctionne mieux avec des PDF numériques basés sur du texte. Les PDF numérisés ou composés uniquement d’images n’ont pas de couche de texte, ils ne se convertissent donc peut-être pas encore — la prise en charge de l’OCR est prévue."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "jpgToPdf": {
+      "slug": "jpg-to-pdf",
+      "title": "Convertir un JPG en PDF — Convertisseur JPG en PDF en ligne gratuit",
+      "metaDescription": "Convertissez un JPG en PDF en ligne gratuitement. Transformez vos images JPG en document PDF en quelques secondes, sans installation ni inscription. Rapide, sécurisé et fonctionne sur n’importe quel appareil.",
+      "h1": "Convertissez un JPG en PDF GRATUITEMENT",
+      "subtitle": "Transformez vos images JPG en document PDF en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre JPG ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en PDF",
+        "converting": "Conversion de votre image…",
+        "downloadReady": "Terminé ! Votre PDF est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir une image JPG.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir un JPG en PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez l’image JPG que vous souhaitez convertir. Glissez-déposez-la dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit place votre image sur une page PDF propre et correctement dimensionnée en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau PDF sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un JPG en PDF ?",
+            "a": "Importez votre JPG dans la zone ci-dessus, cliquez sur « Convertir en PDF » et téléchargez le PDF obtenu. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Le convertisseur JPG en PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "La qualité de mon image sera-t-elle conservée ?",
+            "a": "Oui. Votre image est intégrée au PDF en pleine qualité et redimensionnée pour s’adapter à la page sans distorsion."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "pngToPdf": {
+      "slug": "png-to-pdf",
+      "title": "Convertir un PNG en PDF — Convertisseur PNG en PDF en ligne gratuit",
+      "metaDescription": "Convertissez un PNG en PDF en ligne gratuitement. Transformez vos images PNG en document PDF en quelques secondes, sans installation ni inscription. Rapide, sécurisé et fonctionne sur n’importe quel appareil.",
+      "h1": "Convertissez un PNG en PDF GRATUITEMENT",
+      "subtitle": "Transformez vos images PNG en document PDF en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PNG ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en PDF",
+        "converting": "Conversion de votre image…",
+        "downloadReady": "Terminé ! Votre PDF est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir une image PNG.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir un PNG en PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez l’image PNG que vous souhaitez convertir. Glissez-déposez-la dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit place votre image sur une page PDF propre et correctement dimensionnée en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau PDF sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un PNG en PDF ?",
+            "a": "Importez votre PNG dans la zone ci-dessus, cliquez sur « Convertir en PDF » et téléchargez le PDF obtenu. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Le convertisseur PNG en PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "La transparence est-elle prise en charge ?",
+            "a": "Votre PNG est intégré au PDF et redimensionné pour s’adapter à la page ; les zones transparentes apparaissent sur un fond de page blanc."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "mergePdf": {
+      "slug": "merge-pdf",
+      "title": "Fusionner des PDF — Outil en ligne gratuit pour fusionner des PDF",
+      "metaDescription": "Fusionnez des fichiers PDF en ligne gratuitement. Combinez plusieurs PDF en un seul document en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Fusionnez des PDF GRATUITEMENT",
+      "subtitle": "Combinez plusieurs fichiers PDF en un seul document en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez vos PDF ici ou cliquez pour les importer",
+        "hint": "Sélectionnez 2 PDF ou plus · 40 Mo au maximum au total · Traité en toute sécurité",
+        "button": "Fusionner les PDF",
+        "converting": "Fusion de vos PDF…",
+        "downloadReady": "Terminé ! Votre PDF fusionné est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite lors de la fusion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir des fichiers PDF.",
+        "errorTooLarge": "Ces fichiers sont trop volumineux. Le total maximal est de 40 Mo.",
+        "errorMin": "Veuillez sélectionner au moins deux fichiers PDF."
+      },
+      "howTo": {
+        "heading": "Comment fusionner des fichiers PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez deux fichiers PDF ou plus que vous souhaitez combiner. Glissez-déposez-les dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre outil en ligne gratuit assemble vos PDF, dans l’ordre que vous avez choisi, en un seul document en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre PDF fusionné sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment fusionner des fichiers PDF ?",
+            "a": "Importez deux PDF ou plus dans la zone ci-dessus, cliquez sur « Fusionner les PDF » et téléchargez le document combiné. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "L’outil de fusion de PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Dans quel ordre les PDF sont-ils combinés ?",
+            "a": "Ils sont fusionnés dans l’ordre dans lequel vous les sélectionnez, alors choisissez vos fichiers dans la séquence où vous voulez qu’ils apparaissent."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Vos fichiers sont envoyés via une connexion chiffrée (SSL) et traités automatiquement sans que personne ne les consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "splitPdf": {
+      "slug": "split-pdf",
+      "title": "Diviser un PDF — Outil en ligne gratuit pour diviser des PDF",
+      "metaDescription": "Divisez des fichiers PDF en ligne gratuitement. Séparez un PDF en fichiers d’une page distincts en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Divisez un PDF GRATUITEMENT",
+      "subtitle": "Divisez un PDF en fichiers d’une page distincts en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Diviser PDF",
+        "converting": "Division de votre PDF…",
+        "downloadReady": "Terminé ! Vos pages divisées (ZIP) sont prêtes.",
+        "download": "Télécharger le ZIP",
+        "errorGeneric": "Une erreur s’est produite lors de la division. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment diviser un PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez diviser. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre outil en ligne gratuit sépare chaque page de votre PDF dans son propre fichier et les regroupe dans un ZIP en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre ZIP de PDF d’une page sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment diviser un PDF ?",
+            "a": "Importez votre PDF dans la zone ci-dessus, cliquez sur « Diviser PDF » et téléchargez le ZIP obtenu — il contient un PDF par page. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "L’outil de division de PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Qu’est-ce que je récupère ?",
+            "a": "Un fichier ZIP contenant chaque page de votre PDF sous forme de PDF distinct d’une seule page (page-1.pdf, page-2.pdf, etc.)."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "deletePdfPages": {
+      "slug": "delete-pdf-pages",
+      "title": "Supprimer des pages PDF — Suppresseur de pages PDF en ligne gratuit",
+      "metaDescription": "Supprimez des pages d’un PDF en ligne gratuitement. Retirez des pages précises de votre PDF en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Supprimez des pages PDF GRATUITEMENT",
+      "subtitle": "Supprimez des pages précises d’un document PDF en quelques secondes : gratuit, en ligne et sécurisé.",
+      "paramPlaceholder": "Pages à supprimer, p. ex. 2, 5-7",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Supprimer les pages",
+        "converting": "Suppression des pages…",
+        "downloadReady": "Terminé ! Votre PDF modifié est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment supprimer des pages d’un PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez modifier. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Choisissez les pages",
+            "text": "Saisissez les pages que vous souhaitez supprimer — les pages seules et les plages fonctionnent, par exemple 2, 5-7."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau PDF sans ces pages sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment supprimer des pages d’un PDF ?",
+            "a": "Importez votre PDF, saisissez les pages à supprimer (p. ex. 2, 5-7), cliquez sur « Supprimer les pages » et téléchargez le PDF modifié. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Comment indiquer les pages ?",
+            "a": "Utilisez des numéros de page à partir de 1, séparés par des virgules. Vous pouvez mélanger des pages seules et des plages, par exemple : 1, 4, 8-10."
+          },
+          {
+            "q": "Le suppresseur de pages PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "compressPdf": {
+      "slug": "compress-pdf",
+      "title": "Compresser un PDF — Compresseur de PDF en ligne gratuit",
+      "metaDescription": "Compressez des fichiers PDF en ligne gratuitement. Réduisez la taille de votre PDF en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Compressez un PDF GRATUITEMENT",
+      "subtitle": "Réduisez la taille de votre PDF en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Compresser PDF",
+        "converting": "Compression de votre PDF…",
+        "downloadReady": "Terminé ! Votre PDF compressé est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite lors de la compression. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment compresser un PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez compresser. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre outil en ligne gratuit optimise la structure interne de votre PDF pour réduire sa taille en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre PDF plus léger sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment compresser un PDF ?",
+            "a": "Importez votre PDF dans la zone ci-dessus, cliquez sur « Compresser PDF » et téléchargez le fichier plus léger. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "De combien mon PDF sera-t-il réduit ?",
+            "a": "Cela dépend du fichier. Nous optimisons la structure interne du PDF pour réduire sa taille, de sorte que les PDF qui ne sont pas déjà optimisés peuvent être nettement réduits, tandis que les PDF très optimisés ou riches en images peuvent l’être moins. Nous ne renvoyons jamais un fichier plus volumineux que l’original."
+          },
+          {
+            "q": "Le compresseur de PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "mdToPdf": {
+      "slug": "md-to-pdf",
+      "title": "Markdown en PDF — Convertisseur MD en PDF en ligne gratuit",
+      "metaDescription": "Convertissez du Markdown en PDF en ligne gratuitement. Transformez des fichiers .md en PDF propre et mis en forme en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Convertissez du Markdown en PDF GRATUITEMENT",
+      "subtitle": "Transformez vos fichiers Markdown (.md) en PDF propre et mis en forme en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre fichier Markdown ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en PDF",
+        "converting": "Conversion de votre Markdown…",
+        "downloadReady": "Terminé ! Votre PDF est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier Markdown (.md).",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir du Markdown en PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier Markdown (.md) que vous souhaitez convertir. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit met en forme votre Markdown — titres, listes, gras, blocs de code et plus — en un PDF formaté en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau PDF sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir du Markdown en PDF ?",
+            "a": "Importez votre fichier .md dans la zone ci-dessus, cliquez sur « Convertir en PDF » et téléchargez le PDF obtenu. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Quelles fonctionnalités Markdown sont prises en charge ?",
+            "a": "Les titres, le texte en gras et en italique, le code en ligne et les blocs de code, les listes ordonnées et non ordonnées, les citations, les lignes horizontales et les liens sont tous rendus. Les images intégrées et les tableaux sont simplifiés pour conserver une mise en page nette."
+          },
+          {
+            "q": "Le convertisseur Markdown en PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "textToPdf": {
+      "slug": "text-to-pdf",
+      "title": "TXT en PDF — Convertisseur de texte en PDF en ligne gratuit",
+      "metaDescription": "Convertissez un TXT en PDF en ligne gratuitement. Transformez des fichiers texte (.txt) en PDF propre et paginé en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Convertissez un TXT en PDF GRATUITEMENT",
+      "subtitle": "Transformez des fichiers texte (.txt) en PDF propre et paginé en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre fichier texte ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en PDF",
+        "converting": "Conversion de votre texte…",
+        "downloadReady": "Terminé ! Votre PDF est prêt.",
+        "download": "Télécharger le PDF",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier texte (.txt).",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir un TXT en PDF gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier texte (.txt) que vous souhaitez convertir. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit ajuste et pagine votre texte sur des pages A4 propres et le transforme en PDF en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau PDF sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un fichier TXT en PDF ?",
+            "a": "Importez votre fichier .txt dans la zone ci-dessus, cliquez sur « Convertir en PDF » et téléchargez le PDF obtenu. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "La mise en forme de mon texte est-elle conservée ?",
+            "a": "Les sauts de ligne et les paragraphes sont conservés, et les longues lignes sont ajustées pour tenir sur la page. Le texte brut n’a ni polices ni styles, le PDF utilise donc une seule police claire et lisible."
+          },
+          {
+            "q": "Le convertisseur TXT en PDF est-il gratuit ?",
+            "a": "Oui. PDFConvertMe est entièrement gratuit, sans inscription, sans abonnement et sans frais cachés."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "pdfToText": {
+      "slug": "pdf-to-text",
+      "title": "PDF en TXT — Convertisseur PDF en texte en ligne gratuit",
+      "metaDescription": "Convertissez un PDF en texte en ligne gratuitement. Extrayez le texte d’un PDF vers un fichier .txt en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Convertissez un PDF en texte GRATUITEMENT",
+      "subtitle": "Extrayez le texte d’un PDF vers un fichier .txt en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en texte",
+        "converting": "Extraction de votre texte…",
+        "downloadReady": "Terminé ! Votre fichier texte est prêt.",
+        "download": "Télécharger le TXT",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir un PDF en texte gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez convertir. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit lit la couche de texte de votre PDF et l’extrait dans un fichier .txt propre en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau fichier texte sera prêt à télécharger immédiatement. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un PDF en texte ?",
+            "a": "Importez votre PDF dans la zone ci-dessus, cliquez sur « Convertir en texte » et téléchargez le fichier .txt obtenu. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "La mise en page sera-t-elle conservée ?",
+            "a": "Nous extrayons le texte lisible dans l’ordre de lecture. Le texte brut ne peut pas contenir de colonnes, de tableaux ni de styles, les mises en page complexes sont donc aplaties en lignes de texte."
+          },
+          {
+            "q": "Puis-je convertir un PDF numérisé ?",
+            "a": "Le convertisseur fonctionne mieux avec des PDF numériques basés sur du texte. Les PDF numérisés ou composés uniquement d’images n’ont pas de couche de texte, ils ne se convertissent donc peut-être pas encore — la prise en charge de l’OCR est prévue."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    },
+    "pdfToAutocad": {
+      "slug": "pdf-to-autocad",
+      "title": "PDF en AutoCAD — Convertisseur PDF en DXF en ligne gratuit",
+      "metaDescription": "Convertissez un PDF en AutoCAD en ligne gratuitement. Transformez des PDF vectoriels en dessins DXF modifiables que vous pouvez ouvrir dans AutoCAD en quelques secondes, sans installation ni inscription. Rapide et sécurisé.",
+      "h1": "Convertissez un PDF en AutoCAD GRATUITEMENT",
+      "subtitle": "Transformez des PDF vectoriels en dessins DXF AutoCAD modifiables en quelques secondes : gratuit, en ligne et sécurisé.",
+      "uploader": {
+        "dropText": "Déposez votre PDF ici ou cliquez pour l’importer",
+        "hint": "Taille maximale du fichier : 20 Mo · Votre fichier est traité en toute sécurité",
+        "button": "Convertir en DXF",
+        "converting": "Conversion de votre PDF…",
+        "downloadReady": "Terminé ! Votre dessin DXF est prêt.",
+        "download": "Télécharger le DXF",
+        "errorGeneric": "Une erreur s’est produite pendant la conversion. Veuillez réessayer.",
+        "errorFileType": "Veuillez choisir un fichier PDF.",
+        "errorTooLarge": "Ce fichier est trop volumineux. La taille maximale est de 20 Mo."
+      },
+      "howTo": {
+        "heading": "Comment convertir un PDF en AutoCAD gratuitement",
+        "steps": [
+          {
+            "title": "Importez",
+            "text": "Sélectionnez le fichier PDF que vous souhaitez convertir. Glissez-déposez-le dans la zone ci-dessus ou parcourez votre appareil."
+          },
+          {
+            "title": "Lancez le traitement",
+            "text": "Notre convertisseur en ligne gratuit extrait les lignes vectorielles, les formes et le texte de votre PDF et les reconstruit en entités CAO en quelques secondes."
+          },
+          {
+            "title": "Téléchargez",
+            "text": "Votre nouveau dessin DXF sera prêt à télécharger immédiatement — ouvrez-le dans AutoCAD ou toute application de CAO. Une fois le téléchargement terminé, tous les fichiers restants que vous avez importés seront supprimés de notre serveur."
+          }
+        ]
+      },
+      "faq": {
+        "heading": "Foire aux questions",
+        "items": [
+          {
+            "q": "Comment convertir un PDF en AutoCAD ?",
+            "a": "Importez votre PDF dans la zone ci-dessus, cliquez sur « Convertir en DXF » et téléchargez le fichier DXF obtenu. Ouvrez-le directement dans AutoCAD ou toute application de CAO. L’ensemble du processus ne prend que quelques secondes."
+          },
+          {
+            "q": "Est-ce que j’obtiens un fichier DWG ou DXF ?",
+            "a": "Vous obtenez un fichier DXF. Le DWG est le format binaire propriétaire d’Autodesk, tandis que le DXF est le format d’échange CAO ouvert que AutoCAD et pratiquement tous les autres logiciels de CAO ouvrent nativement. Vous pouvez le réenregistrer au format DWG depuis AutoCAD si nécessaire."
+          },
+          {
+            "q": "Qu’est-ce qui est converti ?",
+            "a": "La géométrie vectorielle — lignes, polylignes, rectangles et courbes — ainsi que le texte sont convertis en entités CAO modifiables placées à leurs coordonnées d’origine. Les couleurs, les calques, les épaisseurs de ligne et les hachures sont simplifiés."
+          },
+          {
+            "q": "Puis-je convertir un PDF numérisé ?",
+            "a": "Non. Les PDF numérisés ou composés uniquement d’images sont des images matricielles sans couche vectorielle, il n’y a donc aucune ligne à extraire. Cet outil fonctionne avec des PDF vectoriels exportés depuis un logiciel de CAO ou de conception."
+          },
+          {
+            "q": "Mes fichiers sont-ils sécurisés et confidentiels ?",
+            "a": "Votre fichier est envoyé via une connexion chiffrée (SSL) et traité automatiquement sans que personne ne le consulte. Les fichiers importés sont supprimés de nos serveurs automatiquement en quelques heures."
+          },
+          {
+            "q": "Fonctionne-t-il sur Windows, Mac et mobile ?",
+            "a": "Oui. PDFConvertMe fonctionne entièrement dans votre navigateur, il fonctionne donc sur n’importe quel système d’exploitation ou appareil — Windows, Mac, Linux, Android et iOS."
+          }
+        ]
+      }
+    }
+  }
+}
