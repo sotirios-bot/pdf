@@ -120,6 +120,15 @@ function toolLinksFor(locale, t, category) {
         `<a href="${urlPath(locale, getLocale(locale).pages[p.id].slug || "")}">${t.nav[p.id]}</a>`
     );
 }
+// Same, but each link is prefixed with the tool's icon (for header dropdowns).
+function navLinksFor(locale, t, category) {
+  return toolPages
+    .filter((p) => (p.category || "convert") === category && pageLocales(p).includes(locale))
+    .map(
+      (p) =>
+        `<a href="${urlPath(locale, getLocale(locale).pages[p.id].slug || "")}"><span class="mega-ico" aria-hidden="true">${toolIcons[p.id] || "📄"}</span>${t.nav[p.id]}</a>`
+    );
+}
 // Flag emoji per locale, for the language mega menu.
 const flags = { en: "🇬🇧", ru: "🇷🇺", tr: "🇹🇷", kk: "🇰🇿", uz: "🇺🇿", es: "🇪🇸", pt: "🇧🇷", fr: "🇫🇷", de: "🇩🇪", pl: "🇵🇱", id: "🇮🇩", vi: "🇻🇳" };
 
@@ -176,18 +185,19 @@ function langMenu(locale, label, items) {
 // Header dropdown + footer column for a category, or "" if it has no tools
 // in this locale (e.g. Edit PDF on non-English pages).
 function navGroup(locale, t, category, label) {
-  const links = toolLinksFor(locale, t, category);
-  if (!links.length) return { dropdown: "", footerCol: "" };
+  const plain = toolLinksFor(locale, t, category);
+  if (!plain.length) return { dropdown: "", footerCol: "" };
+  const withIcons = navLinksFor(locale, t, category);
   return {
     dropdown: `<div class="nav-dropdown">
         <button type="button" class="nav-dropbtn" aria-haspopup="true">${label}<span class="caret" aria-hidden="true">▾</span></button>
         <div class="nav-menu">
-          ${links.join("\n          ")}
+          ${withIcons.join("\n          ")}
         </div>
       </div>`,
     footerCol: `<div class="footer-col">
       <h4>${label}</h4>
-      ${links.join("\n      ")}
+      ${plain.join("\n      ")}
     </div>`
   };
 }
@@ -398,7 +408,7 @@ for (const locale of config.locales) {
       jsHref,
       navHome: t.nav.home,
       navConvertPdf: t.nav.convertPdf,
-      navConvertLinks: toolLinksFor(locale, t, "convert").join("\n          "),
+      navConvertLinks: navLinksFor(locale, t, "convert").join("\n          "),
       footerConvertLinks: toolLinksFor(locale, t, "convert").join("\n      "),
       editDropdown: navGroup(locale, t, "edit", t.nav.editPdf).dropdown,
       footerEditCol: navGroup(locale, t, "edit", t.nav.editPdf).footerCol,
@@ -552,7 +562,7 @@ for (const locale of config.locales) {
     jsHref,
     navHome: t.nav.home,
     navConvertPdf: t.nav.convertPdf,
-    navConvertLinks: toolLinksFor(t.lang, t, "convert").join("\n          "),
+    navConvertLinks: navLinksFor(t.lang, t, "convert").join("\n          "),
     footerConvertLinks: toolLinksFor(t.lang, t, "convert").join("\n      "),
     editDropdown: navGroup(t.lang, t, "edit", t.nav.editPdf).dropdown,
     footerEditCol: navGroup(t.lang, t, "edit", t.nav.editPdf).footerCol,

@@ -101,7 +101,9 @@ body {
   height: 0.65rem;
 }
 .nav-menu a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   padding: 0.55rem 0.75rem;
   border-radius: 8px;
   color: var(--text);
